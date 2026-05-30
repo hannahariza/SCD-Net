@@ -1,0 +1,647 @@
+2026-03-24 10:19:36 INFO:train:Logging initialized at temp path: ./output/tmp_logs\train_20260324-101936.log
+2026-03-24 10:19:36 INFO:train:Namespace(T=16, T_train=None, amp=True, batch_size=16, cooldown_epochs=10, cutmix=0.1, cutmix_minmax=None, data_path='D:/dataset/data/cifar10dvs/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda:0', dim=256, dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, experiment='', flblocks=16, log_wandb=False, lr=0.005, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='max_former_causal', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir=None, patience_epochs=10, print_freq=256, resume='', sched='cosine', seed=35307, smoothing=0.1, start_epoch=0, sync_bn=False, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+2026-03-24 10:19:36 INFO:train:Log file moved to: ./output/train_causal\20260324-101936_max_former_causal_b16_T16_wd0.06_adamw\logs\train_20260324-101936.log
+2026-03-24 10:19:36 INFO:train:All outputs for this run will be saved to: ./output/train_causal\20260324-101936_max_former_causal_b16_T16_wd0.06_adamw
+2026-03-24 10:19:36 INFO:train:device: cuda:0
+2026-03-24 10:19:36 INFO:train:Loading data
+2026-03-24 10:20:39 INFO:train:Took 63.69 seconds
+2026-03-24 10:20:39 INFO:train:Creating data loaders
+2026-03-24 10:20:39 INFO:train:Creating model
+2026-03-24 10:20:39 INFO:train:number of params: 1468106
+2026-03-24 10:20:40 INFO:train:Start training
+2026-03-24 10:21:26 INFO:train:Train: [0:00:46] [Epoch: 0/106] [Iter:  256/562]  Loss_Tot: 4.4613  L_Full: 2.2213  L_Mask: 2.2400  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3440  Wgt(C/S): 0.00/0.00  LR: 1.000e-05  Acc@1:  6.2500
+2026-03-24 10:21:57 INFO:train:Train: [0:01:17] [Epoch: 0/106] [Iter:  512/562]  Loss_Tot: 4.3751  L_Full: 2.1783  L_Mask: 2.1968  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3552  Wgt(C/S): 0.00/0.00  LR: 1.000e-05  Acc@1: 43.7500
+2026-03-24 10:22:03 INFO:train:Train: [0:01:23] [Epoch: 0/106] [Iter:  562/562]  Loss_Tot: 4.4409  L_Full: 2.2079  L_Mask: 2.2329  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3547  Wgt(C/S): 0.00/0.00  LR: 1.000e-05  Acc@1: 12.5000
+2026-03-24 10:22:17 INFO:train:Test:  [0:01:37] [Iter:   63/63]  Loss_Tot: 4.5756  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5: 37.5000
+2026-03-24 10:22:17 INFO:train: * Acc@1 = 19.0000, Acc@5 = 60.8000, loss = 4.4190
+2026-03-24 10:22:17 INFO:train:Training time 0:01:37, max_test_acc1 19.0000, test_acc5_at_max_test_acc1 60.8000
+2026-03-24 10:22:59 INFO:train:Train: [0:02:19] [Epoch: 1/106] [Iter:  256/562]  Loss_Tot: 3.9561  L_Full: 1.9724  L_Mask: 1.9837  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3342  Wgt(C/S): 0.00/0.00  LR: 5.090e-04  Acc@1: 25.0000
+2026-03-24 10:23:31 INFO:train:Train: [0:02:51] [Epoch: 1/106] [Iter:  512/562]  Loss_Tot: 4.0606  L_Full: 2.0472  L_Mask: 2.0134  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3328  Wgt(C/S): 0.00/0.00  LR: 5.090e-04  Acc@1: 37.5000
+2026-03-24 10:23:37 INFO:train:Train: [0:02:57] [Epoch: 1/106] [Iter:  562/562]  Loss_Tot: 3.4394  L_Full: 1.7373  L_Mask: 1.7021  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3389  Wgt(C/S): 0.00/0.00  LR: 5.090e-04  Acc@1: 56.2500
+2026-03-24 10:23:51 INFO:train:Test:  [0:03:11] [Iter:   63/63]  Loss_Tot: 4.3538  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5:  0.0000
+2026-03-24 10:23:51 INFO:train: * Acc@1 = 19.7000, Acc@5 = 66.9000, loss = 4.2124
+2026-03-24 10:23:51 INFO:train:Training time 0:03:11, max_test_acc1 19.7000, test_acc5_at_max_test_acc1 66.9000
+2026-03-24 10:24:32 INFO:train:Train: [0:03:52] [Epoch: 2/106] [Iter:  256/562]  Loss_Tot: 3.8990  L_Full: 1.9595  L_Mask: 1.9395  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3157  Wgt(C/S): 0.00/0.00  LR: 1.008e-03  Acc@1: 37.5000
+2026-03-24 10:25:04 INFO:train:Train: [0:04:24] [Epoch: 2/106] [Iter:  512/562]  Loss_Tot: 3.0103  L_Full: 1.4957  L_Mask: 1.5146  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2913  Wgt(C/S): 0.00/0.00  LR: 1.008e-03  Acc@1: 50.0000
+2026-03-24 10:25:11 INFO:train:Train: [0:04:31] [Epoch: 2/106] [Iter:  562/562]  Loss_Tot: 3.3768  L_Full: 1.6910  L_Mask: 1.6858  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2935  Wgt(C/S): 0.00/0.00  LR: 1.008e-03  Acc@1: 50.0000
+2026-03-24 10:25:24 INFO:train:Test:  [0:04:43] [Iter:   63/63]  Loss_Tot: 2.9599  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5: 87.5000
+2026-03-24 10:25:24 INFO:train: * Acc@1 = 25.2000, Acc@5 = 82.1000, loss = 3.8083
+2026-03-24 10:25:24 INFO:train:Training time 0:04:44, max_test_acc1 25.2000, test_acc5_at_max_test_acc1 82.1000
+2026-03-24 10:26:05 INFO:train:Train: [0:05:25] [Epoch: 3/106] [Iter:  256/562]  Loss_Tot: 3.4831  L_Full: 1.7509  L_Mask: 1.7322  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2502  Wgt(C/S): 0.00/0.00  LR: 1.507e-03  Acc@1: 50.0000
+2026-03-24 10:26:37 INFO:train:Train: [0:05:57] [Epoch: 3/106] [Iter:  512/562]  Loss_Tot: 3.3645  L_Full: 1.6759  L_Mask: 1.6887  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2416  Wgt(C/S): 0.00/0.00  LR: 1.507e-03  Acc@1: 37.5000
+2026-03-24 10:26:44 INFO:train:Train: [0:06:04] [Epoch: 3/106] [Iter:  562/562]  Loss_Tot: 3.8237  L_Full: 1.9224  L_Mask: 1.9013  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2512  Wgt(C/S): 0.00/0.00  LR: 1.507e-03  Acc@1: 37.5000
+2026-03-24 10:26:56 INFO:train:Test:  [0:06:16] [Iter:   63/63]  Loss_Tot: 4.8697  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5:  0.0000
+2026-03-24 10:26:56 INFO:train: * Acc@1 = 24.0000, Acc@5 = 73.6000, loss = 3.9778
+2026-03-24 10:26:56 INFO:train:Training time 0:06:16, max_test_acc1 25.2000, test_acc5_at_max_test_acc1 82.1000
+2026-03-24 10:27:38 INFO:train:Train: [0:06:58] [Epoch: 4/106] [Iter:  256/562]  Loss_Tot: 2.6881  L_Full: 1.3411  L_Mask: 1.3471  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2288  Wgt(C/S): 0.00/0.00  LR: 2.006e-03  Acc@1: 56.2500
+2026-03-24 10:28:10 INFO:train:Train: [0:07:30] [Epoch: 4/106] [Iter:  512/562]  Loss_Tot: 2.7241  L_Full: 1.3531  L_Mask: 1.3710  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2188  Wgt(C/S): 0.00/0.00  LR: 2.006e-03  Acc@1: 50.0000
+2026-03-24 10:28:16 INFO:train:Train: [0:07:36] [Epoch: 4/106] [Iter:  562/562]  Loss_Tot: 3.1581  L_Full: 1.5620  L_Mask: 1.5961  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2134  Wgt(C/S): 0.00/0.00  LR: 2.006e-03  Acc@1: 43.7500
+2026-03-24 10:28:29 INFO:train:Test:  [0:07:49] [Iter:   63/63]  Loss_Tot: 2.0150  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 12.5000  Acc@5: 100.0000
+2026-03-24 10:28:29 INFO:train: * Acc@1 = 38.5000, Acc@5 = 89.8000, loss = 3.3577
+2026-03-24 10:28:29 INFO:train:Training time 0:07:49, max_test_acc1 38.5000, test_acc5_at_max_test_acc1 89.8000
+2026-03-24 10:29:11 INFO:train:Train: [0:08:31] [Epoch: 5/106] [Iter:  256/562]  Loss_Tot: 3.8412  L_Full: 1.9119  L_Mask: 1.9293  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1755  Wgt(C/S): 0.00/0.00  LR: 2.505e-03  Acc@1: 31.2500
+2026-03-24 10:29:43 INFO:train:Train: [0:09:03] [Epoch: 5/106] [Iter:  512/562]  Loss_Tot: 3.1875  L_Full: 1.5956  L_Mask: 1.5919  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1797  Wgt(C/S): 0.00/0.00  LR: 2.505e-03  Acc@1: 50.0000
+2026-03-24 10:29:49 INFO:train:Train: [0:09:09] [Epoch: 5/106] [Iter:  562/562]  Loss_Tot: 3.7523  L_Full: 1.8509  L_Mask: 1.9014  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1719  Wgt(C/S): 0.00/0.00  LR: 2.505e-03  Acc@1: 50.0000
+2026-03-24 10:30:02 INFO:train:Test:  [0:09:22] [Iter:   63/63]  Loss_Tot: 3.2413  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5: 87.5000
+2026-03-24 10:30:02 INFO:train: * Acc@1 = 36.8000, Acc@5 = 85.5000, loss = 3.1702
+2026-03-24 10:30:02 INFO:train:Training time 0:09:22, max_test_acc1 38.5000, test_acc5_at_max_test_acc1 89.8000
+2026-03-24 10:30:43 INFO:train:Train: [0:10:03] [Epoch: 6/106] [Iter:  256/562]  Loss_Tot: 3.4797  L_Full: 1.6834  L_Mask: 1.7963  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1622  Wgt(C/S): 0.00/0.00  LR: 3.004e-03  Acc@1: 56.2500
+2026-03-24 10:31:16 INFO:train:Train: [0:10:36] [Epoch: 6/106] [Iter:  512/562]  Loss_Tot: 3.2454  L_Full: 1.6192  L_Mask: 1.6262  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1404  Wgt(C/S): 0.00/0.00  LR: 3.004e-03  Acc@1: 43.7500
+2026-03-24 10:31:22 INFO:train:Train: [0:10:42] [Epoch: 6/106] [Iter:  562/562]  Loss_Tot: 2.1760  L_Full: 1.0646  L_Mask: 1.1114  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1538  Wgt(C/S): 0.00/0.00  LR: 3.004e-03  Acc@1: 75.0000
+2026-03-24 10:31:35 INFO:train:Test:  [0:10:55] [Iter:   63/63]  Loss_Tot: 2.5598  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 25.0000  Acc@5: 75.0000
+2026-03-24 10:31:35 INFO:train: * Acc@1 = 50.1000, Acc@5 = 91.3000, loss = 3.0294
+2026-03-24 10:31:35 INFO:train:Training time 0:10:55, max_test_acc1 50.1000, test_acc5_at_max_test_acc1 91.3000
+2026-03-24 10:32:19 INFO:train:Train: [0:11:39] [Epoch: 7/106] [Iter:  256/562]  Loss_Tot: 4.2635  L_Full: 2.1113  L_Mask: 2.1522  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1328  Wgt(C/S): 0.00/0.00  LR: 3.503e-03  Acc@1: 50.0000
+2026-03-24 10:32:53 INFO:train:Train: [0:12:13] [Epoch: 7/106] [Iter:  512/562]  Loss_Tot: 3.3949  L_Full: 1.7172  L_Mask: 1.6777  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1210  Wgt(C/S): 0.00/0.00  LR: 3.503e-03  Acc@1: 50.0000
+2026-03-24 10:33:01 INFO:train:Train: [0:12:21] [Epoch: 7/106] [Iter:  562/562]  Loss_Tot: 2.5330  L_Full: 1.2506  L_Mask: 1.2824  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1465  Wgt(C/S): 0.00/0.00  LR: 3.503e-03  Acc@1: 68.7500
+2026-03-24 10:33:13 INFO:train:Test:  [0:12:33] [Iter:   63/63]  Loss_Tot: 1.2170  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 50.0000  Acc@5: 100.0000
+2026-03-24 10:33:14 INFO:train: * Acc@1 = 53.3000, Acc@5 = 93.3000, loss = 2.8013
+2026-03-24 10:33:14 INFO:train:Training time 0:12:34, max_test_acc1 53.3000, test_acc5_at_max_test_acc1 93.3000
+2026-03-24 10:33:55 INFO:train:Train: [0:13:15] [Epoch: 8/106] [Iter:  256/562]  Loss_Tot: 4.3510  L_Full: 2.1610  L_Mask: 2.1901  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1035  Wgt(C/S): 0.00/0.00  LR: 4.002e-03  Acc@1: 12.5000
+2026-03-24 10:34:26 INFO:train:Train: [0:13:46] [Epoch: 8/106] [Iter:  512/562]  Loss_Tot: 3.6606  L_Full: 1.8199  L_Mask: 1.8407  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1089  Wgt(C/S): 0.00/0.00  LR: 4.002e-03  Acc@1: 56.2500
+2026-03-24 10:34:32 INFO:train:Train: [0:13:52] [Epoch: 8/106] [Iter:  562/562]  Loss_Tot: 2.9248  L_Full: 1.4368  L_Mask: 1.4880  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1304  Wgt(C/S): 0.00/0.00  LR: 4.002e-03  Acc@1: 62.5000
+2026-03-24 10:34:45 INFO:train:Test:  [0:14:05] [Iter:   63/63]  Loss_Tot: 3.8787  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 12.5000  Acc@5: 62.5000
+2026-03-24 10:34:45 INFO:train: * Acc@1 = 37.6000, Acc@5 = 83.9000, loss = 3.2307
+2026-03-24 10:34:45 INFO:train:Training time 0:14:05, max_test_acc1 53.3000, test_acc5_at_max_test_acc1 93.3000
+2026-03-24 10:35:26 INFO:train:Train: [0:14:46] [Epoch: 9/106] [Iter:  256/562]  Loss_Tot: 3.2864  L_Full: 1.6438  L_Mask: 1.6426  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1139  Wgt(C/S): 0.00/0.00  LR: 4.501e-03  Acc@1: 43.7500
+2026-03-24 10:35:58 INFO:train:Train: [0:15:18] [Epoch: 9/106] [Iter:  512/562]  Loss_Tot: 4.1884  L_Full: 2.0623  L_Mask: 2.1262  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0874  Wgt(C/S): 0.00/0.00  LR: 4.501e-03  Acc@1: 18.7500
+2026-03-24 10:36:04 INFO:train:Train: [0:15:24] [Epoch: 9/106] [Iter:  562/562]  Loss_Tot: 3.1100  L_Full: 1.5455  L_Mask: 1.5645  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1013  Wgt(C/S): 0.00/0.00  LR: 4.501e-03  Acc@1: 50.0000
+2026-03-24 10:36:16 INFO:train:Test:  [0:15:36] [Iter:   63/63]  Loss_Tot: 1.4132  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 62.5000  Acc@5: 87.5000
+2026-03-24 10:36:17 INFO:train: * Acc@1 = 54.5000, Acc@5 = 94.0000, loss = 2.7165
+2026-03-24 10:36:17 INFO:train:Training time 0:15:37, max_test_acc1 54.5000, test_acc5_at_max_test_acc1 94.0000
+2026-03-24 10:36:57 INFO:train:Train: [0:16:17] [Epoch: 10/106] [Iter:  256/562]  Loss_Tot: 2.7908  L_Full: 1.3872  L_Mask: 1.4036  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1077  Wgt(C/S): 0.00/0.00  LR: 4.868e-03  Acc@1: 62.5000
+2026-03-24 10:37:29 INFO:train:Train: [0:16:49] [Epoch: 10/106] [Iter:  512/562]  Loss_Tot: 2.5223  L_Full: 1.2592  L_Mask: 1.2631  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1042  Wgt(C/S): 0.00/0.00  LR: 4.868e-03  Acc@1: 68.7500
+2026-03-24 10:37:35 INFO:train:Train: [0:16:55] [Epoch: 10/106] [Iter:  562/562]  Loss_Tot: 2.6674  L_Full: 1.3406  L_Mask: 1.3269  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1078  Wgt(C/S): 0.00/0.00  LR: 4.868e-03  Acc@1: 62.5000
+2026-03-24 10:37:48 INFO:train:Test:  [0:17:08] [Iter:   63/63]  Loss_Tot: 1.9937  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 62.5000  Acc@5: 100.0000
+2026-03-24 10:37:48 INFO:train: * Acc@1 = 52.5000, Acc@5 = 91.3000, loss = 2.7489
+2026-03-24 10:37:48 INFO:train:Training time 0:17:08, max_test_acc1 54.5000, test_acc5_at_max_test_acc1 94.0000
+2026-03-24 10:38:29 INFO:train:Train: [0:17:49] [Epoch: 11/106] [Iter:  256/562]  Loss_Tot: 4.4821  L_Full: 2.2319  L_Mask: 2.2502  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0763  Wgt(C/S): 0.00/0.00  LR: 4.840e-03  Acc@1: 31.2500
+2026-03-24 10:39:00 INFO:train:Train: [0:18:20] [Epoch: 11/106] [Iter:  512/562]  Loss_Tot: 4.0241  L_Full: 1.9946  L_Mask: 2.0295  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0874  Wgt(C/S): 0.00/0.00  LR: 4.840e-03  Acc@1: 56.2500
+2026-03-24 10:39:06 INFO:train:Train: [0:18:26] [Epoch: 11/106] [Iter:  562/562]  Loss_Tot: 2.9089  L_Full: 1.4360  L_Mask: 1.4728  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0880  Wgt(C/S): 0.00/0.00  LR: 4.840e-03  Acc@1: 68.7500
+2026-03-24 10:39:18 INFO:train:Test:  [0:18:38] [Iter:   63/63]  Loss_Tot: 1.0344  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 10:39:19 INFO:train: * Acc@1 = 56.8000, Acc@5 = 94.9000, loss = 2.3924
+2026-03-24 10:39:19 INFO:train:Training time 0:18:39, max_test_acc1 56.8000, test_acc5_at_max_test_acc1 94.9000
+2026-03-24 10:40:01 INFO:train:Train: [0:19:21] [Epoch: 12/106] [Iter:  256/562]  Loss_Tot: 3.8297  L_Full: 1.8856  L_Mask: 1.9442  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0847  Wgt(C/S): 0.00/0.00  LR: 4.810e-03  Acc@1: 56.2500
+2026-03-24 10:40:32 INFO:train:Train: [0:19:52] [Epoch: 12/106] [Iter:  512/562]  Loss_Tot: 3.8595  L_Full: 1.9267  L_Mask: 1.9328  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0852  Wgt(C/S): 0.00/0.00  LR: 4.810e-03  Acc@1: 62.5000
+2026-03-24 10:40:38 INFO:train:Train: [0:19:58] [Epoch: 12/106] [Iter:  562/562]  Loss_Tot: 3.8498  L_Full: 1.8954  L_Mask: 1.9544  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0864  Wgt(C/S): 0.00/0.00  LR: 4.810e-03  Acc@1: 56.2500
+2026-03-24 10:40:51 INFO:train:Test:  [0:20:11] [Iter:   63/63]  Loss_Tot: 1.3659  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 87.5000
+2026-03-24 10:40:51 INFO:train: * Acc@1 = 60.5000, Acc@5 = 95.1000, loss = 2.2156
+2026-03-24 10:40:51 INFO:train:Training time 0:20:11, max_test_acc1 60.5000, test_acc5_at_max_test_acc1 95.1000
+2026-03-24 10:41:31 INFO:train:Train: [0:20:51] [Epoch: 13/106] [Iter:  256/562]  Loss_Tot: 2.9420  L_Full: 1.4547  L_Mask: 1.4873  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0953  Wgt(C/S): 0.00/0.00  LR: 4.778e-03  Acc@1: 56.2500
+2026-03-24 10:42:02 INFO:train:Train: [0:21:22] [Epoch: 13/106] [Iter:  512/562]  Loss_Tot: 4.1033  L_Full: 2.0182  L_Mask: 2.0850  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0825  Wgt(C/S): 0.00/0.00  LR: 4.778e-03  Acc@1: 31.2500
+2026-03-24 10:42:08 INFO:train:Train: [0:21:28] [Epoch: 13/106] [Iter:  562/562]  Loss_Tot: 3.3488  L_Full: 1.6671  L_Mask: 1.6818  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0817  Wgt(C/S): 0.00/0.00  LR: 4.778e-03  Acc@1: 56.2500
+2026-03-24 10:42:21 INFO:train:Test:  [0:21:41] [Iter:   63/63]  Loss_Tot: 1.3133  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 10:42:21 INFO:train: * Acc@1 = 64.4000, Acc@5 = 96.0000, loss = 2.1519
+2026-03-24 10:42:21 INFO:train:Training time 0:21:41, max_test_acc1 64.4000, test_acc5_at_max_test_acc1 96.0000
+2026-03-24 10:43:01 INFO:train:Train: [0:22:21] [Epoch: 14/106] [Iter:  256/562]  Loss_Tot: 2.3738  L_Full: 1.2163  L_Mask: 1.1576  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0861  Wgt(C/S): 0.00/0.00  LR: 4.743e-03  Acc@1: 62.5000
+2026-03-24 10:43:32 INFO:train:Train: [0:22:52] [Epoch: 14/106] [Iter:  512/562]  Loss_Tot: 3.6332  L_Full: 1.8297  L_Mask: 1.8034  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0811  Wgt(C/S): 0.00/0.00  LR: 4.743e-03  Acc@1: 62.5000
+2026-03-24 10:43:38 INFO:train:Train: [0:22:58] [Epoch: 14/106] [Iter:  562/562]  Loss_Tot: 4.1526  L_Full: 2.0624  L_Mask: 2.0902  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0741  Wgt(C/S): 0.00/0.00  LR: 4.743e-03  Acc@1: 50.0000
+2026-03-24 10:43:51 INFO:train:Test:  [0:23:11] [Iter:   63/63]  Loss_Tot: 2.4918  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 50.0000  Acc@5: 100.0000
+2026-03-24 10:43:51 INFO:train: * Acc@1 = 60.8000, Acc@5 = 95.1000, loss = 2.3292
+2026-03-24 10:43:51 INFO:train:Training time 0:23:11, max_test_acc1 64.4000, test_acc5_at_max_test_acc1 96.0000
+2026-03-24 10:44:31 INFO:train:Train: [0:23:51] [Epoch: 15/106] [Iter:  256/562]  Loss_Tot: 4.1874  L_Full: 2.0731  L_Mask: 2.1143  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0651  Wgt(C/S): 0.00/0.00  LR: 4.705e-03  Acc@1: 37.5000
+2026-03-24 10:45:02 INFO:train:Train: [0:24:22] [Epoch: 15/106] [Iter:  512/562]  Loss_Tot: 2.4828  L_Full: 1.2358  L_Mask: 1.2470  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0815  Wgt(C/S): 0.00/0.00  LR: 4.705e-03  Acc@1: 81.2500
+2026-03-24 10:45:08 INFO:train:Train: [0:24:28] [Epoch: 15/106] [Iter:  562/562]  Loss_Tot: 2.9366  L_Full: 1.4585  L_Mask: 1.4781  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0862  Wgt(C/S): 0.00/0.00  LR: 4.705e-03  Acc@1: 50.0000
+2026-03-24 10:45:21 INFO:train:Test:  [0:24:41] [Iter:   63/63]  Loss_Tot: 1.9206  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 62.5000  Acc@5: 87.5000
+2026-03-24 10:45:21 INFO:train: * Acc@1 = 55.9000, Acc@5 = 93.6000, loss = 2.4608
+2026-03-24 10:45:21 INFO:train:Training time 0:24:41, max_test_acc1 64.4000, test_acc5_at_max_test_acc1 96.0000
+2026-03-24 10:46:02 INFO:train:Train: [0:25:22] [Epoch: 16/106] [Iter:  256/562]  Loss_Tot: 2.8107  L_Full: 1.4077  L_Mask: 1.4030  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0782  Wgt(C/S): 0.00/0.00  LR: 4.666e-03  Acc@1: 75.0000
+2026-03-24 10:46:33 INFO:train:Train: [0:25:53] [Epoch: 16/106] [Iter:  512/562]  Loss_Tot: 1.8863  L_Full: 0.9535  L_Mask: 0.9328  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0827  Wgt(C/S): 0.00/0.00  LR: 4.666e-03  Acc@1: 93.7500
+2026-03-24 10:46:39 INFO:train:Train: [0:25:59] [Epoch: 16/106] [Iter:  562/562]  Loss_Tot: 2.3890  L_Full: 1.1577  L_Mask: 1.2313  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0828  Wgt(C/S): 0.00/0.00  LR: 4.666e-03  Acc@1: 62.5000
+2026-03-24 10:46:51 INFO:train:Test:  [0:26:11] [Iter:   63/63]  Loss_Tot: 0.6657  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 10:46:52 INFO:train: * Acc@1 = 64.6000, Acc@5 = 96.5000, loss = 2.2573
+2026-03-24 10:46:52 INFO:train:Training time 0:26:12, max_test_acc1 64.6000, test_acc5_at_max_test_acc1 96.5000
+2026-03-24 10:47:32 INFO:train:Train: [0:26:52] [Epoch: 17/106] [Iter:  256/562]  Loss_Tot: 2.4549  L_Full: 1.2079  L_Mask: 1.2471  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0822  Wgt(C/S): 0.00/0.00  LR: 4.624e-03  Acc@1: 62.5000
+2026-03-24 10:48:03 INFO:train:Train: [0:27:23] [Epoch: 17/106] [Iter:  512/562]  Loss_Tot: 2.0081  L_Full: 1.0182  L_Mask: 0.9900  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0789  Wgt(C/S): 0.00/0.00  LR: 4.624e-03  Acc@1: 93.7500
+2026-03-24 10:48:09 INFO:train:Train: [0:27:29] [Epoch: 17/106] [Iter:  562/562]  Loss_Tot: 3.6161  L_Full: 1.7822  L_Mask: 1.8339  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0789  Wgt(C/S): 0.00/0.00  LR: 4.624e-03  Acc@1: 62.5000
+2026-03-24 10:48:22 INFO:train:Test:  [0:27:42] [Iter:   63/63]  Loss_Tot: 0.5334  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 10:48:22 INFO:train: * Acc@1 = 65.3000, Acc@5 = 95.7000, loss = 2.1268
+2026-03-24 10:48:22 INFO:train:Training time 0:27:42, max_test_acc1 65.3000, test_acc5_at_max_test_acc1 95.7000
+2026-03-24 10:49:02 INFO:train:Train: [0:28:22] [Epoch: 18/106] [Iter:  256/562]  Loss_Tot: 1.9077  L_Full: 0.9551  L_Mask: 0.9526  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0796  Wgt(C/S): 0.00/0.00  LR: 4.580e-03  Acc@1: 68.7500
+2026-03-24 10:49:33 INFO:train:Train: [0:28:53] [Epoch: 18/106] [Iter:  512/562]  Loss_Tot: 3.3527  L_Full: 1.6661  L_Mask: 1.6866  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0752  Wgt(C/S): 0.00/0.00  LR: 4.580e-03  Acc@1: 75.0000
+2026-03-24 10:49:39 INFO:train:Train: [0:28:59] [Epoch: 18/106] [Iter:  562/562]  Loss_Tot: 2.2252  L_Full: 1.1371  L_Mask: 1.0881  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0729  Wgt(C/S): 0.00/0.00  LR: 4.580e-03  Acc@1: 68.7500
+2026-03-24 10:49:51 INFO:train:Test:  [0:29:11] [Iter:   63/63]  Loss_Tot: 0.6767  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 10:49:52 INFO:train: * Acc@1 = 68.7000, Acc@5 = 97.2000, loss = 1.9714
+2026-03-24 10:49:52 INFO:train:Training time 0:29:12, max_test_acc1 68.7000, test_acc5_at_max_test_acc1 97.2000
+2026-03-24 10:50:32 INFO:train:Train: [0:29:52] [Epoch: 19/106] [Iter:  256/562]  Loss_Tot: 4.0521  L_Full: 1.9954  L_Mask: 2.0567  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0671  Wgt(C/S): 0.00/0.00  LR: 4.533e-03  Acc@1: 25.0000
+2026-03-24 10:51:03 INFO:train:Train: [0:30:23] [Epoch: 19/106] [Iter:  512/562]  Loss_Tot: 2.1000  L_Full: 1.0656  L_Mask: 1.0344  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0769  Wgt(C/S): 0.00/0.00  LR: 4.533e-03  Acc@1: 75.0000
+2026-03-24 10:51:09 INFO:train:Train: [0:30:29] [Epoch: 19/106] [Iter:  562/562]  Loss_Tot: 2.3816  L_Full: 1.1834  L_Mask: 1.1982  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0777  Wgt(C/S): 0.00/0.00  LR: 4.533e-03  Acc@1: 68.7500
+2026-03-24 10:51:22 INFO:train:Test:  [0:30:42] [Iter:   63/63]  Loss_Tot: 0.7918  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 10:51:22 INFO:train: * Acc@1 = 66.6000, Acc@5 = 95.6000, loss = 2.0602
+2026-03-24 10:51:22 INFO:train:Training time 0:30:42, max_test_acc1 68.7000, test_acc5_at_max_test_acc1 97.2000
+2026-03-24 10:52:02 INFO:train:Train: [0:31:22] [Epoch: 20/106] [Iter:  256/562]  Loss_Tot: 2.1226  L_Full: 1.0738  L_Mask: 1.0488  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0765  Wgt(C/S): 0.00/0.00  LR: 4.484e-03  Acc@1: 87.5000
+2026-03-24 10:52:34 INFO:train:Train: [0:31:54] [Epoch: 20/106] [Iter:  512/562]  Loss_Tot: 3.8638  L_Full: 1.9142  L_Mask: 1.9496  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0668  Wgt(C/S): 0.00/0.00  LR: 4.484e-03  Acc@1: 37.5000
+2026-03-24 10:52:40 INFO:train:Train: [0:32:00] [Epoch: 20/106] [Iter:  562/562]  Loss_Tot: 3.9934  L_Full: 2.0002  L_Mask: 1.9932  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0699  Wgt(C/S): 0.00/0.00  LR: 4.484e-03  Acc@1: 56.2500
+2026-03-24 10:52:52 INFO:train:Test:  [0:32:12] [Iter:   63/63]  Loss_Tot: 0.9314  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 10:52:53 INFO:train: * Acc@1 = 69.3000, Acc@5 = 97.1000, loss = 1.8747
+2026-03-24 10:52:53 INFO:train:Training time 0:32:13, max_test_acc1 69.3000, test_acc5_at_max_test_acc1 97.1000
+2026-03-24 10:53:33 INFO:train:Train: [0:32:53] [Epoch: 21/106] [Iter:  256/562]  Loss_Tot: 2.5277  L_Full: 1.2366  L_Mask: 1.2911  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0746  Wgt(C/S): 0.00/0.00  LR: 4.434e-03  Acc@1: 68.7500
+2026-03-24 10:54:04 INFO:train:Train: [0:33:24] [Epoch: 21/106] [Iter:  512/562]  Loss_Tot: 2.2953  L_Full: 1.1442  L_Mask: 1.1511  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0726  Wgt(C/S): 0.00/0.00  LR: 4.434e-03  Acc@1: 68.7500
+2026-03-24 10:54:10 INFO:train:Train: [0:33:30] [Epoch: 21/106] [Iter:  562/562]  Loss_Tot: 3.3070  L_Full: 1.6366  L_Mask: 1.6704  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0706  Wgt(C/S): 0.00/0.00  LR: 4.434e-03  Acc@1: 62.5000
+2026-03-24 10:54:22 INFO:train:Test:  [0:33:42] [Iter:   63/63]  Loss_Tot: 0.8920  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 10:54:23 INFO:train: * Acc@1 = 69.1000, Acc@5 = 97.2000, loss = 1.8952
+2026-03-24 10:54:23 INFO:train:Training time 0:33:43, max_test_acc1 69.3000, test_acc5_at_max_test_acc1 97.1000
+2026-03-24 10:55:02 INFO:train:Train: [0:34:22] [Epoch: 22/106] [Iter:  256/562]  Loss_Tot: 1.8000  L_Full: 0.9098  L_Mask: 0.8902  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0721  Wgt(C/S): 0.00/0.00  LR: 4.381e-03  Acc@1: 87.5000
+2026-03-24 10:55:34 INFO:train:Train: [0:34:54] [Epoch: 22/106] [Iter:  512/562]  Loss_Tot: 2.1923  L_Full: 1.0657  L_Mask: 1.1266  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0762  Wgt(C/S): 0.00/0.00  LR: 4.381e-03  Acc@1: 75.0000
+2026-03-24 10:55:40 INFO:train:Train: [0:35:00] [Epoch: 22/106] [Iter:  562/562]  Loss_Tot: 5.0813  L_Full: 2.5178  L_Mask: 2.5635  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0727  Wgt(C/S): 0.00/0.00  LR: 4.381e-03  Acc@1: 12.5000
+2026-03-24 10:55:52 INFO:train:Test:  [0:35:12] [Iter:   63/63]  Loss_Tot: 0.2286  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 10:55:53 INFO:train: * Acc@1 = 67.6000, Acc@5 = 96.8000, loss = 1.9548
+2026-03-24 10:55:53 INFO:train:Training time 0:35:13, max_test_acc1 69.3000, test_acc5_at_max_test_acc1 97.1000
+2026-03-24 10:56:33 INFO:train:Train: [0:35:53] [Epoch: 23/106] [Iter:  256/562]  Loss_Tot: 2.7766  L_Full: 1.3850  L_Mask: 1.3916  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0789  Wgt(C/S): 0.00/0.00  LR: 4.326e-03  Acc@1: 62.5000
+2026-03-24 10:57:04 INFO:train:Train: [0:36:24] [Epoch: 23/106] [Iter:  512/562]  Loss_Tot: 2.3711  L_Full: 1.1752  L_Mask: 1.1959  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0759  Wgt(C/S): 0.00/0.00  LR: 4.326e-03  Acc@1: 68.7500
+2026-03-24 10:57:10 INFO:train:Train: [0:36:30] [Epoch: 23/106] [Iter:  562/562]  Loss_Tot: 1.9163  L_Full: 0.9727  L_Mask: 0.9436  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0696  Wgt(C/S): 0.00/0.00  LR: 4.326e-03  Acc@1: 87.5000
+2026-03-24 10:57:22 INFO:train:Test:  [0:36:42] [Iter:   63/63]  Loss_Tot: 1.3161  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 10:57:23 INFO:train: * Acc@1 = 69.2000, Acc@5 = 97.6000, loss = 1.9261
+2026-03-24 10:57:23 INFO:train:Training time 0:36:43, max_test_acc1 69.3000, test_acc5_at_max_test_acc1 97.1000
+2026-03-24 10:58:03 INFO:train:Train: [0:37:23] [Epoch: 24/106] [Iter:  256/562]  Loss_Tot: 5.4816  L_Full: 2.6790  L_Mask: 2.8026  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0764  Wgt(C/S): 0.00/0.00  LR: 4.269e-03  Acc@1: 18.7500
+2026-03-24 10:58:34 INFO:train:Train: [0:37:54] [Epoch: 24/106] [Iter:  512/562]  Loss_Tot: 1.8849  L_Full: 0.9507  L_Mask: 0.9342  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0790  Wgt(C/S): 0.00/0.00  LR: 4.269e-03  Acc@1: 81.2500
+2026-03-24 10:58:41 INFO:train:Train: [0:38:01] [Epoch: 24/106] [Iter:  562/562]  Loss_Tot: 2.1386  L_Full: 1.0638  L_Mask: 1.0748  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0680  Wgt(C/S): 0.00/0.00  LR: 4.269e-03  Acc@1: 75.0000
+2026-03-24 10:58:53 INFO:train:Test:  [0:38:13] [Iter:   63/63]  Loss_Tot: 1.2589  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 10:58:54 INFO:train: * Acc@1 = 68.0000, Acc@5 = 97.8000, loss = 1.9392
+2026-03-24 10:58:54 INFO:train:Training time 0:38:13, max_test_acc1 69.3000, test_acc5_at_max_test_acc1 97.1000
+2026-03-24 10:59:34 INFO:train:Train: [0:38:54] [Epoch: 25/106] [Iter:  256/562]  Loss_Tot: 3.7013  L_Full: 1.8340  L_Mask: 1.8674  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0587  Wgt(C/S): 0.00/0.00  LR: 4.211e-03  Acc@1: 37.5000
+2026-03-24 11:00:05 INFO:train:Train: [0:39:25] [Epoch: 25/106] [Iter:  512/562]  Loss_Tot: 2.1803  L_Full: 1.1076  L_Mask: 1.0727  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0674  Wgt(C/S): 0.00/0.00  LR: 4.211e-03  Acc@1: 68.7500
+2026-03-24 11:00:11 INFO:train:Train: [0:39:31] [Epoch: 25/106] [Iter:  562/562]  Loss_Tot: 2.4656  L_Full: 1.2389  L_Mask: 1.2268  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0684  Wgt(C/S): 0.00/0.00  LR: 4.211e-03  Acc@1: 87.5000
+2026-03-24 11:00:23 INFO:train:Test:  [0:39:43] [Iter:   63/63]  Loss_Tot: 0.7396  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:00:24 INFO:train: * Acc@1 = 66.5000, Acc@5 = 96.0000, loss = 2.0602
+2026-03-24 11:00:24 INFO:train:Training time 0:39:44, max_test_acc1 69.3000, test_acc5_at_max_test_acc1 97.1000
+2026-03-24 11:01:03 INFO:train:Train: [0:40:23] [Epoch: 26/106] [Iter:  256/562]  Loss_Tot: 2.6277  L_Full: 1.3089  L_Mask: 1.3188  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0639  Wgt(C/S): 0.00/0.00  LR: 4.150e-03  Acc@1: 62.5000
+2026-03-24 11:01:35 INFO:train:Train: [0:40:55] [Epoch: 26/106] [Iter:  512/562]  Loss_Tot: 1.5975  L_Full: 0.8103  L_Mask: 0.7871  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0743  Wgt(C/S): 0.00/0.00  LR: 4.150e-03  Acc@1: 87.5000
+2026-03-24 11:01:41 INFO:train:Train: [0:41:01] [Epoch: 26/106] [Iter:  562/562]  Loss_Tot: 1.8422  L_Full: 0.9421  L_Mask: 0.9001  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0839  Wgt(C/S): 0.00/0.00  LR: 4.150e-03  Acc@1: 87.5000
+2026-03-24 11:01:54 INFO:train:Test:  [0:41:14] [Iter:   63/63]  Loss_Tot: 0.8240  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:01:54 INFO:train: * Acc@1 = 67.2000, Acc@5 = 95.8000, loss = 2.0169
+2026-03-24 11:01:54 INFO:train:Training time 0:41:14, max_test_acc1 69.3000, test_acc5_at_max_test_acc1 97.1000
+2026-03-24 11:02:34 INFO:train:Train: [0:41:54] [Epoch: 27/106] [Iter:  256/562]  Loss_Tot: 2.6487  L_Full: 1.3823  L_Mask: 1.2664  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0704  Wgt(C/S): 0.00/0.00  LR: 4.088e-03  Acc@1: 68.7500
+2026-03-24 11:03:05 INFO:train:Train: [0:42:25] [Epoch: 27/106] [Iter:  512/562]  Loss_Tot: 2.7090  L_Full: 1.3552  L_Mask: 1.3538  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0654  Wgt(C/S): 0.00/0.00  LR: 4.088e-03  Acc@1: 68.7500
+2026-03-24 11:03:12 INFO:train:Train: [0:42:32] [Epoch: 27/106] [Iter:  562/562]  Loss_Tot: 3.9678  L_Full: 1.9934  L_Mask: 1.9744  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0599  Wgt(C/S): 0.00/0.00  LR: 4.088e-03  Acc@1: 43.7500
+2026-03-24 11:03:24 INFO:train:Test:  [0:42:44] [Iter:   63/63]  Loss_Tot: 0.7772  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:03:24 INFO:train: * Acc@1 = 71.9000, Acc@5 = 98.1000, loss = 1.7111
+2026-03-24 11:03:24 INFO:train:Training time 0:42:44, max_test_acc1 71.9000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 11:04:05 INFO:train:Train: [0:43:25] [Epoch: 28/106] [Iter:  256/562]  Loss_Tot: 2.2793  L_Full: 1.1241  L_Mask: 1.1552  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0701  Wgt(C/S): 0.00/0.00  LR: 4.024e-03  Acc@1: 81.2500
+2026-03-24 11:04:36 INFO:train:Train: [0:43:56] [Epoch: 28/106] [Iter:  512/562]  Loss_Tot: 2.1888  L_Full: 1.0866  L_Mask: 1.1022  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0662  Wgt(C/S): 0.00/0.00  LR: 4.024e-03  Acc@1: 75.0000
+2026-03-24 11:04:42 INFO:train:Train: [0:44:02] [Epoch: 28/106] [Iter:  562/562]  Loss_Tot: 1.7284  L_Full: 0.8681  L_Mask: 0.8603  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0755  Wgt(C/S): 0.00/0.00  LR: 4.024e-03  Acc@1: 81.2500
+2026-03-24 11:04:55 INFO:train:Test:  [0:44:15] [Iter:   63/63]  Loss_Tot: 0.8418  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:04:55 INFO:train: * Acc@1 = 70.9000, Acc@5 = 97.4000, loss = 1.8700
+2026-03-24 11:04:55 INFO:train:Training time 0:44:15, max_test_acc1 71.9000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 11:05:35 INFO:train:Train: [0:44:55] [Epoch: 29/106] [Iter:  256/562]  Loss_Tot: 3.2282  L_Full: 1.6186  L_Mask: 1.6097  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0701  Wgt(C/S): 0.00/0.00  LR: 3.958e-03  Acc@1: 87.5000
+2026-03-24 11:06:06 INFO:train:Train: [0:45:26] [Epoch: 29/106] [Iter:  512/562]  Loss_Tot: 2.0382  L_Full: 1.0267  L_Mask: 1.0115  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0713  Wgt(C/S): 0.00/0.00  LR: 3.958e-03  Acc@1: 75.0000
+2026-03-24 11:06:12 INFO:train:Train: [0:45:32] [Epoch: 29/106] [Iter:  562/562]  Loss_Tot: 2.0598  L_Full: 1.0416  L_Mask: 1.0182  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0630  Wgt(C/S): 0.00/0.00  LR: 3.958e-03  Acc@1: 75.0000
+2026-03-24 11:06:25 INFO:train:Test:  [0:45:45] [Iter:   63/63]  Loss_Tot: 0.7036  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:06:25 INFO:train: * Acc@1 = 73.2000, Acc@5 = 96.5000, loss = 1.7374
+2026-03-24 11:06:25 INFO:train:Training time 0:45:45, max_test_acc1 73.2000, test_acc5_at_max_test_acc1 96.5000
+2026-03-24 11:07:05 INFO:train:Train: [0:46:25] [Epoch: 30/106] [Iter:  256/562]  Loss_Tot: 1.3688  L_Full: 0.6848  L_Mask: 0.6841  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0705  Wgt(C/S): 0.00/0.00  LR: 3.891e-03  Acc@1: 100.0000
+2026-03-24 11:07:36 INFO:train:Train: [0:46:56] [Epoch: 30/106] [Iter:  512/562]  Loss_Tot: 1.9043  L_Full: 0.9630  L_Mask: 0.9412  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0779  Wgt(C/S): 0.00/0.00  LR: 3.891e-03  Acc@1: 81.2500
+2026-03-24 11:07:43 INFO:train:Train: [0:47:03] [Epoch: 30/106] [Iter:  562/562]  Loss_Tot: 1.3623  L_Full: 0.6993  L_Mask: 0.6630  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0737  Wgt(C/S): 0.00/0.00  LR: 3.891e-03  Acc@1: 100.0000
+2026-03-24 11:07:55 INFO:train:Test:  [0:47:15] [Iter:   63/63]  Loss_Tot: 0.9442  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 11:07:55 INFO:train: * Acc@1 = 71.4000, Acc@5 = 97.3000, loss = 1.7887
+2026-03-24 11:07:55 INFO:train:Training time 0:47:15, max_test_acc1 73.2000, test_acc5_at_max_test_acc1 96.5000
+2026-03-24 11:08:34 INFO:train:Train: [0:47:54] [Epoch: 31/106] [Iter:  256/562]  Loss_Tot: 2.0106  L_Full: 1.0027  L_Mask: 1.0079  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0752  Wgt(C/S): 0.00/0.00  LR: 3.823e-03  Acc@1: 75.0000
+2026-03-24 11:09:02 INFO:train:Train: [0:48:22] [Epoch: 31/106] [Iter:  512/562]  Loss_Tot: 3.9927  L_Full: 1.9658  L_Mask: 2.0269  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0671  Wgt(C/S): 0.00/0.00  LR: 3.823e-03  Acc@1: 50.0000
+2026-03-24 11:09:08 INFO:train:Train: [0:48:28] [Epoch: 31/106] [Iter:  562/562]  Loss_Tot: 2.0762  L_Full: 1.0392  L_Mask: 1.0370  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0646  Wgt(C/S): 0.00/0.00  LR: 3.823e-03  Acc@1: 87.5000
+2026-03-24 11:09:19 INFO:train:Test:  [0:48:39] [Iter:   63/63]  Loss_Tot: 1.0029  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 11:09:20 INFO:train: * Acc@1 = 73.6000, Acc@5 = 97.8000, loss = 1.7793
+2026-03-24 11:09:20 INFO:train:Training time 0:48:40, max_test_acc1 73.6000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:09:56 INFO:train:Train: [0:49:16] [Epoch: 32/106] [Iter:  256/562]  Loss_Tot: 1.8094  L_Full: 0.9071  L_Mask: 0.9023  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0626  Wgt(C/S): 0.00/0.00  LR: 3.753e-03  Acc@1: 87.5000
+2026-03-24 11:10:25 INFO:train:Train: [0:49:45] [Epoch: 32/106] [Iter:  512/562]  Loss_Tot: 2.1743  L_Full: 1.0763  L_Mask: 1.0979  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0656  Wgt(C/S): 0.00/0.00  LR: 3.753e-03  Acc@1: 75.0000
+2026-03-24 11:10:30 INFO:train:Train: [0:49:50] [Epoch: 32/106] [Iter:  562/562]  Loss_Tot: 1.5571  L_Full: 0.7849  L_Mask: 0.7722  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0707  Wgt(C/S): 0.00/0.00  LR: 3.753e-03  Acc@1: 87.5000
+2026-03-24 11:10:41 INFO:train:Test:  [0:50:01] [Iter:   63/63]  Loss_Tot: 0.4564  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:10:41 INFO:train: * Acc@1 = 70.7000, Acc@5 = 96.6000, loss = 1.9536
+2026-03-24 11:10:41 INFO:train:Training time 0:50:01, max_test_acc1 73.6000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:11:17 INFO:train:Train: [0:50:37] [Epoch: 33/106] [Iter:  256/562]  Loss_Tot: 1.9913  L_Full: 0.9991  L_Mask: 0.9923  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0752  Wgt(C/S): 0.00/0.00  LR: 3.681e-03  Acc@1: 87.5000
+2026-03-24 11:11:46 INFO:train:Train: [0:51:06] [Epoch: 33/106] [Iter:  512/562]  Loss_Tot: 1.9495  L_Full: 0.9994  L_Mask: 0.9501  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0674  Wgt(C/S): 0.00/0.00  LR: 3.681e-03  Acc@1: 81.2500
+2026-03-24 11:11:51 INFO:train:Train: [0:51:11] [Epoch: 33/106] [Iter:  562/562]  Loss_Tot: 2.0801  L_Full: 1.0371  L_Mask: 1.0430  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0699  Wgt(C/S): 0.00/0.00  LR: 3.681e-03  Acc@1: 81.2500
+2026-03-24 11:12:02 INFO:train:Test:  [0:51:22] [Iter:   63/63]  Loss_Tot: 0.7909  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:12:03 INFO:train: * Acc@1 = 70.1000, Acc@5 = 97.2000, loss = 1.8323
+2026-03-24 11:12:03 INFO:train:Training time 0:51:23, max_test_acc1 73.6000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:12:39 INFO:train:Train: [0:51:59] [Epoch: 34/106] [Iter:  256/562]  Loss_Tot: 2.0529  L_Full: 1.0393  L_Mask: 1.0136  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0648  Wgt(C/S): 0.00/0.00  LR: 3.609e-03  Acc@1: 81.2500
+2026-03-24 11:13:07 INFO:train:Train: [0:52:27] [Epoch: 34/106] [Iter:  512/562]  Loss_Tot: 2.6380  L_Full: 1.3375  L_Mask: 1.3006  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0648  Wgt(C/S): 0.00/0.00  LR: 3.609e-03  Acc@1: 81.2500
+2026-03-24 11:13:13 INFO:train:Train: [0:52:33] [Epoch: 34/106] [Iter:  562/562]  Loss_Tot: 1.6943  L_Full: 0.8545  L_Mask: 0.8398  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0731  Wgt(C/S): 0.00/0.00  LR: 3.609e-03  Acc@1: 93.7500
+2026-03-24 11:13:24 INFO:train:Test:  [0:52:44] [Iter:   63/63]  Loss_Tot: 1.5459  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 11:13:24 INFO:train: * Acc@1 = 72.0000, Acc@5 = 97.0000, loss = 1.8606
+2026-03-24 11:13:24 INFO:train:Training time 0:52:44, max_test_acc1 73.6000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:14:01 INFO:train:Train: [0:53:21] [Epoch: 35/106] [Iter:  256/562]  Loss_Tot: 2.2950  L_Full: 1.1852  L_Mask: 1.1098  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0660  Wgt(C/S): 0.00/0.00  LR: 3.535e-03  Acc@1: 75.0000
+2026-03-24 11:14:29 INFO:train:Train: [0:53:49] [Epoch: 35/106] [Iter:  512/562]  Loss_Tot: 3.0128  L_Full: 1.5103  L_Mask: 1.5024  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0671  Wgt(C/S): 0.00/0.00  LR: 3.535e-03  Acc@1: 68.7500
+2026-03-24 11:14:35 INFO:train:Train: [0:53:55] [Epoch: 35/106] [Iter:  562/562]  Loss_Tot: 4.1536  L_Full: 2.0938  L_Mask: 2.0599  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0701  Wgt(C/S): 0.00/0.00  LR: 3.535e-03  Acc@1: 68.7500
+2026-03-24 11:14:46 INFO:train:Test:  [0:54:06] [Iter:   63/63]  Loss_Tot: 1.0167  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:14:46 INFO:train: * Acc@1 = 71.3000, Acc@5 = 97.1000, loss = 1.8074
+2026-03-24 11:14:46 INFO:train:Training time 0:54:06, max_test_acc1 73.6000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:15:22 INFO:train:Train: [0:54:42] [Epoch: 36/106] [Iter:  256/562]  Loss_Tot: 3.5348  L_Full: 1.7711  L_Mask: 1.7638  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0529  Wgt(C/S): 0.00/0.00  LR: 3.460e-03  Acc@1: 43.7500
+2026-03-24 11:15:51 INFO:train:Train: [0:55:11] [Epoch: 36/106] [Iter:  512/562]  Loss_Tot: 3.7070  L_Full: 1.8561  L_Mask: 1.8509  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0440  Wgt(C/S): 0.00/0.00  LR: 3.460e-03  Acc@1: 50.0000
+2026-03-24 11:15:56 INFO:train:Train: [0:55:16] [Epoch: 36/106] [Iter:  562/562]  Loss_Tot: 6.1255  L_Full: 3.0062  L_Mask: 3.1193  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0766  Wgt(C/S): 0.00/0.00  LR: 3.460e-03  Acc@1:  0.0000
+2026-03-24 11:16:07 INFO:train:Test:  [0:55:27] [Iter:   63/63]  Loss_Tot: 0.9672  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 11:16:07 INFO:train: * Acc@1 = 73.9000, Acc@5 = 96.8000, loss = 1.7241
+2026-03-24 11:16:08 INFO:train:Training time 0:55:27, max_test_acc1 73.9000, test_acc5_at_max_test_acc1 96.8000
+2026-03-24 11:16:44 INFO:train:Train: [0:56:04] [Epoch: 37/106] [Iter:  256/562]  Loss_Tot: 2.0282  L_Full: 1.0720  L_Mask: 0.9563  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0803  Wgt(C/S): 0.00/0.00  LR: 3.384e-03  Acc@1: 75.0000
+2026-03-24 11:17:12 INFO:train:Train: [0:56:32] [Epoch: 37/106] [Iter:  512/562]  Loss_Tot: 1.3657  L_Full: 0.6811  L_Mask: 0.6846  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0757  Wgt(C/S): 0.00/0.00  LR: 3.384e-03  Acc@1: 93.7500
+2026-03-24 11:17:17 INFO:train:Train: [0:56:37] [Epoch: 37/106] [Iter:  562/562]  Loss_Tot: 7.0845  L_Full: 3.4802  L_Mask: 3.6043  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0640  Wgt(C/S): 0.00/0.00  LR: 3.384e-03  Acc@1:  0.0000
+2026-03-24 11:17:28 INFO:train:Test:  [0:56:48] [Iter:   63/63]  Loss_Tot: 1.0153  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:17:29 INFO:train: * Acc@1 = 73.8000, Acc@5 = 97.8000, loss = 1.7642
+2026-03-24 11:17:29 INFO:train:Training time 0:56:49, max_test_acc1 73.9000, test_acc5_at_max_test_acc1 96.8000
+2026-03-24 11:18:05 INFO:train:Train: [0:57:25] [Epoch: 38/106] [Iter:  256/562]  Loss_Tot: 3.2005  L_Full: 1.5950  L_Mask: 1.6056  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0630  Wgt(C/S): 0.00/0.00  LR: 3.307e-03  Acc@1: 75.0000
+2026-03-24 11:18:33 INFO:train:Train: [0:57:53] [Epoch: 38/106] [Iter:  512/562]  Loss_Tot: 3.9061  L_Full: 1.9382  L_Mask: 1.9679  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0580  Wgt(C/S): 0.00/0.00  LR: 3.307e-03  Acc@1: 18.7500
+2026-03-24 11:18:38 INFO:train:Train: [0:57:58] [Epoch: 38/106] [Iter:  562/562]  Loss_Tot: 2.2799  L_Full: 1.1499  L_Mask: 1.1300  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0651  Wgt(C/S): 0.00/0.00  LR: 3.307e-03  Acc@1: 68.7500
+2026-03-24 11:18:50 INFO:train:Test:  [0:58:09] [Iter:   63/63]  Loss_Tot: 0.8170  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:18:50 INFO:train: * Acc@1 = 68.1000, Acc@5 = 96.7000, loss = 1.9290
+2026-03-24 11:18:50 INFO:train:Training time 0:58:10, max_test_acc1 73.9000, test_acc5_at_max_test_acc1 96.8000
+2026-03-24 11:19:26 INFO:train:Train: [0:58:46] [Epoch: 39/106] [Iter:  256/562]  Loss_Tot: 4.2729  L_Full: 2.1084  L_Mask: 2.1645  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0559  Wgt(C/S): 0.00/0.00  LR: 3.229e-03  Acc@1: 56.2500
+2026-03-24 11:19:55 INFO:train:Train: [0:59:15] [Epoch: 39/106] [Iter:  512/562]  Loss_Tot: 2.9036  L_Full: 1.4449  L_Mask: 1.4587  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0651  Wgt(C/S): 0.00/0.00  LR: 3.229e-03  Acc@1: 75.0000
+2026-03-24 11:20:00 INFO:train:Train: [0:59:20] [Epoch: 39/106] [Iter:  562/562]  Loss_Tot: 1.7605  L_Full: 0.8846  L_Mask: 0.8759  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0713  Wgt(C/S): 0.00/0.00  LR: 3.229e-03  Acc@1: 81.2500
+2026-03-24 11:20:11 INFO:train:Test:  [0:59:31] [Iter:   63/63]  Loss_Tot: 0.9126  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:20:12 INFO:train: * Acc@1 = 76.5000, Acc@5 = 97.8000, loss = 1.6649
+2026-03-24 11:20:12 INFO:train:Training time 0:59:32, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:20:47 INFO:train:Train: [1:00:07] [Epoch: 40/106] [Iter:  256/562]  Loss_Tot: 2.3219  L_Full: 1.1524  L_Mask: 1.1695  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0667  Wgt(C/S): 0.00/0.00  LR: 3.151e-03  Acc@1: 68.7500
+2026-03-24 11:21:16 INFO:train:Train: [1:00:36] [Epoch: 40/106] [Iter:  512/562]  Loss_Tot: 1.9749  L_Full: 0.9893  L_Mask: 0.9857  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0676  Wgt(C/S): 0.00/0.00  LR: 3.151e-03  Acc@1: 87.5000
+2026-03-24 11:21:22 INFO:train:Train: [1:00:42] [Epoch: 40/106] [Iter:  562/562]  Loss_Tot: 2.0692  L_Full: 1.0443  L_Mask: 1.0249  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.0727  Wgt(C/S): 0.00/0.00  LR: 3.151e-03  Acc@1: 75.0000
+2026-03-24 11:21:33 INFO:train:Test:  [1:00:53] [Iter:   63/63]  Loss_Tot: 0.8237  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:21:33 INFO:train: * Acc@1 = 73.1000, Acc@5 = 97.9000, loss = 1.6343
+2026-03-24 11:21:33 INFO:train:Training time 1:00:53, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:22:09 INFO:train:Train: [1:01:29] [Epoch: 41/106] [Iter:  256/562]  Loss_Tot: 4.0906  L_Full: 2.0011  L_Mask: 2.0890  L_Caus: 0.0238  L_Spar: 0.0000  FR: 0.0631  Wgt(C/S): 0.02/0.00  LR: 3.072e-03  Acc@1: 68.7500
+2026-03-24 11:22:37 INFO:train:Train: [1:01:57] [Epoch: 41/106] [Iter:  512/562]  Loss_Tot: 1.9272  L_Full: 0.9791  L_Mask: 0.9473  L_Caus: 0.0325  L_Spar: 0.0000  FR: 0.0691  Wgt(C/S): 0.02/0.00  LR: 3.072e-03  Acc@1: 93.7500
+2026-03-24 11:22:43 INFO:train:Train: [1:02:03] [Epoch: 41/106] [Iter:  562/562]  Loss_Tot: 2.2476  L_Full: 1.1439  L_Mask: 1.1029  L_Caus: 0.0346  L_Spar: 0.0000  FR: 0.0753  Wgt(C/S): 0.02/0.00  LR: 3.072e-03  Acc@1: 75.0000
+2026-03-24 11:22:54 INFO:train:Test:  [1:02:14] [Iter:   63/63]  Loss_Tot: 0.4921  L_Caus: 0.0153  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:22:55 INFO:train: * Acc@1 = 75.0000, Acc@5 = 97.5000, loss = 1.5623
+2026-03-24 11:22:55 INFO:train:Training time 1:02:15, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:23:32 INFO:train:Train: [1:02:52] [Epoch: 42/106] [Iter:  256/562]  Loss_Tot: 2.2771  L_Full: 1.1523  L_Mask: 1.1240  L_Caus: 0.0179  L_Spar: 0.0000  FR: 0.0646  Wgt(C/S): 0.04/0.00  LR: 2.992e-03  Acc@1: 75.0000
+2026-03-24 11:24:01 INFO:train:Train: [1:03:21] [Epoch: 42/106] [Iter:  512/562]  Loss_Tot: 1.8712  L_Full: 0.9505  L_Mask: 0.9194  L_Caus: 0.0303  L_Spar: 0.0000  FR: 0.0660  Wgt(C/S): 0.04/0.00  LR: 2.992e-03  Acc@1: 87.5000
+2026-03-24 11:24:07 INFO:train:Train: [1:03:27] [Epoch: 42/106] [Iter:  562/562]  Loss_Tot: 1.3704  L_Full: 0.6843  L_Mask: 0.6856  L_Caus: 0.0108  L_Spar: 0.0000  FR: 0.0721  Wgt(C/S): 0.04/0.00  LR: 2.992e-03  Acc@1: 93.7500
+2026-03-24 11:24:18 INFO:train:Test:  [1:03:38] [Iter:   63/63]  Loss_Tot: 0.6892  L_Caus: 0.0077  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:24:19 INFO:train: * Acc@1 = 76.5000, Acc@5 = 98.3000, loss = 1.5609
+2026-03-24 11:24:19 INFO:train:Training time 1:03:39, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:24:56 INFO:train:Train: [1:04:16] [Epoch: 43/106] [Iter:  256/562]  Loss_Tot: 2.1707  L_Full: 1.1260  L_Mask: 1.0429  L_Caus: 0.0265  L_Spar: 0.0000  FR: 0.0672  Wgt(C/S): 0.07/0.00  LR: 2.911e-03  Acc@1: 75.0000
+2026-03-24 11:25:25 INFO:train:Train: [1:04:45] [Epoch: 43/106] [Iter:  512/562]  Loss_Tot: 6.2539  L_Full: 3.0686  L_Mask: 3.1833  L_Caus: 0.0294  L_Spar: 0.0000  FR: 0.0726  Wgt(C/S): 0.07/0.00  LR: 2.911e-03  Acc@1:  0.0000
+2026-03-24 11:25:31 INFO:train:Train: [1:04:51] [Epoch: 43/106] [Iter:  562/562]  Loss_Tot: 1.6822  L_Full: 0.8365  L_Mask: 0.8440  L_Caus: 0.0263  L_Spar: 0.0000  FR: 0.0678  Wgt(C/S): 0.07/0.00  LR: 2.911e-03  Acc@1: 87.5000
+2026-03-24 11:25:42 INFO:train:Test:  [1:05:02] [Iter:   63/63]  Loss_Tot: 0.9196  L_Caus: 0.0126  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:25:42 INFO:train: * Acc@1 = 73.1000, Acc@5 = 98.1000, loss = 1.6964
+2026-03-24 11:25:42 INFO:train:Training time 1:05:02, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:26:20 INFO:train:Train: [1:05:40] [Epoch: 44/106] [Iter:  256/562]  Loss_Tot: 2.2270  L_Full: 1.0847  L_Mask: 1.1402  L_Caus: 0.0229  L_Spar: 0.0000  FR: 0.0675  Wgt(C/S): 0.09/0.00  LR: 2.831e-03  Acc@1: 81.2500
+2026-03-24 11:26:49 INFO:train:Train: [1:06:09] [Epoch: 44/106] [Iter:  512/562]  Loss_Tot: 1.7115  L_Full: 0.8650  L_Mask: 0.8445  L_Caus: 0.0222  L_Spar: 0.0000  FR: 0.0690  Wgt(C/S): 0.09/0.00  LR: 2.831e-03  Acc@1: 93.7500
+2026-03-24 11:26:54 INFO:train:Train: [1:06:14] [Epoch: 44/106] [Iter:  562/562]  Loss_Tot: 1.6613  L_Full: 0.8603  L_Mask: 0.7992  L_Caus: 0.0212  L_Spar: 0.0000  FR: 0.0644  Wgt(C/S): 0.09/0.00  LR: 2.831e-03  Acc@1: 87.5000
+2026-03-24 11:27:06 INFO:train:Test:  [1:06:26] [Iter:   63/63]  Loss_Tot: 1.6092  L_Caus: 0.0106  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 11:27:06 INFO:train: * Acc@1 = 74.0000, Acc@5 = 97.8000, loss = 1.7687
+2026-03-24 11:27:06 INFO:train:Training time 1:06:26, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:27:44 INFO:train:Train: [1:07:04] [Epoch: 45/106] [Iter:  256/562]  Loss_Tot: 1.5151  L_Full: 0.7784  L_Mask: 0.7342  L_Caus: 0.0233  L_Spar: 0.0000  FR: 0.0681  Wgt(C/S): 0.11/0.00  LR: 2.750e-03  Acc@1: 87.5000
+2026-03-24 11:28:14 INFO:train:Train: [1:07:34] [Epoch: 45/106] [Iter:  512/562]  Loss_Tot: 2.4759  L_Full: 1.2289  L_Mask: 1.2447  L_Caus: 0.0207  L_Spar: 0.0000  FR: 0.0706  Wgt(C/S): 0.11/0.00  LR: 2.750e-03  Acc@1: 75.0000
+2026-03-24 11:28:19 INFO:train:Train: [1:07:39] [Epoch: 45/106] [Iter:  562/562]  Loss_Tot: 1.4796  L_Full: 0.7429  L_Mask: 0.7350  L_Caus: 0.0157  L_Spar: 0.0000  FR: 0.0701  Wgt(C/S): 0.11/0.00  LR: 2.750e-03  Acc@1: 93.7500
+2026-03-24 11:28:31 INFO:train:Test:  [1:07:51] [Iter:   63/63]  Loss_Tot: 0.5934  L_Caus: 0.0235  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:28:31 INFO:train: * Acc@1 = 72.3000, Acc@5 = 96.9000, loss = 1.6606
+2026-03-24 11:28:31 INFO:train:Training time 1:07:51, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:29:08 INFO:train:Train: [1:08:28] [Epoch: 46/106] [Iter:  256/562]  Loss_Tot: 1.5952  L_Full: 0.8070  L_Mask: 0.7848  L_Caus: 0.0251  L_Spar: 0.0000  FR: 0.0666  Wgt(C/S): 0.13/0.00  LR: 2.668e-03  Acc@1: 93.7500
+2026-03-24 11:29:37 INFO:train:Train: [1:08:57] [Epoch: 46/106] [Iter:  512/562]  Loss_Tot: 1.7956  L_Full: 0.9249  L_Mask: 0.8680  L_Caus: 0.0205  L_Spar: 0.0000  FR: 0.0651  Wgt(C/S): 0.13/0.00  LR: 2.668e-03  Acc@1: 87.5000
+2026-03-24 11:29:43 INFO:train:Train: [1:09:03] [Epoch: 46/106] [Iter:  562/562]  Loss_Tot: 2.0323  L_Full: 1.0452  L_Mask: 0.9841  L_Caus: 0.0222  L_Spar: 0.0000  FR: 0.0696  Wgt(C/S): 0.13/0.00  LR: 2.668e-03  Acc@1: 68.7500
+2026-03-24 11:29:54 INFO:train:Test:  [1:09:14] [Iter:   63/63]  Loss_Tot: 0.6932  L_Caus: 0.0060  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:29:55 INFO:train: * Acc@1 = 75.3000, Acc@5 = 97.1000, loss = 1.6741
+2026-03-24 11:29:55 INFO:train:Training time 1:09:15, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:30:32 INFO:train:Train: [1:09:52] [Epoch: 47/106] [Iter:  256/562]  Loss_Tot: 1.8782  L_Full: 0.9439  L_Mask: 0.9315  L_Caus: 0.0178  L_Spar: 0.0000  FR: 0.0769  Wgt(C/S): 0.16/0.00  LR: 2.587e-03  Acc@1: 87.5000
+2026-03-24 11:31:01 INFO:train:Train: [1:10:20] [Epoch: 47/106] [Iter:  512/562]  Loss_Tot: 1.7770  L_Full: 0.9084  L_Mask: 0.8645  L_Caus: 0.0261  L_Spar: 0.0000  FR: 0.0731  Wgt(C/S): 0.16/0.00  LR: 2.587e-03  Acc@1: 87.5000
+2026-03-24 11:31:06 INFO:train:Train: [1:10:26] [Epoch: 47/106] [Iter:  562/562]  Loss_Tot: 3.3660  L_Full: 1.6706  L_Mask: 1.6916  L_Caus: 0.0243  L_Spar: 0.0000  FR: 0.0677  Wgt(C/S): 0.16/0.00  LR: 2.587e-03  Acc@1: 87.5000
+2026-03-24 11:31:18 INFO:train:Test:  [1:10:38] [Iter:   63/63]  Loss_Tot: 0.7375  L_Caus: 0.0133  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:31:18 INFO:train: * Acc@1 = 73.9000, Acc@5 = 96.5000, loss = 1.7100
+2026-03-24 11:31:18 INFO:train:Training time 1:10:38, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:32:11 INFO:train:Train: [1:11:31] [Epoch: 48/106] [Iter:  256/562]  Loss_Tot: 1.5858  L_Full: 0.7938  L_Mask: 0.7897  L_Caus: 0.0132  L_Spar: 0.0000  FR: 0.0757  Wgt(C/S): 0.18/0.00  LR: 2.505e-03  Acc@1: 81.2500
+2026-03-24 11:32:40 INFO:train:Train: [1:12:00] [Epoch: 48/106] [Iter:  512/562]  Loss_Tot: 4.6878  L_Full: 2.3031  L_Mask: 2.3809  L_Caus: 0.0216  L_Spar: 0.0000  FR: 0.0685  Wgt(C/S): 0.18/0.00  LR: 2.505e-03  Acc@1:  6.2500
+2026-03-24 11:32:46 INFO:train:Train: [1:12:06] [Epoch: 48/106] [Iter:  562/562]  Loss_Tot: 1.9290  L_Full: 0.9760  L_Mask: 0.9499  L_Caus: 0.0171  L_Spar: 0.0000  FR: 0.0765  Wgt(C/S): 0.18/0.00  LR: 2.505e-03  Acc@1: 87.5000
+2026-03-24 11:32:57 INFO:train:Test:  [1:12:17] [Iter:   63/63]  Loss_Tot: 0.7521  L_Caus: 0.0132  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:32:58 INFO:train: * Acc@1 = 74.9000, Acc@5 = 97.9000, loss = 1.5376
+2026-03-24 11:32:58 INFO:train:Training time 1:12:18, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:33:37 INFO:train:Train: [1:12:57] [Epoch: 49/106] [Iter:  256/562]  Loss_Tot: 1.1662  L_Full: 0.5795  L_Mask: 0.5836  L_Caus: 0.0158  L_Spar: 0.0000  FR: 0.0759  Wgt(C/S): 0.20/0.00  LR: 2.423e-03  Acc@1: 100.0000
+2026-03-24 11:34:08 INFO:train:Train: [1:13:28] [Epoch: 49/106] [Iter:  512/562]  Loss_Tot: 1.4218  L_Full: 0.7432  L_Mask: 0.6730  L_Caus: 0.0279  L_Spar: 0.0000  FR: 0.0714  Wgt(C/S): 0.20/0.00  LR: 2.423e-03  Acc@1: 100.0000
+2026-03-24 11:34:14 INFO:train:Train: [1:13:34] [Epoch: 49/106] [Iter:  562/562]  Loss_Tot: 1.7496  L_Full: 0.8762  L_Mask: 0.8693  L_Caus: 0.0206  L_Spar: 0.0000  FR: 0.0724  Wgt(C/S): 0.20/0.00  LR: 2.423e-03  Acc@1: 87.5000
+2026-03-24 11:34:27 INFO:train:Test:  [1:13:47] [Iter:   63/63]  Loss_Tot: 1.4827  L_Caus: 0.0176  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 11:34:27 INFO:train: * Acc@1 = 73.4000, Acc@5 = 98.2000, loss = 1.6687
+2026-03-24 11:34:27 INFO:train:Training time 1:13:47, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:35:07 INFO:train:Train: [1:14:27] [Epoch: 50/106] [Iter:  256/562]  Loss_Tot: 2.2752  L_Full: 1.1322  L_Mask: 1.1390  L_Caus: 0.0180  L_Spar: 0.0000  FR: 0.0802  Wgt(C/S): 0.22/0.00  LR: 2.342e-03  Acc@1: 93.7500
+2026-03-24 11:35:39 INFO:train:Train: [1:14:59] [Epoch: 50/106] [Iter:  512/562]  Loss_Tot: 3.3098  L_Full: 1.6598  L_Mask: 1.6459  L_Caus: 0.0188  L_Spar: 0.0000  FR: 0.0618  Wgt(C/S): 0.22/0.00  LR: 2.342e-03  Acc@1: 75.0000
+2026-03-24 11:35:45 INFO:train:Train: [1:15:05] [Epoch: 50/106] [Iter:  562/562]  Loss_Tot: 1.7347  L_Full: 0.8754  L_Mask: 0.8560  L_Caus: 0.0151  L_Spar: 0.0000  FR: 0.0588  Wgt(C/S): 0.22/0.00  LR: 2.342e-03  Acc@1: 81.2500
+2026-03-24 11:35:58 INFO:train:Test:  [1:15:18] [Iter:   63/63]  Loss_Tot: 0.9560  L_Caus: 0.0067  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:35:58 INFO:train: * Acc@1 = 74.0000, Acc@5 = 97.8000, loss = 1.7266
+2026-03-24 11:35:58 INFO:train:Training time 1:15:18, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:36:39 INFO:train:Train: [1:15:59] [Epoch: 51/106] [Iter:  256/562]  Loss_Tot: 1.8099  L_Full: 0.9049  L_Mask: 0.8993  L_Caus: 0.0232  L_Spar: 0.0000  FR: 0.0696  Wgt(C/S): 0.24/0.00  LR: 2.260e-03  Acc@1: 87.5000
+2026-03-24 11:37:12 INFO:train:Train: [1:16:32] [Epoch: 51/106] [Iter:  512/562]  Loss_Tot: 1.5124  L_Full: 0.7773  L_Mask: 0.7303  L_Caus: 0.0196  L_Spar: 0.0000  FR: 0.0718  Wgt(C/S): 0.24/0.00  LR: 2.260e-03  Acc@1: 93.7500
+2026-03-24 11:37:18 INFO:train:Train: [1:16:38] [Epoch: 51/106] [Iter:  562/562]  Loss_Tot: 3.2319  L_Full: 1.6030  L_Mask: 1.6242  L_Caus: 0.0188  L_Spar: 0.0000  FR: 0.0702  Wgt(C/S): 0.24/0.00  LR: 2.260e-03  Acc@1: 75.0000
+2026-03-24 11:37:31 INFO:train:Test:  [1:16:51] [Iter:   63/63]  Loss_Tot: 1.0662  L_Caus: 0.0071  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:37:31 INFO:train: * Acc@1 = 74.1000, Acc@5 = 97.8000, loss = 1.6820
+2026-03-24 11:37:31 INFO:train:Training time 1:16:51, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:38:13 INFO:train:Train: [1:17:33] [Epoch: 52/106] [Iter:  256/562]  Loss_Tot: 3.6829  L_Full: 1.8274  L_Mask: 1.8521  L_Caus: 0.0128  L_Spar: 0.0000  FR: 0.0617  Wgt(C/S): 0.27/0.00  LR: 2.179e-03  Acc@1: 56.2500
+2026-03-24 11:38:44 INFO:train:Train: [1:18:04] [Epoch: 52/106] [Iter:  512/562]  Loss_Tot: 2.4920  L_Full: 1.2506  L_Mask: 1.2372  L_Caus: 0.0156  L_Spar: 0.0000  FR: 0.0654  Wgt(C/S): 0.27/0.00  LR: 2.179e-03  Acc@1: 68.7500
+2026-03-24 11:38:50 INFO:train:Train: [1:18:10] [Epoch: 52/106] [Iter:  562/562]  Loss_Tot: 1.9576  L_Full: 0.9742  L_Mask: 0.9741  L_Caus: 0.0352  L_Spar: 0.0000  FR: 0.0701  Wgt(C/S): 0.27/0.00  LR: 2.179e-03  Acc@1: 87.5000
+2026-03-24 11:39:02 INFO:train:Test:  [1:18:22] [Iter:   63/63]  Loss_Tot: 1.0477  L_Caus: 0.0085  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 87.5000
+2026-03-24 11:39:03 INFO:train: * Acc@1 = 68.8000, Acc@5 = 96.6000, loss = 1.9548
+2026-03-24 11:39:03 INFO:train:Training time 1:18:23, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:39:44 INFO:train:Train: [1:19:04] [Epoch: 53/106] [Iter:  256/562]  Loss_Tot: 1.3582  L_Full: 0.6866  L_Mask: 0.6660  L_Caus: 0.0193  L_Spar: 0.0000  FR: 0.0759  Wgt(C/S): 0.29/0.00  LR: 2.099e-03  Acc@1: 100.0000
+2026-03-24 11:40:15 INFO:train:Train: [1:19:35] [Epoch: 53/106] [Iter:  512/562]  Loss_Tot: 2.5064  L_Full: 1.2420  L_Mask: 1.2573  L_Caus: 0.0246  L_Spar: 0.0000  FR: 0.0720  Wgt(C/S): 0.29/0.00  LR: 2.099e-03  Acc@1: 62.5000
+2026-03-24 11:40:21 INFO:train:Train: [1:19:41] [Epoch: 53/106] [Iter:  562/562]  Loss_Tot: 1.6143  L_Full: 0.7922  L_Mask: 0.8165  L_Caus: 0.0196  L_Spar: 0.0000  FR: 0.0750  Wgt(C/S): 0.29/0.00  LR: 2.099e-03  Acc@1: 87.5000
+2026-03-24 11:40:34 INFO:train:Test:  [1:19:54] [Iter:   63/63]  Loss_Tot: 0.6159  L_Caus: 0.0067  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:40:35 INFO:train: * Acc@1 = 76.3000, Acc@5 = 97.7000, loss = 1.5709
+2026-03-24 11:40:35 INFO:train:Training time 1:19:55, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:41:16 INFO:train:Train: [1:20:36] [Epoch: 54/106] [Iter:  256/562]  Loss_Tot: 1.8599  L_Full: 0.9344  L_Mask: 0.9194  L_Caus: 0.0196  L_Spar: 0.0000  FR: 0.0681  Wgt(C/S): 0.31/0.00  LR: 2.018e-03  Acc@1: 81.2500
+2026-03-24 11:41:48 INFO:train:Train: [1:21:08] [Epoch: 54/106] [Iter:  512/562]  Loss_Tot: 1.3494  L_Full: 0.6768  L_Mask: 0.6687  L_Caus: 0.0125  L_Spar: 0.0000  FR: 0.0701  Wgt(C/S): 0.31/0.00  LR: 2.018e-03  Acc@1: 93.7500
+2026-03-24 11:41:54 INFO:train:Train: [1:21:14] [Epoch: 54/106] [Iter:  562/562]  Loss_Tot: 1.6447  L_Full: 0.8233  L_Mask: 0.8162  L_Caus: 0.0168  L_Spar: 0.0000  FR: 0.0804  Wgt(C/S): 0.31/0.00  LR: 2.018e-03  Acc@1: 87.5000
+2026-03-24 11:42:07 INFO:train:Test:  [1:21:27] [Iter:   63/63]  Loss_Tot: 0.6155  L_Caus: 0.0083  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:42:07 INFO:train: * Acc@1 = 76.2000, Acc@5 = 97.9000, loss = 1.5995
+2026-03-24 11:42:07 INFO:train:Training time 1:21:27, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:42:50 INFO:train:Train: [1:22:10] [Epoch: 55/106] [Iter:  256/562]  Loss_Tot: 1.4120  L_Full: 0.7050  L_Mask: 0.7006  L_Caus: 0.0192  L_Spar: 0.0000  FR: 0.0813  Wgt(C/S): 0.33/0.00  LR: 1.938e-03  Acc@1: 87.5000
+2026-03-24 11:43:21 INFO:train:Train: [1:22:41] [Epoch: 55/106] [Iter:  512/562]  Loss_Tot: 3.0577  L_Full: 1.4998  L_Mask: 1.5527  L_Caus: 0.0156  L_Spar: 0.0000  FR: 0.0670  Wgt(C/S): 0.33/0.00  LR: 1.938e-03  Acc@1: 87.5000
+2026-03-24 11:43:27 INFO:train:Train: [1:22:47] [Epoch: 55/106] [Iter:  562/562]  Loss_Tot: 1.9682  L_Full: 1.0016  L_Mask: 0.9613  L_Caus: 0.0158  L_Spar: 0.0000  FR: 0.0739  Wgt(C/S): 0.33/0.00  LR: 1.938e-03  Acc@1: 87.5000
+2026-03-24 11:43:39 INFO:train:Test:  [1:22:59] [Iter:   63/63]  Loss_Tot: 1.2433  L_Caus: 0.0132  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 87.5000
+2026-03-24 11:43:40 INFO:train: * Acc@1 = 74.9000, Acc@5 = 97.5000, loss = 1.5963
+2026-03-24 11:43:40 INFO:train:Training time 1:23:00, max_test_acc1 76.5000, test_acc5_at_max_test_acc1 97.8000
+2026-03-24 11:44:19 INFO:train:Train: [1:23:39] [Epoch: 56/106] [Iter:  256/562]  Loss_Tot: 1.1788  L_Full: 0.5835  L_Mask: 0.5903  L_Caus: 0.0141  L_Spar: 0.0000  FR: 0.0775  Wgt(C/S): 0.36/0.00  LR: 1.859e-03  Acc@1: 100.0000
+2026-03-24 11:44:49 INFO:train:Train: [1:24:09] [Epoch: 56/106] [Iter:  512/562]  Loss_Tot: 1.9895  L_Full: 1.0001  L_Mask: 0.9860  L_Caus: 0.0096  L_Spar: 0.0000  FR: 0.0692  Wgt(C/S): 0.36/0.00  LR: 1.859e-03  Acc@1: 100.0000
+2026-03-24 11:44:55 INFO:train:Train: [1:24:15] [Epoch: 56/106] [Iter:  562/562]  Loss_Tot: 1.5434  L_Full: 0.7859  L_Mask: 0.7526  L_Caus: 0.0138  L_Spar: 0.0000  FR: 0.0721  Wgt(C/S): 0.36/0.00  LR: 1.859e-03  Acc@1: 87.5000
+2026-03-24 11:45:07 INFO:train:Test:  [1:24:27] [Iter:   63/63]  Loss_Tot: 0.9288  L_Caus: 0.0080  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:45:08 INFO:train: * Acc@1 = 77.4000, Acc@5 = 97.6000, loss = 1.5130
+2026-03-24 11:45:08 INFO:train:Training time 1:24:28, max_test_acc1 77.4000, test_acc5_at_max_test_acc1 97.6000
+2026-03-24 11:45:47 INFO:train:Train: [1:25:07] [Epoch: 57/106] [Iter:  256/562]  Loss_Tot: 1.8060  L_Full: 0.9292  L_Mask: 0.8689  L_Caus: 0.0210  L_Spar: 0.0000  FR: 0.0778  Wgt(C/S): 0.38/0.00  LR: 1.781e-03  Acc@1: 75.0000
+2026-03-24 11:46:17 INFO:train:Train: [1:25:37] [Epoch: 57/106] [Iter:  512/562]  Loss_Tot: 1.6569  L_Full: 0.8304  L_Mask: 0.8202  L_Caus: 0.0167  L_Spar: 0.0000  FR: 0.0731  Wgt(C/S): 0.38/0.00  LR: 1.781e-03  Acc@1: 81.2500
+2026-03-24 11:46:23 INFO:train:Train: [1:25:43] [Epoch: 57/106] [Iter:  562/562]  Loss_Tot: 2.4113  L_Full: 1.2168  L_Mask: 1.1886  L_Caus: 0.0158  L_Spar: 0.0000  FR: 0.0709  Wgt(C/S): 0.38/0.00  LR: 1.781e-03  Acc@1: 87.5000
+2026-03-24 11:46:35 INFO:train:Test:  [1:25:55] [Iter:   63/63]  Loss_Tot: 0.6406  L_Caus: 0.0060  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-03-24 11:46:35 INFO:train: * Acc@1 = 77.3000, Acc@5 = 98.3000, loss = 1.5722
+2026-03-24 11:46:35 INFO:train:Training time 1:25:55, max_test_acc1 77.4000, test_acc5_at_max_test_acc1 97.6000
+2026-03-24 11:47:14 INFO:train:Train: [1:26:34] [Epoch: 58/106] [Iter:  256/562]  Loss_Tot: 1.5318  L_Full: 0.7427  L_Mask: 0.7836  L_Caus: 0.0138  L_Spar: 0.0000  FR: 0.0746  Wgt(C/S): 0.40/0.00  LR: 1.703e-03  Acc@1: 81.2500
+2026-03-24 11:47:44 INFO:train:Train: [1:27:04] [Epoch: 58/106] [Iter:  512/562]  Loss_Tot: 1.3694  L_Full: 0.6956  L_Mask: 0.6686  L_Caus: 0.0129  L_Spar: 0.0000  FR: 0.0730  Wgt(C/S): 0.40/0.00  LR: 1.703e-03  Acc@1: 100.0000
+2026-03-24 11:47:50 INFO:train:Train: [1:27:10] [Epoch: 58/106] [Iter:  562/562]  Loss_Tot: 3.3571  L_Full: 1.6654  L_Mask: 1.6844  L_Caus: 0.0184  L_Spar: 0.0000  FR: 0.0627  Wgt(C/S): 0.40/0.00  LR: 1.703e-03  Acc@1: 68.7500
+2026-03-24 11:48:03 INFO:train:Test:  [1:27:23] [Iter:   63/63]  Loss_Tot: 1.2386  L_Caus: 0.0087  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-03-24 11:48:03 INFO:train: * Acc@1 = 77.2000, Acc@5 = 97.5000, loss = 1.6274
+2026-03-24 11:48:03 INFO:train:Training time 1:27:23, max_test_acc1 77.4000, test_acc5_at_max_test_acc1 97.6000
+2026-03-24 11:48:42 INFO:train:Train: [1:28:02] [Epoch: 59/106] [Iter:  256/562]  Loss_Tot: 1.4348  L_Full: 0.7323  L_Mask: 0.6971  L_Caus: 0.0128  L_Spar: 0.0000  FR: 0.0715  Wgt(C/S): 0.42/0.00  LR: 1.626e-03  Acc@1: 100.0000
+2026-03-24 11:49:16 INFO:train:Train: [1:28:36] [Epoch: 59/106] [Iter:  512/562]  Loss_Tot: 1.9195  L_Full: 0.9604  L_Mask: 0.9490  L_Caus: 0.0240  L_Spar: 0.0000  FR: 0.0715  Wgt(C/S): 0.42/0.00  LR: 1.626e-03  Acc@1: 81.2500
+2026-03-24 11:49:22 INFO:train:Train: [1:28:42] [Epoch: 59/106] [Iter:  562/562]  Loss_Tot: 3.6539  L_Full: 1.8069  L_Mask: 1.8382  L_Caus: 0.0209  L_Spar: 0.0000  FR: 0.0731  Wgt(C/S): 0.42/0.00  LR: 1.626e-03  Acc@1: 62.5000
+2026-03-24 11:49:34 INFO:train:Test:  [1:28:54] [Iter:   63/63]  Loss_Tot: 0.9588  L_Caus: 0.0159  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:49:35 INFO:train: * Acc@1 = 78.8000, Acc@5 = 97.9000, loss = 1.4724
+2026-03-24 11:49:35 INFO:train:Training time 1:28:55, max_test_acc1 78.8000, test_acc5_at_max_test_acc1 97.9000
+2026-03-24 11:50:15 INFO:train:Train: [1:29:35] [Epoch: 60/106] [Iter:  256/562]  Loss_Tot: 1.3450  L_Full: 0.6751  L_Mask: 0.6625  L_Caus: 0.0166  L_Spar: 0.0000  FR: 0.0742  Wgt(C/S): 0.44/0.00  LR: 1.550e-03  Acc@1: 100.0000
+2026-03-24 11:50:46 INFO:train:Train: [1:30:06] [Epoch: 60/106] [Iter:  512/562]  Loss_Tot: 4.6398  L_Full: 2.3062  L_Mask: 2.3267  L_Caus: 0.0155  L_Spar: 0.0000  FR: 0.0584  Wgt(C/S): 0.44/0.00  LR: 1.550e-03  Acc@1: 25.0000
+2026-03-24 11:50:53 INFO:train:Train: [1:30:13] [Epoch: 60/106] [Iter:  562/562]  Loss_Tot: 1.3159  L_Full: 0.6505  L_Mask: 0.6585  L_Caus: 0.0155  L_Spar: 0.0000  FR: 0.0762  Wgt(C/S): 0.44/0.00  LR: 1.550e-03  Acc@1: 93.7500
+2026-03-24 11:51:05 INFO:train:Test:  [1:30:25] [Iter:   63/63]  Loss_Tot: 0.9760  L_Caus: 0.0104  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:51:05 INFO:train: * Acc@1 = 77.8000, Acc@5 = 97.7000, loss = 1.5125
+2026-03-24 11:51:05 INFO:train:Training time 1:30:25, max_test_acc1 78.8000, test_acc5_at_max_test_acc1 97.9000
+2026-03-24 11:51:46 INFO:train:Train: [1:31:06] [Epoch: 61/106] [Iter:  256/562]  Loss_Tot: 1.7387  L_Full: 0.8578  L_Mask: 0.8711  L_Caus: 0.0213  L_Spar: 0.0000  FR: 0.0732  Wgt(C/S): 0.47/0.00  LR: 1.475e-03  Acc@1: 81.2500
+2026-03-24 11:52:17 INFO:train:Train: [1:31:37] [Epoch: 61/106] [Iter:  512/562]  Loss_Tot: 2.0434  L_Full: 1.0307  L_Mask: 1.0076  L_Caus: 0.0110  L_Spar: 0.0000  FR: 0.0701  Wgt(C/S): 0.47/0.00  LR: 1.475e-03  Acc@1: 81.2500
+2026-03-24 11:52:23 INFO:train:Train: [1:31:43] [Epoch: 61/106] [Iter:  562/562]  Loss_Tot: 2.4704  L_Full: 1.2365  L_Mask: 1.2206  L_Caus: 0.0285  L_Spar: 0.0000  FR: 0.0669  Wgt(C/S): 0.47/0.00  LR: 1.475e-03  Acc@1: 93.7500
+2026-03-24 11:52:35 INFO:train:Test:  [1:31:55] [Iter:   63/63]  Loss_Tot: 1.0936  L_Caus: 0.0159  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:52:36 INFO:train: * Acc@1 = 78.0000, Acc@5 = 98.3000, loss = 1.5314
+2026-03-24 11:52:36 INFO:train:Training time 1:31:56, max_test_acc1 78.8000, test_acc5_at_max_test_acc1 97.9000
+2026-03-24 11:53:16 INFO:train:Train: [1:32:36] [Epoch: 62/106] [Iter:  256/562]  Loss_Tot: 3.5385  L_Full: 1.7419  L_Mask: 1.7856  L_Caus: 0.0225  L_Spar: 0.0000  FR: 0.0737  Wgt(C/S): 0.49/0.00  LR: 1.401e-03  Acc@1: 100.0000
+2026-03-24 11:53:47 INFO:train:Train: [1:33:07] [Epoch: 62/106] [Iter:  512/562]  Loss_Tot: 3.6821  L_Full: 1.8334  L_Mask: 1.8401  L_Caus: 0.0177  L_Spar: 0.0000  FR: 0.0715  Wgt(C/S): 0.49/0.00  LR: 1.401e-03  Acc@1: 81.2500
+2026-03-24 11:53:53 INFO:train:Train: [1:33:13] [Epoch: 62/106] [Iter:  562/562]  Loss_Tot: 1.7727  L_Full: 0.8775  L_Mask: 0.8878  L_Caus: 0.0150  L_Spar: 0.0000  FR: 0.0761  Wgt(C/S): 0.49/0.00  LR: 1.401e-03  Acc@1: 87.5000
+2026-03-24 11:54:06 INFO:train:Test:  [1:33:26] [Iter:   63/63]  Loss_Tot: 1.1494  L_Caus: 0.0057  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:54:06 INFO:train: * Acc@1 = 77.6000, Acc@5 = 97.0000, loss = 1.5895
+2026-03-24 11:54:06 INFO:train:Training time 1:33:26, max_test_acc1 78.8000, test_acc5_at_max_test_acc1 97.9000
+2026-03-24 11:54:47 INFO:train:Train: [1:34:07] [Epoch: 63/106] [Iter:  256/562]  Loss_Tot: 1.5317  L_Full: 0.7652  L_Mask: 0.7560  L_Caus: 0.0206  L_Spar: 0.0000  FR: 0.0806  Wgt(C/S): 0.51/0.00  LR: 1.329e-03  Acc@1: 93.7500
+2026-03-24 11:55:18 INFO:train:Train: [1:34:38] [Epoch: 63/106] [Iter:  512/562]  Loss_Tot: 3.2669  L_Full: 1.6104  L_Mask: 1.6475  L_Caus: 0.0175  L_Spar: 0.0000  FR: 0.0694  Wgt(C/S): 0.51/0.00  LR: 1.329e-03  Acc@1: 87.5000
+2026-03-24 11:55:24 INFO:train:Train: [1:34:44] [Epoch: 63/106] [Iter:  562/562]  Loss_Tot: 1.4171  L_Full: 0.7218  L_Mask: 0.6880  L_Caus: 0.0143  L_Spar: 0.0000  FR: 0.0740  Wgt(C/S): 0.51/0.00  LR: 1.329e-03  Acc@1: 87.5000
+2026-03-24 11:55:37 INFO:train:Test:  [1:34:56] [Iter:   63/63]  Loss_Tot: 0.9641  L_Caus: 0.0136  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:55:37 INFO:train: * Acc@1 = 79.1000, Acc@5 = 98.5000, loss = 1.4462
+2026-03-24 11:55:37 INFO:train:Training time 1:34:57, max_test_acc1 79.1000, test_acc5_at_max_test_acc1 98.5000
+2026-03-24 11:56:17 INFO:train:Train: [1:35:37] [Epoch: 64/106] [Iter:  256/562]  Loss_Tot: 2.4363  L_Full: 1.2177  L_Mask: 1.2097  L_Caus: 0.0167  L_Spar: 0.0000  FR: 0.0715  Wgt(C/S): 0.53/0.00  LR: 1.258e-03  Acc@1: 87.5000
+2026-03-24 11:56:50 INFO:train:Train: [1:36:10] [Epoch: 64/106] [Iter:  512/562]  Loss_Tot: 1.2520  L_Full: 0.6306  L_Mask: 0.6156  L_Caus: 0.0107  L_Spar: 0.0000  FR: 0.0813  Wgt(C/S): 0.53/0.00  LR: 1.258e-03  Acc@1: 100.0000
+2026-03-24 11:56:56 INFO:train:Train: [1:36:16] [Epoch: 64/106] [Iter:  562/562]  Loss_Tot: 5.1640  L_Full: 2.5864  L_Mask: 2.5711  L_Caus: 0.0122  L_Spar: 0.0000  FR: 0.0786  Wgt(C/S): 0.53/0.00  LR: 1.258e-03  Acc@1:  0.0000
+2026-03-24 11:57:09 INFO:train:Test:  [1:36:29] [Iter:   63/63]  Loss_Tot: 0.8169  L_Caus: 0.0073  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:57:09 INFO:train: * Acc@1 = 80.1000, Acc@5 = 98.1000, loss = 1.4540
+2026-03-24 11:57:09 INFO:train:Training time 1:36:29, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 11:57:50 INFO:train:Train: [1:37:10] [Epoch: 65/106] [Iter:  256/562]  Loss_Tot: 3.5113  L_Full: 1.7523  L_Mask: 1.7501  L_Caus: 0.0161  L_Spar: 0.0000  FR: 0.0641  Wgt(C/S): 0.56/0.00  LR: 1.187e-03  Acc@1: 81.2500
+2026-03-24 11:58:23 INFO:train:Train: [1:37:43] [Epoch: 65/106] [Iter:  512/562]  Loss_Tot: 1.6889  L_Full: 0.8397  L_Mask: 0.8416  L_Caus: 0.0137  L_Spar: 0.0000  FR: 0.0739  Wgt(C/S): 0.56/0.00  LR: 1.187e-03  Acc@1: 87.5000
+2026-03-24 11:58:29 INFO:train:Train: [1:37:49] [Epoch: 65/106] [Iter:  562/562]  Loss_Tot: 1.2349  L_Full: 0.5951  L_Mask: 0.6306  L_Caus: 0.0168  L_Spar: 0.0000  FR: 0.0768  Wgt(C/S): 0.56/0.00  LR: 1.187e-03  Acc@1: 93.7500
+2026-03-24 11:58:42 INFO:train:Test:  [1:38:02] [Iter:   63/63]  Loss_Tot: 0.6822  L_Caus: 0.0051  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 11:58:42 INFO:train: * Acc@1 = 78.9000, Acc@5 = 98.0000, loss = 1.4653
+2026-03-24 11:58:42 INFO:train:Training time 1:38:02, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 11:59:21 INFO:train:Train: [1:38:41] [Epoch: 66/106] [Iter:  256/562]  Loss_Tot: 3.4938  L_Full: 1.7424  L_Mask: 1.7391  L_Caus: 0.0213  L_Spar: 0.0000  FR: 0.0717  Wgt(C/S): 0.58/0.00  LR: 1.119e-03  Acc@1: 100.0000
+2026-03-24 11:59:51 INFO:train:Train: [1:39:11] [Epoch: 66/106] [Iter:  512/562]  Loss_Tot: 2.7884  L_Full: 1.4008  L_Mask: 1.3809  L_Caus: 0.0116  L_Spar: 0.0000  FR: 0.0719  Wgt(C/S): 0.58/0.00  LR: 1.119e-03  Acc@1: 87.5000
+2026-03-24 11:59:57 INFO:train:Train: [1:39:17] [Epoch: 66/106] [Iter:  562/562]  Loss_Tot: 3.4843  L_Full: 1.7260  L_Mask: 1.7466  L_Caus: 0.0202  L_Spar: 0.0000  FR: 0.0630  Wgt(C/S): 0.58/0.00  LR: 1.119e-03  Acc@1: 75.0000
+2026-03-24 12:00:09 INFO:train:Test:  [1:39:29] [Iter:   63/63]  Loss_Tot: 1.0891  L_Caus: 0.0158  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:00:10 INFO:train: * Acc@1 = 77.5000, Acc@5 = 98.0000, loss = 1.6270
+2026-03-24 12:00:10 INFO:train:Training time 1:39:30, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:00:49 INFO:train:Train: [1:40:09] [Epoch: 67/106] [Iter:  256/562]  Loss_Tot: 5.1064  L_Full: 2.5396  L_Mask: 2.5590  L_Caus: 0.0131  L_Spar: 0.0000  FR: 0.0725  Wgt(C/S): 0.60/0.00  LR: 1.052e-03  Acc@1: 12.5000
+2026-03-24 12:01:19 INFO:train:Train: [1:40:39] [Epoch: 67/106] [Iter:  512/562]  Loss_Tot: 1.2914  L_Full: 0.6341  L_Mask: 0.6483  L_Caus: 0.0149  L_Spar: 0.0000  FR: 0.0702  Wgt(C/S): 0.60/0.00  LR: 1.052e-03  Acc@1: 93.7500
+2026-03-24 12:01:25 INFO:train:Train: [1:40:45] [Epoch: 67/106] [Iter:  562/562]  Loss_Tot: 1.3386  L_Full: 0.6919  L_Mask: 0.6331  L_Caus: 0.0227  L_Spar: 0.0000  FR: 0.0709  Wgt(C/S): 0.60/0.00  LR: 1.052e-03  Acc@1: 100.0000
+2026-03-24 12:01:37 INFO:train:Test:  [1:40:57] [Iter:   63/63]  Loss_Tot: 0.8879  L_Caus: 0.0086  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:01:38 INFO:train: * Acc@1 = 79.1000, Acc@5 = 98.3000, loss = 1.4811
+2026-03-24 12:01:38 INFO:train:Training time 1:40:58, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:02:17 INFO:train:Train: [1:41:37] [Epoch: 68/106] [Iter:  256/562]  Loss_Tot: 1.2875  L_Full: 0.6364  L_Mask: 0.6444  L_Caus: 0.0107  L_Spar: 0.0000  FR: 0.0779  Wgt(C/S): 0.62/0.00  LR: 9.861e-04  Acc@1: 100.0000
+2026-03-24 12:02:47 INFO:train:Train: [1:42:07] [Epoch: 68/106] [Iter:  512/562]  Loss_Tot: 1.2147  L_Full: 0.6086  L_Mask: 0.5937  L_Caus: 0.0200  L_Spar: 0.0000  FR: 0.0834  Wgt(C/S): 0.62/0.00  LR: 9.861e-04  Acc@1: 100.0000
+2026-03-24 12:02:53 INFO:train:Train: [1:42:13] [Epoch: 68/106] [Iter:  562/562]  Loss_Tot: 3.1890  L_Full: 1.5629  L_Mask: 1.6113  L_Caus: 0.0239  L_Spar: 0.0000  FR: 0.0810  Wgt(C/S): 0.62/0.00  LR: 9.861e-04  Acc@1: 100.0000
+2026-03-24 12:03:05 INFO:train:Test:  [1:42:25] [Iter:   63/63]  Loss_Tot: 1.0001  L_Caus: 0.0130  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:03:05 INFO:train: * Acc@1 = 79.4000, Acc@5 = 98.3000, loss = 1.4294
+2026-03-24 12:03:05 INFO:train:Training time 1:42:25, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:03:44 INFO:train:Train: [1:43:04] [Epoch: 69/106] [Iter:  256/562]  Loss_Tot: 1.1410  L_Full: 0.5640  L_Mask: 0.5655  L_Caus: 0.0180  L_Spar: 0.0000  FR: 0.0789  Wgt(C/S): 0.64/0.00  LR: 9.222e-04  Acc@1: 100.0000
+2026-03-24 12:04:14 INFO:train:Train: [1:43:34] [Epoch: 69/106] [Iter:  512/562]  Loss_Tot: 3.1177  L_Full: 1.5664  L_Mask: 1.5399  L_Caus: 0.0176  L_Spar: 0.0000  FR: 0.0659  Wgt(C/S): 0.64/0.00  LR: 9.222e-04  Acc@1: 62.5000
+2026-03-24 12:04:20 INFO:train:Train: [1:43:40] [Epoch: 69/106] [Iter:  562/562]  Loss_Tot: 1.6771  L_Full: 0.8509  L_Mask: 0.8154  L_Caus: 0.0168  L_Spar: 0.0000  FR: 0.0748  Wgt(C/S): 0.64/0.00  LR: 9.222e-04  Acc@1: 93.7500
+2026-03-24 12:04:32 INFO:train:Test:  [1:43:52] [Iter:   63/63]  Loss_Tot: 0.6541  L_Caus: 0.0077  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:04:33 INFO:train: * Acc@1 = 79.5000, Acc@5 = 98.2000, loss = 1.4766
+2026-03-24 12:04:33 INFO:train:Training time 1:43:53, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:05:12 INFO:train:Train: [1:44:31] [Epoch: 70/106] [Iter:  256/562]  Loss_Tot: 1.4832  L_Full: 0.7549  L_Mask: 0.7174  L_Caus: 0.0164  L_Spar: 0.0000  FR: 0.0745  Wgt(C/S): 0.67/0.00  LR: 8.599e-04  Acc@1: 87.5000
+2026-03-24 12:05:42 INFO:train:Train: [1:45:02] [Epoch: 70/106] [Iter:  512/562]  Loss_Tot: 1.5927  L_Full: 0.8037  L_Mask: 0.7790  L_Caus: 0.0150  L_Spar: 0.0000  FR: 0.0701  Wgt(C/S): 0.67/0.00  LR: 8.599e-04  Acc@1: 87.5000
+2026-03-24 12:05:48 INFO:train:Train: [1:45:08] [Epoch: 70/106] [Iter:  562/562]  Loss_Tot: 1.2111  L_Full: 0.5987  L_Mask: 0.6021  L_Caus: 0.0155  L_Spar: 0.0000  FR: 0.0793  Wgt(C/S): 0.67/0.00  LR: 8.599e-04  Acc@1: 100.0000
+2026-03-24 12:06:00 INFO:train:Test:  [1:45:20] [Iter:   63/63]  Loss_Tot: 0.9435  L_Caus: 0.0143  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:06:00 INFO:train: * Acc@1 = 79.9000, Acc@5 = 98.7000, loss = 1.4540
+2026-03-24 12:06:00 INFO:train:Training time 1:45:20, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:06:39 INFO:train:Train: [1:45:59] [Epoch: 71/106] [Iter:  256/562]  Loss_Tot: 2.9058  L_Full: 1.4476  L_Mask: 1.4473  L_Caus: 0.0159  L_Spar: 0.0000  FR: 0.0702  Wgt(C/S): 0.69/0.00  LR: 7.994e-04  Acc@1: 62.5000
+2026-03-24 12:07:10 INFO:train:Train: [1:46:29] [Epoch: 71/106] [Iter:  512/562]  Loss_Tot: 1.3994  L_Full: 0.7037  L_Mask: 0.6877  L_Caus: 0.0117  L_Spar: 0.0000  FR: 0.0807  Wgt(C/S): 0.69/0.00  LR: 7.994e-04  Acc@1: 87.5000
+2026-03-24 12:07:15 INFO:train:Train: [1:46:35] [Epoch: 71/106] [Iter:  562/562]  Loss_Tot: 1.3963  L_Full: 0.7200  L_Mask: 0.6667  L_Caus: 0.0140  L_Spar: 0.0000  FR: 0.0734  Wgt(C/S): 0.69/0.00  LR: 7.994e-04  Acc@1: 100.0000
+2026-03-24 12:07:28 INFO:train:Test:  [1:46:48] [Iter:   63/63]  Loss_Tot: 0.9698  L_Caus: 0.0103  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:07:28 INFO:train: * Acc@1 = 79.2000, Acc@5 = 98.4000, loss = 1.4543
+2026-03-24 12:07:28 INFO:train:Training time 1:46:48, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:08:07 INFO:train:Train: [1:47:27] [Epoch: 72/106] [Iter:  256/562]  Loss_Tot: 1.3706  L_Full: 0.6846  L_Mask: 0.6767  L_Caus: 0.0132  L_Spar: 0.0000  FR: 0.0789  Wgt(C/S): 0.71/0.00  LR: 7.408e-04  Acc@1: 93.7500
+2026-03-24 12:08:37 INFO:train:Train: [1:47:57] [Epoch: 72/106] [Iter:  512/562]  Loss_Tot: 1.3036  L_Full: 0.6563  L_Mask: 0.6363  L_Caus: 0.0155  L_Spar: 0.0000  FR: 0.0801  Wgt(C/S): 0.71/0.00  LR: 7.408e-04  Acc@1: 93.7500
+2026-03-24 12:08:43 INFO:train:Train: [1:48:03] [Epoch: 72/106] [Iter:  562/562]  Loss_Tot: 1.8784  L_Full: 0.9374  L_Mask: 0.9308  L_Caus: 0.0144  L_Spar: 0.0000  FR: 0.0731  Wgt(C/S): 0.71/0.00  LR: 7.408e-04  Acc@1: 75.0000
+2026-03-24 12:08:55 INFO:train:Test:  [1:48:15] [Iter:   63/63]  Loss_Tot: 0.9813  L_Caus: 0.0114  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:08:56 INFO:train: * Acc@1 = 77.4000, Acc@5 = 97.9000, loss = 1.5937
+2026-03-24 12:08:56 INFO:train:Training time 1:48:16, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:09:35 INFO:train:Train: [1:48:55] [Epoch: 73/106] [Iter:  256/562]  Loss_Tot: 1.2573  L_Full: 0.6405  L_Mask: 0.6059  L_Caus: 0.0148  L_Spar: 0.0000  FR: 0.0723  Wgt(C/S): 0.73/0.00  LR: 6.840e-04  Acc@1: 100.0000
+2026-03-24 12:10:05 INFO:train:Train: [1:49:25] [Epoch: 73/106] [Iter:  512/562]  Loss_Tot: 2.8053  L_Full: 1.3880  L_Mask: 1.4065  L_Caus: 0.0147  L_Spar: 0.0000  FR: 0.0787  Wgt(C/S): 0.73/0.00  LR: 6.840e-04  Acc@1: 93.7500
+2026-03-24 12:10:11 INFO:train:Train: [1:49:31] [Epoch: 73/106] [Iter:  562/562]  Loss_Tot: 2.9599  L_Full: 1.4973  L_Mask: 1.4547  L_Caus: 0.0107  L_Spar: 0.0000  FR: 0.0770  Wgt(C/S): 0.73/0.00  LR: 6.840e-04  Acc@1: 93.7500
+2026-03-24 12:10:23 INFO:train:Test:  [1:49:43] [Iter:   63/63]  Loss_Tot: 1.0912  L_Caus: 0.0107  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:10:24 INFO:train: * Acc@1 = 78.1000, Acc@5 = 98.7000, loss = 1.4958
+2026-03-24 12:10:24 INFO:train:Training time 1:49:44, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:11:02 INFO:train:Train: [1:50:22] [Epoch: 74/106] [Iter:  256/562]  Loss_Tot: 1.3355  L_Full: 0.6551  L_Mask: 0.6710  L_Caus: 0.0125  L_Spar: 0.0000  FR: 0.0850  Wgt(C/S): 0.76/0.00  LR: 6.292e-04  Acc@1: 100.0000
+2026-03-24 12:11:33 INFO:train:Train: [1:50:53] [Epoch: 74/106] [Iter:  512/562]  Loss_Tot: 1.1792  L_Full: 0.5868  L_Mask: 0.5818  L_Caus: 0.0140  L_Spar: 0.0000  FR: 0.0809  Wgt(C/S): 0.76/0.00  LR: 6.292e-04  Acc@1: 100.0000
+2026-03-24 12:11:39 INFO:train:Train: [1:50:59] [Epoch: 74/106] [Iter:  562/562]  Loss_Tot: 1.9203  L_Full: 0.9616  L_Mask: 0.9424  L_Caus: 0.0215  L_Spar: 0.0000  FR: 0.0814  Wgt(C/S): 0.76/0.00  LR: 6.292e-04  Acc@1: 93.7500
+2026-03-24 12:11:51 INFO:train:Test:  [1:51:11] [Iter:   63/63]  Loss_Tot: 0.5874  L_Caus: 0.0084  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:11:51 INFO:train: * Acc@1 = 79.7000, Acc@5 = 98.3000, loss = 1.3807
+2026-03-24 12:11:51 INFO:train:Training time 1:51:11, max_test_acc1 80.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:12:30 INFO:train:Train: [1:51:50] [Epoch: 75/106] [Iter:  256/562]  Loss_Tot: 1.1565  L_Full: 0.5634  L_Mask: 0.5792  L_Caus: 0.0178  L_Spar: 0.0000  FR: 0.0845  Wgt(C/S): 0.78/0.00  LR: 5.763e-04  Acc@1: 100.0000
+2026-03-24 12:13:00 INFO:train:Train: [1:52:20] [Epoch: 75/106] [Iter:  512/562]  Loss_Tot: 1.3421  L_Full: 0.6643  L_Mask: 0.6691  L_Caus: 0.0111  L_Spar: 0.0000  FR: 0.0888  Wgt(C/S): 0.78/0.00  LR: 5.763e-04  Acc@1: 93.7500
+2026-03-24 12:13:06 INFO:train:Train: [1:52:26] [Epoch: 75/106] [Iter:  562/562]  Loss_Tot: 1.1885  L_Full: 0.6047  L_Mask: 0.5724  L_Caus: 0.0146  L_Spar: 0.0000  FR: 0.0856  Wgt(C/S): 0.78/0.00  LR: 5.763e-04  Acc@1: 100.0000
+2026-03-24 12:13:18 INFO:train:Test:  [1:52:38] [Iter:   63/63]  Loss_Tot: 0.5634  L_Caus: 0.0142  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:13:18 INFO:train: * Acc@1 = 81.6000, Acc@5 = 98.5000, loss = 1.2710
+2026-03-24 12:13:18 INFO:train:Training time 1:52:38, max_test_acc1 81.6000, test_acc5_at_max_test_acc1 98.5000
+2026-03-24 12:13:58 INFO:train:Train: [1:53:18] [Epoch: 76/106] [Iter:  256/562]  Loss_Tot: 1.6156  L_Full: 0.7942  L_Mask: 0.8027  L_Caus: 0.0234  L_Spar: 0.0000  FR: 0.0805  Wgt(C/S): 0.80/0.00  LR: 5.256e-04  Acc@1: 87.5000
+2026-03-24 12:14:28 INFO:train:Train: [1:53:48] [Epoch: 76/106] [Iter:  512/562]  Loss_Tot: 1.0975  L_Full: 0.5361  L_Mask: 0.5471  L_Caus: 0.0178  L_Spar: 0.0000  FR: 0.0811  Wgt(C/S): 0.80/0.00  LR: 5.256e-04  Acc@1: 100.0000
+2026-03-24 12:14:34 INFO:train:Train: [1:53:54] [Epoch: 76/106] [Iter:  562/562]  Loss_Tot: 1.1711  L_Full: 0.5809  L_Mask: 0.5745  L_Caus: 0.0196  L_Spar: 0.0000  FR: 0.0773  Wgt(C/S): 0.80/0.00  LR: 5.256e-04  Acc@1: 100.0000
+2026-03-24 12:14:46 INFO:train:Test:  [1:54:06] [Iter:   63/63]  Loss_Tot: 1.2673  L_Caus: 0.0108  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:14:46 INFO:train: * Acc@1 = 82.0000, Acc@5 = 98.0000, loss = 1.2693
+2026-03-24 12:14:46 INFO:train:Training time 1:54:06, max_test_acc1 82.0000, test_acc5_at_max_test_acc1 98.0000
+2026-03-24 12:15:25 INFO:train:Train: [1:54:45] [Epoch: 77/106] [Iter:  256/562]  Loss_Tot: 1.1003  L_Full: 0.5463  L_Mask: 0.5366  L_Caus: 0.0211  L_Spar: 0.0000  FR: 0.0864  Wgt(C/S): 0.82/0.00  LR: 4.769e-04  Acc@1: 100.0000
+2026-03-24 12:15:55 INFO:train:Train: [1:55:15] [Epoch: 77/106] [Iter:  512/562]  Loss_Tot: 1.0602  L_Full: 0.5225  L_Mask: 0.5265  L_Caus: 0.0136  L_Spar: 0.0000  FR: 0.0814  Wgt(C/S): 0.82/0.00  LR: 4.769e-04  Acc@1: 100.0000
+2026-03-24 12:16:01 INFO:train:Train: [1:55:21] [Epoch: 77/106] [Iter:  562/562]  Loss_Tot: 1.1266  L_Full: 0.5650  L_Mask: 0.5499  L_Caus: 0.0142  L_Spar: 0.0000  FR: 0.0845  Wgt(C/S): 0.82/0.00  LR: 4.769e-04  Acc@1: 100.0000
+2026-03-24 12:16:13 INFO:train:Test:  [1:55:33] [Iter:   63/63]  Loss_Tot: 0.7032  L_Caus: 0.0248  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:16:14 INFO:train: * Acc@1 = 79.2000, Acc@5 = 98.3000, loss = 1.3437
+2026-03-24 12:16:14 INFO:train:Training time 1:55:34, max_test_acc1 82.0000, test_acc5_at_max_test_acc1 98.0000
+2026-03-24 12:16:53 INFO:train:Train: [1:56:13] [Epoch: 78/106] [Iter:  256/562]  Loss_Tot: 1.1411  L_Full: 0.5699  L_Mask: 0.5627  L_Caus: 0.0100  L_Spar: 0.0000  FR: 0.0842  Wgt(C/S): 0.84/0.00  LR: 4.305e-04  Acc@1: 100.0000
+2026-03-24 12:17:23 INFO:train:Train: [1:56:43] [Epoch: 78/106] [Iter:  512/562]  Loss_Tot: 1.1082  L_Full: 0.5479  L_Mask: 0.5473  L_Caus: 0.0155  L_Spar: 0.0000  FR: 0.0849  Wgt(C/S): 0.84/0.00  LR: 4.305e-04  Acc@1: 100.0000
+2026-03-24 12:17:29 INFO:train:Train: [1:56:49] [Epoch: 78/106] [Iter:  562/562]  Loss_Tot: 1.0484  L_Full: 0.5184  L_Mask: 0.5161  L_Caus: 0.0165  L_Spar: 0.0000  FR: 0.0874  Wgt(C/S): 0.84/0.00  LR: 4.305e-04  Acc@1: 100.0000
+2026-03-24 12:17:41 INFO:train:Test:  [1:57:01] [Iter:   63/63]  Loss_Tot: 0.7708  L_Caus: 0.0060  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:17:41 INFO:train: * Acc@1 = 82.0000, Acc@5 = 98.1000, loss = 1.2692
+2026-03-24 12:17:41 INFO:train:Training time 1:57:01, max_test_acc1 82.0000, test_acc5_at_max_test_acc1 98.0000
+2026-03-24 12:18:20 INFO:train:Train: [1:57:40] [Epoch: 79/106] [Iter:  256/562]  Loss_Tot: 1.1449  L_Full: 0.5690  L_Mask: 0.5649  L_Caus: 0.0127  L_Spar: 0.0000  FR: 0.0823  Wgt(C/S): 0.87/0.00  LR: 3.862e-04  Acc@1: 100.0000
+2026-03-24 12:18:51 INFO:train:Train: [1:58:11] [Epoch: 79/106] [Iter:  512/562]  Loss_Tot: 1.0498  L_Full: 0.5170  L_Mask: 0.5174  L_Caus: 0.0179  L_Spar: 0.0000  FR: 0.0801  Wgt(C/S): 0.87/0.00  LR: 3.862e-04  Acc@1: 100.0000
+2026-03-24 12:18:57 INFO:train:Train: [1:58:17] [Epoch: 79/106] [Iter:  562/562]  Loss_Tot: 1.2054  L_Full: 0.5904  L_Mask: 0.6020  L_Caus: 0.0150  L_Spar: 0.0000  FR: 0.0834  Wgt(C/S): 0.87/0.00  LR: 3.862e-04  Acc@1: 93.7500
+2026-03-24 12:19:09 INFO:train:Test:  [1:58:28] [Iter:   63/63]  Loss_Tot: 0.6727  L_Caus: 0.0093  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:19:09 INFO:train: * Acc@1 = 80.3000, Acc@5 = 98.8000, loss = 1.2746
+2026-03-24 12:19:09 INFO:train:Training time 1:58:29, max_test_acc1 82.0000, test_acc5_at_max_test_acc1 98.0000
+2026-03-24 12:19:48 INFO:train:Train: [1:59:08] [Epoch: 80/106] [Iter:  256/562]  Loss_Tot: 1.0963  L_Full: 0.5452  L_Mask: 0.5354  L_Caus: 0.0177  L_Spar: 0.0000  FR: 0.0839  Wgt(C/S): 0.89/0.00  LR: 3.443e-04  Acc@1: 100.0000
+2026-03-24 12:20:19 INFO:train:Train: [1:59:39] [Epoch: 80/106] [Iter:  512/562]  Loss_Tot: 1.1364  L_Full: 0.5722  L_Mask: 0.5487  L_Caus: 0.0175  L_Spar: 0.0000  FR: 0.0796  Wgt(C/S): 0.89/0.00  LR: 3.443e-04  Acc@1: 100.0000
+2026-03-24 12:20:24 INFO:train:Train: [1:59:44] [Epoch: 80/106] [Iter:  562/562]  Loss_Tot: 1.0753  L_Full: 0.5270  L_Mask: 0.5315  L_Caus: 0.0189  L_Spar: 0.0000  FR: 0.0811  Wgt(C/S): 0.89/0.00  LR: 3.443e-04  Acc@1: 100.0000
+2026-03-24 12:20:36 INFO:train:Test:  [1:59:56] [Iter:   63/63]  Loss_Tot: 0.7585  L_Caus: 0.0137  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:20:37 INFO:train: * Acc@1 = 81.0000, Acc@5 = 97.7000, loss = 1.2464
+2026-03-24 12:20:37 INFO:train:Training time 1:59:57, max_test_acc1 82.0000, test_acc5_at_max_test_acc1 98.0000
+2026-03-24 12:21:15 INFO:train:Train: [2:00:35] [Epoch: 81/106] [Iter:  256/562]  Loss_Tot: 1.0868  L_Full: 0.5351  L_Mask: 0.5330  L_Caus: 0.0206  L_Spar: 0.0000  FR: 0.0872  Wgt(C/S): 0.91/0.00  LR: 3.046e-04  Acc@1: 100.0000
+2026-03-24 12:21:46 INFO:train:Train: [2:01:06] [Epoch: 81/106] [Iter:  512/562]  Loss_Tot: 1.1265  L_Full: 0.5595  L_Mask: 0.5524  L_Caus: 0.0161  L_Spar: 0.0000  FR: 0.0787  Wgt(C/S): 0.91/0.00  LR: 3.046e-04  Acc@1: 100.0000
+2026-03-24 12:21:52 INFO:train:Train: [2:01:12] [Epoch: 81/106] [Iter:  562/562]  Loss_Tot: 1.2030  L_Full: 0.5965  L_Mask: 0.5926  L_Caus: 0.0153  L_Spar: 0.0000  FR: 0.0828  Wgt(C/S): 0.91/0.00  LR: 3.046e-04  Acc@1: 100.0000
+2026-03-24 12:22:04 INFO:train:Test:  [2:01:24] [Iter:   63/63]  Loss_Tot: 0.6484  L_Caus: 0.0076  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:22:04 INFO:train: * Acc@1 = 81.9000, Acc@5 = 97.6000, loss = 1.2421
+2026-03-24 12:22:04 INFO:train:Training time 2:01:24, max_test_acc1 82.0000, test_acc5_at_max_test_acc1 98.0000
+2026-03-24 12:22:43 INFO:train:Train: [2:02:03] [Epoch: 82/106] [Iter:  256/562]  Loss_Tot: 1.3941  L_Full: 0.6822  L_Mask: 0.6953  L_Caus: 0.0178  L_Spar: 0.0000  FR: 0.0778  Wgt(C/S): 0.93/0.00  LR: 2.673e-04  Acc@1: 87.5000
+2026-03-24 12:23:13 INFO:train:Train: [2:02:33] [Epoch: 82/106] [Iter:  512/562]  Loss_Tot: 1.1684  L_Full: 0.5878  L_Mask: 0.5622  L_Caus: 0.0197  L_Spar: 0.0000  FR: 0.0803  Wgt(C/S): 0.93/0.00  LR: 2.673e-04  Acc@1: 100.0000
+2026-03-24 12:23:19 INFO:train:Train: [2:02:39] [Epoch: 82/106] [Iter:  562/562]  Loss_Tot: 1.0741  L_Full: 0.5310  L_Mask: 0.5267  L_Caus: 0.0176  L_Spar: 0.0000  FR: 0.0877  Wgt(C/S): 0.93/0.00  LR: 2.673e-04  Acc@1: 100.0000
+2026-03-24 12:23:31 INFO:train:Test:  [2:02:51] [Iter:   63/63]  Loss_Tot: 0.8612  L_Caus: 0.0079  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:23:31 INFO:train: * Acc@1 = 81.9000, Acc@5 = 98.0000, loss = 1.2840
+2026-03-24 12:23:31 INFO:train:Training time 2:02:51, max_test_acc1 82.0000, test_acc5_at_max_test_acc1 98.0000
+2026-03-24 12:24:11 INFO:train:Train: [2:03:31] [Epoch: 83/106] [Iter:  256/562]  Loss_Tot: 1.0535  L_Full: 0.5165  L_Mask: 0.5187  L_Caus: 0.0192  L_Spar: 0.0000  FR: 0.0858  Wgt(C/S): 0.96/0.00  LR: 2.324e-04  Acc@1: 100.0000
+2026-03-24 12:24:41 INFO:train:Train: [2:04:01] [Epoch: 83/106] [Iter:  512/562]  Loss_Tot: 1.1440  L_Full: 0.5748  L_Mask: 0.5563  L_Caus: 0.0136  L_Spar: 0.0000  FR: 0.0883  Wgt(C/S): 0.96/0.00  LR: 2.324e-04  Acc@1: 100.0000
+2026-03-24 12:24:47 INFO:train:Train: [2:04:07] [Epoch: 83/106] [Iter:  562/562]  Loss_Tot: 1.2383  L_Full: 0.6216  L_Mask: 0.6051  L_Caus: 0.0122  L_Spar: 0.0000  FR: 0.0880  Wgt(C/S): 0.96/0.00  LR: 2.324e-04  Acc@1: 93.7500
+2026-03-24 12:24:59 INFO:train:Test:  [2:04:19] [Iter:   63/63]  Loss_Tot: 0.6786  L_Caus: 0.0062  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:24:59 INFO:train: * Acc@1 = 83.1000, Acc@5 = 98.1000, loss = 1.2209
+2026-03-24 12:24:59 INFO:train:Training time 2:04:19, max_test_acc1 83.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:25:38 INFO:train:Train: [2:04:58] [Epoch: 84/106] [Iter:  256/562]  Loss_Tot: 1.0822  L_Full: 0.5380  L_Mask: 0.5299  L_Caus: 0.0146  L_Spar: 0.0000  FR: 0.0868  Wgt(C/S): 0.98/0.00  LR: 1.999e-04  Acc@1: 100.0000
+2026-03-24 12:26:09 INFO:train:Train: [2:05:29] [Epoch: 84/106] [Iter:  512/562]  Loss_Tot: 1.0794  L_Full: 0.5271  L_Mask: 0.5319  L_Caus: 0.0209  L_Spar: 0.0000  FR: 0.0864  Wgt(C/S): 0.98/0.00  LR: 1.999e-04  Acc@1: 100.0000
+2026-03-24 12:26:15 INFO:train:Train: [2:05:35] [Epoch: 84/106] [Iter:  562/562]  Loss_Tot: 1.0986  L_Full: 0.5519  L_Mask: 0.5376  L_Caus: 0.0093  L_Spar: 0.0000  FR: 0.0874  Wgt(C/S): 0.98/0.00  LR: 1.999e-04  Acc@1: 100.0000
+2026-03-24 12:26:27 INFO:train:Test:  [2:05:47] [Iter:   63/63]  Loss_Tot: 0.8313  L_Caus: 0.0200  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:26:27 INFO:train: * Acc@1 = 82.1000, Acc@5 = 98.0000, loss = 1.2391
+2026-03-24 12:26:27 INFO:train:Training time 2:05:47, max_test_acc1 83.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:27:06 INFO:train:Train: [2:06:26] [Epoch: 85/106] [Iter:  256/562]  Loss_Tot: 1.2261  L_Full: 0.6045  L_Mask: 0.6067  L_Caus: 0.0150  L_Spar: 0.0000  FR: 0.0872  Wgt(C/S): 1.00/0.00  LR: 1.699e-04  Acc@1: 93.7500
+2026-03-24 12:27:36 INFO:train:Train: [2:06:56] [Epoch: 85/106] [Iter:  512/562]  Loss_Tot: 1.1221  L_Full: 0.5554  L_Mask: 0.5493  L_Caus: 0.0173  L_Spar: 0.0000  FR: 0.0835  Wgt(C/S): 1.00/0.00  LR: 1.699e-04  Acc@1: 100.0000
+2026-03-24 12:27:42 INFO:train:Train: [2:07:02] [Epoch: 85/106] [Iter:  562/562]  Loss_Tot: 1.1199  L_Full: 0.5526  L_Mask: 0.5492  L_Caus: 0.0181  L_Spar: 0.0000  FR: 0.0807  Wgt(C/S): 1.00/0.00  LR: 1.699e-04  Acc@1: 100.0000
+2026-03-24 12:27:54 INFO:train:Test:  [2:07:14] [Iter:   63/63]  Loss_Tot: 0.7606  L_Caus: 0.0092  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:27:55 INFO:train: * Acc@1 = 81.4000, Acc@5 = 98.2000, loss = 1.2585
+2026-03-24 12:27:55 INFO:train:Training time 2:07:15, max_test_acc1 83.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:28:33 INFO:train:Train: [2:07:53] [Epoch: 86/106] [Iter:  256/562]  Loss_Tot: 1.0673  L_Full: 0.5283  L_Mask: 0.5264  L_Caus: 0.0126  L_Spar: 0.0000  FR: 0.0827  Wgt(C/S): 1.00/0.00  LR: 1.424e-04  Acc@1: 100.0000
+2026-03-24 12:29:04 INFO:train:Train: [2:08:24] [Epoch: 86/106] [Iter:  512/562]  Loss_Tot: 1.1954  L_Full: 0.5965  L_Mask: 0.5818  L_Caus: 0.0172  L_Spar: 0.0000  FR: 0.0831  Wgt(C/S): 1.00/0.00  LR: 1.424e-04  Acc@1: 93.7500
+2026-03-24 12:29:10 INFO:train:Train: [2:08:30] [Epoch: 86/106] [Iter:  562/562]  Loss_Tot: 1.0496  L_Full: 0.5187  L_Mask: 0.5187  L_Caus: 0.0121  L_Spar: 0.0000  FR: 0.0823  Wgt(C/S): 1.00/0.00  LR: 1.424e-04  Acc@1: 100.0000
+2026-03-24 12:29:22 INFO:train:Test:  [2:08:42] [Iter:   63/63]  Loss_Tot: 0.7795  L_Caus: 0.0114  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:29:22 INFO:train: * Acc@1 = 81.7000, Acc@5 = 97.7000, loss = 1.2792
+2026-03-24 12:29:22 INFO:train:Training time 2:08:42, max_test_acc1 83.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:30:01 INFO:train:Train: [2:09:21] [Epoch: 87/106] [Iter:  256/562]  Loss_Tot: 1.1079  L_Full: 0.5459  L_Mask: 0.5426  L_Caus: 0.0194  L_Spar: 0.0000  FR: 0.0869  Wgt(C/S): 1.00/0.00  LR: 1.174e-04  Acc@1: 100.0000
+2026-03-24 12:30:32 INFO:train:Train: [2:09:52] [Epoch: 87/106] [Iter:  512/562]  Loss_Tot: 1.2145  L_Full: 0.6030  L_Mask: 0.5962  L_Caus: 0.0153  L_Spar: 0.0000  FR: 0.0915  Wgt(C/S): 1.00/0.00  LR: 1.174e-04  Acc@1: 93.7500
+2026-03-24 12:30:38 INFO:train:Train: [2:09:57] [Epoch: 87/106] [Iter:  562/562]  Loss_Tot: 1.3478  L_Full: 0.6479  L_Mask: 0.6713  L_Caus: 0.0286  L_Spar: 0.0000  FR: 0.0849  Wgt(C/S): 1.00/0.00  LR: 1.174e-04  Acc@1: 93.7500
+2026-03-24 12:30:50 INFO:train:Test:  [2:10:10] [Iter:   63/63]  Loss_Tot: 0.5929  L_Caus: 0.0070  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:30:50 INFO:train: * Acc@1 = 82.5000, Acc@5 = 98.4000, loss = 1.2346
+2026-03-24 12:30:50 INFO:train:Training time 2:10:10, max_test_acc1 83.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:31:29 INFO:train:Train: [2:10:49] [Epoch: 88/106] [Iter:  256/562]  Loss_Tot: 1.1085  L_Full: 0.5576  L_Mask: 0.5352  L_Caus: 0.0157  L_Spar: 0.0000  FR: 0.0825  Wgt(C/S): 1.00/0.00  LR: 9.502e-05  Acc@1: 100.0000
+2026-03-24 12:31:59 INFO:train:Train: [2:11:19] [Epoch: 88/106] [Iter:  512/562]  Loss_Tot: 1.0405  L_Full: 0.5151  L_Mask: 0.5152  L_Caus: 0.0102  L_Spar: 0.0000  FR: 0.0849  Wgt(C/S): 1.00/0.00  LR: 9.502e-05  Acc@1: 100.0000
+2026-03-24 12:32:05 INFO:train:Train: [2:11:25] [Epoch: 88/106] [Iter:  562/562]  Loss_Tot: 1.0456  L_Full: 0.5179  L_Mask: 0.5178  L_Caus: 0.0100  L_Spar: 0.0000  FR: 0.0874  Wgt(C/S): 1.00/0.00  LR: 9.502e-05  Acc@1: 100.0000
+2026-03-24 12:32:17 INFO:train:Test:  [2:11:37] [Iter:   63/63]  Loss_Tot: 0.7389  L_Caus: 0.0138  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:32:18 INFO:train: * Acc@1 = 82.2000, Acc@5 = 98.0000, loss = 1.2546
+2026-03-24 12:32:18 INFO:train:Training time 2:11:38, max_test_acc1 83.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:32:56 INFO:train:Train: [2:12:16] [Epoch: 89/106] [Iter:  256/562]  Loss_Tot: 1.0414  L_Full: 0.5167  L_Mask: 0.5133  L_Caus: 0.0114  L_Spar: 0.0000  FR: 0.0832  Wgt(C/S): 1.00/0.00  LR: 7.518e-05  Acc@1: 100.0000
+2026-03-24 12:33:27 INFO:train:Train: [2:12:47] [Epoch: 89/106] [Iter:  512/562]  Loss_Tot: 1.1718  L_Full: 0.5823  L_Mask: 0.5672  L_Caus: 0.0223  L_Spar: 0.0000  FR: 0.0822  Wgt(C/S): 1.00/0.00  LR: 7.518e-05  Acc@1: 100.0000
+2026-03-24 12:33:33 INFO:train:Train: [2:12:53] [Epoch: 89/106] [Iter:  562/562]  Loss_Tot: 1.0613  L_Full: 0.5259  L_Mask: 0.5236  L_Caus: 0.0117  L_Spar: 0.0000  FR: 0.0901  Wgt(C/S): 1.00/0.00  LR: 7.518e-05  Acc@1: 100.0000
+2026-03-24 12:33:45 INFO:train:Test:  [2:13:05] [Iter:   63/63]  Loss_Tot: 0.5778  L_Caus: 0.0171  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:33:45 INFO:train: * Acc@1 = 82.5000, Acc@5 = 98.2000, loss = 1.2091
+2026-03-24 12:33:45 INFO:train:Training time 2:13:05, max_test_acc1 83.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:34:24 INFO:train:Train: [2:13:44] [Epoch: 90/106] [Iter:  256/562]  Loss_Tot: 1.0473  L_Full: 0.5176  L_Mask: 0.5183  L_Caus: 0.0114  L_Spar: 0.0000  FR: 0.0845  Wgt(C/S): 1.00/0.00  LR: 5.794e-05  Acc@1: 100.0000
+2026-03-24 12:34:54 INFO:train:Train: [2:14:14] [Epoch: 90/106] [Iter:  512/562]  Loss_Tot: 1.2066  L_Full: 0.6063  L_Mask: 0.5850  L_Caus: 0.0153  L_Spar: 0.0000  FR: 0.0757  Wgt(C/S): 1.00/0.00  LR: 5.794e-05  Acc@1: 100.0000
+2026-03-24 12:35:00 INFO:train:Train: [2:14:20] [Epoch: 90/106] [Iter:  562/562]  Loss_Tot: 1.0323  L_Full: 0.5098  L_Mask: 0.5122  L_Caus: 0.0102  L_Spar: 0.0000  FR: 0.0853  Wgt(C/S): 1.00/0.00  LR: 5.794e-05  Acc@1: 100.0000
+2026-03-24 12:35:12 INFO:train:Test:  [2:14:32] [Iter:   63/63]  Loss_Tot: 0.7699  L_Caus: 0.0152  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:35:13 INFO:train: * Acc@1 = 82.7000, Acc@5 = 98.0000, loss = 1.2402
+2026-03-24 12:35:13 INFO:train:Training time 2:14:32, max_test_acc1 83.1000, test_acc5_at_max_test_acc1 98.1000
+2026-03-24 12:35:52 INFO:train:Train: [2:15:12] [Epoch: 91/106] [Iter:  256/562]  Loss_Tot: 1.2131  L_Full: 0.5953  L_Mask: 0.6012  L_Caus: 0.0167  L_Spar: 0.0000  FR: 0.0850  Wgt(C/S): 1.00/0.00  LR: 4.332e-05  Acc@1: 93.7500
+2026-03-24 12:36:22 INFO:train:Train: [2:15:42] [Epoch: 91/106] [Iter:  512/562]  Loss_Tot: 1.0508  L_Full: 0.5157  L_Mask: 0.5177  L_Caus: 0.0173  L_Spar: 0.0000  FR: 0.0812  Wgt(C/S): 1.00/0.00  LR: 4.332e-05  Acc@1: 100.0000
+2026-03-24 12:36:28 INFO:train:Train: [2:15:48] [Epoch: 91/106] [Iter:  562/562]  Loss_Tot: 1.0809  L_Full: 0.5362  L_Mask: 0.5322  L_Caus: 0.0125  L_Spar: 0.0000  FR: 0.0869  Wgt(C/S): 1.00/0.00  LR: 4.332e-05  Acc@1: 100.0000
+2026-03-24 12:36:40 INFO:train:Test:  [2:16:00] [Iter:   63/63]  Loss_Tot: 0.7221  L_Caus: 0.0080  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:36:40 INFO:train: * Acc@1 = 83.7000, Acc@5 = 98.3000, loss = 1.2161
+2026-03-24 12:36:40 INFO:train:Training time 2:16:00, max_test_acc1 83.7000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:37:20 INFO:train:Train: [2:16:40] [Epoch: 92/106] [Iter:  256/562]  Loss_Tot: 1.0823  L_Full: 0.5432  L_Mask: 0.5225  L_Caus: 0.0167  L_Spar: 0.0000  FR: 0.0789  Wgt(C/S): 1.00/0.00  LR: 3.135e-05  Acc@1: 100.0000
+2026-03-24 12:37:50 INFO:train:Train: [2:17:10] [Epoch: 92/106] [Iter:  512/562]  Loss_Tot: 1.0520  L_Full: 0.5174  L_Mask: 0.5225  L_Caus: 0.0121  L_Spar: 0.0000  FR: 0.0896  Wgt(C/S): 1.00/0.00  LR: 3.135e-05  Acc@1: 100.0000
+2026-03-24 12:37:56 INFO:train:Train: [2:17:16] [Epoch: 92/106] [Iter:  562/562]  Loss_Tot: 1.0922  L_Full: 0.5457  L_Mask: 0.5322  L_Caus: 0.0143  L_Spar: 0.0000  FR: 0.0853  Wgt(C/S): 1.00/0.00  LR: 3.135e-05  Acc@1: 100.0000
+2026-03-24 12:38:08 INFO:train:Test:  [2:17:28] [Iter:   63/63]  Loss_Tot: 0.8922  L_Caus: 0.0073  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:38:09 INFO:train: * Acc@1 = 82.7000, Acc@5 = 97.8000, loss = 1.2196
+2026-03-24 12:38:09 INFO:train:Training time 2:17:29, max_test_acc1 83.7000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:38:47 INFO:train:Train: [2:18:07] [Epoch: 93/106] [Iter:  256/562]  Loss_Tot: 1.0356  L_Full: 0.5105  L_Mask: 0.5101  L_Caus: 0.0150  L_Spar: 0.0000  FR: 0.0865  Wgt(C/S): 1.00/0.00  LR: 2.201e-05  Acc@1: 100.0000
+2026-03-24 12:39:18 INFO:train:Train: [2:18:38] [Epoch: 93/106] [Iter:  512/562]  Loss_Tot: 1.0371  L_Full: 0.5130  L_Mask: 0.5123  L_Caus: 0.0117  L_Spar: 0.0000  FR: 0.0918  Wgt(C/S): 1.00/0.00  LR: 2.201e-05  Acc@1: 100.0000
+2026-03-24 12:39:24 INFO:train:Train: [2:18:44] [Epoch: 93/106] [Iter:  562/562]  Loss_Tot: 1.0619  L_Full: 0.5249  L_Mask: 0.5237  L_Caus: 0.0133  L_Spar: 0.0000  FR: 0.0835  Wgt(C/S): 1.00/0.00  LR: 2.201e-05  Acc@1: 100.0000
+2026-03-24 12:39:36 INFO:train:Test:  [2:18:55] [Iter:   63/63]  Loss_Tot: 0.6516  L_Caus: 0.0111  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:39:36 INFO:train: * Acc@1 = 82.5000, Acc@5 = 98.3000, loss = 1.2441
+2026-03-24 12:39:36 INFO:train:Training time 2:18:56, max_test_acc1 83.7000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:40:15 INFO:train:Train: [2:19:35] [Epoch: 94/106] [Iter:  256/562]  Loss_Tot: 1.0613  L_Full: 0.5127  L_Mask: 0.5261  L_Caus: 0.0225  L_Spar: 0.0000  FR: 0.0834  Wgt(C/S): 1.00/0.00  LR: 1.534e-05  Acc@1: 100.0000
+2026-03-24 12:40:45 INFO:train:Train: [2:20:05] [Epoch: 94/106] [Iter:  512/562]  Loss_Tot: 1.0442  L_Full: 0.5148  L_Mask: 0.5177  L_Caus: 0.0117  L_Spar: 0.0000  FR: 0.0875  Wgt(C/S): 1.00/0.00  LR: 1.534e-05  Acc@1: 100.0000
+2026-03-24 12:40:51 INFO:train:Train: [2:20:11] [Epoch: 94/106] [Iter:  562/562]  Loss_Tot: 1.0318  L_Full: 0.5124  L_Mask: 0.5081  L_Caus: 0.0113  L_Spar: 0.0000  FR: 0.0876  Wgt(C/S): 1.00/0.00  LR: 1.534e-05  Acc@1: 100.0000
+2026-03-24 12:41:03 INFO:train:Test:  [2:20:23] [Iter:   63/63]  Loss_Tot: 0.6451  L_Caus: 0.0075  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:41:04 INFO:train: * Acc@1 = 83.0000, Acc@5 = 97.9000, loss = 1.2085
+2026-03-24 12:41:04 INFO:train:Training time 2:20:24, max_test_acc1 83.7000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:41:43 INFO:train:Train: [2:21:03] [Epoch: 95/106] [Iter:  256/562]  Loss_Tot: 1.0446  L_Full: 0.5152  L_Mask: 0.5142  L_Caus: 0.0152  L_Spar: 0.0000  FR: 0.0892  Wgt(C/S): 1.00/0.00  LR: 1.134e-05  Acc@1: 100.0000
+2026-03-24 12:42:13 INFO:train:Train: [2:21:33] [Epoch: 95/106] [Iter:  512/562]  Loss_Tot: 1.1535  L_Full: 0.5665  L_Mask: 0.5720  L_Caus: 0.0150  L_Spar: 0.0000  FR: 0.0879  Wgt(C/S): 1.00/0.00  LR: 1.134e-05  Acc@1: 93.7500
+2026-03-24 12:42:19 INFO:train:Train: [2:21:39] [Epoch: 95/106] [Iter:  562/562]  Loss_Tot: 1.2131  L_Full: 0.5976  L_Mask: 0.6039  L_Caus: 0.0116  L_Spar: 0.0000  FR: 0.0874  Wgt(C/S): 1.00/0.00  LR: 1.134e-05  Acc@1: 93.7500
+2026-03-24 12:42:30 INFO:train:Test:  [2:21:50] [Iter:   63/63]  Loss_Tot: 0.6557  L_Caus: 0.0089  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:42:30 INFO:train: * Acc@1 = 83.1000, Acc@5 = 98.0000, loss = 1.2136
+2026-03-24 12:42:30 INFO:train:Training time 2:21:50, max_test_acc1 83.7000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:43:06 INFO:train:Train: [2:22:26] [Epoch: 96/106] [Iter:  256/562]  Loss_Tot: 1.0717  L_Full: 0.5286  L_Mask: 0.5333  L_Caus: 0.0099  L_Spar: 0.0000  FR: 0.0831  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:43:33 INFO:train:Train: [2:22:53] [Epoch: 96/106] [Iter:  512/562]  Loss_Tot: 1.2406  L_Full: 0.6164  L_Mask: 0.6112  L_Caus: 0.0130  L_Spar: 0.0000  FR: 0.0875  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-03-24 12:43:39 INFO:train:Train: [2:22:59] [Epoch: 96/106] [Iter:  562/562]  Loss_Tot: 1.0526  L_Full: 0.5207  L_Mask: 0.5140  L_Caus: 0.0179  L_Spar: 0.0000  FR: 0.0853  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:43:49 INFO:train:Test:  [2:23:09] [Iter:   63/63]  Loss_Tot: 0.8080  L_Caus: 0.0057  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:43:49 INFO:train: * Acc@1 = 82.7000, Acc@5 = 98.4000, loss = 1.2205
+2026-03-24 12:43:49 INFO:train:Training time 2:23:09, max_test_acc1 83.7000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:44:25 INFO:train:Train: [2:23:45] [Epoch: 97/106] [Iter:  256/562]  Loss_Tot: 1.0479  L_Full: 0.5125  L_Mask: 0.5139  L_Caus: 0.0215  L_Spar: 0.0000  FR: 0.0859  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:44:54 INFO:train:Train: [2:24:14] [Epoch: 97/106] [Iter:  512/562]  Loss_Tot: 1.1445  L_Full: 0.5742  L_Mask: 0.5596  L_Caus: 0.0107  L_Spar: 0.0000  FR: 0.0861  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:45:00 INFO:train:Train: [2:24:20] [Epoch: 97/106] [Iter:  562/562]  Loss_Tot: 1.4361  L_Full: 0.6945  L_Mask: 0.7308  L_Caus: 0.0108  L_Spar: 0.0000  FR: 0.0876  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-03-24 12:45:11 INFO:train:Test:  [2:24:31] [Iter:   63/63]  Loss_Tot: 0.7779  L_Caus: 0.0083  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:45:11 INFO:train: * Acc@1 = 84.4000, Acc@5 = 98.3000, loss = 1.2096
+2026-03-24 12:45:11 INFO:train:Training time 2:24:31, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:45:45 INFO:train:Train: [2:25:05] [Epoch: 98/106] [Iter:  256/562]  Loss_Tot: 1.1476  L_Full: 0.5597  L_Mask: 0.5710  L_Caus: 0.0168  L_Spar: 0.0000  FR: 0.0850  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:46:15 INFO:train:Train: [2:25:35] [Epoch: 98/106] [Iter:  512/562]  Loss_Tot: 1.0346  L_Full: 0.5115  L_Mask: 0.5111  L_Caus: 0.0120  L_Spar: 0.0000  FR: 0.0854  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:46:21 INFO:train:Train: [2:25:41] [Epoch: 98/106] [Iter:  562/562]  Loss_Tot: 1.0408  L_Full: 0.5123  L_Mask: 0.5101  L_Caus: 0.0184  L_Spar: 0.0000  FR: 0.0864  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:46:31 INFO:train:Test:  [2:25:51] [Iter:   63/63]  Loss_Tot: 0.7352  L_Caus: 0.0038  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:46:32 INFO:train: * Acc@1 = 82.6000, Acc@5 = 98.5000, loss = 1.2298
+2026-03-24 12:46:32 INFO:train:Training time 2:25:52, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:47:07 INFO:train:Train: [2:26:27] [Epoch: 99/106] [Iter:  256/562]  Loss_Tot: 1.0580  L_Full: 0.5270  L_Mask: 0.5200  L_Caus: 0.0109  L_Spar: 0.0000  FR: 0.0867  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:47:34 INFO:train:Train: [2:26:54] [Epoch: 99/106] [Iter:  512/562]  Loss_Tot: 1.0347  L_Full: 0.5153  L_Mask: 0.5088  L_Caus: 0.0107  L_Spar: 0.0000  FR: 0.0844  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:47:39 INFO:train:Train: [2:26:59] [Epoch: 99/106] [Iter:  562/562]  Loss_Tot: 1.0539  L_Full: 0.5233  L_Mask: 0.5151  L_Caus: 0.0156  L_Spar: 0.0000  FR: 0.0847  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:47:50 INFO:train:Test:  [2:27:10] [Iter:   63/63]  Loss_Tot: 0.5827  L_Caus: 0.0109  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:47:50 INFO:train: * Acc@1 = 83.3000, Acc@5 = 98.3000, loss = 1.2251
+2026-03-24 12:47:50 INFO:train:Training time 2:27:10, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:48:26 INFO:train:Train: [2:27:46] [Epoch: 100/106] [Iter:  256/562]  Loss_Tot: 1.2952  L_Full: 0.6309  L_Mask: 0.6508  L_Caus: 0.0135  L_Spar: 0.0000  FR: 0.0837  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-03-24 12:48:53 INFO:train:Train: [2:28:13] [Epoch: 100/106] [Iter:  512/562]  Loss_Tot: 1.0850  L_Full: 0.5323  L_Mask: 0.5384  L_Caus: 0.0143  L_Spar: 0.0000  FR: 0.0846  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:48:59 INFO:train:Train: [2:28:19] [Epoch: 100/106] [Iter:  562/562]  Loss_Tot: 1.1486  L_Full: 0.5708  L_Mask: 0.5648  L_Caus: 0.0130  L_Spar: 0.0000  FR: 0.0799  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:49:09 INFO:train:Test:  [2:28:29] [Iter:   63/63]  Loss_Tot: 0.7504  L_Caus: 0.0122  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:49:10 INFO:train: * Acc@1 = 82.9000, Acc@5 = 97.8000, loss = 1.2280
+2026-03-24 12:49:10 INFO:train:Training time 2:28:30, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:49:44 INFO:train:Train: [2:29:04] [Epoch: 101/106] [Iter:  256/562]  Loss_Tot: 1.0490  L_Full: 0.5213  L_Mask: 0.5180  L_Caus: 0.0097  L_Spar: 0.0000  FR: 0.0897  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:50:14 INFO:train:Train: [2:29:34] [Epoch: 101/106] [Iter:  512/562]  Loss_Tot: 1.0600  L_Full: 0.5273  L_Mask: 0.5158  L_Caus: 0.0169  L_Spar: 0.0000  FR: 0.0899  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:50:20 INFO:train:Train: [2:29:39] [Epoch: 101/106] [Iter:  562/562]  Loss_Tot: 1.0938  L_Full: 0.5390  L_Mask: 0.5395  L_Caus: 0.0153  L_Spar: 0.0000  FR: 0.0893  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:50:30 INFO:train:Test:  [2:29:50] [Iter:   63/63]  Loss_Tot: 0.7366  L_Caus: 0.0111  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:50:30 INFO:train: * Acc@1 = 82.8000, Acc@5 = 98.0000, loss = 1.2266
+2026-03-24 12:50:30 INFO:train:Training time 2:29:50, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:51:07 INFO:train:Train: [2:30:27] [Epoch: 102/106] [Iter:  256/562]  Loss_Tot: 1.0836  L_Full: 0.5335  L_Mask: 0.5355  L_Caus: 0.0146  L_Spar: 0.0000  FR: 0.0828  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:51:34 INFO:train:Train: [2:30:54] [Epoch: 102/106] [Iter:  512/562]  Loss_Tot: 1.0434  L_Full: 0.5159  L_Mask: 0.5150  L_Caus: 0.0124  L_Spar: 0.0000  FR: 0.0884  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:51:39 INFO:train:Train: [2:30:59] [Epoch: 102/106] [Iter:  562/562]  Loss_Tot: 1.2266  L_Full: 0.6172  L_Mask: 0.5925  L_Caus: 0.0168  L_Spar: 0.0000  FR: 0.0853  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-03-24 12:51:50 INFO:train:Test:  [2:31:10] [Iter:   63/63]  Loss_Tot: 0.6426  L_Caus: 0.0051  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:51:50 INFO:train: * Acc@1 = 82.4000, Acc@5 = 98.2000, loss = 1.2390
+2026-03-24 12:51:50 INFO:train:Training time 2:31:10, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:52:27 INFO:train:Train: [2:31:47] [Epoch: 103/106] [Iter:  256/562]  Loss_Tot: 1.2518  L_Full: 0.6273  L_Mask: 0.6113  L_Caus: 0.0133  L_Spar: 0.0000  FR: 0.0872  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-03-24 12:52:55 INFO:train:Train: [2:32:15] [Epoch: 103/106] [Iter:  512/562]  Loss_Tot: 1.1491  L_Full: 0.5670  L_Mask: 0.5717  L_Caus: 0.0104  L_Spar: 0.0000  FR: 0.0765  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-03-24 12:53:01 INFO:train:Train: [2:32:21] [Epoch: 103/106] [Iter:  562/562]  Loss_Tot: 1.1198  L_Full: 0.5494  L_Mask: 0.5566  L_Caus: 0.0138  L_Spar: 0.0000  FR: 0.0814  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:53:11 INFO:train:Test:  [2:32:31] [Iter:   63/63]  Loss_Tot: 0.7004  L_Caus: 0.0067  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:53:12 INFO:train: * Acc@1 = 83.3000, Acc@5 = 97.9000, loss = 1.2067
+2026-03-24 12:53:12 INFO:train:Training time 2:32:32, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:53:46 INFO:train:Train: [2:33:06] [Epoch: 104/106] [Iter:  256/562]  Loss_Tot: 1.0553  L_Full: 0.5217  L_Mask: 0.5218  L_Caus: 0.0118  L_Spar: 0.0000  FR: 0.0812  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:54:16 INFO:train:Train: [2:33:36] [Epoch: 104/106] [Iter:  512/562]  Loss_Tot: 1.0864  L_Full: 0.5366  L_Mask: 0.5371  L_Caus: 0.0127  L_Spar: 0.0000  FR: 0.0850  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:54:21 INFO:train:Train: [2:33:41] [Epoch: 104/106] [Iter:  562/562]  Loss_Tot: 1.0960  L_Full: 0.5406  L_Mask: 0.5439  L_Caus: 0.0114  L_Spar: 0.0000  FR: 0.0853  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:54:32 INFO:train:Test:  [2:33:52] [Iter:   63/63]  Loss_Tot: 0.6726  L_Caus: 0.0093  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:54:32 INFO:train: * Acc@1 = 82.5000, Acc@5 = 98.5000, loss = 1.2279
+2026-03-24 12:54:32 INFO:train:Training time 2:33:52, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000
+2026-03-24 12:55:07 INFO:train:Train: [2:34:27] [Epoch: 105/106] [Iter:  256/562]  Loss_Tot: 1.1392  L_Full: 0.5723  L_Mask: 0.5467  L_Caus: 0.0202  L_Spar: 0.0000  FR: 0.0815  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:55:35 INFO:train:Train: [2:34:54] [Epoch: 105/106] [Iter:  512/562]  Loss_Tot: 1.0390  L_Full: 0.5166  L_Mask: 0.5112  L_Caus: 0.0112  L_Spar: 0.0000  FR: 0.0850  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:55:40 INFO:train:Train: [2:35:00] [Epoch: 105/106] [Iter:  562/562]  Loss_Tot: 1.1568  L_Full: 0.5710  L_Mask: 0.5695  L_Caus: 0.0164  L_Spar: 0.0000  FR: 0.0868  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-03-24 12:55:51 INFO:train:Test:  [2:35:11] [Iter:   63/63]  Loss_Tot: 0.6573  L_Caus: 0.0169  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-03-24 12:55:51 INFO:train: * Acc@1 = 83.4000, Acc@5 = 98.1000, loss = 1.2114
+2026-03-24 12:55:51 INFO:train:Training time 2:35:11, max_test_acc1 84.4000, test_acc5_at_max_test_acc1 98.3000

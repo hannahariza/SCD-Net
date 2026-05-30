@@ -1,0 +1,647 @@
+2026-05-21 21:31:22 INFO:train:Logging initialized at temp path: ./output/tmp_logs\train_20260521-213122.log
+2026-05-21 21:31:22 INFO:train:Namespace(T=16, T_train=None, amp=True, batch_size=32, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='D:/dataset/data/cifar10dvs/', dataset='cifar10dvs', decay_epochs=20, decay_rate=0.1, device='cuda', dist_url='env://', distributed=False, epoch_repeats=0.0, epochs=96, lr=0.005, lr_cycle_limit=1, lr_cycle_mul=1.0, lr_noise=None, lr_noise_pct=0.67, lr_noise_std=1.0, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='QKFormer', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', patience_epochs=10, print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+2026-05-21 21:31:22 INFO:train:Log file moved to: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD\logs\train_20260521-213122.log
+2026-05-21 21:31:22 INFO:train:All outputs for this run will be saved to: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:31:22 INFO:train:Loading data
+2026-05-21 21:32:15 INFO:train:Took 52.58 seconds
+2026-05-21 21:32:15 INFO:train:Creating data loaders
+2026-05-21 21:32:15 INFO:train:Creating model
+2026-05-21 21:32:15 INFO:train:number of params: 1504138
+2026-05-21 21:32:15 INFO:train:purge_step_train=0, purge_step_te=0
+2026-05-21 21:32:15 INFO:train:Start training
+2026-05-21 21:33:07 INFO:train:Train: [0:00:52] [Epoch: 0/106] [Iter:  256/281]  Loss: 2.2446  LR: 1.000e-05  Acc@1: 28.1250
+2026-05-21 21:33:11 INFO:train:Train: [0:00:56] [Epoch: 0/106] [Iter:  281/281]  Loss: 2.2749  LR: 1.000e-05  Acc@1: 18.7500
+2026-05-21 21:33:24 INFO:train:Test:  [0:01:09] [Iter:   32/32]  Loss: 2.0047  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 21:33:24 INFO:train: * Acc@1 = 19.6000, Acc@5 = 71.2000, loss = 2.2291
+2026-05-21 21:33:24 INFO:train:Training time 0:01:09, max_test_acc1 19.6000, test_acc5_at_max_test_acc1 71.2000
+2026-05-21 21:33:24 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:34:15 INFO:train:Train: [0:02:00] [Epoch: 1/106] [Iter:  256/281]  Loss: 2.1262  LR: 5.090e-04  Acc@1: 25.0000
+2026-05-21 21:34:19 INFO:train:Train: [0:02:04] [Epoch: 1/106] [Iter:  281/281]  Loss: 1.8626  LR: 5.090e-04  Acc@1: 31.2500
+2026-05-21 21:34:32 INFO:train:Test:  [0:02:17] [Iter:   32/32]  Loss: 1.5373  Acc@1:  0.0000  Acc@5: 100.0000
+2026-05-21 21:34:32 INFO:train: * Acc@1 = 22.2000, Acc@5 = 73.4000, loss = 2.2600
+2026-05-21 21:34:32 INFO:train:Training time 0:02:17, max_test_acc1 22.2000, test_acc5_at_max_test_acc1 73.4000
+2026-05-21 21:34:32 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:35:23 INFO:train:Train: [0:03:08] [Epoch: 2/106] [Iter:  256/281]  Loss: 1.6699  LR: 1.008e-03  Acc@1: 40.6250
+2026-05-21 21:35:27 INFO:train:Train: [0:03:12] [Epoch: 2/106] [Iter:  281/281]  Loss: 1.7259  LR: 1.008e-03  Acc@1: 43.7500
+2026-05-21 21:35:39 INFO:train:Test:  [0:03:24] [Iter:   32/32]  Loss: 2.8105  Acc@1:  0.0000  Acc@5: 37.5000
+2026-05-21 21:35:40 INFO:train: * Acc@1 = 25.7000, Acc@5 = 75.6000, loss = 2.0900
+2026-05-21 21:35:40 INFO:train:Training time 0:03:25, max_test_acc1 25.7000, test_acc5_at_max_test_acc1 75.6000
+2026-05-21 21:35:40 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:36:30 INFO:train:Train: [0:04:15] [Epoch: 3/106] [Iter:  256/281]  Loss: 1.8350  LR: 1.507e-03  Acc@1: 40.6250
+2026-05-21 21:36:34 INFO:train:Train: [0:04:19] [Epoch: 3/106] [Iter:  281/281]  Loss: 1.7343  LR: 1.507e-03  Acc@1: 43.7500
+2026-05-21 21:36:47 INFO:train:Test:  [0:04:32] [Iter:   32/32]  Loss: 1.1728  Acc@1: 87.5000  Acc@5: 87.5000
+2026-05-21 21:36:47 INFO:train: * Acc@1 = 38.3000, Acc@5 = 88.5000, loss = 1.6542
+2026-05-21 21:36:47 INFO:train:Training time 0:04:32, max_test_acc1 38.3000, test_acc5_at_max_test_acc1 88.5000
+2026-05-21 21:36:47 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:37:38 INFO:train:Train: [0:05:22] [Epoch: 4/106] [Iter:  256/281]  Loss: 2.0820  LR: 2.006e-03  Acc@1: 34.3750
+2026-05-21 21:37:42 INFO:train:Train: [0:05:26] [Epoch: 4/106] [Iter:  281/281]  Loss: 1.6189  LR: 2.006e-03  Acc@1: 50.0000
+2026-05-21 21:37:54 INFO:train:Test:  [0:05:39] [Iter:   32/32]  Loss: 0.8426  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 21:37:54 INFO:train: * Acc@1 = 42.6000, Acc@5 = 85.5000, loss = 1.6734
+2026-05-21 21:37:54 INFO:train:Training time 0:05:39, max_test_acc1 42.6000, test_acc5_at_max_test_acc1 85.5000
+2026-05-21 21:37:54 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:38:44 INFO:train:Train: [0:06:29] [Epoch: 5/106] [Iter:  256/281]  Loss: 1.5495  LR: 2.505e-03  Acc@1: 56.2500
+2026-05-21 21:38:49 INFO:train:Train: [0:06:33] [Epoch: 5/106] [Iter:  281/281]  Loss: 1.6122  LR: 2.505e-03  Acc@1: 56.2500
+2026-05-21 21:39:01 INFO:train:Test:  [0:06:45] [Iter:   32/32]  Loss: 0.4228  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 21:39:01 INFO:train: * Acc@1 = 45.6000, Acc@5 = 86.1000, loss = 1.6722
+2026-05-21 21:39:01 INFO:train:Training time 0:06:46, max_test_acc1 45.6000, test_acc5_at_max_test_acc1 86.1000
+2026-05-21 21:39:01 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:39:51 INFO:train:Train: [0:07:36] [Epoch: 6/106] [Iter:  256/281]  Loss: 1.6207  LR: 3.004e-03  Acc@1: 46.8750
+2026-05-21 21:39:55 INFO:train:Train: [0:07:40] [Epoch: 6/106] [Iter:  281/281]  Loss: 1.6650  LR: 3.004e-03  Acc@1: 46.8750
+2026-05-21 21:40:08 INFO:train:Test:  [0:07:52] [Iter:   32/32]  Loss: 1.0843  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 21:40:08 INFO:train: * Acc@1 = 43.0000, Acc@5 = 88.6000, loss = 1.6132
+2026-05-21 21:40:08 INFO:train:Training time 0:07:53, max_test_acc1 45.6000, test_acc5_at_max_test_acc1 86.1000
+2026-05-21 21:40:08 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:40:58 INFO:train:Train: [0:08:43] [Epoch: 7/106] [Iter:  256/281]  Loss: 1.3973  LR: 3.503e-03  Acc@1: 65.6250
+2026-05-21 21:41:03 INFO:train:Train: [0:08:47] [Epoch: 7/106] [Iter:  281/281]  Loss: 2.0884  LR: 3.503e-03  Acc@1: 37.5000
+2026-05-21 21:41:15 INFO:train:Test:  [0:09:00] [Iter:   32/32]  Loss: 1.7235  Acc@1: 25.0000  Acc@5: 87.5000
+2026-05-21 21:41:15 INFO:train: * Acc@1 = 36.4000, Acc@5 = 87.1000, loss = 1.7345
+2026-05-21 21:41:15 INFO:train:Training time 0:09:00, max_test_acc1 45.6000, test_acc5_at_max_test_acc1 86.1000
+2026-05-21 21:41:15 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:42:06 INFO:train:Train: [0:09:50] [Epoch: 8/106] [Iter:  256/281]  Loss: 1.3545  LR: 4.002e-03  Acc@1: 68.7500
+2026-05-21 21:42:10 INFO:train:Train: [0:09:55] [Epoch: 8/106] [Iter:  281/281]  Loss: 1.4587  LR: 4.002e-03  Acc@1: 65.6250
+2026-05-21 21:42:22 INFO:train:Test:  [0:10:07] [Iter:   32/32]  Loss: 1.5158  Acc@1: 50.0000  Acc@5: 100.0000
+2026-05-21 21:42:22 INFO:train: * Acc@1 = 48.3000, Acc@5 = 92.1000, loss = 1.5014
+2026-05-21 21:42:22 INFO:train:Training time 0:10:07, max_test_acc1 48.3000, test_acc5_at_max_test_acc1 92.1000
+2026-05-21 21:42:22 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:43:13 INFO:train:Train: [0:10:58] [Epoch: 9/106] [Iter:  256/281]  Loss: 1.8378  LR: 4.501e-03  Acc@1: 53.1250
+2026-05-21 21:43:17 INFO:train:Train: [0:11:02] [Epoch: 9/106] [Iter:  281/281]  Loss: 1.7316  LR: 4.501e-03  Acc@1: 50.0000
+2026-05-21 21:43:29 INFO:train:Test:  [0:11:14] [Iter:   32/32]  Loss: 0.8176  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 21:43:29 INFO:train: * Acc@1 = 56.7000, Acc@5 = 95.6000, loss = 1.2100
+2026-05-21 21:43:29 INFO:train:Training time 0:11:14, max_test_acc1 56.7000, test_acc5_at_max_test_acc1 95.6000
+2026-05-21 21:43:29 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:44:20 INFO:train:Train: [0:12:05] [Epoch: 10/106] [Iter:  256/281]  Loss: 1.7940  LR: 4.868e-03  Acc@1: 34.3750
+2026-05-21 21:44:24 INFO:train:Train: [0:12:09] [Epoch: 10/106] [Iter:  281/281]  Loss: 1.3584  LR: 4.868e-03  Acc@1: 65.6250
+2026-05-21 21:44:36 INFO:train:Test:  [0:12:21] [Iter:   32/32]  Loss: 0.1682  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:44:36 INFO:train: * Acc@1 = 54.4000, Acc@5 = 93.5000, loss = 1.2745
+2026-05-21 21:44:36 INFO:train:Training time 0:12:21, max_test_acc1 56.7000, test_acc5_at_max_test_acc1 95.6000
+2026-05-21 21:44:36 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:45:27 INFO:train:Train: [0:13:12] [Epoch: 11/106] [Iter:  256/281]  Loss: 1.4797  LR: 4.840e-03  Acc@1: 53.1250
+2026-05-21 21:45:31 INFO:train:Train: [0:13:16] [Epoch: 11/106] [Iter:  281/281]  Loss: 1.4442  LR: 4.840e-03  Acc@1: 62.5000
+2026-05-21 21:45:43 INFO:train:Test:  [0:13:28] [Iter:   32/32]  Loss: 0.6382  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 21:45:44 INFO:train: * Acc@1 = 51.8000, Acc@5 = 87.7000, loss = 1.4454
+2026-05-21 21:45:44 INFO:train:Training time 0:13:28, max_test_acc1 56.7000, test_acc5_at_max_test_acc1 95.6000
+2026-05-21 21:45:44 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:46:34 INFO:train:Train: [0:14:19] [Epoch: 12/106] [Iter:  256/281]  Loss: 1.1708  LR: 4.810e-03  Acc@1: 75.0000
+2026-05-21 21:46:38 INFO:train:Train: [0:14:23] [Epoch: 12/106] [Iter:  281/281]  Loss: 1.4312  LR: 4.810e-03  Acc@1: 53.1250
+2026-05-21 21:46:51 INFO:train:Test:  [0:14:36] [Iter:   32/32]  Loss: 0.5654  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:46:51 INFO:train: * Acc@1 = 55.9000, Acc@5 = 93.8000, loss = 1.2900
+2026-05-21 21:46:51 INFO:train:Training time 0:14:36, max_test_acc1 56.7000, test_acc5_at_max_test_acc1 95.6000
+2026-05-21 21:46:51 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:47:41 INFO:train:Train: [0:15:26] [Epoch: 13/106] [Iter:  256/281]  Loss: 1.2223  LR: 4.778e-03  Acc@1: 65.6250
+2026-05-21 21:47:45 INFO:train:Train: [0:15:30] [Epoch: 13/106] [Iter:  281/281]  Loss: 1.2698  LR: 4.778e-03  Acc@1: 75.0000
+2026-05-21 21:47:58 INFO:train:Test:  [0:15:42] [Iter:   32/32]  Loss: 0.1995  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:47:58 INFO:train: * Acc@1 = 54.9000, Acc@5 = 96.3000, loss = 1.2917
+2026-05-21 21:47:58 INFO:train:Training time 0:15:43, max_test_acc1 56.7000, test_acc5_at_max_test_acc1 95.6000
+2026-05-21 21:47:58 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:48:48 INFO:train:Train: [0:16:33] [Epoch: 14/106] [Iter:  256/281]  Loss: 1.4731  LR: 4.743e-03  Acc@1: 56.2500
+2026-05-21 21:48:52 INFO:train:Train: [0:16:37] [Epoch: 14/106] [Iter:  281/281]  Loss: 1.5152  LR: 4.743e-03  Acc@1: 40.6250
+2026-05-21 21:49:05 INFO:train:Test:  [0:16:49] [Iter:   32/32]  Loss: 0.5705  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 21:49:05 INFO:train: * Acc@1 = 61.5000, Acc@5 = 95.1000, loss = 1.1467
+2026-05-21 21:49:05 INFO:train:Training time 0:16:50, max_test_acc1 61.5000, test_acc5_at_max_test_acc1 95.1000
+2026-05-21 21:49:05 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:49:55 INFO:train:Train: [0:17:40] [Epoch: 15/106] [Iter:  256/281]  Loss: 1.2489  LR: 4.705e-03  Acc@1: 65.6250
+2026-05-21 21:49:59 INFO:train:Train: [0:17:44] [Epoch: 15/106] [Iter:  281/281]  Loss: 1.9307  LR: 4.705e-03  Acc@1: 46.8750
+2026-05-21 21:50:12 INFO:train:Test:  [0:17:57] [Iter:   32/32]  Loss: 0.5597  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:50:12 INFO:train: * Acc@1 = 64.9000, Acc@5 = 96.2000, loss = 1.1033
+2026-05-21 21:50:12 INFO:train:Training time 0:17:57, max_test_acc1 64.9000, test_acc5_at_max_test_acc1 96.2000
+2026-05-21 21:50:12 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:51:03 INFO:train:Train: [0:18:48] [Epoch: 16/106] [Iter:  256/281]  Loss: 0.9818  LR: 4.666e-03  Acc@1: 78.1250
+2026-05-21 21:51:07 INFO:train:Train: [0:18:52] [Epoch: 16/106] [Iter:  281/281]  Loss: 1.4817  LR: 4.666e-03  Acc@1: 59.3750
+2026-05-21 21:51:19 INFO:train:Test:  [0:19:04] [Iter:   32/32]  Loss: 0.2857  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:51:19 INFO:train: * Acc@1 = 61.8000, Acc@5 = 93.1000, loss = 1.1391
+2026-05-21 21:51:19 INFO:train:Training time 0:19:04, max_test_acc1 64.9000, test_acc5_at_max_test_acc1 96.2000
+2026-05-21 21:51:19 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:52:10 INFO:train:Train: [0:19:55] [Epoch: 17/106] [Iter:  256/281]  Loss: 1.4566  LR: 4.624e-03  Acc@1: 65.6250
+2026-05-21 21:52:14 INFO:train:Train: [0:19:59] [Epoch: 17/106] [Iter:  281/281]  Loss: 1.3065  LR: 4.624e-03  Acc@1: 59.3750
+2026-05-21 21:52:26 INFO:train:Test:  [0:20:11] [Iter:   32/32]  Loss: 0.1447  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:52:27 INFO:train: * Acc@1 = 58.6000, Acc@5 = 96.9000, loss = 1.1598
+2026-05-21 21:52:27 INFO:train:Training time 0:20:12, max_test_acc1 64.9000, test_acc5_at_max_test_acc1 96.2000
+2026-05-21 21:52:27 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:53:17 INFO:train:Train: [0:21:02] [Epoch: 18/106] [Iter:  256/281]  Loss: 1.8233  LR: 4.580e-03  Acc@1: 43.7500
+2026-05-21 21:53:21 INFO:train:Train: [0:21:06] [Epoch: 18/106] [Iter:  281/281]  Loss: 1.9315  LR: 4.580e-03  Acc@1: 43.7500
+2026-05-21 21:53:34 INFO:train:Test:  [0:21:18] [Iter:   32/32]  Loss: 0.6783  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 21:53:34 INFO:train: * Acc@1 = 68.9000, Acc@5 = 97.7000, loss = 0.9677
+2026-05-21 21:53:34 INFO:train:Training time 0:21:19, max_test_acc1 68.9000, test_acc5_at_max_test_acc1 97.7000
+2026-05-21 21:53:34 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:54:24 INFO:train:Train: [0:22:09] [Epoch: 19/106] [Iter:  256/281]  Loss: 1.9492  LR: 4.533e-03  Acc@1: 46.8750
+2026-05-21 21:54:28 INFO:train:Train: [0:22:13] [Epoch: 19/106] [Iter:  281/281]  Loss: 1.3076  LR: 4.533e-03  Acc@1: 65.6250
+2026-05-21 21:54:40 INFO:train:Test:  [0:22:25] [Iter:   32/32]  Loss: 1.4231  Acc@1: 50.0000  Acc@5: 87.5000
+2026-05-21 21:54:41 INFO:train: * Acc@1 = 59.8000, Acc@5 = 96.4000, loss = 1.1778
+2026-05-21 21:54:41 INFO:train:Training time 0:22:26, max_test_acc1 68.9000, test_acc5_at_max_test_acc1 97.7000
+2026-05-21 21:54:41 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:55:31 INFO:train:Train: [0:23:16] [Epoch: 20/106] [Iter:  256/281]  Loss: 1.0893  LR: 4.484e-03  Acc@1: 78.1250
+2026-05-21 21:55:35 INFO:train:Train: [0:23:20] [Epoch: 20/106] [Iter:  281/281]  Loss: 1.0322  LR: 4.484e-03  Acc@1: 78.1250
+2026-05-21 21:55:47 INFO:train:Test:  [0:23:32] [Iter:   32/32]  Loss: 0.2741  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:55:48 INFO:train: * Acc@1 = 65.2000, Acc@5 = 96.3000, loss = 0.9920
+2026-05-21 21:55:48 INFO:train:Training time 0:23:33, max_test_acc1 68.9000, test_acc5_at_max_test_acc1 97.7000
+2026-05-21 21:55:48 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:56:38 INFO:train:Train: [0:24:23] [Epoch: 21/106] [Iter:  256/281]  Loss: 2.0032  LR: 4.434e-03  Acc@1: 34.3750
+2026-05-21 21:56:42 INFO:train:Train: [0:24:27] [Epoch: 21/106] [Iter:  281/281]  Loss: 1.3310  LR: 4.434e-03  Acc@1: 71.8750
+2026-05-21 21:56:54 INFO:train:Test:  [0:24:39] [Iter:   32/32]  Loss: 0.0770  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:56:55 INFO:train: * Acc@1 = 68.0000, Acc@5 = 97.1000, loss = 0.9588
+2026-05-21 21:56:55 INFO:train:Training time 0:24:39, max_test_acc1 68.9000, test_acc5_at_max_test_acc1 97.7000
+2026-05-21 21:56:55 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:57:45 INFO:train:Train: [0:25:30] [Epoch: 22/106] [Iter:  256/281]  Loss: 1.0935  LR: 4.381e-03  Acc@1: 71.8750
+2026-05-21 21:57:49 INFO:train:Train: [0:25:34] [Epoch: 22/106] [Iter:  281/281]  Loss: 1.4150  LR: 4.381e-03  Acc@1: 65.6250
+2026-05-21 21:58:01 INFO:train:Test:  [0:25:46] [Iter:   32/32]  Loss: 0.2727  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 21:58:01 INFO:train: * Acc@1 = 75.0000, Acc@5 = 98.0000, loss = 0.8122
+2026-05-21 21:58:01 INFO:train:Training time 0:25:46, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 21:58:01 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:58:52 INFO:train:Train: [0:26:37] [Epoch: 23/106] [Iter:  256/281]  Loss: 1.0598  LR: 4.326e-03  Acc@1: 78.1250
+2026-05-21 21:58:56 INFO:train:Train: [0:26:41] [Epoch: 23/106] [Iter:  281/281]  Loss: 0.8687  LR: 4.326e-03  Acc@1: 87.5000
+2026-05-21 21:59:08 INFO:train:Test:  [0:26:53] [Iter:   32/32]  Loss: 1.0021  Acc@1: 75.0000  Acc@5: 87.5000
+2026-05-21 21:59:09 INFO:train: * Acc@1 = 63.2000, Acc@5 = 96.2000, loss = 1.0826
+2026-05-21 21:59:09 INFO:train:Training time 0:26:53, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 21:59:09 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 21:59:59 INFO:train:Train: [0:27:44] [Epoch: 24/106] [Iter:  256/281]  Loss: 1.2091  LR: 4.269e-03  Acc@1: 71.8750
+2026-05-21 22:00:03 INFO:train:Train: [0:27:48] [Epoch: 24/106] [Iter:  281/281]  Loss: 1.3044  LR: 4.269e-03  Acc@1: 62.5000
+2026-05-21 22:00:15 INFO:train:Test:  [0:28:00] [Iter:   32/32]  Loss: 0.4481  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:00:16 INFO:train: * Acc@1 = 71.3000, Acc@5 = 96.8000, loss = 0.9156
+2026-05-21 22:00:16 INFO:train:Training time 0:28:01, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:00:16 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:01:06 INFO:train:Train: [0:28:51] [Epoch: 25/106] [Iter:  256/281]  Loss: 1.5182  LR: 4.211e-03  Acc@1: 71.8750
+2026-05-21 22:01:10 INFO:train:Train: [0:28:55] [Epoch: 25/106] [Iter:  281/281]  Loss: 1.8735  LR: 4.211e-03  Acc@1: 65.6250
+2026-05-21 22:01:22 INFO:train:Test:  [0:29:07] [Iter:   32/32]  Loss: 0.1893  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:01:23 INFO:train: * Acc@1 = 69.7000, Acc@5 = 97.8000, loss = 0.8985
+2026-05-21 22:01:23 INFO:train:Training time 0:29:08, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:01:23 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:02:13 INFO:train:Train: [0:29:58] [Epoch: 26/106] [Iter:  256/281]  Loss: 1.3097  LR: 4.150e-03  Acc@1: 59.3750
+2026-05-21 22:02:17 INFO:train:Train: [0:30:02] [Epoch: 26/106] [Iter:  281/281]  Loss: 0.9182  LR: 4.150e-03  Acc@1: 81.2500
+2026-05-21 22:02:30 INFO:train:Test:  [0:30:14] [Iter:   32/32]  Loss: 0.6564  Acc@1: 87.5000  Acc@5: 87.5000
+2026-05-21 22:02:30 INFO:train: * Acc@1 = 58.5000, Acc@5 = 96.0000, loss = 1.1831
+2026-05-21 22:02:30 INFO:train:Training time 0:30:15, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:02:30 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:03:20 INFO:train:Train: [0:31:05] [Epoch: 27/106] [Iter:  256/281]  Loss: 0.9584  LR: 4.088e-03  Acc@1: 87.5000
+2026-05-21 22:03:24 INFO:train:Train: [0:31:09] [Epoch: 27/106] [Iter:  281/281]  Loss: 1.0402  LR: 4.088e-03  Acc@1: 84.3750
+2026-05-21 22:03:36 INFO:train:Test:  [0:31:21] [Iter:   32/32]  Loss: 0.2101  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:03:37 INFO:train: * Acc@1 = 69.0000, Acc@5 = 97.6000, loss = 0.9255
+2026-05-21 22:03:37 INFO:train:Training time 0:31:21, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:03:37 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:04:27 INFO:train:Train: [0:32:12] [Epoch: 28/106] [Iter:  256/281]  Loss: 0.8672  LR: 4.024e-03  Acc@1: 81.2500
+2026-05-21 22:04:31 INFO:train:Train: [0:32:16] [Epoch: 28/106] [Iter:  281/281]  Loss: 1.0689  LR: 4.024e-03  Acc@1: 78.1250
+2026-05-21 22:04:43 INFO:train:Test:  [0:32:28] [Iter:   32/32]  Loss: 0.7869  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 22:04:44 INFO:train: * Acc@1 = 60.1000, Acc@5 = 94.3000, loss = 1.1519
+2026-05-21 22:04:44 INFO:train:Training time 0:32:28, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:04:44 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:05:34 INFO:train:Train: [0:33:19] [Epoch: 29/106] [Iter:  256/281]  Loss: 1.2263  LR: 3.958e-03  Acc@1: 59.3750
+2026-05-21 22:05:38 INFO:train:Train: [0:33:23] [Epoch: 29/106] [Iter:  281/281]  Loss: 1.4740  LR: 3.958e-03  Acc@1: 75.0000
+2026-05-21 22:05:50 INFO:train:Test:  [0:33:35] [Iter:   32/32]  Loss: 1.1483  Acc@1: 62.5000  Acc@5: 87.5000
+2026-05-21 22:05:51 INFO:train: * Acc@1 = 65.2000, Acc@5 = 94.3000, loss = 1.1052
+2026-05-21 22:05:51 INFO:train:Training time 0:33:36, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:05:51 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:06:41 INFO:train:Train: [0:34:26] [Epoch: 30/106] [Iter:  256/281]  Loss: 1.1103  LR: 3.891e-03  Acc@1: 87.5000
+2026-05-21 22:06:45 INFO:train:Train: [0:34:30] [Epoch: 30/106] [Iter:  281/281]  Loss: 0.9147  LR: 3.891e-03  Acc@1: 84.3750
+2026-05-21 22:06:57 INFO:train:Test:  [0:34:42] [Iter:   32/32]  Loss: 0.3300  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:06:58 INFO:train: * Acc@1 = 67.8000, Acc@5 = 97.0000, loss = 0.9540
+2026-05-21 22:06:58 INFO:train:Training time 0:34:42, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:06:58 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:07:48 INFO:train:Train: [0:35:33] [Epoch: 31/106] [Iter:  256/281]  Loss: 1.7547  LR: 3.823e-03  Acc@1: 68.7500
+2026-05-21 22:07:52 INFO:train:Train: [0:35:37] [Epoch: 31/106] [Iter:  281/281]  Loss: 0.9749  LR: 3.823e-03  Acc@1: 81.2500
+2026-05-21 22:08:04 INFO:train:Test:  [0:35:49] [Iter:   32/32]  Loss: 0.4867  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:08:04 INFO:train: * Acc@1 = 72.7000, Acc@5 = 95.9000, loss = 0.8796
+2026-05-21 22:08:04 INFO:train:Training time 0:35:49, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:08:04 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:08:54 INFO:train:Train: [0:36:39] [Epoch: 32/106] [Iter:  256/281]  Loss: 1.4690  LR: 3.753e-03  Acc@1: 87.5000
+2026-05-21 22:08:58 INFO:train:Train: [0:36:43] [Epoch: 32/106] [Iter:  281/281]  Loss: 1.3306  LR: 3.753e-03  Acc@1: 62.5000
+2026-05-21 22:09:10 INFO:train:Test:  [0:36:55] [Iter:   32/32]  Loss: 1.0999  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 22:09:11 INFO:train: * Acc@1 = 56.1000, Acc@5 = 95.3000, loss = 1.3059
+2026-05-21 22:09:11 INFO:train:Training time 0:36:56, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:09:11 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:10:01 INFO:train:Train: [0:37:46] [Epoch: 33/106] [Iter:  256/281]  Loss: 1.0847  LR: 3.681e-03  Acc@1: 81.2500
+2026-05-21 22:10:05 INFO:train:Train: [0:37:50] [Epoch: 33/106] [Iter:  281/281]  Loss: 1.2435  LR: 3.681e-03  Acc@1: 81.2500
+2026-05-21 22:10:17 INFO:train:Test:  [0:38:02] [Iter:   32/32]  Loss: 0.2896  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:10:18 INFO:train: * Acc@1 = 74.9000, Acc@5 = 97.7000, loss = 0.7716
+2026-05-21 22:10:18 INFO:train:Training time 0:38:02, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:10:18 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:11:08 INFO:train:Train: [0:38:53] [Epoch: 34/106] [Iter:  256/281]  Loss: 1.3430  LR: 3.609e-03  Acc@1: 59.3750
+2026-05-21 22:11:12 INFO:train:Train: [0:38:57] [Epoch: 34/106] [Iter:  281/281]  Loss: 1.1099  LR: 3.609e-03  Acc@1: 78.1250
+2026-05-21 22:11:24 INFO:train:Test:  [0:39:09] [Iter:   32/32]  Loss: 0.6433  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 22:11:25 INFO:train: * Acc@1 = 69.2000, Acc@5 = 96.4000, loss = 0.9013
+2026-05-21 22:11:25 INFO:train:Training time 0:39:10, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:11:25 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:12:15 INFO:train:Train: [0:40:00] [Epoch: 35/106] [Iter:  256/281]  Loss: 0.8714  LR: 3.535e-03  Acc@1: 84.3750
+2026-05-21 22:12:19 INFO:train:Train: [0:40:04] [Epoch: 35/106] [Iter:  281/281]  Loss: 1.2583  LR: 3.535e-03  Acc@1: 65.6250
+2026-05-21 22:12:31 INFO:train:Test:  [0:40:16] [Iter:   32/32]  Loss: 0.5504  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:12:31 INFO:train: * Acc@1 = 72.8000, Acc@5 = 98.1000, loss = 0.8743
+2026-05-21 22:12:31 INFO:train:Training time 0:40:16, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:12:31 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:13:22 INFO:train:Train: [0:41:07] [Epoch: 36/106] [Iter:  256/281]  Loss: 1.2201  LR: 3.460e-03  Acc@1: 68.7500
+2026-05-21 22:13:26 INFO:train:Train: [0:41:11] [Epoch: 36/106] [Iter:  281/281]  Loss: 1.2556  LR: 3.460e-03  Acc@1: 84.3750
+2026-05-21 22:13:38 INFO:train:Test:  [0:41:23] [Iter:   32/32]  Loss: 0.1940  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:13:38 INFO:train: * Acc@1 = 73.6000, Acc@5 = 97.4000, loss = 0.8400
+2026-05-21 22:13:38 INFO:train:Training time 0:41:23, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:13:38 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:14:29 INFO:train:Train: [0:42:14] [Epoch: 37/106] [Iter:  256/281]  Loss: 1.0205  LR: 3.384e-03  Acc@1: 81.2500
+2026-05-21 22:14:33 INFO:train:Train: [0:42:18] [Epoch: 37/106] [Iter:  281/281]  Loss: 1.0249  LR: 3.384e-03  Acc@1: 78.1250
+2026-05-21 22:14:45 INFO:train:Test:  [0:42:30] [Iter:   32/32]  Loss: 0.9830  Acc@1: 62.5000  Acc@5: 100.0000
+2026-05-21 22:14:45 INFO:train: * Acc@1 = 72.2000, Acc@5 = 96.8000, loss = 0.8921
+2026-05-21 22:14:45 INFO:train:Training time 0:42:30, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:14:45 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:15:36 INFO:train:Train: [0:43:21] [Epoch: 38/106] [Iter:  256/281]  Loss: 1.1332  LR: 3.307e-03  Acc@1: 65.6250
+2026-05-21 22:15:40 INFO:train:Train: [0:43:25] [Epoch: 38/106] [Iter:  281/281]  Loss: 0.9214  LR: 3.307e-03  Acc@1: 81.2500
+2026-05-21 22:15:52 INFO:train:Test:  [0:43:37] [Iter:   32/32]  Loss: 0.2747  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:15:53 INFO:train: * Acc@1 = 67.9000, Acc@5 = 96.5000, loss = 0.9736
+2026-05-21 22:15:53 INFO:train:Training time 0:43:37, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:15:53 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:16:43 INFO:train:Train: [0:44:28] [Epoch: 39/106] [Iter:  256/281]  Loss: 1.0244  LR: 3.229e-03  Acc@1: 75.0000
+2026-05-21 22:16:48 INFO:train:Train: [0:44:32] [Epoch: 39/106] [Iter:  281/281]  Loss: 0.8570  LR: 3.229e-03  Acc@1: 90.6250
+2026-05-21 22:17:00 INFO:train:Test:  [0:44:45] [Iter:   32/32]  Loss: 0.6184  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:17:00 INFO:train: * Acc@1 = 70.8000, Acc@5 = 96.6000, loss = 0.9374
+2026-05-21 22:17:00 INFO:train:Training time 0:44:45, max_test_acc1 75.0000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:17:00 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:17:51 INFO:train:Train: [0:45:35] [Epoch: 40/106] [Iter:  256/281]  Loss: 0.9176  LR: 3.151e-03  Acc@1: 81.2500
+2026-05-21 22:17:55 INFO:train:Train: [0:45:39] [Epoch: 40/106] [Iter:  281/281]  Loss: 1.4125  LR: 3.151e-03  Acc@1: 81.2500
+2026-05-21 22:18:07 INFO:train:Test:  [0:45:52] [Iter:   32/32]  Loss: 0.4123  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:18:07 INFO:train: * Acc@1 = 75.1000, Acc@5 = 98.0000, loss = 0.7927
+2026-05-21 22:18:07 INFO:train:Training time 0:45:52, max_test_acc1 75.1000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:18:07 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:18:58 INFO:train:Train: [0:46:42] [Epoch: 41/106] [Iter:  256/281]  Loss: 0.9649  LR: 3.072e-03  Acc@1: 78.1250
+2026-05-21 22:19:02 INFO:train:Train: [0:46:46] [Epoch: 41/106] [Iter:  281/281]  Loss: 0.8835  LR: 3.072e-03  Acc@1: 90.6250
+2026-05-21 22:19:14 INFO:train:Test:  [0:46:59] [Iter:   32/32]  Loss: 0.4887  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:19:14 INFO:train: * Acc@1 = 69.5000, Acc@5 = 96.7000, loss = 0.9194
+2026-05-21 22:19:14 INFO:train:Training time 0:46:59, max_test_acc1 75.1000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:19:14 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:20:05 INFO:train:Train: [0:47:49] [Epoch: 42/106] [Iter:  256/281]  Loss: 0.9455  LR: 2.992e-03  Acc@1: 78.1250
+2026-05-21 22:20:09 INFO:train:Train: [0:47:53] [Epoch: 42/106] [Iter:  281/281]  Loss: 0.9318  LR: 2.992e-03  Acc@1: 84.3750
+2026-05-21 22:20:21 INFO:train:Test:  [0:48:06] [Iter:   32/32]  Loss: 0.5308  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:20:21 INFO:train: * Acc@1 = 71.4000, Acc@5 = 97.6000, loss = 0.9106
+2026-05-21 22:20:21 INFO:train:Training time 0:48:06, max_test_acc1 75.1000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:20:21 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:21:12 INFO:train:Train: [0:48:57] [Epoch: 43/106] [Iter:  256/281]  Loss: 1.8295  LR: 2.911e-03  Acc@1: 59.3750
+2026-05-21 22:21:16 INFO:train:Train: [0:49:01] [Epoch: 43/106] [Iter:  281/281]  Loss: 1.2043  LR: 2.911e-03  Acc@1: 71.8750
+2026-05-21 22:21:29 INFO:train:Test:  [0:49:13] [Iter:   32/32]  Loss: 0.3358  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:21:29 INFO:train: * Acc@1 = 73.3000, Acc@5 = 98.3000, loss = 0.8443
+2026-05-21 22:21:29 INFO:train:Training time 0:49:14, max_test_acc1 75.1000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:21:29 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:22:20 INFO:train:Train: [0:50:05] [Epoch: 44/106] [Iter:  256/281]  Loss: 2.0156  LR: 2.831e-03  Acc@1: 34.3750
+2026-05-21 22:22:24 INFO:train:Train: [0:50:09] [Epoch: 44/106] [Iter:  281/281]  Loss: 0.8374  LR: 2.831e-03  Acc@1: 93.7500
+2026-05-21 22:22:36 INFO:train:Test:  [0:50:21] [Iter:   32/32]  Loss: 0.6236  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:22:36 INFO:train: * Acc@1 = 71.5000, Acc@5 = 96.1000, loss = 0.9328
+2026-05-21 22:22:36 INFO:train:Training time 0:50:21, max_test_acc1 75.1000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:22:36 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:23:27 INFO:train:Train: [0:51:12] [Epoch: 45/106] [Iter:  256/281]  Loss: 1.3821  LR: 2.750e-03  Acc@1: 93.7500
+2026-05-21 22:23:31 INFO:train:Train: [0:51:16] [Epoch: 45/106] [Iter:  281/281]  Loss: 0.7851  LR: 2.750e-03  Acc@1: 87.5000
+2026-05-21 22:23:43 INFO:train:Test:  [0:51:28] [Iter:   32/32]  Loss: 0.8040  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 22:23:44 INFO:train: * Acc@1 = 71.2000, Acc@5 = 98.0000, loss = 0.9286
+2026-05-21 22:23:44 INFO:train:Training time 0:51:28, max_test_acc1 75.1000, test_acc5_at_max_test_acc1 98.0000
+2026-05-21 22:23:44 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:24:34 INFO:train:Train: [0:52:19] [Epoch: 46/106] [Iter:  256/281]  Loss: 1.1956  LR: 2.668e-03  Acc@1: 75.0000
+2026-05-21 22:24:38 INFO:train:Train: [0:52:23] [Epoch: 46/106] [Iter:  281/281]  Loss: 0.9335  LR: 2.668e-03  Acc@1: 78.1250
+2026-05-21 22:24:51 INFO:train:Test:  [0:52:36] [Iter:   32/32]  Loss: 0.1838  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:24:51 INFO:train: * Acc@1 = 75.3000, Acc@5 = 98.8000, loss = 0.7351
+2026-05-21 22:24:51 INFO:train:Training time 0:52:36, max_test_acc1 75.3000, test_acc5_at_max_test_acc1 98.8000
+2026-05-21 22:24:51 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:25:42 INFO:train:Train: [0:53:26] [Epoch: 47/106] [Iter:  256/281]  Loss: 1.3936  LR: 2.587e-03  Acc@1: 65.6250
+2026-05-21 22:25:46 INFO:train:Train: [0:53:30] [Epoch: 47/106] [Iter:  281/281]  Loss: 0.8409  LR: 2.587e-03  Acc@1: 84.3750
+2026-05-21 22:25:58 INFO:train:Test:  [0:53:43] [Iter:   32/32]  Loss: 0.2721  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:25:58 INFO:train: * Acc@1 = 69.8000, Acc@5 = 93.5000, loss = 0.9745
+2026-05-21 22:25:58 INFO:train:Training time 0:53:43, max_test_acc1 75.3000, test_acc5_at_max_test_acc1 98.8000
+2026-05-21 22:25:58 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:26:49 INFO:train:Train: [0:54:34] [Epoch: 48/106] [Iter:  256/281]  Loss: 0.8716  LR: 2.505e-03  Acc@1: 90.6250
+2026-05-21 22:26:53 INFO:train:Train: [0:54:38] [Epoch: 48/106] [Iter:  281/281]  Loss: 1.7844  LR: 2.505e-03  Acc@1: 62.5000
+2026-05-21 22:27:05 INFO:train:Test:  [0:54:50] [Iter:   32/32]  Loss: 0.2690  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:27:06 INFO:train: * Acc@1 = 72.2000, Acc@5 = 98.0000, loss = 0.8630
+2026-05-21 22:27:06 INFO:train:Training time 0:54:50, max_test_acc1 75.3000, test_acc5_at_max_test_acc1 98.8000
+2026-05-21 22:27:06 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:27:56 INFO:train:Train: [0:55:41] [Epoch: 49/106] [Iter:  256/281]  Loss: 1.4766  LR: 2.423e-03  Acc@1: 71.8750
+2026-05-21 22:28:00 INFO:train:Train: [0:55:45] [Epoch: 49/106] [Iter:  281/281]  Loss: 0.6436  LR: 2.423e-03  Acc@1: 96.8750
+2026-05-21 22:28:13 INFO:train:Test:  [0:55:57] [Iter:   32/32]  Loss: 0.4419  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:28:13 INFO:train: * Acc@1 = 77.5000, Acc@5 = 98.2000, loss = 0.7724
+2026-05-21 22:28:13 INFO:train:Training time 0:55:58, max_test_acc1 77.5000, test_acc5_at_max_test_acc1 98.2000
+2026-05-21 22:28:13 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:29:04 INFO:train:Train: [0:56:48] [Epoch: 50/106] [Iter:  256/281]  Loss: 0.9796  LR: 2.342e-03  Acc@1: 84.3750
+2026-05-21 22:29:08 INFO:train:Train: [0:56:53] [Epoch: 50/106] [Iter:  281/281]  Loss: 0.7624  LR: 2.342e-03  Acc@1: 93.7500
+2026-05-21 22:29:20 INFO:train:Test:  [0:57:05] [Iter:   32/32]  Loss: 0.4489  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:29:20 INFO:train: * Acc@1 = 75.1000, Acc@5 = 98.2000, loss = 0.8011
+2026-05-21 22:29:20 INFO:train:Training time 0:57:05, max_test_acc1 77.5000, test_acc5_at_max_test_acc1 98.2000
+2026-05-21 22:29:20 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:30:11 INFO:train:Train: [0:57:56] [Epoch: 51/106] [Iter:  256/281]  Loss: 0.6330  LR: 2.260e-03  Acc@1: 96.8750
+2026-05-21 22:30:15 INFO:train:Train: [0:58:00] [Epoch: 51/106] [Iter:  281/281]  Loss: 0.8728  LR: 2.260e-03  Acc@1: 96.8750
+2026-05-21 22:30:27 INFO:train:Test:  [0:58:12] [Iter:   32/32]  Loss: 0.3521  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:30:28 INFO:train: * Acc@1 = 75.9000, Acc@5 = 98.2000, loss = 0.7797
+2026-05-21 22:30:28 INFO:train:Training time 0:58:13, max_test_acc1 77.5000, test_acc5_at_max_test_acc1 98.2000
+2026-05-21 22:30:28 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:31:18 INFO:train:Train: [0:59:03] [Epoch: 52/106] [Iter:  256/281]  Loss: 0.6665  LR: 2.179e-03  Acc@1: 96.8750
+2026-05-21 22:31:22 INFO:train:Train: [0:59:07] [Epoch: 52/106] [Iter:  281/281]  Loss: 0.9226  LR: 2.179e-03  Acc@1: 87.5000
+2026-05-21 22:31:35 INFO:train:Test:  [0:59:20] [Iter:   32/32]  Loss: 0.4548  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:31:35 INFO:train: * Acc@1 = 71.4000, Acc@5 = 96.0000, loss = 0.9192
+2026-05-21 22:31:35 INFO:train:Training time 0:59:20, max_test_acc1 77.5000, test_acc5_at_max_test_acc1 98.2000
+2026-05-21 22:31:35 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:32:26 INFO:train:Train: [1:00:11] [Epoch: 53/106] [Iter:  256/281]  Loss: 1.6910  LR: 2.099e-03  Acc@1: 56.2500
+2026-05-21 22:32:30 INFO:train:Train: [1:00:15] [Epoch: 53/106] [Iter:  281/281]  Loss: 0.7900  LR: 2.099e-03  Acc@1: 93.7500
+2026-05-21 22:32:42 INFO:train:Test:  [1:00:27] [Iter:   32/32]  Loss: 0.8454  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:32:42 INFO:train: * Acc@1 = 78.3000, Acc@5 = 97.4000, loss = 0.7544
+2026-05-21 22:32:42 INFO:train:Training time 1:00:27, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:32:42 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:33:33 INFO:train:Train: [1:01:18] [Epoch: 54/106] [Iter:  256/281]  Loss: 1.7504  LR: 2.018e-03  Acc@1: 71.8750
+2026-05-21 22:33:37 INFO:train:Train: [1:01:22] [Epoch: 54/106] [Iter:  281/281]  Loss: 1.0151  LR: 2.018e-03  Acc@1: 84.3750
+2026-05-21 22:33:49 INFO:train:Test:  [1:01:34] [Iter:   32/32]  Loss: 0.2872  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:33:50 INFO:train: * Acc@1 = 76.9000, Acc@5 = 97.6000, loss = 0.8118
+2026-05-21 22:33:50 INFO:train:Training time 1:01:35, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:33:50 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:34:40 INFO:train:Train: [1:02:25] [Epoch: 55/106] [Iter:  256/281]  Loss: 0.6970  LR: 1.938e-03  Acc@1: 93.7500
+2026-05-21 22:34:44 INFO:train:Train: [1:02:29] [Epoch: 55/106] [Iter:  281/281]  Loss: 0.9697  LR: 1.938e-03  Acc@1: 84.3750
+2026-05-21 22:34:57 INFO:train:Test:  [1:02:41] [Iter:   32/32]  Loss: 0.1987  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:34:57 INFO:train: * Acc@1 = 77.7000, Acc@5 = 98.1000, loss = 0.7337
+2026-05-21 22:34:57 INFO:train:Training time 1:02:42, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:34:57 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:35:49 INFO:train:Train: [1:03:33] [Epoch: 56/106] [Iter:  256/281]  Loss: 0.7422  LR: 1.859e-03  Acc@1: 90.6250
+2026-05-21 22:35:53 INFO:train:Train: [1:03:37] [Epoch: 56/106] [Iter:  281/281]  Loss: 0.7580  LR: 1.859e-03  Acc@1: 96.8750
+2026-05-21 22:36:05 INFO:train:Test:  [1:03:50] [Iter:   32/32]  Loss: 0.4810  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:36:06 INFO:train: * Acc@1 = 76.4000, Acc@5 = 98.4000, loss = 0.7699
+2026-05-21 22:36:06 INFO:train:Training time 1:03:51, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:36:06 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:36:58 INFO:train:Train: [1:04:43] [Epoch: 57/106] [Iter:  256/281]  Loss: 0.9437  LR: 1.781e-03  Acc@1: 100.0000
+2026-05-21 22:37:02 INFO:train:Train: [1:04:47] [Epoch: 57/106] [Iter:  281/281]  Loss: 0.9566  LR: 1.781e-03  Acc@1: 84.3750
+2026-05-21 22:37:15 INFO:train:Test:  [1:05:00] [Iter:   32/32]  Loss: 0.3368  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:37:15 INFO:train: * Acc@1 = 75.7000, Acc@5 = 97.7000, loss = 0.7933
+2026-05-21 22:37:15 INFO:train:Training time 1:05:00, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:37:15 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:38:07 INFO:train:Train: [1:05:52] [Epoch: 58/106] [Iter:  256/281]  Loss: 1.4975  LR: 1.703e-03  Acc@1: 84.3750
+2026-05-21 22:38:12 INFO:train:Train: [1:05:56] [Epoch: 58/106] [Iter:  281/281]  Loss: 1.2664  LR: 1.703e-03  Acc@1: 87.5000
+2026-05-21 22:38:24 INFO:train:Test:  [1:06:09] [Iter:   32/32]  Loss: 0.5356  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 22:38:25 INFO:train: * Acc@1 = 73.2000, Acc@5 = 97.6000, loss = 0.8856
+2026-05-21 22:38:25 INFO:train:Training time 1:06:10, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:38:25 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:39:17 INFO:train:Train: [1:07:02] [Epoch: 59/106] [Iter:  256/281]  Loss: 0.6617  LR: 1.626e-03  Acc@1: 96.8750
+2026-05-21 22:39:21 INFO:train:Train: [1:07:06] [Epoch: 59/106] [Iter:  281/281]  Loss: 0.6242  LR: 1.626e-03  Acc@1: 100.0000
+2026-05-21 22:39:34 INFO:train:Test:  [1:07:19] [Iter:   32/32]  Loss: 0.9358  Acc@1: 75.0000  Acc@5: 100.0000
+2026-05-21 22:39:34 INFO:train: * Acc@1 = 71.4000, Acc@5 = 96.1000, loss = 0.9164
+2026-05-21 22:39:34 INFO:train:Training time 1:07:19, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:39:34 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:40:26 INFO:train:Train: [1:08:11] [Epoch: 60/106] [Iter:  256/281]  Loss: 0.7867  LR: 1.550e-03  Acc@1: 87.5000
+2026-05-21 22:40:30 INFO:train:Train: [1:08:15] [Epoch: 60/106] [Iter:  281/281]  Loss: 1.6512  LR: 1.550e-03  Acc@1: 59.3750
+2026-05-21 22:40:43 INFO:train:Test:  [1:08:28] [Iter:   32/32]  Loss: 0.3191  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:40:44 INFO:train: * Acc@1 = 71.7000, Acc@5 = 97.4000, loss = 0.8859
+2026-05-21 22:40:44 INFO:train:Training time 1:08:28, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:40:44 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:41:36 INFO:train:Train: [1:09:21] [Epoch: 61/106] [Iter:  256/281]  Loss: 1.3664  LR: 1.475e-03  Acc@1: 87.5000
+2026-05-21 22:41:40 INFO:train:Train: [1:09:25] [Epoch: 61/106] [Iter:  281/281]  Loss: 1.9399  LR: 1.475e-03  Acc@1: 28.1250
+2026-05-21 22:41:53 INFO:train:Test:  [1:09:38] [Iter:   32/32]  Loss: 0.4360  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:41:53 INFO:train: * Acc@1 = 64.4000, Acc@5 = 96.0000, loss = 1.1032
+2026-05-21 22:41:53 INFO:train:Training time 1:09:38, max_test_acc1 78.3000, test_acc5_at_max_test_acc1 97.4000
+2026-05-21 22:41:53 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:42:45 INFO:train:Train: [1:10:30] [Epoch: 62/106] [Iter:  256/281]  Loss: 1.1768  LR: 1.401e-03  Acc@1: 87.5000
+2026-05-21 22:42:49 INFO:train:Train: [1:10:34] [Epoch: 62/106] [Iter:  281/281]  Loss: 0.6198  LR: 1.401e-03  Acc@1: 100.0000
+2026-05-21 22:43:02 INFO:train:Test:  [1:10:47] [Iter:   32/32]  Loss: 0.2609  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:43:02 INFO:train: * Acc@1 = 78.5000, Acc@5 = 97.6000, loss = 0.7325
+2026-05-21 22:43:03 INFO:train:Training time 1:10:47, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-05-21 22:43:03 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:43:54 INFO:train:Train: [1:11:39] [Epoch: 63/106] [Iter:  256/281]  Loss: 0.7641  LR: 1.329e-03  Acc@1: 96.8750
+2026-05-21 22:43:59 INFO:train:Train: [1:11:43] [Epoch: 63/106] [Iter:  281/281]  Loss: 0.6995  LR: 1.329e-03  Acc@1: 87.5000
+2026-05-21 22:44:12 INFO:train:Test:  [1:11:56] [Iter:   32/32]  Loss: 0.2646  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:44:12 INFO:train: * Acc@1 = 77.0000, Acc@5 = 98.2000, loss = 0.7685
+2026-05-21 22:44:12 INFO:train:Training time 1:11:57, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-05-21 22:44:12 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:45:04 INFO:train:Train: [1:12:49] [Epoch: 64/106] [Iter:  256/281]  Loss: 1.6209  LR: 1.258e-03  Acc@1: 68.7500
+2026-05-21 22:45:08 INFO:train:Train: [1:12:53] [Epoch: 64/106] [Iter:  281/281]  Loss: 0.7149  LR: 1.258e-03  Acc@1: 93.7500
+2026-05-21 22:45:21 INFO:train:Test:  [1:13:06] [Iter:   32/32]  Loss: 0.2739  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:45:21 INFO:train: * Acc@1 = 78.2000, Acc@5 = 98.6000, loss = 0.6965
+2026-05-21 22:45:21 INFO:train:Training time 1:13:06, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-05-21 22:45:21 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:46:13 INFO:train:Train: [1:13:58] [Epoch: 65/106] [Iter:  256/281]  Loss: 0.8437  LR: 1.187e-03  Acc@1: 87.5000
+2026-05-21 22:46:18 INFO:train:Train: [1:14:02] [Epoch: 65/106] [Iter:  281/281]  Loss: 0.7551  LR: 1.187e-03  Acc@1: 90.6250
+2026-05-21 22:46:30 INFO:train:Test:  [1:14:15] [Iter:   32/32]  Loss: 0.3601  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:46:31 INFO:train: * Acc@1 = 78.3000, Acc@5 = 97.9000, loss = 0.7617
+2026-05-21 22:46:31 INFO:train:Training time 1:14:16, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-05-21 22:46:31 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:47:23 INFO:train:Train: [1:15:08] [Epoch: 66/106] [Iter:  256/281]  Loss: 1.8784  LR: 1.119e-03  Acc@1: 43.7500
+2026-05-21 22:47:27 INFO:train:Train: [1:15:12] [Epoch: 66/106] [Iter:  281/281]  Loss: 0.7564  LR: 1.119e-03  Acc@1: 90.6250
+2026-05-21 22:47:40 INFO:train:Test:  [1:15:25] [Iter:   32/32]  Loss: 0.1244  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:47:40 INFO:train: * Acc@1 = 78.4000, Acc@5 = 97.8000, loss = 0.7049
+2026-05-21 22:47:40 INFO:train:Training time 1:15:25, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-05-21 22:47:40 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:48:32 INFO:train:Train: [1:16:17] [Epoch: 67/106] [Iter:  256/281]  Loss: 1.4993  LR: 1.052e-03  Acc@1: 71.8750
+2026-05-21 22:48:36 INFO:train:Train: [1:16:21] [Epoch: 67/106] [Iter:  281/281]  Loss: 1.6637  LR: 1.052e-03  Acc@1: 68.7500
+2026-05-21 22:48:49 INFO:train:Test:  [1:16:34] [Iter:   32/32]  Loss: 0.2967  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:48:50 INFO:train: * Acc@1 = 78.5000, Acc@5 = 97.8000, loss = 0.7522
+2026-05-21 22:48:50 INFO:train:Training time 1:16:34, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-05-21 22:48:50 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:49:42 INFO:train:Train: [1:17:27] [Epoch: 68/106] [Iter:  256/281]  Loss: 0.5958  LR: 9.861e-04  Acc@1: 100.0000
+2026-05-21 22:49:46 INFO:train:Train: [1:17:31] [Epoch: 68/106] [Iter:  281/281]  Loss: 1.4056  LR: 9.861e-04  Acc@1: 87.5000
+2026-05-21 22:49:59 INFO:train:Test:  [1:17:44] [Iter:   32/32]  Loss: 0.3248  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:49:59 INFO:train: * Acc@1 = 77.2000, Acc@5 = 97.3000, loss = 0.8179
+2026-05-21 22:49:59 INFO:train:Training time 1:17:44, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-05-21 22:49:59 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:50:52 INFO:train:Train: [1:18:36] [Epoch: 69/106] [Iter:  256/281]  Loss: 0.5914  LR: 9.222e-04  Acc@1: 96.8750
+2026-05-21 22:50:56 INFO:train:Train: [1:18:41] [Epoch: 69/106] [Iter:  281/281]  Loss: 0.7890  LR: 9.222e-04  Acc@1: 96.8750
+2026-05-21 22:51:09 INFO:train:Test:  [1:18:54] [Iter:   32/32]  Loss: 0.1962  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:51:09 INFO:train: * Acc@1 = 78.0000, Acc@5 = 98.1000, loss = 0.7039
+2026-05-21 22:51:09 INFO:train:Training time 1:18:54, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-05-21 22:51:09 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:52:01 INFO:train:Train: [1:19:46] [Epoch: 70/106] [Iter:  256/281]  Loss: 1.3665  LR: 8.599e-04  Acc@1: 87.5000
+2026-05-21 22:52:06 INFO:train:Train: [1:19:50] [Epoch: 70/106] [Iter:  281/281]  Loss: 0.9695  LR: 8.599e-04  Acc@1: 100.0000
+2026-05-21 22:52:19 INFO:train:Test:  [1:20:03] [Iter:   32/32]  Loss: 0.2201  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:52:19 INFO:train: * Acc@1 = 80.8000, Acc@5 = 98.9000, loss = 0.6689
+2026-05-21 22:52:19 INFO:train:Training time 1:20:04, max_test_acc1 80.8000, test_acc5_at_max_test_acc1 98.9000
+2026-05-21 22:52:19 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:53:11 INFO:train:Train: [1:20:56] [Epoch: 71/106] [Iter:  256/281]  Loss: 1.2629  LR: 7.994e-04  Acc@1: 84.3750
+2026-05-21 22:53:16 INFO:train:Train: [1:21:00] [Epoch: 71/106] [Iter:  281/281]  Loss: 0.6334  LR: 7.994e-04  Acc@1: 96.8750
+2026-05-21 22:53:28 INFO:train:Test:  [1:21:13] [Iter:   32/32]  Loss: 0.2681  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:53:29 INFO:train: * Acc@1 = 77.5000, Acc@5 = 97.7000, loss = 0.7850
+2026-05-21 22:53:29 INFO:train:Training time 1:21:14, max_test_acc1 80.8000, test_acc5_at_max_test_acc1 98.9000
+2026-05-21 22:53:29 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:54:21 INFO:train:Train: [1:22:06] [Epoch: 72/106] [Iter:  256/281]  Loss: 0.6749  LR: 7.408e-04  Acc@1: 93.7500
+2026-05-21 22:54:25 INFO:train:Train: [1:22:10] [Epoch: 72/106] [Iter:  281/281]  Loss: 0.5763  LR: 7.408e-04  Acc@1: 100.0000
+2026-05-21 22:54:38 INFO:train:Test:  [1:22:23] [Iter:   32/32]  Loss: 0.2913  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:54:38 INFO:train: * Acc@1 = 81.0000, Acc@5 = 98.7000, loss = 0.6904
+2026-05-21 22:54:38 INFO:train:Training time 1:22:23, max_test_acc1 81.0000, test_acc5_at_max_test_acc1 98.7000
+2026-05-21 22:54:38 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:55:31 INFO:train:Train: [1:23:16] [Epoch: 73/106] [Iter:  256/281]  Loss: 0.6176  LR: 6.840e-04  Acc@1: 96.8750
+2026-05-21 22:55:35 INFO:train:Train: [1:23:20] [Epoch: 73/106] [Iter:  281/281]  Loss: 1.7163  LR: 6.840e-04  Acc@1: 71.8750
+2026-05-21 22:55:48 INFO:train:Test:  [1:23:33] [Iter:   32/32]  Loss: 0.5683  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:55:48 INFO:train: * Acc@1 = 76.2000, Acc@5 = 98.0000, loss = 0.7955
+2026-05-21 22:55:48 INFO:train:Training time 1:23:33, max_test_acc1 81.0000, test_acc5_at_max_test_acc1 98.7000
+2026-05-21 22:55:48 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:56:41 INFO:train:Train: [1:24:26] [Epoch: 74/106] [Iter:  256/281]  Loss: 1.7738  LR: 6.292e-04  Acc@1: 68.7500
+2026-05-21 22:56:45 INFO:train:Train: [1:24:30] [Epoch: 74/106] [Iter:  281/281]  Loss: 1.7705  LR: 6.292e-04  Acc@1: 68.7500
+2026-05-21 22:56:58 INFO:train:Test:  [1:24:43] [Iter:   32/32]  Loss: 0.2475  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:56:58 INFO:train: * Acc@1 = 79.4000, Acc@5 = 98.2000, loss = 0.7183
+2026-05-21 22:56:58 INFO:train:Training time 1:24:43, max_test_acc1 81.0000, test_acc5_at_max_test_acc1 98.7000
+2026-05-21 22:56:58 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:57:51 INFO:train:Train: [1:25:36] [Epoch: 75/106] [Iter:  256/281]  Loss: 0.7319  LR: 5.763e-04  Acc@1: 93.7500
+2026-05-21 22:57:55 INFO:train:Train: [1:25:40] [Epoch: 75/106] [Iter:  281/281]  Loss: 0.5510  LR: 5.763e-04  Acc@1: 100.0000
+2026-05-21 22:58:08 INFO:train:Test:  [1:25:53] [Iter:   32/32]  Loss: 0.2461  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 22:58:08 INFO:train: * Acc@1 = 82.4000, Acc@5 = 98.3000, loss = 0.6083
+2026-05-21 22:58:08 INFO:train:Training time 1:25:53, max_test_acc1 82.4000, test_acc5_at_max_test_acc1 98.3000
+2026-05-21 22:58:08 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 22:59:00 INFO:train:Train: [1:26:45] [Epoch: 76/106] [Iter:  256/281]  Loss: 0.5941  LR: 5.256e-04  Acc@1: 100.0000
+2026-05-21 22:59:05 INFO:train:Train: [1:26:49] [Epoch: 76/106] [Iter:  281/281]  Loss: 0.6536  LR: 5.256e-04  Acc@1: 96.8750
+2026-05-21 22:59:18 INFO:train:Test:  [1:27:03] [Iter:   32/32]  Loss: 0.2417  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 22:59:18 INFO:train: * Acc@1 = 79.8000, Acc@5 = 98.5000, loss = 0.6186
+2026-05-21 22:59:18 INFO:train:Training time 1:27:03, max_test_acc1 82.4000, test_acc5_at_max_test_acc1 98.3000
+2026-05-21 22:59:18 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:00:10 INFO:train:Train: [1:27:55] [Epoch: 77/106] [Iter:  256/281]  Loss: 0.6198  LR: 4.769e-04  Acc@1: 96.8750
+2026-05-21 23:00:14 INFO:train:Train: [1:27:59] [Epoch: 77/106] [Iter:  281/281]  Loss: 0.5707  LR: 4.769e-04  Acc@1: 100.0000
+2026-05-21 23:00:28 INFO:train:Test:  [1:28:13] [Iter:   32/32]  Loss: 0.2407  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:00:28 INFO:train: * Acc@1 = 82.6000, Acc@5 = 98.4000, loss = 0.5988
+2026-05-21 23:00:28 INFO:train:Training time 1:28:13, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:00:28 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:01:21 INFO:train:Train: [1:29:06] [Epoch: 78/106] [Iter:  256/281]  Loss: 0.5607  LR: 4.305e-04  Acc@1: 100.0000
+2026-05-21 23:01:25 INFO:train:Train: [1:29:10] [Epoch: 78/106] [Iter:  281/281]  Loss: 0.6553  LR: 4.305e-04  Acc@1: 93.7500
+2026-05-21 23:01:38 INFO:train:Test:  [1:29:23] [Iter:   32/32]  Loss: 0.3020  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:01:38 INFO:train: * Acc@1 = 81.5000, Acc@5 = 98.2000, loss = 0.6339
+2026-05-21 23:01:38 INFO:train:Training time 1:29:23, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:01:38 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:02:31 INFO:train:Train: [1:30:16] [Epoch: 79/106] [Iter:  256/281]  Loss: 0.5810  LR: 3.862e-04  Acc@1: 96.8750
+2026-05-21 23:02:35 INFO:train:Train: [1:30:20] [Epoch: 79/106] [Iter:  281/281]  Loss: 0.6441  LR: 3.862e-04  Acc@1: 96.8750
+2026-05-21 23:02:48 INFO:train:Test:  [1:30:33] [Iter:   32/32]  Loss: 0.1881  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:02:48 INFO:train: * Acc@1 = 81.2000, Acc@5 = 98.3000, loss = 0.6181
+2026-05-21 23:02:48 INFO:train:Training time 1:30:33, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:02:48 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:03:41 INFO:train:Train: [1:31:26] [Epoch: 80/106] [Iter:  256/281]  Loss: 0.5631  LR: 3.443e-04  Acc@1: 100.0000
+2026-05-21 23:03:45 INFO:train:Train: [1:31:30] [Epoch: 80/106] [Iter:  281/281]  Loss: 0.5463  LR: 3.443e-04  Acc@1: 100.0000
+2026-05-21 23:03:58 INFO:train:Test:  [1:31:43] [Iter:   32/32]  Loss: 0.2078  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:03:58 INFO:train: * Acc@1 = 80.5000, Acc@5 = 98.0000, loss = 0.6288
+2026-05-21 23:03:58 INFO:train:Training time 1:31:43, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:03:58 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:04:51 INFO:train:Train: [1:32:36] [Epoch: 81/106] [Iter:  256/281]  Loss: 0.6138  LR: 3.046e-04  Acc@1: 100.0000
+2026-05-21 23:04:55 INFO:train:Train: [1:32:40] [Epoch: 81/106] [Iter:  281/281]  Loss: 0.5890  LR: 3.046e-04  Acc@1: 96.8750
+2026-05-21 23:05:08 INFO:train:Test:  [1:32:53] [Iter:   32/32]  Loss: 0.2365  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:05:08 INFO:train: * Acc@1 = 81.1000, Acc@5 = 98.3000, loss = 0.6227
+2026-05-21 23:05:08 INFO:train:Training time 1:32:53, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:05:08 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:06:01 INFO:train:Train: [1:33:46] [Epoch: 82/106] [Iter:  256/281]  Loss: 0.5681  LR: 2.673e-04  Acc@1: 96.8750
+2026-05-21 23:06:05 INFO:train:Train: [1:33:50] [Epoch: 82/106] [Iter:  281/281]  Loss: 0.5673  LR: 2.673e-04  Acc@1: 96.8750
+2026-05-21 23:06:18 INFO:train:Test:  [1:34:03] [Iter:   32/32]  Loss: 0.2278  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:06:18 INFO:train: * Acc@1 = 81.6000, Acc@5 = 98.1000, loss = 0.6107
+2026-05-21 23:06:18 INFO:train:Training time 1:34:03, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:06:18 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:07:10 INFO:train:Train: [1:34:55] [Epoch: 83/106] [Iter:  256/281]  Loss: 0.5682  LR: 2.324e-04  Acc@1: 96.8750
+2026-05-21 23:07:15 INFO:train:Train: [1:34:59] [Epoch: 83/106] [Iter:  281/281]  Loss: 0.5703  LR: 2.324e-04  Acc@1: 100.0000
+2026-05-21 23:07:28 INFO:train:Test:  [1:35:13] [Iter:   32/32]  Loss: 0.2628  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 23:07:28 INFO:train: * Acc@1 = 81.6000, Acc@5 = 98.8000, loss = 0.5923
+2026-05-21 23:07:28 INFO:train:Training time 1:35:13, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:07:28 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:08:21 INFO:train:Train: [1:36:06] [Epoch: 84/106] [Iter:  256/281]  Loss: 0.5715  LR: 1.999e-04  Acc@1: 96.8750
+2026-05-21 23:08:25 INFO:train:Train: [1:36:10] [Epoch: 84/106] [Iter:  281/281]  Loss: 0.5738  LR: 1.999e-04  Acc@1: 100.0000
+2026-05-21 23:08:38 INFO:train:Test:  [1:36:23] [Iter:   32/32]  Loss: 0.2587  Acc@1: 87.5000  Acc@5: 100.0000
+2026-05-21 23:08:39 INFO:train: * Acc@1 = 81.4000, Acc@5 = 98.4000, loss = 0.6037
+2026-05-21 23:08:39 INFO:train:Training time 1:36:23, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:08:39 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:09:31 INFO:train:Train: [1:37:16] [Epoch: 85/106] [Iter:  256/281]  Loss: 0.5517  LR: 1.699e-04  Acc@1: 100.0000
+2026-05-21 23:09:35 INFO:train:Train: [1:37:20] [Epoch: 85/106] [Iter:  281/281]  Loss: 0.6044  LR: 1.699e-04  Acc@1: 96.8750
+2026-05-21 23:09:48 INFO:train:Test:  [1:37:33] [Iter:   32/32]  Loss: 0.1916  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:09:49 INFO:train: * Acc@1 = 81.4000, Acc@5 = 98.3000, loss = 0.6160
+2026-05-21 23:09:49 INFO:train:Training time 1:37:34, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:09:49 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:10:41 INFO:train:Train: [1:38:26] [Epoch: 86/106] [Iter:  256/281]  Loss: 0.5429  LR: 1.424e-04  Acc@1: 100.0000
+2026-05-21 23:10:46 INFO:train:Train: [1:38:30] [Epoch: 86/106] [Iter:  281/281]  Loss: 0.5669  LR: 1.424e-04  Acc@1: 100.0000
+2026-05-21 23:10:59 INFO:train:Test:  [1:38:44] [Iter:   32/32]  Loss: 0.2125  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:10:59 INFO:train: * Acc@1 = 81.4000, Acc@5 = 98.3000, loss = 0.6211
+2026-05-21 23:10:59 INFO:train:Training time 1:38:44, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:10:59 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:11:52 INFO:train:Train: [1:39:36] [Epoch: 87/106] [Iter:  256/281]  Loss: 0.6137  LR: 1.174e-04  Acc@1: 96.8750
+2026-05-21 23:11:56 INFO:train:Train: [1:39:41] [Epoch: 87/106] [Iter:  281/281]  Loss: 0.6652  LR: 1.174e-04  Acc@1: 93.7500
+2026-05-21 23:12:09 INFO:train:Test:  [1:39:53] [Iter:   32/32]  Loss: 0.1989  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:12:09 INFO:train: * Acc@1 = 81.7000, Acc@5 = 98.3000, loss = 0.6232
+2026-05-21 23:12:09 INFO:train:Training time 1:39:54, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:12:09 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:13:02 INFO:train:Train: [1:40:47] [Epoch: 88/106] [Iter:  256/281]  Loss: 0.5707  LR: 9.502e-05  Acc@1: 96.8750
+2026-05-21 23:13:06 INFO:train:Train: [1:40:51] [Epoch: 88/106] [Iter:  281/281]  Loss: 0.5402  LR: 9.502e-05  Acc@1: 100.0000
+2026-05-21 23:13:19 INFO:train:Test:  [1:41:04] [Iter:   32/32]  Loss: 0.2305  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:13:19 INFO:train: * Acc@1 = 81.6000, Acc@5 = 98.2000, loss = 0.6164
+2026-05-21 23:13:19 INFO:train:Training time 1:41:04, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:13:19 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:14:12 INFO:train:Train: [1:41:57] [Epoch: 89/106] [Iter:  256/281]  Loss: 0.5609  LR: 7.518e-05  Acc@1: 100.0000
+2026-05-21 23:14:16 INFO:train:Train: [1:42:01] [Epoch: 89/106] [Iter:  281/281]  Loss: 0.5441  LR: 7.518e-05  Acc@1: 100.0000
+2026-05-21 23:14:30 INFO:train:Test:  [1:42:14] [Iter:   32/32]  Loss: 0.2267  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:14:30 INFO:train: * Acc@1 = 81.5000, Acc@5 = 98.2000, loss = 0.6163
+2026-05-21 23:14:30 INFO:train:Training time 1:42:15, max_test_acc1 82.6000, test_acc5_at_max_test_acc1 98.4000
+2026-05-21 23:14:30 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:15:23 INFO:train:Train: [1:43:08] [Epoch: 90/106] [Iter:  256/281]  Loss: 0.5963  LR: 5.794e-05  Acc@1: 96.8750
+2026-05-21 23:15:27 INFO:train:Train: [1:43:12] [Epoch: 90/106] [Iter:  281/281]  Loss: 0.5706  LR: 5.794e-05  Acc@1: 100.0000
+2026-05-21 23:15:40 INFO:train:Test:  [1:43:25] [Iter:   32/32]  Loss: 0.2202  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:15:40 INFO:train: * Acc@1 = 82.8000, Acc@5 = 98.5000, loss = 0.6073
+2026-05-21 23:15:40 INFO:train:Training time 1:43:25, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:15:40 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:16:33 INFO:train:Train: [1:44:18] [Epoch: 91/106] [Iter:  256/281]  Loss: 0.5265  LR: 4.332e-05  Acc@1: 100.0000
+2026-05-21 23:16:37 INFO:train:Train: [1:44:22] [Epoch: 91/106] [Iter:  281/281]  Loss: 0.5345  LR: 4.332e-05  Acc@1: 100.0000
+2026-05-21 23:16:50 INFO:train:Test:  [1:44:35] [Iter:   32/32]  Loss: 0.2500  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:16:51 INFO:train: * Acc@1 = 81.5000, Acc@5 = 97.8000, loss = 0.6079
+2026-05-21 23:16:51 INFO:train:Training time 1:44:36, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:16:51 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:17:43 INFO:train:Train: [1:45:28] [Epoch: 92/106] [Iter:  256/281]  Loss: 0.7288  LR: 3.135e-05  Acc@1: 90.6250
+2026-05-21 23:17:48 INFO:train:Train: [1:45:33] [Epoch: 92/106] [Iter:  281/281]  Loss: 0.5926  LR: 3.135e-05  Acc@1: 96.8750
+2026-05-21 23:18:00 INFO:train:Test:  [1:45:45] [Iter:   32/32]  Loss: 0.2689  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:18:01 INFO:train: * Acc@1 = 82.6000, Acc@5 = 98.5000, loss = 0.5936
+2026-05-21 23:18:01 INFO:train:Training time 1:45:46, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:18:01 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:18:53 INFO:train:Train: [1:46:38] [Epoch: 93/106] [Iter:  256/281]  Loss: 0.5614  LR: 2.201e-05  Acc@1: 100.0000
+2026-05-21 23:18:58 INFO:train:Train: [1:46:42] [Epoch: 93/106] [Iter:  281/281]  Loss: 0.5620  LR: 2.201e-05  Acc@1: 100.0000
+2026-05-21 23:19:11 INFO:train:Test:  [1:46:56] [Iter:   32/32]  Loss: 0.2379  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:19:11 INFO:train: * Acc@1 = 81.5000, Acc@5 = 98.1000, loss = 0.6101
+2026-05-21 23:19:11 INFO:train:Training time 1:46:56, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:19:11 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:20:04 INFO:train:Train: [1:47:49] [Epoch: 94/106] [Iter:  256/281]  Loss: 0.5487  LR: 1.534e-05  Acc@1: 100.0000
+2026-05-21 23:20:08 INFO:train:Train: [1:47:53] [Epoch: 94/106] [Iter:  281/281]  Loss: 0.6414  LR: 1.534e-05  Acc@1: 96.8750
+2026-05-21 23:20:21 INFO:train:Test:  [1:48:06] [Iter:   32/32]  Loss: 0.2292  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:20:22 INFO:train: * Acc@1 = 82.4000, Acc@5 = 98.1000, loss = 0.6069
+2026-05-21 23:20:22 INFO:train:Training time 1:48:07, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:20:22 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:21:15 INFO:train:Train: [1:49:00] [Epoch: 95/106] [Iter:  256/281]  Loss: 0.5805  LR: 1.134e-05  Acc@1: 96.8750
+2026-05-21 23:21:19 INFO:train:Train: [1:49:04] [Epoch: 95/106] [Iter:  281/281]  Loss: 0.5392  LR: 1.134e-05  Acc@1: 100.0000
+2026-05-21 23:21:32 INFO:train:Test:  [1:49:17] [Iter:   32/32]  Loss: 0.2084  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:21:33 INFO:train: * Acc@1 = 81.5000, Acc@5 = 98.1000, loss = 0.6095
+2026-05-21 23:21:33 INFO:train:Training time 1:49:17, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:21:33 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:22:25 INFO:train:Train: [1:50:10] [Epoch: 96/106] [Iter:  256/281]  Loss: 0.5352  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:22:29 INFO:train:Train: [1:50:14] [Epoch: 96/106] [Iter:  281/281]  Loss: 0.5801  LR: 1.000e-05  Acc@1: 96.8750
+2026-05-21 23:22:43 INFO:train:Test:  [1:50:28] [Iter:   32/32]  Loss: 0.2396  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:22:43 INFO:train: * Acc@1 = 81.8000, Acc@5 = 98.1000, loss = 0.6103
+2026-05-21 23:22:43 INFO:train:Training time 1:50:28, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:22:43 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:23:36 INFO:train:Train: [1:51:20] [Epoch: 97/106] [Iter:  256/281]  Loss: 0.6175  LR: 1.000e-05  Acc@1: 93.7500
+2026-05-21 23:23:40 INFO:train:Train: [1:51:25] [Epoch: 97/106] [Iter:  281/281]  Loss: 0.5881  LR: 1.000e-05  Acc@1: 96.8750
+2026-05-21 23:23:53 INFO:train:Test:  [1:51:38] [Iter:   32/32]  Loss: 0.1949  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:23:53 INFO:train: * Acc@1 = 81.6000, Acc@5 = 98.2000, loss = 0.6093
+2026-05-21 23:23:53 INFO:train:Training time 1:51:38, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:23:53 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:24:46 INFO:train:Train: [1:52:31] [Epoch: 98/106] [Iter:  256/281]  Loss: 0.5342  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:24:51 INFO:train:Train: [1:52:35] [Epoch: 98/106] [Iter:  281/281]  Loss: 0.5574  LR: 1.000e-05  Acc@1: 96.8750
+2026-05-21 23:25:03 INFO:train:Test:  [1:52:48] [Iter:   32/32]  Loss: 0.1939  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:25:04 INFO:train: * Acc@1 = 81.8000, Acc@5 = 98.0000, loss = 0.6118
+2026-05-21 23:25:04 INFO:train:Training time 1:52:49, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:25:04 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:25:57 INFO:train:Train: [1:53:41] [Epoch: 99/106] [Iter:  256/281]  Loss: 0.6107  LR: 1.000e-05  Acc@1: 96.8750
+2026-05-21 23:26:01 INFO:train:Train: [1:53:46] [Epoch: 99/106] [Iter:  281/281]  Loss: 0.5391  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:26:14 INFO:train:Test:  [1:53:59] [Iter:   32/32]  Loss: 0.2174  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:26:14 INFO:train: * Acc@1 = 82.0000, Acc@5 = 98.3000, loss = 0.5989
+2026-05-21 23:26:14 INFO:train:Training time 1:53:59, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:26:14 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:27:07 INFO:train:Train: [1:54:52] [Epoch: 100/106] [Iter:  256/281]  Loss: 0.5573  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:27:11 INFO:train:Train: [1:54:56] [Epoch: 100/106] [Iter:  281/281]  Loss: 0.5705  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:27:24 INFO:train:Test:  [1:55:09] [Iter:   32/32]  Loss: 0.2187  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:27:25 INFO:train: * Acc@1 = 81.2000, Acc@5 = 98.1000, loss = 0.6135
+2026-05-21 23:27:25 INFO:train:Training time 1:55:10, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:27:25 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:28:18 INFO:train:Train: [1:56:02] [Epoch: 101/106] [Iter:  256/281]  Loss: 0.5502  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:28:22 INFO:train:Train: [1:56:07] [Epoch: 101/106] [Iter:  281/281]  Loss: 0.6000  LR: 1.000e-05  Acc@1: 96.8750
+2026-05-21 23:28:35 INFO:train:Test:  [1:56:20] [Iter:   32/32]  Loss: 0.2333  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:28:35 INFO:train: * Acc@1 = 82.0000, Acc@5 = 97.9000, loss = 0.6100
+2026-05-21 23:28:35 INFO:train:Training time 1:56:20, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:28:35 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:29:28 INFO:train:Train: [1:57:13] [Epoch: 102/106] [Iter:  256/281]  Loss: 0.5285  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:29:32 INFO:train:Train: [1:57:17] [Epoch: 102/106] [Iter:  281/281]  Loss: 0.5819  LR: 1.000e-05  Acc@1: 96.8750
+2026-05-21 23:29:46 INFO:train:Test:  [1:57:30] [Iter:   32/32]  Loss: 0.1855  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:29:46 INFO:train: * Acc@1 = 82.3000, Acc@5 = 98.3000, loss = 0.5933
+2026-05-21 23:29:46 INFO:train:Training time 1:57:31, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:29:46 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:30:39 INFO:train:Train: [1:58:23] [Epoch: 103/106] [Iter:  256/281]  Loss: 0.5676  LR: 1.000e-05  Acc@1: 96.8750
+2026-05-21 23:30:43 INFO:train:Train: [1:58:28] [Epoch: 103/106] [Iter:  281/281]  Loss: 0.5392  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:30:56 INFO:train:Test:  [1:58:41] [Iter:   32/32]  Loss: 0.2059  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:30:56 INFO:train: * Acc@1 = 81.9000, Acc@5 = 98.2000, loss = 0.6069
+2026-05-21 23:30:56 INFO:train:Training time 1:58:41, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:30:56 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:31:49 INFO:train:Train: [1:59:34] [Epoch: 104/106] [Iter:  256/281]  Loss: 0.5276  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:31:54 INFO:train:Train: [1:59:38] [Epoch: 104/106] [Iter:  281/281]  Loss: 0.5296  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:32:07 INFO:train:Test:  [1:59:51] [Iter:   32/32]  Loss: 0.2207  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:32:07 INFO:train: * Acc@1 = 81.9000, Acc@5 = 98.2000, loss = 0.5901
+2026-05-21 23:32:07 INFO:train:Training time 1:59:52, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:32:07 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD
+2026-05-21 23:33:00 INFO:train:Train: [2:00:45] [Epoch: 105/106] [Iter:  256/281]  Loss: 0.5343  LR: 1.000e-05  Acc@1: 100.0000
+2026-05-21 23:33:04 INFO:train:Train: [2:00:49] [Epoch: 105/106] [Iter:  281/281]  Loss: 0.5905  LR: 1.000e-05  Acc@1: 96.8750
+2026-05-21 23:33:17 INFO:train:Test:  [2:01:02] [Iter:   32/32]  Loss: 0.2273  Acc@1: 100.0000  Acc@5: 100.0000
+2026-05-21 23:33:17 INFO:train: * Acc@1 = 82.2000, Acc@5 = 98.4000, loss = 0.6063
+2026-05-21 23:33:17 INFO:train:Training time 2:01:02, max_test_acc1 82.8000, test_acc5_at_max_test_acc1 98.5000
+2026-05-21 23:33:17 INFO:train:Current Run Directory: ./output\20260521-213122_QKFormer_b32_T16_wd0.06_adamw_cnf_ADD

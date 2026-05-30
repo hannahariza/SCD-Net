@@ -1,0 +1,753 @@
+2026-04-03 16:20:47 INFO:train:Logging initialized at temp path: ./output/tmp_logs\train_20260403-162047.log
+2026-04-03 16:20:47 INFO:train:Namespace(T=16, T_train=None, amp=True, batch_size=16, connect_f='ADD', cooldown_epochs=10, cutmix=0.0, cutmix_minmax=None, data_path='D:/dataset/data/cifar10dvs/', dataset='cifar10dvs', decay_epochs=20, device='cuda', dist_url='env://', distributed=False, epochs=96, lr=0.005, min_lr=1e-05, mixup=0.5, mixup_mode='batch', mixup_off_epoch=0, mixup_prob=0.5, mixup_switch_prob=0.5, model='QKFormer', momentum=0.9, num_classes=10, opt='adamw', opt_betas=None, opt_eps=1e-08, output_dir='./logs', print_freq=256, resume='', sched='cosine', smoothing=0.1, start_epoch=0, sync_bn=False, tb=True, test_only=False, warmup_epochs=10, warmup_lr=1e-05, weight_decay=0.06, workers=4, world_size=1)
+2026-04-03 16:20:47 INFO:train:Log file moved to: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD\logs\train_20260403-162047.log
+2026-04-03 16:20:47 INFO:train:All outputs for this run will be saved to: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:20:47 INFO:train:Loading data
+2026-04-03 16:21:47 INFO:train:Took 59.98 seconds
+2026-04-03 16:21:47 INFO:train:Creating data loaders
+2026-04-03 16:21:47 INFO:train:Creating model
+2026-04-03 16:21:47 INFO:train:number of params: 1516618
+2026-04-03 16:21:47 INFO:train:purge_step_train=0, purge_step_te=0
+2026-04-03 16:21:47 INFO:train:Start training
+2026-04-03 16:22:30 INFO:train:Train: [0:00:42] [Epoch: 0/106] [Iter:  256/562]  Loss_Tot: 4.5562  L_Full: 2.2710  L_Mask: 2.2852  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3479  Wgt(C/S): 0.00/0.00  LR: 1.000e-05  Acc@1: 12.5000
+2026-04-03 16:22:59 INFO:train:Train: [0:01:11] [Epoch: 0/106] [Iter:  512/562]  Loss_Tot: 4.5246  L_Full: 2.2597  L_Mask: 2.2649  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3457  Wgt(C/S): 0.00/0.00  LR: 1.000e-05  Acc@1:  6.2500
+2026-04-03 16:23:05 INFO:train:Train: [0:01:17] [Epoch: 0/106] [Iter:  562/562]  Loss_Tot: 4.5550  L_Full: 2.2659  L_Mask: 2.2891  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3406  Wgt(C/S): 0.00/0.00  LR: 1.000e-05  Acc@1: 18.7500
+2026-04-03 16:23:19 INFO:train:Test:  [0:01:31] [Iter:   63/63]  Loss_Tot: 3.9566  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 25.0000  Acc@5: 100.0000
+2026-04-03 16:23:19 INFO:train: * Acc@1 = 18.3000, Acc@5 = 67.7000, loss = 4.5090
+2026-04-03 16:23:19 INFO:train:Training time 0:01:31, max_test_acc1 18.3000, test_acc5_at_max_test_acc1 67.7000
+2026-04-03 16:23:19 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:23:59 INFO:train:Train: [0:02:11] [Epoch: 1/106] [Iter:  256/562]  Loss_Tot: 4.2243  L_Full: 2.0885  L_Mask: 2.1358  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3284  Wgt(C/S): 0.00/0.00  LR: 5.090e-04  Acc@1: 25.0000
+2026-04-03 16:24:28 INFO:train:Train: [0:02:40] [Epoch: 1/106] [Iter:  512/562]  Loss_Tot: 4.1606  L_Full: 2.0807  L_Mask: 2.0799  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3240  Wgt(C/S): 0.00/0.00  LR: 5.090e-04  Acc@1: 37.5000
+2026-04-03 16:24:34 INFO:train:Train: [0:02:46] [Epoch: 1/106] [Iter:  562/562]  Loss_Tot: 3.7956  L_Full: 1.9206  L_Mask: 1.8750  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3296  Wgt(C/S): 0.00/0.00  LR: 5.090e-04  Acc@1: 25.0000
+2026-04-03 16:24:47 INFO:train:Test:  [0:02:59] [Iter:   63/63]  Loss_Tot: 4.5042  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5: 50.0000
+2026-04-03 16:24:47 INFO:train: * Acc@1 = 16.5000, Acc@5 = 66.7000, loss = 4.2367
+2026-04-03 16:24:47 INFO:train:Training time 0:02:59, max_test_acc1 18.3000, test_acc5_at_max_test_acc1 67.7000
+2026-04-03 16:24:47 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:25:26 INFO:train:Train: [0:03:38] [Epoch: 2/106] [Iter:  256/562]  Loss_Tot: 4.1167  L_Full: 2.0477  L_Mask: 2.0690  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3110  Wgt(C/S): 0.00/0.00  LR: 1.008e-03  Acc@1: 31.2500
+2026-04-03 16:25:56 INFO:train:Train: [0:04:08] [Epoch: 2/106] [Iter:  512/562]  Loss_Tot: 4.2806  L_Full: 2.1466  L_Mask: 2.1340  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3098  Wgt(C/S): 0.00/0.00  LR: 1.008e-03  Acc@1: 25.0000
+2026-04-03 16:26:02 INFO:train:Train: [0:04:14] [Epoch: 2/106] [Iter:  562/562]  Loss_Tot: 4.2426  L_Full: 2.1138  L_Mask: 2.1288  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3206  Wgt(C/S): 0.00/0.00  LR: 1.008e-03  Acc@1: 18.7500
+2026-04-03 16:26:15 INFO:train:Test:  [0:04:27] [Iter:   63/63]  Loss_Tot: 3.6092  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5: 75.0000
+2026-04-03 16:26:15 INFO:train: * Acc@1 = 31.4000, Acc@5 = 78.0000, loss = 3.8922
+2026-04-03 16:26:15 INFO:train:Training time 0:04:27, max_test_acc1 31.4000, test_acc5_at_max_test_acc1 78.0000
+2026-04-03 16:26:15 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:26:54 INFO:train:Train: [0:05:06] [Epoch: 3/106] [Iter:  256/562]  Loss_Tot: 3.5879  L_Full: 1.7902  L_Mask: 1.7977  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.3008  Wgt(C/S): 0.00/0.00  LR: 1.507e-03  Acc@1: 25.0000
+2026-04-03 16:27:24 INFO:train:Train: [0:05:36] [Epoch: 3/106] [Iter:  512/562]  Loss_Tot: 3.2178  L_Full: 1.6216  L_Mask: 1.5963  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2937  Wgt(C/S): 0.00/0.00  LR: 1.507e-03  Acc@1: 50.0000
+2026-04-03 16:27:30 INFO:train:Train: [0:05:42] [Epoch: 3/106] [Iter:  562/562]  Loss_Tot: 4.2377  L_Full: 2.0884  L_Mask: 2.1493  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2732  Wgt(C/S): 0.00/0.00  LR: 1.507e-03  Acc@1: 37.5000
+2026-04-03 16:27:43 INFO:train:Test:  [0:05:55] [Iter:   63/63]  Loss_Tot: 5.4434  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5:  0.0000
+2026-04-03 16:27:43 INFO:train: * Acc@1 = 21.6000, Acc@5 = 68.8000, loss = 4.5627
+2026-04-03 16:27:43 INFO:train:Training time 0:05:55, max_test_acc1 31.4000, test_acc5_at_max_test_acc1 78.0000
+2026-04-03 16:27:43 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:28:22 INFO:train:Train: [0:06:34] [Epoch: 4/106] [Iter:  256/562]  Loss_Tot: 3.5851  L_Full: 1.8011  L_Mask: 1.7841  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2871  Wgt(C/S): 0.00/0.00  LR: 2.006e-03  Acc@1: 25.0000
+2026-04-03 16:28:52 INFO:train:Train: [0:07:04] [Epoch: 4/106] [Iter:  512/562]  Loss_Tot: 3.9295  L_Full: 1.9217  L_Mask: 2.0078  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2578  Wgt(C/S): 0.00/0.00  LR: 2.006e-03  Acc@1: 43.7500
+2026-04-03 16:28:58 INFO:train:Train: [0:07:10] [Epoch: 4/106] [Iter:  562/562]  Loss_Tot: 2.7674  L_Full: 1.3848  L_Mask: 1.3827  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2781  Wgt(C/S): 0.00/0.00  LR: 2.006e-03  Acc@1: 62.5000
+2026-04-03 16:29:11 INFO:train:Test:  [0:07:23] [Iter:   63/63]  Loss_Tot: 4.2622  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5: 62.5000
+2026-04-03 16:29:11 INFO:train: * Acc@1 = 33.9000, Acc@5 = 80.4000, loss = 3.4962
+2026-04-03 16:29:11 INFO:train:Training time 0:07:23, max_test_acc1 33.9000, test_acc5_at_max_test_acc1 80.4000
+2026-04-03 16:29:11 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:29:50 INFO:train:Train: [0:08:02] [Epoch: 5/106] [Iter:  256/562]  Loss_Tot: 4.1797  L_Full: 2.0915  L_Mask: 2.0882  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2642  Wgt(C/S): 0.00/0.00  LR: 2.505e-03  Acc@1: 31.2500
+2026-04-03 16:30:20 INFO:train:Train: [0:08:32] [Epoch: 5/106] [Iter:  512/562]  Loss_Tot: 3.2893  L_Full: 1.6309  L_Mask: 1.6583  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2539  Wgt(C/S): 0.00/0.00  LR: 2.505e-03  Acc@1: 56.2500
+2026-04-03 16:30:26 INFO:train:Train: [0:08:38] [Epoch: 5/106] [Iter:  562/562]  Loss_Tot: 3.4415  L_Full: 1.7107  L_Mask: 1.7308  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2590  Wgt(C/S): 0.00/0.00  LR: 2.505e-03  Acc@1: 37.5000
+2026-04-03 16:30:39 INFO:train:Test:  [0:08:51] [Iter:   63/63]  Loss_Tot: 4.0511  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 12.5000  Acc@5: 75.0000
+2026-04-03 16:30:39 INFO:train: * Acc@1 = 20.6000, Acc@5 = 81.5000, loss = 3.9662
+2026-04-03 16:30:39 INFO:train:Training time 0:08:51, max_test_acc1 33.9000, test_acc5_at_max_test_acc1 80.4000
+2026-04-03 16:30:39 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:31:18 INFO:train:Train: [0:09:30] [Epoch: 6/106] [Iter:  256/562]  Loss_Tot: 3.1195  L_Full: 1.5940  L_Mask: 1.5256  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2440  Wgt(C/S): 0.00/0.00  LR: 3.004e-03  Acc@1: 50.0000
+2026-04-03 16:31:48 INFO:train:Train: [0:10:00] [Epoch: 6/106] [Iter:  512/562]  Loss_Tot: 3.3861  L_Full: 1.6521  L_Mask: 1.7340  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2361  Wgt(C/S): 0.00/0.00  LR: 3.004e-03  Acc@1: 43.7500
+2026-04-03 16:31:54 INFO:train:Train: [0:10:06] [Epoch: 6/106] [Iter:  562/562]  Loss_Tot: 2.6221  L_Full: 1.3156  L_Mask: 1.3065  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2341  Wgt(C/S): 0.00/0.00  LR: 3.004e-03  Acc@1: 75.0000
+2026-04-03 16:32:07 INFO:train:Test:  [0:10:19] [Iter:   63/63]  Loss_Tot: 4.3901  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5: 75.0000
+2026-04-03 16:32:07 INFO:train: * Acc@1 = 38.6000, Acc@5 = 89.4000, loss = 3.3625
+2026-04-03 16:32:07 INFO:train:Training time 0:10:19, max_test_acc1 38.6000, test_acc5_at_max_test_acc1 89.4000
+2026-04-03 16:32:07 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:32:46 INFO:train:Train: [0:10:59] [Epoch: 7/106] [Iter:  256/562]  Loss_Tot: 3.4133  L_Full: 1.6962  L_Mask: 1.7171  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2162  Wgt(C/S): 0.00/0.00  LR: 3.503e-03  Acc@1: 43.7500
+2026-04-03 16:33:17 INFO:train:Train: [0:11:29] [Epoch: 7/106] [Iter:  512/562]  Loss_Tot: 3.6832  L_Full: 1.8288  L_Mask: 1.8544  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2156  Wgt(C/S): 0.00/0.00  LR: 3.503e-03  Acc@1: 50.0000
+2026-04-03 16:33:22 INFO:train:Train: [0:11:34] [Epoch: 7/106] [Iter:  562/562]  Loss_Tot: 3.5458  L_Full: 1.7807  L_Mask: 1.7650  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2114  Wgt(C/S): 0.00/0.00  LR: 3.503e-03  Acc@1: 43.7500
+2026-04-03 16:33:35 INFO:train:Test:  [0:11:47] [Iter:   63/63]  Loss_Tot: 5.9556  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1:  0.0000  Acc@5: 37.5000
+2026-04-03 16:33:36 INFO:train: * Acc@1 = 27.8000, Acc@5 = 74.0000, loss = 4.3520
+2026-04-03 16:33:36 INFO:train:Training time 0:11:48, max_test_acc1 38.6000, test_acc5_at_max_test_acc1 89.4000
+2026-04-03 16:33:36 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:34:15 INFO:train:Train: [0:12:27] [Epoch: 8/106] [Iter:  256/562]  Loss_Tot: 2.7178  L_Full: 1.3394  L_Mask: 1.3785  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2009  Wgt(C/S): 0.00/0.00  LR: 4.002e-03  Acc@1: 62.5000
+2026-04-03 16:34:45 INFO:train:Train: [0:12:57] [Epoch: 8/106] [Iter:  512/562]  Loss_Tot: 2.9752  L_Full: 1.5109  L_Mask: 1.4643  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.2050  Wgt(C/S): 0.00/0.00  LR: 4.002e-03  Acc@1: 56.2500
+2026-04-03 16:34:51 INFO:train:Train: [0:13:03] [Epoch: 8/106] [Iter:  562/562]  Loss_Tot: 2.8533  L_Full: 1.4374  L_Mask: 1.4159  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1985  Wgt(C/S): 0.00/0.00  LR: 4.002e-03  Acc@1: 68.7500
+2026-04-03 16:35:04 INFO:train:Test:  [0:13:16] [Iter:   63/63]  Loss_Tot: 2.2672  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 37.5000  Acc@5: 87.5000
+2026-04-03 16:35:04 INFO:train: * Acc@1 = 51.7000, Acc@5 = 92.6000, loss = 2.5892
+2026-04-03 16:35:04 INFO:train:Training time 0:13:16, max_test_acc1 51.7000, test_acc5_at_max_test_acc1 92.6000
+2026-04-03 16:35:04 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:35:43 INFO:train:Train: [0:13:55] [Epoch: 9/106] [Iter:  256/562]  Loss_Tot: 4.1103  L_Full: 2.0447  L_Mask: 2.0656  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1847  Wgt(C/S): 0.00/0.00  LR: 4.501e-03  Acc@1: 18.7500
+2026-04-03 16:36:13 INFO:train:Train: [0:14:25] [Epoch: 9/106] [Iter:  512/562]  Loss_Tot: 2.3414  L_Full: 1.1829  L_Mask: 1.1586  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1827  Wgt(C/S): 0.00/0.00  LR: 4.501e-03  Acc@1: 81.2500
+2026-04-03 16:36:19 INFO:train:Train: [0:14:31] [Epoch: 9/106] [Iter:  562/562]  Loss_Tot: 2.9213  L_Full: 1.4797  L_Mask: 1.4416  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1823  Wgt(C/S): 0.00/0.00  LR: 4.501e-03  Acc@1: 68.7500
+2026-04-03 16:36:32 INFO:train:Test:  [0:14:44] [Iter:   63/63]  Loss_Tot: 1.0887  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 16:36:32 INFO:train: * Acc@1 = 63.3000, Acc@5 = 95.8000, loss = 2.3227
+2026-04-03 16:36:32 INFO:train:Training time 0:14:44, max_test_acc1 63.3000, test_acc5_at_max_test_acc1 95.8000
+2026-04-03 16:36:32 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:37:11 INFO:train:Train: [0:15:23] [Epoch: 10/106] [Iter:  256/562]  Loss_Tot: 3.0917  L_Full: 1.5478  L_Mask: 1.5439  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1682  Wgt(C/S): 0.00/0.00  LR: 4.868e-03  Acc@1: 56.2500
+2026-04-03 16:37:41 INFO:train:Train: [0:15:53] [Epoch: 10/106] [Iter:  512/562]  Loss_Tot: 2.7367  L_Full: 1.3670  L_Mask: 1.3697  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1746  Wgt(C/S): 0.00/0.00  LR: 4.868e-03  Acc@1: 62.5000
+2026-04-03 16:37:47 INFO:train:Train: [0:15:59] [Epoch: 10/106] [Iter:  562/562]  Loss_Tot: 2.5288  L_Full: 1.2710  L_Mask: 1.2578  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1725  Wgt(C/S): 0.00/0.00  LR: 4.868e-03  Acc@1: 62.5000
+2026-04-03 16:38:00 INFO:train:Test:  [0:16:12] [Iter:   63/63]  Loss_Tot: 1.4601  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 87.5000
+2026-04-03 16:38:01 INFO:train: * Acc@1 = 55.8000, Acc@5 = 95.0000, loss = 2.5160
+2026-04-03 16:38:01 INFO:train:Training time 0:16:13, max_test_acc1 63.3000, test_acc5_at_max_test_acc1 95.8000
+2026-04-03 16:38:01 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:38:40 INFO:train:Train: [0:16:52] [Epoch: 11/106] [Iter:  256/562]  Loss_Tot: 2.5559  L_Full: 1.2524  L_Mask: 1.3035  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1641  Wgt(C/S): 0.00/0.00  LR: 4.840e-03  Acc@1: 62.5000
+2026-04-03 16:39:09 INFO:train:Train: [0:17:21] [Epoch: 11/106] [Iter:  512/562]  Loss_Tot: 2.5418  L_Full: 1.2831  L_Mask: 1.2587  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1580  Wgt(C/S): 0.00/0.00  LR: 4.840e-03  Acc@1: 62.5000
+2026-04-03 16:39:15 INFO:train:Train: [0:17:27] [Epoch: 11/106] [Iter:  562/562]  Loss_Tot: 2.4387  L_Full: 1.2271  L_Mask: 1.2116  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1550  Wgt(C/S): 0.00/0.00  LR: 4.840e-03  Acc@1: 68.7500
+2026-04-03 16:39:28 INFO:train:Test:  [0:17:40] [Iter:   63/63]  Loss_Tot: 3.0196  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 37.5000  Acc@5: 87.5000
+2026-04-03 16:39:29 INFO:train: * Acc@1 = 55.1000, Acc@5 = 92.3000, loss = 2.4234
+2026-04-03 16:39:29 INFO:train:Training time 0:17:41, max_test_acc1 63.3000, test_acc5_at_max_test_acc1 95.8000
+2026-04-03 16:39:29 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:40:07 INFO:train:Train: [0:18:20] [Epoch: 12/106] [Iter:  256/562]  Loss_Tot: 2.8225  L_Full: 1.4306  L_Mask: 1.3919  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1556  Wgt(C/S): 0.00/0.00  LR: 4.810e-03  Acc@1: 62.5000
+2026-04-03 16:40:37 INFO:train:Train: [0:18:50] [Epoch: 12/106] [Iter:  512/562]  Loss_Tot: 2.6403  L_Full: 1.3227  L_Mask: 1.3176  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1545  Wgt(C/S): 0.00/0.00  LR: 4.810e-03  Acc@1: 81.2500
+2026-04-03 16:40:43 INFO:train:Train: [0:18:55] [Epoch: 12/106] [Iter:  562/562]  Loss_Tot: 3.7232  L_Full: 1.8513  L_Mask: 1.8719  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1473  Wgt(C/S): 0.00/0.00  LR: 4.810e-03  Acc@1: 50.0000
+2026-04-03 16:40:56 INFO:train:Test:  [0:19:08] [Iter:   63/63]  Loss_Tot: 1.5428  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 16:40:57 INFO:train: * Acc@1 = 49.1000, Acc@5 = 95.6000, loss = 3.2508
+2026-04-03 16:40:57 INFO:train:Training time 0:19:09, max_test_acc1 63.3000, test_acc5_at_max_test_acc1 95.8000
+2026-04-03 16:40:57 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:41:35 INFO:train:Train: [0:19:47] [Epoch: 13/106] [Iter:  256/562]  Loss_Tot: 2.8816  L_Full: 1.4372  L_Mask: 1.4444  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1483  Wgt(C/S): 0.00/0.00  LR: 4.778e-03  Acc@1: 56.2500
+2026-04-03 16:42:05 INFO:train:Train: [0:20:17] [Epoch: 13/106] [Iter:  512/562]  Loss_Tot: 3.1914  L_Full: 1.5992  L_Mask: 1.5923  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1486  Wgt(C/S): 0.00/0.00  LR: 4.778e-03  Acc@1: 50.0000
+2026-04-03 16:42:11 INFO:train:Train: [0:20:23] [Epoch: 13/106] [Iter:  562/562]  Loss_Tot: 3.0361  L_Full: 1.5028  L_Mask: 1.5333  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1511  Wgt(C/S): 0.00/0.00  LR: 4.778e-03  Acc@1: 62.5000
+2026-04-03 16:42:24 INFO:train:Test:  [0:20:36] [Iter:   63/63]  Loss_Tot: 0.7760  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 16:42:24 INFO:train: * Acc@1 = 68.6000, Acc@5 = 97.4000, loss = 1.9930
+2026-04-03 16:42:24 INFO:train:Training time 0:20:36, max_test_acc1 68.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 16:42:24 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:43:03 INFO:train:Train: [0:21:15] [Epoch: 14/106] [Iter:  256/562]  Loss_Tot: 2.9026  L_Full: 1.4527  L_Mask: 1.4499  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1381  Wgt(C/S): 0.00/0.00  LR: 4.743e-03  Acc@1: 56.2500
+2026-04-03 16:43:32 INFO:train:Train: [0:21:44] [Epoch: 14/106] [Iter:  512/562]  Loss_Tot: 2.8447  L_Full: 1.3996  L_Mask: 1.4451  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1411  Wgt(C/S): 0.00/0.00  LR: 4.743e-03  Acc@1: 50.0000
+2026-04-03 16:43:38 INFO:train:Train: [0:21:50] [Epoch: 14/106] [Iter:  562/562]  Loss_Tot: 3.2560  L_Full: 1.6154  L_Mask: 1.6406  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1425  Wgt(C/S): 0.00/0.00  LR: 4.743e-03  Acc@1: 62.5000
+2026-04-03 16:43:50 INFO:train:Test:  [0:22:03] [Iter:   63/63]  Loss_Tot: 0.8782  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 16:43:51 INFO:train: * Acc@1 = 65.4000, Acc@5 = 96.3000, loss = 2.0922
+2026-04-03 16:43:51 INFO:train:Training time 0:22:03, max_test_acc1 68.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 16:43:51 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:44:29 INFO:train:Train: [0:22:41] [Epoch: 15/106] [Iter:  256/562]  Loss_Tot: 2.8322  L_Full: 1.4034  L_Mask: 1.4289  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1422  Wgt(C/S): 0.00/0.00  LR: 4.705e-03  Acc@1: 56.2500
+2026-04-03 16:44:58 INFO:train:Train: [0:23:10] [Epoch: 15/106] [Iter:  512/562]  Loss_Tot: 3.2830  L_Full: 1.6279  L_Mask: 1.6551  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1404  Wgt(C/S): 0.00/0.00  LR: 4.705e-03  Acc@1: 68.7500
+2026-04-03 16:45:04 INFO:train:Train: [0:23:16] [Epoch: 15/106] [Iter:  562/562]  Loss_Tot: 2.8819  L_Full: 1.4519  L_Mask: 1.4300  L_Caus: 0.0000  L_Spar: 0.0000  FR: 0.1384  Wgt(C/S): 0.00/0.00  LR: 4.705e-03  Acc@1: 50.0000
+2026-04-03 16:45:17 INFO:train:Test:  [0:23:29] [Iter:   63/63]  Loss_Tot: 2.7784  L_Caus: 0.0000  L_Spar: 0.0000  Acc@1: 37.5000  Acc@5: 100.0000
+2026-04-03 16:45:17 INFO:train: * Acc@1 = 50.9000, Acc@5 = 94.4000, loss = 2.6683
+2026-04-03 16:45:17 INFO:train:Training time 0:23:29, max_test_acc1 68.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 16:45:17 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:45:56 INFO:train:Train: [0:24:08] [Epoch: 16/106] [Iter:  256/562]  Loss_Tot: 3.2339  L_Full: 1.6002  L_Mask: 1.6335  L_Caus: 0.0113  L_Spar: 0.0000  FR: 0.1387  Wgt(C/S): 0.02/0.00  LR: 4.666e-03  Acc@1: 68.7500
+2026-04-03 16:46:25 INFO:train:Train: [0:24:37] [Epoch: 16/106] [Iter:  512/562]  Loss_Tot: 3.5461  L_Full: 1.7588  L_Mask: 1.7872  L_Caus: 0.0045  L_Spar: 0.0000  FR: 0.1376  Wgt(C/S): 0.02/0.00  LR: 4.666e-03  Acc@1: 62.5000
+2026-04-03 16:46:31 INFO:train:Train: [0:24:43] [Epoch: 16/106] [Iter:  562/562]  Loss_Tot: 3.1128  L_Full: 1.5655  L_Mask: 1.5471  L_Caus: 0.0087  L_Spar: 0.0000  FR: 0.1370  Wgt(C/S): 0.02/0.00  LR: 4.666e-03  Acc@1: 68.7500
+2026-04-03 16:46:44 INFO:train:Test:  [0:24:56] [Iter:   63/63]  Loss_Tot: 1.5426  L_Caus: 0.1120  L_Spar: 0.0000  Acc@1: 62.5000  Acc@5: 100.0000
+2026-04-03 16:46:44 INFO:train: * Acc@1 = 58.0000, Acc@5 = 92.8000, loss = 2.5631
+2026-04-03 16:46:44 INFO:train:Training time 0:24:56, max_test_acc1 68.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 16:46:44 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:47:22 INFO:train:Train: [0:25:34] [Epoch: 17/106] [Iter:  256/562]  Loss_Tot: 2.3591  L_Full: 1.1951  L_Mask: 1.1636  L_Caus: 0.0114  L_Spar: 0.0000  FR: 0.1315  Wgt(C/S): 0.04/0.00  LR: 4.624e-03  Acc@1: 68.7500
+2026-04-03 16:47:52 INFO:train:Train: [0:26:04] [Epoch: 17/106] [Iter:  512/562]  Loss_Tot: 2.0571  L_Full: 1.0491  L_Mask: 1.0076  L_Caus: 0.0106  L_Spar: 0.0000  FR: 0.1317  Wgt(C/S): 0.04/0.00  LR: 4.624e-03  Acc@1: 93.7500
+2026-04-03 16:47:58 INFO:train:Train: [0:26:10] [Epoch: 17/106] [Iter:  562/562]  Loss_Tot: 2.8055  L_Full: 1.3839  L_Mask: 1.4213  L_Caus: 0.0057  L_Spar: 0.0000  FR: 0.1367  Wgt(C/S): 0.04/0.00  LR: 4.624e-03  Acc@1: 62.5000
+2026-04-03 16:48:11 INFO:train:Test:  [0:26:23] [Iter:   63/63]  Loss_Tot: 1.3370  L_Caus: 0.0941  L_Spar: 0.0000  Acc@1: 62.5000  Acc@5: 100.0000
+2026-04-03 16:48:11 INFO:train: * Acc@1 = 63.9000, Acc@5 = 96.0000, loss = 2.1281
+2026-04-03 16:48:11 INFO:train:Training time 0:26:23, max_test_acc1 68.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 16:48:11 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:48:49 INFO:train:Train: [0:27:01] [Epoch: 18/106] [Iter:  256/562]  Loss_Tot: 2.4170  L_Full: 1.2056  L_Mask: 1.2110  L_Caus: 0.0060  L_Spar: 0.0000  FR: 0.1346  Wgt(C/S): 0.07/0.00  LR: 4.580e-03  Acc@1: 68.7500
+2026-04-03 16:49:19 INFO:train:Train: [0:27:31] [Epoch: 18/106] [Iter:  512/562]  Loss_Tot: 2.7276  L_Full: 1.3793  L_Mask: 1.3476  L_Caus: 0.0106  L_Spar: 0.0000  FR: 0.1333  Wgt(C/S): 0.07/0.00  LR: 4.580e-03  Acc@1: 93.7500
+2026-04-03 16:49:24 INFO:train:Train: [0:27:36] [Epoch: 18/106] [Iter:  562/562]  Loss_Tot: 2.8421  L_Full: 1.4073  L_Mask: 1.4342  L_Caus: 0.0080  L_Spar: 0.0000  FR: 0.1334  Wgt(C/S): 0.07/0.00  LR: 4.580e-03  Acc@1: 62.5000
+2026-04-03 16:49:37 INFO:train:Test:  [0:27:49] [Iter:   63/63]  Loss_Tot: 0.8872  L_Caus: 0.0382  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 16:49:37 INFO:train: * Acc@1 = 67.6000, Acc@5 = 96.6000, loss = 2.0049
+2026-04-03 16:49:37 INFO:train:Training time 0:27:49, max_test_acc1 68.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 16:49:37 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:50:15 INFO:train:Train: [0:28:27] [Epoch: 19/106] [Iter:  256/562]  Loss_Tot: 2.4069  L_Full: 1.2092  L_Mask: 1.1968  L_Caus: 0.0102  L_Spar: 0.0000  FR: 0.1306  Wgt(C/S): 0.09/0.00  LR: 4.533e-03  Acc@1: 81.2500
+2026-04-03 16:50:45 INFO:train:Train: [0:28:57] [Epoch: 19/106] [Iter:  512/562]  Loss_Tot: 2.7669  L_Full: 1.3924  L_Mask: 1.3735  L_Caus: 0.0107  L_Spar: 0.0000  FR: 0.1270  Wgt(C/S): 0.09/0.00  LR: 4.533e-03  Acc@1: 56.2500
+2026-04-03 16:50:50 INFO:train:Train: [0:29:02] [Epoch: 19/106] [Iter:  562/562]  Loss_Tot: 2.7879  L_Full: 1.4055  L_Mask: 1.3813  L_Caus: 0.0124  L_Spar: 0.0000  FR: 0.1316  Wgt(C/S): 0.09/0.00  LR: 4.533e-03  Acc@1: 62.5000
+2026-04-03 16:51:03 INFO:train:Test:  [0:29:15] [Iter:   63/63]  Loss_Tot: 1.4897  L_Caus: 0.0553  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 16:51:03 INFO:train: * Acc@1 = 61.7000, Acc@5 = 95.7000, loss = 2.2407
+2026-04-03 16:51:03 INFO:train:Training time 0:29:16, max_test_acc1 68.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 16:51:03 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:51:42 INFO:train:Train: [0:29:54] [Epoch: 20/106] [Iter:  256/562]  Loss_Tot: 2.8785  L_Full: 1.4470  L_Mask: 1.4301  L_Caus: 0.0122  L_Spar: 0.0000  FR: 0.1317  Wgt(C/S): 0.11/0.00  LR: 4.484e-03  Acc@1: 50.0000
+2026-04-03 16:52:11 INFO:train:Train: [0:30:23] [Epoch: 20/106] [Iter:  512/562]  Loss_Tot: 2.0202  L_Full: 1.0096  L_Mask: 1.0101  L_Caus: 0.0047  L_Spar: 0.0000  FR: 0.1284  Wgt(C/S): 0.11/0.00  LR: 4.484e-03  Acc@1: 87.5000
+2026-04-03 16:52:17 INFO:train:Train: [0:30:29] [Epoch: 20/106] [Iter:  562/562]  Loss_Tot: 2.2673  L_Full: 1.1299  L_Mask: 1.1365  L_Caus: 0.0074  L_Spar: 0.0000  FR: 0.1301  Wgt(C/S): 0.11/0.00  LR: 4.484e-03  Acc@1: 75.0000
+2026-04-03 16:52:30 INFO:train:Test:  [0:30:42] [Iter:   63/63]  Loss_Tot: 0.7733  L_Caus: 0.0473  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 16:52:30 INFO:train: * Acc@1 = 70.0000, Acc@5 = 96.7000, loss = 1.8221
+2026-04-03 16:52:30 INFO:train:Training time 0:30:42, max_test_acc1 70.0000, test_acc5_at_max_test_acc1 96.7000
+2026-04-03 16:52:30 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:53:09 INFO:train:Train: [0:31:21] [Epoch: 21/106] [Iter:  256/562]  Loss_Tot: 1.9063  L_Full: 0.9668  L_Mask: 0.9383  L_Caus: 0.0093  L_Spar: 0.0000  FR: 0.1273  Wgt(C/S): 0.13/0.00  LR: 4.434e-03  Acc@1: 93.7500
+2026-04-03 16:53:38 INFO:train:Train: [0:31:50] [Epoch: 21/106] [Iter:  512/562]  Loss_Tot: 2.8364  L_Full: 1.4013  L_Mask: 1.4339  L_Caus: 0.0087  L_Spar: 0.0000  FR: 0.1296  Wgt(C/S): 0.13/0.00  LR: 4.434e-03  Acc@1: 68.7500
+2026-04-03 16:53:43 INFO:train:Train: [0:31:56] [Epoch: 21/106] [Iter:  562/562]  Loss_Tot: 1.7409  L_Full: 0.8706  L_Mask: 0.8684  L_Caus: 0.0146  L_Spar: 0.0000  FR: 0.1238  Wgt(C/S): 0.13/0.00  LR: 4.434e-03  Acc@1: 93.7500
+2026-04-03 16:53:56 INFO:train:Test:  [0:32:08] [Iter:   63/63]  Loss_Tot: 0.7381  L_Caus: 0.1374  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 16:53:57 INFO:train: * Acc@1 = 66.6000, Acc@5 = 96.7000, loss = 1.9208
+2026-04-03 16:53:57 INFO:train:Training time 0:32:09, max_test_acc1 70.0000, test_acc5_at_max_test_acc1 96.7000
+2026-04-03 16:53:57 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:54:35 INFO:train:Train: [0:32:47] [Epoch: 22/106] [Iter:  256/562]  Loss_Tot: 4.2313  L_Full: 2.0918  L_Mask: 2.1385  L_Caus: 0.0064  L_Spar: 0.0000  FR: 0.1243  Wgt(C/S): 0.16/0.00  LR: 4.381e-03  Acc@1: 37.5000
+2026-04-03 16:55:05 INFO:train:Train: [0:33:17] [Epoch: 22/106] [Iter:  512/562]  Loss_Tot: 2.1092  L_Full: 1.0756  L_Mask: 1.0324  L_Caus: 0.0077  L_Spar: 0.0000  FR: 0.1266  Wgt(C/S): 0.16/0.00  LR: 4.381e-03  Acc@1: 75.0000
+2026-04-03 16:55:10 INFO:train:Train: [0:33:22] [Epoch: 22/106] [Iter:  562/562]  Loss_Tot: 2.6379  L_Full: 1.2956  L_Mask: 1.3411  L_Caus: 0.0076  L_Spar: 0.0000  FR: 0.1254  Wgt(C/S): 0.16/0.00  LR: 4.381e-03  Acc@1: 56.2500
+2026-04-03 16:55:23 INFO:train:Test:  [0:33:35] [Iter:   63/63]  Loss_Tot: 1.2906  L_Caus: 0.0369  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 16:55:23 INFO:train: * Acc@1 = 67.3000, Acc@5 = 96.9000, loss = 2.0262
+2026-04-03 16:55:23 INFO:train:Training time 0:33:35, max_test_acc1 70.0000, test_acc5_at_max_test_acc1 96.7000
+2026-04-03 16:55:23 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:56:02 INFO:train:Train: [0:34:14] [Epoch: 23/106] [Iter:  256/562]  Loss_Tot: 1.7601  L_Full: 0.8781  L_Mask: 0.8811  L_Caus: 0.0053  L_Spar: 0.0000  FR: 0.1294  Wgt(C/S): 0.18/0.00  LR: 4.326e-03  Acc@1: 100.0000
+2026-04-03 16:56:31 INFO:train:Train: [0:34:43] [Epoch: 23/106] [Iter:  512/562]  Loss_Tot: 3.8000  L_Full: 1.8924  L_Mask: 1.9053  L_Caus: 0.0125  L_Spar: 0.0000  FR: 0.1225  Wgt(C/S): 0.18/0.00  LR: 4.326e-03  Acc@1: 43.7500
+2026-04-03 16:56:36 INFO:train:Train: [0:34:48] [Epoch: 23/106] [Iter:  562/562]  Loss_Tot: 2.2760  L_Full: 1.1556  L_Mask: 1.1189  L_Caus: 0.0087  L_Spar: 0.0000  FR: 0.1271  Wgt(C/S): 0.18/0.00  LR: 4.326e-03  Acc@1: 75.0000
+2026-04-03 16:56:49 INFO:train:Test:  [0:35:01] [Iter:   63/63]  Loss_Tot: 0.4360  L_Caus: 0.0563  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 16:56:49 INFO:train: * Acc@1 = 67.2000, Acc@5 = 94.1000, loss = 2.1412
+2026-04-03 16:56:49 INFO:train:Training time 0:35:01, max_test_acc1 70.0000, test_acc5_at_max_test_acc1 96.7000
+2026-04-03 16:56:49 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:57:28 INFO:train:Train: [0:35:40] [Epoch: 24/106] [Iter:  256/562]  Loss_Tot: 2.1856  L_Full: 1.0929  L_Mask: 1.0910  L_Caus: 0.0083  L_Spar: 0.0000  FR: 0.1249  Wgt(C/S): 0.20/0.00  LR: 4.269e-03  Acc@1: 81.2500
+2026-04-03 16:57:57 INFO:train:Train: [0:36:09] [Epoch: 24/106] [Iter:  512/562]  Loss_Tot: 3.0628  L_Full: 1.5280  L_Mask: 1.5320  L_Caus: 0.0140  L_Spar: 0.0000  FR: 0.1231  Wgt(C/S): 0.20/0.00  LR: 4.269e-03  Acc@1: 62.5000
+2026-04-03 16:58:03 INFO:train:Train: [0:36:15] [Epoch: 24/106] [Iter:  562/562]  Loss_Tot: 2.5370  L_Full: 1.2588  L_Mask: 1.2770  L_Caus: 0.0060  L_Spar: 0.0000  FR: 0.1212  Wgt(C/S): 0.20/0.00  LR: 4.269e-03  Acc@1: 75.0000
+2026-04-03 16:58:16 INFO:train:Test:  [0:36:28] [Iter:   63/63]  Loss_Tot: 0.9483  L_Caus: 0.0356  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 16:58:16 INFO:train: * Acc@1 = 66.3000, Acc@5 = 98.0000, loss = 2.0359
+2026-04-03 16:58:16 INFO:train:Training time 0:36:28, max_test_acc1 70.0000, test_acc5_at_max_test_acc1 96.7000
+2026-04-03 16:58:16 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 16:58:54 INFO:train:Train: [0:37:06] [Epoch: 25/106] [Iter:  256/562]  Loss_Tot: 2.6470  L_Full: 1.3280  L_Mask: 1.3179  L_Caus: 0.0047  L_Spar: 0.0000  FR: 0.1285  Wgt(C/S): 0.22/0.00  LR: 4.211e-03  Acc@1: 68.7500
+2026-04-03 16:59:23 INFO:train:Train: [0:37:35] [Epoch: 25/106] [Iter:  512/562]  Loss_Tot: 2.7974  L_Full: 1.3911  L_Mask: 1.4029  L_Caus: 0.0153  L_Spar: 0.0000  FR: 0.1259  Wgt(C/S): 0.22/0.00  LR: 4.211e-03  Acc@1: 62.5000
+2026-04-03 16:59:29 INFO:train:Train: [0:37:41] [Epoch: 25/106] [Iter:  562/562]  Loss_Tot: 2.4747  L_Full: 1.2465  L_Mask: 1.2247  L_Caus: 0.0157  L_Spar: 0.0000  FR: 0.1240  Wgt(C/S): 0.22/0.00  LR: 4.211e-03  Acc@1: 81.2500
+2026-04-03 16:59:42 INFO:train:Test:  [0:37:54] [Iter:   63/63]  Loss_Tot: 0.9460  L_Caus: 0.0463  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 16:59:42 INFO:train: * Acc@1 = 65.2000, Acc@5 = 96.3000, loss = 2.1016
+2026-04-03 16:59:42 INFO:train:Training time 0:37:54, max_test_acc1 70.0000, test_acc5_at_max_test_acc1 96.7000
+2026-04-03 16:59:42 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:00:21 INFO:train:Train: [0:38:33] [Epoch: 26/106] [Iter:  256/562]  Loss_Tot: 2.2479  L_Full: 1.0954  L_Mask: 1.1481  L_Caus: 0.0183  L_Spar: 0.0000  FR: 0.1194  Wgt(C/S): 0.24/0.00  LR: 4.150e-03  Acc@1: 75.0000
+2026-04-03 17:00:50 INFO:train:Train: [0:39:02] [Epoch: 26/106] [Iter:  512/562]  Loss_Tot: 2.5229  L_Full: 1.2604  L_Mask: 1.2586  L_Caus: 0.0160  L_Spar: 0.0000  FR: 0.1198  Wgt(C/S): 0.24/0.00  LR: 4.150e-03  Acc@1: 75.0000
+2026-04-03 17:00:55 INFO:train:Train: [0:39:08] [Epoch: 26/106] [Iter:  562/562]  Loss_Tot: 2.2193  L_Full: 1.1304  L_Mask: 1.0872  L_Caus: 0.0071  L_Spar: 0.0000  FR: 0.1194  Wgt(C/S): 0.24/0.00  LR: 4.150e-03  Acc@1: 81.2500
+2026-04-03 17:01:08 INFO:train:Test:  [0:39:20] [Iter:   63/63]  Loss_Tot: 0.5683  L_Caus: 0.0309  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:01:08 INFO:train: * Acc@1 = 64.3000, Acc@5 = 96.2000, loss = 2.1336
+2026-04-03 17:01:08 INFO:train:Training time 0:39:21, max_test_acc1 70.0000, test_acc5_at_max_test_acc1 96.7000
+2026-04-03 17:01:08 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:01:47 INFO:train:Train: [0:39:59] [Epoch: 27/106] [Iter:  256/562]  Loss_Tot: 3.7847  L_Full: 1.8818  L_Mask: 1.9003  L_Caus: 0.0099  L_Spar: 0.0000  FR: 0.1194  Wgt(C/S): 0.27/0.00  LR: 4.088e-03  Acc@1: 56.2500
+2026-04-03 17:02:16 INFO:train:Train: [0:40:28] [Epoch: 27/106] [Iter:  512/562]  Loss_Tot: 2.2966  L_Full: 1.1546  L_Mask: 1.1390  L_Caus: 0.0113  L_Spar: 0.0000  FR: 0.1285  Wgt(C/S): 0.27/0.00  LR: 4.088e-03  Acc@1: 75.0000
+2026-04-03 17:02:22 INFO:train:Train: [0:40:34] [Epoch: 27/106] [Iter:  562/562]  Loss_Tot: 3.0238  L_Full: 1.5003  L_Mask: 1.5212  L_Caus: 0.0085  L_Spar: 0.0000  FR: 0.1241  Wgt(C/S): 0.27/0.00  LR: 4.088e-03  Acc@1: 62.5000
+2026-04-03 17:02:34 INFO:train:Test:  [0:40:46] [Iter:   63/63]  Loss_Tot: 0.5026  L_Caus: 0.0324  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:02:35 INFO:train: * Acc@1 = 72.1000, Acc@5 = 97.7000, loss = 1.8088
+2026-04-03 17:02:35 INFO:train:Training time 0:40:47, max_test_acc1 72.1000, test_acc5_at_max_test_acc1 97.7000
+2026-04-03 17:02:35 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:03:13 INFO:train:Train: [0:41:25] [Epoch: 28/106] [Iter:  256/562]  Loss_Tot: 2.4882  L_Full: 1.2508  L_Mask: 1.2355  L_Caus: 0.0064  L_Spar: 0.0000  FR: 0.1223  Wgt(C/S): 0.29/0.00  LR: 4.024e-03  Acc@1: 68.7500
+2026-04-03 17:03:42 INFO:train:Train: [0:41:54] [Epoch: 28/106] [Iter:  512/562]  Loss_Tot: 2.5414  L_Full: 1.2282  L_Mask: 1.3106  L_Caus: 0.0093  L_Spar: 0.0000  FR: 0.1228  Wgt(C/S): 0.29/0.00  LR: 4.024e-03  Acc@1: 62.5000
+2026-04-03 17:03:48 INFO:train:Train: [0:42:00] [Epoch: 28/106] [Iter:  562/562]  Loss_Tot: 2.3040  L_Full: 1.1519  L_Mask: 1.1484  L_Caus: 0.0125  L_Spar: 0.0000  FR: 0.1249  Wgt(C/S): 0.29/0.00  LR: 4.024e-03  Acc@1: 75.0000
+2026-04-03 17:04:01 INFO:train:Test:  [0:42:13] [Iter:   63/63]  Loss_Tot: 0.9327  L_Caus: 0.0217  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 17:04:01 INFO:train: * Acc@1 = 64.2000, Acc@5 = 95.0000, loss = 2.1074
+2026-04-03 17:04:01 INFO:train:Training time 0:42:13, max_test_acc1 72.1000, test_acc5_at_max_test_acc1 97.7000
+2026-04-03 17:04:01 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:04:39 INFO:train:Train: [0:42:51] [Epoch: 29/106] [Iter:  256/562]  Loss_Tot: 3.8238  L_Full: 1.9043  L_Mask: 1.9164  L_Caus: 0.0100  L_Spar: 0.0000  FR: 0.1204  Wgt(C/S): 0.31/0.00  LR: 3.958e-03  Acc@1: 56.2500
+2026-04-03 17:05:08 INFO:train:Train: [0:43:21] [Epoch: 29/106] [Iter:  512/562]  Loss_Tot: 2.0816  L_Full: 1.0207  L_Mask: 1.0590  L_Caus: 0.0061  L_Spar: 0.0000  FR: 0.1287  Wgt(C/S): 0.31/0.00  LR: 3.958e-03  Acc@1: 68.7500
+2026-04-03 17:05:14 INFO:train:Train: [0:43:26] [Epoch: 29/106] [Iter:  562/562]  Loss_Tot: 2.1303  L_Full: 1.0762  L_Mask: 1.0519  L_Caus: 0.0069  L_Spar: 0.0000  FR: 0.1238  Wgt(C/S): 0.31/0.00  LR: 3.958e-03  Acc@1: 81.2500
+2026-04-03 17:05:27 INFO:train:Test:  [0:43:39] [Iter:   63/63]  Loss_Tot: 0.3725  L_Caus: 0.0166  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:05:27 INFO:train: * Acc@1 = 74.7000, Acc@5 = 96.9000, loss = 1.6633
+2026-04-03 17:05:27 INFO:train:Training time 0:43:39, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:05:27 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:06:06 INFO:train:Train: [0:44:18] [Epoch: 30/106] [Iter:  256/562]  Loss_Tot: 2.4337  L_Full: 1.2202  L_Mask: 1.2111  L_Caus: 0.0070  L_Spar: 0.0000  FR: 0.1266  Wgt(C/S): 0.33/0.00  LR: 3.891e-03  Acc@1: 68.7500
+2026-04-03 17:06:35 INFO:train:Train: [0:44:47] [Epoch: 30/106] [Iter:  512/562]  Loss_Tot: 2.4478  L_Full: 1.2162  L_Mask: 1.2293  L_Caus: 0.0068  L_Spar: 0.0000  FR: 0.1249  Wgt(C/S): 0.33/0.00  LR: 3.891e-03  Acc@1: 68.7500
+2026-04-03 17:06:41 INFO:train:Train: [0:44:53] [Epoch: 30/106] [Iter:  562/562]  Loss_Tot: 4.3355  L_Full: 2.1581  L_Mask: 2.1740  L_Caus: 0.0102  L_Spar: 0.0000  FR: 0.1153  Wgt(C/S): 0.33/0.00  LR: 3.891e-03  Acc@1: 31.2500
+2026-04-03 17:06:53 INFO:train:Test:  [0:45:05] [Iter:   63/63]  Loss_Tot: 1.5928  L_Caus: 0.0155  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:06:54 INFO:train: * Acc@1 = 57.5000, Acc@5 = 94.3000, loss = 2.6195
+2026-04-03 17:06:54 INFO:train:Training time 0:45:06, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:06:54 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:07:32 INFO:train:Train: [0:45:44] [Epoch: 31/106] [Iter:  256/562]  Loss_Tot: 2.6516  L_Full: 1.3263  L_Mask: 1.3219  L_Caus: 0.0097  L_Spar: 0.0000  FR: 0.1305  Wgt(C/S): 0.36/0.00  LR: 3.823e-03  Acc@1: 81.2500
+2026-04-03 17:08:01 INFO:train:Train: [0:46:13] [Epoch: 31/106] [Iter:  512/562]  Loss_Tot: 1.9277  L_Full: 0.9558  L_Mask: 0.9701  L_Caus: 0.0052  L_Spar: 0.0000  FR: 0.1277  Wgt(C/S): 0.36/0.00  LR: 3.823e-03  Acc@1: 81.2500
+2026-04-03 17:08:07 INFO:train:Train: [0:46:19] [Epoch: 31/106] [Iter:  562/562]  Loss_Tot: 2.1270  L_Full: 1.0722  L_Mask: 1.0530  L_Caus: 0.0050  L_Spar: 0.0000  FR: 0.1270  Wgt(C/S): 0.36/0.00  LR: 3.823e-03  Acc@1: 75.0000
+2026-04-03 17:08:20 INFO:train:Test:  [0:46:32] [Iter:   63/63]  Loss_Tot: 0.6985  L_Caus: 0.0225  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:08:20 INFO:train: * Acc@1 = 70.4000, Acc@5 = 97.6000, loss = 1.7789
+2026-04-03 17:08:20 INFO:train:Training time 0:46:32, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:08:20 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:08:58 INFO:train:Train: [0:47:10] [Epoch: 32/106] [Iter:  256/562]  Loss_Tot: 3.9794  L_Full: 1.9721  L_Mask: 2.0042  L_Caus: 0.0081  L_Spar: 0.0000  FR: 0.1234  Wgt(C/S): 0.38/0.00  LR: 3.753e-03  Acc@1: 56.2500
+2026-04-03 17:09:28 INFO:train:Train: [0:47:40] [Epoch: 32/106] [Iter:  512/562]  Loss_Tot: 2.3753  L_Full: 1.1790  L_Mask: 1.1924  L_Caus: 0.0102  L_Spar: 0.0000  FR: 0.1243  Wgt(C/S): 0.38/0.00  LR: 3.753e-03  Acc@1: 56.2500
+2026-04-03 17:09:33 INFO:train:Train: [0:47:46] [Epoch: 32/106] [Iter:  562/562]  Loss_Tot: 1.8292  L_Full: 0.9259  L_Mask: 0.9012  L_Caus: 0.0055  L_Spar: 0.0000  FR: 0.1289  Wgt(C/S): 0.38/0.00  LR: 3.753e-03  Acc@1: 87.5000
+2026-04-03 17:09:46 INFO:train:Test:  [0:47:58] [Iter:   63/63]  Loss_Tot: 0.7323  L_Caus: 0.0400  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:09:47 INFO:train: * Acc@1 = 69.4000, Acc@5 = 97.4000, loss = 1.8059
+2026-04-03 17:09:47 INFO:train:Training time 0:47:59, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:09:47 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:10:25 INFO:train:Train: [0:48:37] [Epoch: 33/106] [Iter:  256/562]  Loss_Tot: 4.1739  L_Full: 2.0757  L_Mask: 2.0913  L_Caus: 0.0171  L_Spar: 0.0000  FR: 0.1202  Wgt(C/S): 0.40/0.00  LR: 3.681e-03  Acc@1: 31.2500
+2026-04-03 17:10:55 INFO:train:Train: [0:49:07] [Epoch: 33/106] [Iter:  512/562]  Loss_Tot: 2.5384  L_Full: 1.2674  L_Mask: 1.2684  L_Caus: 0.0067  L_Spar: 0.0000  FR: 0.1215  Wgt(C/S): 0.40/0.00  LR: 3.681e-03  Acc@1: 56.2500
+2026-04-03 17:11:00 INFO:train:Train: [0:49:12] [Epoch: 33/106] [Iter:  562/562]  Loss_Tot: 4.0267  L_Full: 2.0045  L_Mask: 2.0177  L_Caus: 0.0114  L_Spar: 0.0000  FR: 0.1219  Wgt(C/S): 0.40/0.00  LR: 3.681e-03  Acc@1: 43.7500
+2026-04-03 17:11:13 INFO:train:Test:  [0:49:25] [Iter:   63/63]  Loss_Tot: 1.7568  L_Caus: 0.0177  L_Spar: 0.0000  Acc@1: 62.5000  Acc@5: 100.0000
+2026-04-03 17:11:13 INFO:train: * Acc@1 = 70.4000, Acc@5 = 96.9000, loss = 1.7904
+2026-04-03 17:11:13 INFO:train:Training time 0:49:25, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:11:13 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:11:52 INFO:train:Train: [0:50:04] [Epoch: 34/106] [Iter:  256/562]  Loss_Tot: 2.2504  L_Full: 1.1091  L_Mask: 1.1373  L_Caus: 0.0095  L_Spar: 0.0000  FR: 0.1295  Wgt(C/S): 0.42/0.00  LR: 3.609e-03  Acc@1: 75.0000
+2026-04-03 17:12:21 INFO:train:Train: [0:50:33] [Epoch: 34/106] [Iter:  512/562]  Loss_Tot: 3.2473  L_Full: 1.6098  L_Mask: 1.6313  L_Caus: 0.0147  L_Spar: 0.0000  FR: 0.1216  Wgt(C/S): 0.42/0.00  LR: 3.609e-03  Acc@1: 62.5000
+2026-04-03 17:12:27 INFO:train:Train: [0:50:39] [Epoch: 34/106] [Iter:  562/562]  Loss_Tot: 2.1935  L_Full: 1.0920  L_Mask: 1.0997  L_Caus: 0.0044  L_Spar: 0.0000  FR: 0.1354  Wgt(C/S): 0.42/0.00  LR: 3.609e-03  Acc@1: 75.0000
+2026-04-03 17:12:40 INFO:train:Test:  [0:50:52] [Iter:   63/63]  Loss_Tot: 0.7447  L_Caus: 0.0299  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:12:40 INFO:train: * Acc@1 = 69.7000, Acc@5 = 97.1000, loss = 1.8343
+2026-04-03 17:12:40 INFO:train:Training time 0:50:52, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:12:40 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:13:18 INFO:train:Train: [0:51:30] [Epoch: 35/106] [Iter:  256/562]  Loss_Tot: 3.4559  L_Full: 1.7160  L_Mask: 1.7353  L_Caus: 0.0105  L_Spar: 0.0000  FR: 0.1254  Wgt(C/S): 0.44/0.00  LR: 3.535e-03  Acc@1: 68.7500
+2026-04-03 17:13:48 INFO:train:Train: [0:52:00] [Epoch: 35/106] [Iter:  512/562]  Loss_Tot: 1.5741  L_Full: 0.7740  L_Mask: 0.7947  L_Caus: 0.0121  L_Spar: 0.0000  FR: 0.1323  Wgt(C/S): 0.44/0.00  LR: 3.535e-03  Acc@1: 87.5000
+2026-04-03 17:13:53 INFO:train:Train: [0:52:05] [Epoch: 35/106] [Iter:  562/562]  Loss_Tot: 2.3000  L_Full: 1.1424  L_Mask: 1.1558  L_Caus: 0.0043  L_Spar: 0.0000  FR: 0.1328  Wgt(C/S): 0.44/0.00  LR: 3.535e-03  Acc@1: 68.7500
+2026-04-03 17:14:06 INFO:train:Test:  [0:52:18] [Iter:   63/63]  Loss_Tot: 0.8974  L_Caus: 0.0153  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:14:06 INFO:train: * Acc@1 = 68.9000, Acc@5 = 96.1000, loss = 1.9813
+2026-04-03 17:14:06 INFO:train:Training time 0:52:18, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:14:06 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:14:45 INFO:train:Train: [0:52:57] [Epoch: 36/106] [Iter:  256/562]  Loss_Tot: 2.5206  L_Full: 1.2612  L_Mask: 1.2528  L_Caus: 0.0143  L_Spar: 0.0000  FR: 0.1299  Wgt(C/S): 0.47/0.00  LR: 3.460e-03  Acc@1: 75.0000
+2026-04-03 17:15:13 INFO:train:Train: [0:53:25] [Epoch: 36/106] [Iter:  512/562]  Loss_Tot: 1.3812  L_Full: 0.7060  L_Mask: 0.6708  L_Caus: 0.0093  L_Spar: 0.0000  FR: 0.1309  Wgt(C/S): 0.47/0.00  LR: 3.460e-03  Acc@1: 100.0000
+2026-04-03 17:15:19 INFO:train:Train: [0:53:31] [Epoch: 36/106] [Iter:  562/562]  Loss_Tot: 3.7467  L_Full: 1.8720  L_Mask: 1.8715  L_Caus: 0.0069  L_Spar: 0.0000  FR: 0.1278  Wgt(C/S): 0.47/0.00  LR: 3.460e-03  Acc@1: 56.2500
+2026-04-03 17:15:32 INFO:train:Test:  [0:53:44] [Iter:   63/63]  Loss_Tot: 1.2944  L_Caus: 0.0164  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 17:15:32 INFO:train: * Acc@1 = 73.5000, Acc@5 = 97.4000, loss = 1.6788
+2026-04-03 17:15:32 INFO:train:Training time 0:53:44, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:15:32 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:16:11 INFO:train:Train: [0:54:23] [Epoch: 37/106] [Iter:  256/562]  Loss_Tot: 3.5740  L_Full: 1.7789  L_Mask: 1.7897  L_Caus: 0.0111  L_Spar: 0.0000  FR: 0.1217  Wgt(C/S): 0.49/0.00  LR: 3.384e-03  Acc@1: 68.7500
+2026-04-03 17:16:40 INFO:train:Train: [0:54:52] [Epoch: 37/106] [Iter:  512/562]  Loss_Tot: 3.8388  L_Full: 1.9164  L_Mask: 1.9170  L_Caus: 0.0111  L_Spar: 0.0000  FR: 0.1207  Wgt(C/S): 0.49/0.00  LR: 3.384e-03  Acc@1: 68.7500
+2026-04-03 17:16:46 INFO:train:Train: [0:54:58] [Epoch: 37/106] [Iter:  562/562]  Loss_Tot: 1.9333  L_Full: 0.9711  L_Mask: 0.9566  L_Caus: 0.0116  L_Spar: 0.0000  FR: 0.1281  Wgt(C/S): 0.49/0.00  LR: 3.384e-03  Acc@1: 75.0000
+2026-04-03 17:16:59 INFO:train:Test:  [0:55:11] [Iter:   63/63]  Loss_Tot: 1.6373  L_Caus: 0.0160  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 17:16:59 INFO:train: * Acc@1 = 73.8000, Acc@5 = 98.3000, loss = 1.6270
+2026-04-03 17:16:59 INFO:train:Training time 0:55:11, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:16:59 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:17:37 INFO:train:Train: [0:55:49] [Epoch: 38/106] [Iter:  256/562]  Loss_Tot: 3.3486  L_Full: 1.6618  L_Mask: 1.6798  L_Caus: 0.0137  L_Spar: 0.0000  FR: 0.1227  Wgt(C/S): 0.51/0.00  LR: 3.307e-03  Acc@1: 68.7500
+2026-04-03 17:18:06 INFO:train:Train: [0:56:18] [Epoch: 38/106] [Iter:  512/562]  Loss_Tot: 1.8026  L_Full: 0.9185  L_Mask: 0.8783  L_Caus: 0.0114  L_Spar: 0.0000  FR: 0.1335  Wgt(C/S): 0.51/0.00  LR: 3.307e-03  Acc@1: 81.2500
+2026-04-03 17:18:12 INFO:train:Train: [0:56:24] [Epoch: 38/106] [Iter:  562/562]  Loss_Tot: 3.5548  L_Full: 1.7730  L_Mask: 1.7776  L_Caus: 0.0082  L_Spar: 0.0000  FR: 0.1240  Wgt(C/S): 0.51/0.00  LR: 3.307e-03  Acc@1: 62.5000
+2026-04-03 17:18:25 INFO:train:Test:  [0:56:37] [Iter:   63/63]  Loss_Tot: 0.7758  L_Caus: 0.0169  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:18:26 INFO:train: * Acc@1 = 71.0000, Acc@5 = 98.1000, loss = 1.7649
+2026-04-03 17:18:26 INFO:train:Training time 0:56:38, max_test_acc1 74.7000, test_acc5_at_max_test_acc1 96.9000
+2026-04-03 17:18:26 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:19:04 INFO:train:Train: [0:57:16] [Epoch: 39/106] [Iter:  256/562]  Loss_Tot: 3.2211  L_Full: 1.6258  L_Mask: 1.5891  L_Caus: 0.0118  L_Spar: 0.0000  FR: 0.1251  Wgt(C/S): 0.53/0.00  LR: 3.229e-03  Acc@1: 87.5000
+2026-04-03 17:19:33 INFO:train:Train: [0:57:45] [Epoch: 39/106] [Iter:  512/562]  Loss_Tot: 2.4427  L_Full: 1.2284  L_Mask: 1.2073  L_Caus: 0.0130  L_Spar: 0.0000  FR: 0.1338  Wgt(C/S): 0.53/0.00  LR: 3.229e-03  Acc@1: 62.5000
+2026-04-03 17:19:39 INFO:train:Train: [0:57:51] [Epoch: 39/106] [Iter:  562/562]  Loss_Tot: 3.6128  L_Full: 1.7873  L_Mask: 1.8178  L_Caus: 0.0145  L_Spar: 0.0000  FR: 0.1313  Wgt(C/S): 0.53/0.00  LR: 3.229e-03  Acc@1: 43.7500
+2026-04-03 17:19:52 INFO:train:Test:  [0:58:04] [Iter:   63/63]  Loss_Tot: 0.5364  L_Caus: 0.0189  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:19:52 INFO:train: * Acc@1 = 75.7000, Acc@5 = 98.1000, loss = 1.5940
+2026-04-03 17:19:52 INFO:train:Training time 0:58:04, max_test_acc1 75.7000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:19:52 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:20:31 INFO:train:Train: [0:58:43] [Epoch: 40/106] [Iter:  256/562]  Loss_Tot: 2.2199  L_Full: 1.0945  L_Mask: 1.1199  L_Caus: 0.0101  L_Spar: 0.0000  FR: 0.1306  Wgt(C/S): 0.56/0.00  LR: 3.151e-03  Acc@1: 62.5000
+2026-04-03 17:21:00 INFO:train:Train: [0:59:12] [Epoch: 40/106] [Iter:  512/562]  Loss_Tot: 1.9362  L_Full: 0.9782  L_Mask: 0.9543  L_Caus: 0.0066  L_Spar: 0.0000  FR: 0.1332  Wgt(C/S): 0.56/0.00  LR: 3.151e-03  Acc@1: 81.2500
+2026-04-03 17:21:06 INFO:train:Train: [0:59:18] [Epoch: 40/106] [Iter:  562/562]  Loss_Tot: 1.4737  L_Full: 0.7279  L_Mask: 0.7425  L_Caus: 0.0061  L_Spar: 0.0000  FR: 0.1302  Wgt(C/S): 0.56/0.00  LR: 3.151e-03  Acc@1: 93.7500
+2026-04-03 17:21:18 INFO:train:Test:  [0:59:30] [Iter:   63/63]  Loss_Tot: 2.1592  L_Caus: 0.0463  L_Spar: 0.0000  Acc@1: 62.5000  Acc@5: 100.0000
+2026-04-03 17:21:19 INFO:train: * Acc@1 = 67.0000, Acc@5 = 97.0000, loss = 1.9311
+2026-04-03 17:21:19 INFO:train:Training time 0:59:31, max_test_acc1 75.7000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:21:19 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:21:57 INFO:train:Train: [1:00:09] [Epoch: 41/106] [Iter:  256/562]  Loss_Tot: 3.3114  L_Full: 1.6501  L_Mask: 1.6559  L_Caus: 0.0094  L_Spar: 0.0000  FR: 0.1207  Wgt(C/S): 0.58/0.00  LR: 3.072e-03  Acc@1: 81.2500
+2026-04-03 17:22:26 INFO:train:Train: [1:00:38] [Epoch: 41/106] [Iter:  512/562]  Loss_Tot: 1.5787  L_Full: 0.8044  L_Mask: 0.7688  L_Caus: 0.0096  L_Spar: 0.0000  FR: 0.1371  Wgt(C/S): 0.58/0.00  LR: 3.072e-03  Acc@1: 100.0000
+2026-04-03 17:22:32 INFO:train:Train: [1:00:44] [Epoch: 41/106] [Iter:  562/562]  Loss_Tot: 2.2879  L_Full: 1.1600  L_Mask: 1.1233  L_Caus: 0.0079  L_Spar: 0.0000  FR: 0.1377  Wgt(C/S): 0.58/0.00  LR: 3.072e-03  Acc@1: 75.0000
+2026-04-03 17:22:45 INFO:train:Test:  [1:00:57] [Iter:   63/63]  Loss_Tot: 1.0042  L_Caus: 0.0161  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:22:45 INFO:train: * Acc@1 = 74.9000, Acc@5 = 97.7000, loss = 1.6094
+2026-04-03 17:22:45 INFO:train:Training time 1:00:57, max_test_acc1 75.7000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:22:45 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:23:24 INFO:train:Train: [1:01:36] [Epoch: 42/106] [Iter:  256/562]  Loss_Tot: 2.1352  L_Full: 1.0743  L_Mask: 1.0541  L_Caus: 0.0114  L_Spar: 0.0000  FR: 0.1343  Wgt(C/S): 0.60/0.00  LR: 2.992e-03  Acc@1: 81.2500
+2026-04-03 17:23:53 INFO:train:Train: [1:02:05] [Epoch: 42/106] [Iter:  512/562]  Loss_Tot: 2.3237  L_Full: 1.1416  L_Mask: 1.1745  L_Caus: 0.0126  L_Spar: 0.0000  FR: 0.1313  Wgt(C/S): 0.60/0.00  LR: 2.992e-03  Acc@1: 68.7500
+2026-04-03 17:23:59 INFO:train:Train: [1:02:11] [Epoch: 42/106] [Iter:  562/562]  Loss_Tot: 1.9196  L_Full: 0.9714  L_Mask: 0.9422  L_Caus: 0.0101  L_Spar: 0.0000  FR: 0.1337  Wgt(C/S): 0.60/0.00  LR: 2.992e-03  Acc@1: 81.2500
+2026-04-03 17:24:12 INFO:train:Test:  [1:02:24] [Iter:   63/63]  Loss_Tot: 1.4091  L_Caus: 0.0257  L_Spar: 0.0000  Acc@1: 62.5000  Acc@5: 100.0000
+2026-04-03 17:24:12 INFO:train: * Acc@1 = 72.7000, Acc@5 = 98.2000, loss = 1.7028
+2026-04-03 17:24:12 INFO:train:Training time 1:02:24, max_test_acc1 75.7000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:24:12 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:24:51 INFO:train:Train: [1:03:03] [Epoch: 43/106] [Iter:  256/562]  Loss_Tot: 2.8724  L_Full: 1.4377  L_Mask: 1.4288  L_Caus: 0.0095  L_Spar: 0.0000  FR: 0.1340  Wgt(C/S): 0.62/0.00  LR: 2.911e-03  Acc@1: 75.0000
+2026-04-03 17:25:20 INFO:train:Train: [1:03:32] [Epoch: 43/106] [Iter:  512/562]  Loss_Tot: 2.5541  L_Full: 1.2633  L_Mask: 1.2864  L_Caus: 0.0071  L_Spar: 0.0000  FR: 0.1323  Wgt(C/S): 0.62/0.00  LR: 2.911e-03  Acc@1: 81.2500
+2026-04-03 17:25:26 INFO:train:Train: [1:03:38] [Epoch: 43/106] [Iter:  562/562]  Loss_Tot: 2.2738  L_Full: 1.1411  L_Mask: 1.1277  L_Caus: 0.0082  L_Spar: 0.0000  FR: 0.1328  Wgt(C/S): 0.62/0.00  LR: 2.911e-03  Acc@1: 81.2500
+2026-04-03 17:25:38 INFO:train:Test:  [1:03:50] [Iter:   63/63]  Loss_Tot: 1.1198  L_Caus: 0.0152  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:25:39 INFO:train: * Acc@1 = 73.3000, Acc@5 = 98.1000, loss = 1.7114
+2026-04-03 17:25:39 INFO:train:Training time 1:03:51, max_test_acc1 75.7000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:25:39 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:26:17 INFO:train:Train: [1:04:29] [Epoch: 44/106] [Iter:  256/562]  Loss_Tot: 3.3105  L_Full: 1.6351  L_Mask: 1.6695  L_Caus: 0.0093  L_Spar: 0.0000  FR: 0.1249  Wgt(C/S): 0.64/0.00  LR: 2.831e-03  Acc@1: 56.2500
+2026-04-03 17:26:47 INFO:train:Train: [1:04:59] [Epoch: 44/106] [Iter:  512/562]  Loss_Tot: 2.8446  L_Full: 1.4148  L_Mask: 1.4221  L_Caus: 0.0120  L_Spar: 0.0000  FR: 0.1294  Wgt(C/S): 0.64/0.00  LR: 2.831e-03  Acc@1: 87.5000
+2026-04-03 17:26:52 INFO:train:Train: [1:05:04] [Epoch: 44/106] [Iter:  562/562]  Loss_Tot: 4.6360  L_Full: 2.3114  L_Mask: 2.3164  L_Caus: 0.0127  L_Spar: 0.0000  FR: 0.1249  Wgt(C/S): 0.64/0.00  LR: 2.831e-03  Acc@1: 18.7500
+2026-04-03 17:27:05 INFO:train:Test:  [1:05:17] [Iter:   63/63]  Loss_Tot: 0.8242  L_Caus: 0.0278  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:27:06 INFO:train: * Acc@1 = 77.3000, Acc@5 = 98.7000, loss = 1.5603
+2026-04-03 17:27:06 INFO:train:Training time 1:05:18, max_test_acc1 77.3000, test_acc5_at_max_test_acc1 98.7000
+2026-04-03 17:27:06 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:27:44 INFO:train:Train: [1:05:56] [Epoch: 45/106] [Iter:  256/562]  Loss_Tot: 3.6805  L_Full: 1.8305  L_Mask: 1.8380  L_Caus: 0.0180  L_Spar: 0.0000  FR: 0.1276  Wgt(C/S): 0.67/0.00  LR: 2.750e-03  Acc@1: 31.2500
+2026-04-03 17:28:13 INFO:train:Train: [1:06:25] [Epoch: 45/106] [Iter:  512/562]  Loss_Tot: 1.7641  L_Full: 0.9022  L_Mask: 0.8504  L_Caus: 0.0172  L_Spar: 0.0000  FR: 0.1359  Wgt(C/S): 0.67/0.00  LR: 2.750e-03  Acc@1: 93.7500
+2026-04-03 17:28:18 INFO:train:Train: [1:06:31] [Epoch: 45/106] [Iter:  562/562]  Loss_Tot: 2.4475  L_Full: 1.2104  L_Mask: 1.2276  L_Caus: 0.0143  L_Spar: 0.0000  FR: 0.1315  Wgt(C/S): 0.67/0.00  LR: 2.750e-03  Acc@1: 81.2500
+2026-04-03 17:28:31 INFO:train:Test:  [1:06:43] [Iter:   63/63]  Loss_Tot: 0.5460  L_Caus: 0.0120  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:28:32 INFO:train: * Acc@1 = 68.3000, Acc@5 = 97.4000, loss = 1.9668
+2026-04-03 17:28:32 INFO:train:Training time 1:06:44, max_test_acc1 77.3000, test_acc5_at_max_test_acc1 98.7000
+2026-04-03 17:28:32 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:29:10 INFO:train:Train: [1:07:22] [Epoch: 46/106] [Iter:  256/562]  Loss_Tot: 1.9164  L_Full: 0.9497  L_Mask: 0.9590  L_Caus: 0.0111  L_Spar: 0.0000  FR: 0.1372  Wgt(C/S): 0.69/0.00  LR: 2.668e-03  Acc@1: 81.2500
+2026-04-03 17:29:39 INFO:train:Train: [1:07:51] [Epoch: 46/106] [Iter:  512/562]  Loss_Tot: 2.2852  L_Full: 1.1476  L_Mask: 1.1340  L_Caus: 0.0052  L_Spar: 0.0000  FR: 0.1383  Wgt(C/S): 0.69/0.00  LR: 2.668e-03  Acc@1: 93.7500
+2026-04-03 17:29:45 INFO:train:Train: [1:07:57] [Epoch: 46/106] [Iter:  562/562]  Loss_Tot: 4.0171  L_Full: 1.9894  L_Mask: 2.0185  L_Caus: 0.0134  L_Spar: 0.0000  FR: 0.1318  Wgt(C/S): 0.69/0.00  LR: 2.668e-03  Acc@1: 56.2500
+2026-04-03 17:29:58 INFO:train:Test:  [1:08:10] [Iter:   63/63]  Loss_Tot: 0.4343  L_Caus: 0.0139  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:29:58 INFO:train: * Acc@1 = 74.9000, Acc@5 = 97.4000, loss = 1.5818
+2026-04-03 17:29:58 INFO:train:Training time 1:08:11, max_test_acc1 77.3000, test_acc5_at_max_test_acc1 98.7000
+2026-04-03 17:29:58 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:30:37 INFO:train:Train: [1:08:49] [Epoch: 47/106] [Iter:  256/562]  Loss_Tot: 1.5490  L_Full: 0.7695  L_Mask: 0.7715  L_Caus: 0.0113  L_Spar: 0.0000  FR: 0.1385  Wgt(C/S): 0.71/0.00  LR: 2.587e-03  Acc@1: 93.7500
+2026-04-03 17:31:06 INFO:train:Train: [1:09:19] [Epoch: 47/106] [Iter:  512/562]  Loss_Tot: 1.6909  L_Full: 0.8317  L_Mask: 0.8523  L_Caus: 0.0098  L_Spar: 0.0000  FR: 0.1364  Wgt(C/S): 0.71/0.00  LR: 2.587e-03  Acc@1: 81.2500
+2026-04-03 17:31:12 INFO:train:Train: [1:09:24] [Epoch: 47/106] [Iter:  562/562]  Loss_Tot: 2.1709  L_Full: 1.0781  L_Mask: 1.0876  L_Caus: 0.0073  L_Spar: 0.0000  FR: 0.1366  Wgt(C/S): 0.71/0.00  LR: 2.587e-03  Acc@1: 87.5000
+2026-04-03 17:31:25 INFO:train:Test:  [1:09:37] [Iter:   63/63]  Loss_Tot: 0.7725  L_Caus: 0.0199  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:31:25 INFO:train: * Acc@1 = 77.6000, Acc@5 = 97.4000, loss = 1.5139
+2026-04-03 17:31:25 INFO:train:Training time 1:09:38, max_test_acc1 77.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 17:31:25 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:32:04 INFO:train:Train: [1:10:16] [Epoch: 48/106] [Iter:  256/562]  Loss_Tot: 1.5980  L_Full: 0.8141  L_Mask: 0.7733  L_Caus: 0.0146  L_Spar: 0.0000  FR: 0.1396  Wgt(C/S): 0.73/0.00  LR: 2.505e-03  Acc@1: 93.7500
+2026-04-03 17:32:33 INFO:train:Train: [1:10:45] [Epoch: 48/106] [Iter:  512/562]  Loss_Tot: 1.9770  L_Full: 0.9898  L_Mask: 0.9781  L_Caus: 0.0124  L_Spar: 0.0000  FR: 0.1406  Wgt(C/S): 0.73/0.00  LR: 2.505e-03  Acc@1: 93.7500
+2026-04-03 17:32:39 INFO:train:Train: [1:10:51] [Epoch: 48/106] [Iter:  562/562]  Loss_Tot: 1.8952  L_Full: 0.9522  L_Mask: 0.9311  L_Caus: 0.0162  L_Spar: 0.0000  FR: 0.1414  Wgt(C/S): 0.73/0.00  LR: 2.505e-03  Acc@1: 81.2500
+2026-04-03 17:32:51 INFO:train:Test:  [1:11:04] [Iter:   63/63]  Loss_Tot: 0.6799  L_Caus: 0.0312  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:32:52 INFO:train: * Acc@1 = 76.8000, Acc@5 = 98.3000, loss = 1.5442
+2026-04-03 17:32:52 INFO:train:Training time 1:11:04, max_test_acc1 77.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 17:32:52 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:33:30 INFO:train:Train: [1:11:42] [Epoch: 49/106] [Iter:  256/562]  Loss_Tot: 2.0515  L_Full: 1.0234  L_Mask: 1.0235  L_Caus: 0.0061  L_Spar: 0.0000  FR: 0.1437  Wgt(C/S): 0.76/0.00  LR: 2.423e-03  Acc@1: 75.0000
+2026-04-03 17:33:59 INFO:train:Train: [1:12:11] [Epoch: 49/106] [Iter:  512/562]  Loss_Tot: 3.5600  L_Full: 1.7744  L_Mask: 1.7773  L_Caus: 0.0110  L_Spar: 0.0000  FR: 0.1375  Wgt(C/S): 0.76/0.00  LR: 2.423e-03  Acc@1: 75.0000
+2026-04-03 17:34:05 INFO:train:Train: [1:12:17] [Epoch: 49/106] [Iter:  562/562]  Loss_Tot: 1.4919  L_Full: 0.7332  L_Mask: 0.7517  L_Caus: 0.0092  L_Spar: 0.0000  FR: 0.1431  Wgt(C/S): 0.76/0.00  LR: 2.423e-03  Acc@1: 87.5000
+2026-04-03 17:34:18 INFO:train:Test:  [1:12:30] [Iter:   63/63]  Loss_Tot: 0.7690  L_Caus: 0.0288  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:34:18 INFO:train: * Acc@1 = 74.2000, Acc@5 = 98.7000, loss = 1.5860
+2026-04-03 17:34:18 INFO:train:Training time 1:12:30, max_test_acc1 77.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 17:34:18 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:34:56 INFO:train:Train: [1:13:08] [Epoch: 50/106] [Iter:  256/562]  Loss_Tot: 1.8731  L_Full: 0.9443  L_Mask: 0.9214  L_Caus: 0.0096  L_Spar: 0.0000  FR: 0.1434  Wgt(C/S): 0.78/0.00  LR: 2.342e-03  Acc@1: 87.5000
+2026-04-03 17:35:26 INFO:train:Train: [1:13:38] [Epoch: 50/106] [Iter:  512/562]  Loss_Tot: 2.6025  L_Full: 1.2989  L_Mask: 1.2945  L_Caus: 0.0117  L_Spar: 0.0000  FR: 0.1412  Wgt(C/S): 0.78/0.00  LR: 2.342e-03  Acc@1: 87.5000
+2026-04-03 17:35:31 INFO:train:Train: [1:13:44] [Epoch: 50/106] [Iter:  562/562]  Loss_Tot: 2.5087  L_Full: 1.2366  L_Mask: 1.2659  L_Caus: 0.0079  L_Spar: 0.0000  FR: 0.1422  Wgt(C/S): 0.78/0.00  LR: 2.342e-03  Acc@1: 68.7500
+2026-04-03 17:35:44 INFO:train:Test:  [1:13:56] [Iter:   63/63]  Loss_Tot: 0.7686  L_Caus: 0.0236  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:35:44 INFO:train: * Acc@1 = 76.3000, Acc@5 = 97.9000, loss = 1.5453
+2026-04-03 17:35:44 INFO:train:Training time 1:13:56, max_test_acc1 77.6000, test_acc5_at_max_test_acc1 97.4000
+2026-04-03 17:35:44 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:36:23 INFO:train:Train: [1:14:35] [Epoch: 51/106] [Iter:  256/562]  Loss_Tot: 2.4009  L_Full: 1.1918  L_Mask: 1.2015  L_Caus: 0.0095  L_Spar: 0.0000  FR: 0.1422  Wgt(C/S): 0.80/0.00  LR: 2.260e-03  Acc@1: 81.2500
+2026-04-03 17:36:52 INFO:train:Train: [1:15:04] [Epoch: 51/106] [Iter:  512/562]  Loss_Tot: 1.6470  L_Full: 0.8378  L_Mask: 0.7994  L_Caus: 0.0124  L_Spar: 0.0000  FR: 0.1404  Wgt(C/S): 0.80/0.00  LR: 2.260e-03  Acc@1: 93.7500
+2026-04-03 17:36:58 INFO:train:Train: [1:15:10] [Epoch: 51/106] [Iter:  562/562]  Loss_Tot: 2.2264  L_Full: 1.1147  L_Mask: 1.1003  L_Caus: 0.0142  L_Spar: 0.0000  FR: 0.1415  Wgt(C/S): 0.80/0.00  LR: 2.260e-03  Acc@1: 75.0000
+2026-04-03 17:37:11 INFO:train:Test:  [1:15:23] [Iter:   63/63]  Loss_Tot: 1.0449  L_Caus: 0.0110  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:37:11 INFO:train: * Acc@1 = 78.5000, Acc@5 = 97.6000, loss = 1.4084
+2026-04-03 17:37:11 INFO:train:Training time 1:15:23, max_test_acc1 78.5000, test_acc5_at_max_test_acc1 97.6000
+2026-04-03 17:37:11 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:37:49 INFO:train:Train: [1:16:01] [Epoch: 52/106] [Iter:  256/562]  Loss_Tot: 1.8112  L_Full: 0.9164  L_Mask: 0.8874  L_Caus: 0.0090  L_Spar: 0.0000  FR: 0.1440  Wgt(C/S): 0.82/0.00  LR: 2.179e-03  Acc@1: 81.2500
+2026-04-03 17:38:19 INFO:train:Train: [1:16:31] [Epoch: 52/106] [Iter:  512/562]  Loss_Tot: 2.3700  L_Full: 1.1914  L_Mask: 1.1710  L_Caus: 0.0092  L_Spar: 0.0000  FR: 0.1407  Wgt(C/S): 0.82/0.00  LR: 2.179e-03  Acc@1: 68.7500
+2026-04-03 17:38:24 INFO:train:Train: [1:16:36] [Epoch: 52/106] [Iter:  562/562]  Loss_Tot: 1.4027  L_Full: 0.6898  L_Mask: 0.7081  L_Caus: 0.0058  L_Spar: 0.0000  FR: 0.1471  Wgt(C/S): 0.82/0.00  LR: 2.179e-03  Acc@1: 93.7500
+2026-04-03 17:38:37 INFO:train:Test:  [1:16:49] [Iter:   63/63]  Loss_Tot: 0.8790  L_Caus: 0.0231  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:38:37 INFO:train: * Acc@1 = 79.3000, Acc@5 = 98.0000, loss = 1.4266
+2026-04-03 17:38:38 INFO:train:Training time 1:16:50, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:38:38 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:39:16 INFO:train:Train: [1:17:28] [Epoch: 53/106] [Iter:  256/562]  Loss_Tot: 1.5711  L_Full: 0.7980  L_Mask: 0.7651  L_Caus: 0.0095  L_Spar: 0.0000  FR: 0.1454  Wgt(C/S): 0.84/0.00  LR: 2.099e-03  Acc@1: 100.0000
+2026-04-03 17:39:45 INFO:train:Train: [1:17:57] [Epoch: 53/106] [Iter:  512/562]  Loss_Tot: 3.7114  L_Full: 1.8535  L_Mask: 1.8449  L_Caus: 0.0154  L_Spar: 0.0000  FR: 0.1390  Wgt(C/S): 0.84/0.00  LR: 2.099e-03  Acc@1: 62.5000
+2026-04-03 17:39:51 INFO:train:Train: [1:18:03] [Epoch: 53/106] [Iter:  562/562]  Loss_Tot: 1.7628  L_Full: 0.9032  L_Mask: 0.8511  L_Caus: 0.0101  L_Spar: 0.0000  FR: 0.1467  Wgt(C/S): 0.84/0.00  LR: 2.099e-03  Acc@1: 87.5000
+2026-04-03 17:40:04 INFO:train:Test:  [1:18:16] [Iter:   63/63]  Loss_Tot: 0.6630  L_Caus: 0.0144  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:40:04 INFO:train: * Acc@1 = 77.2000, Acc@5 = 97.9000, loss = 1.5037
+2026-04-03 17:40:04 INFO:train:Training time 1:18:16, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:40:04 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:40:42 INFO:train:Train: [1:18:54] [Epoch: 54/106] [Iter:  256/562]  Loss_Tot: 2.8475  L_Full: 1.4134  L_Mask: 1.4175  L_Caus: 0.0191  L_Spar: 0.0000  FR: 0.1387  Wgt(C/S): 0.87/0.00  LR: 2.018e-03  Acc@1: 62.5000
+2026-04-03 17:41:11 INFO:train:Train: [1:19:23] [Epoch: 54/106] [Iter:  512/562]  Loss_Tot: 2.1663  L_Full: 1.0946  L_Mask: 1.0640  L_Caus: 0.0089  L_Spar: 0.0000  FR: 0.1448  Wgt(C/S): 0.87/0.00  LR: 2.018e-03  Acc@1: 93.7500
+2026-04-03 17:41:17 INFO:train:Train: [1:19:29] [Epoch: 54/106] [Iter:  562/562]  Loss_Tot: 2.7877  L_Full: 1.3522  L_Mask: 1.4225  L_Caus: 0.0149  L_Spar: 0.0000  FR: 0.1436  Wgt(C/S): 0.87/0.00  LR: 2.018e-03  Acc@1: 68.7500
+2026-04-03 17:41:30 INFO:train:Test:  [1:19:42] [Iter:   63/63]  Loss_Tot: 0.6466  L_Caus: 0.0351  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:41:30 INFO:train: * Acc@1 = 78.2000, Acc@5 = 98.2000, loss = 1.4991
+2026-04-03 17:41:30 INFO:train:Training time 1:19:42, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:41:30 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:42:08 INFO:train:Train: [1:20:21] [Epoch: 55/106] [Iter:  256/562]  Loss_Tot: 3.8720  L_Full: 1.9606  L_Mask: 1.8975  L_Caus: 0.0156  L_Spar: 0.0000  FR: 0.1346  Wgt(C/S): 0.89/0.00  LR: 1.938e-03  Acc@1: 25.0000
+2026-04-03 17:42:38 INFO:train:Train: [1:20:50] [Epoch: 55/106] [Iter:  512/562]  Loss_Tot: 2.6053  L_Full: 1.3045  L_Mask: 1.2908  L_Caus: 0.0112  L_Spar: 0.0000  FR: 0.1482  Wgt(C/S): 0.89/0.00  LR: 1.938e-03  Acc@1: 75.0000
+2026-04-03 17:42:44 INFO:train:Train: [1:20:56] [Epoch: 55/106] [Iter:  562/562]  Loss_Tot: 2.3426  L_Full: 1.1570  L_Mask: 1.1778  L_Caus: 0.0087  L_Spar: 0.0000  FR: 0.1449  Wgt(C/S): 0.89/0.00  LR: 1.938e-03  Acc@1: 87.5000
+2026-04-03 17:42:56 INFO:train:Test:  [1:21:09] [Iter:   63/63]  Loss_Tot: 1.0095  L_Caus: 0.0210  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 17:42:57 INFO:train: * Acc@1 = 78.3000, Acc@5 = 98.0000, loss = 1.5309
+2026-04-03 17:42:57 INFO:train:Training time 1:21:09, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:42:57 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:43:35 INFO:train:Train: [1:21:47] [Epoch: 56/106] [Iter:  256/562]  Loss_Tot: 3.3259  L_Full: 1.6498  L_Mask: 1.6660  L_Caus: 0.0111  L_Spar: 0.0000  FR: 0.1443  Wgt(C/S): 0.91/0.00  LR: 1.859e-03  Acc@1: 68.7500
+2026-04-03 17:44:04 INFO:train:Train: [1:22:16] [Epoch: 56/106] [Iter:  512/562]  Loss_Tot: 2.0247  L_Full: 1.0150  L_Mask: 1.0001  L_Caus: 0.0105  L_Spar: 0.0000  FR: 0.1459  Wgt(C/S): 0.91/0.00  LR: 1.859e-03  Acc@1: 81.2500
+2026-04-03 17:44:10 INFO:train:Train: [1:22:22] [Epoch: 56/106] [Iter:  562/562]  Loss_Tot: 1.5467  L_Full: 0.7793  L_Mask: 0.7557  L_Caus: 0.0129  L_Spar: 0.0000  FR: 0.1461  Wgt(C/S): 0.91/0.00  LR: 1.859e-03  Acc@1: 93.7500
+2026-04-03 17:44:23 INFO:train:Test:  [1:22:35] [Iter:   63/63]  Loss_Tot: 0.9517  L_Caus: 0.0238  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:44:23 INFO:train: * Acc@1 = 76.4000, Acc@5 = 97.8000, loss = 1.6319
+2026-04-03 17:44:23 INFO:train:Training time 1:22:35, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:44:23 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:45:02 INFO:train:Train: [1:23:14] [Epoch: 57/106] [Iter:  256/562]  Loss_Tot: 1.9099  L_Full: 0.9488  L_Mask: 0.9530  L_Caus: 0.0088  L_Spar: 0.0000  FR: 0.1517  Wgt(C/S): 0.93/0.00  LR: 1.781e-03  Acc@1: 81.2500
+2026-04-03 17:45:31 INFO:train:Train: [1:23:43] [Epoch: 57/106] [Iter:  512/562]  Loss_Tot: 2.0538  L_Full: 1.0190  L_Mask: 1.0268  L_Caus: 0.0087  L_Spar: 0.0000  FR: 0.1526  Wgt(C/S): 0.93/0.00  LR: 1.781e-03  Acc@1: 93.7500
+2026-04-03 17:45:37 INFO:train:Train: [1:23:49] [Epoch: 57/106] [Iter:  562/562]  Loss_Tot: 2.1977  L_Full: 1.0578  L_Mask: 1.1297  L_Caus: 0.0109  L_Spar: 0.0000  FR: 0.1516  Wgt(C/S): 0.93/0.00  LR: 1.781e-03  Acc@1: 75.0000
+2026-04-03 17:45:49 INFO:train:Test:  [1:24:01] [Iter:   63/63]  Loss_Tot: 0.5035  L_Caus: 0.0235  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:45:50 INFO:train: * Acc@1 = 78.3000, Acc@5 = 98.1000, loss = 1.4023
+2026-04-03 17:45:50 INFO:train:Training time 1:24:02, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:45:50 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:46:28 INFO:train:Train: [1:24:40] [Epoch: 58/106] [Iter:  256/562]  Loss_Tot: 1.3774  L_Full: 0.6922  L_Mask: 0.6720  L_Caus: 0.0139  L_Spar: 0.0000  FR: 0.1532  Wgt(C/S): 0.96/0.00  LR: 1.703e-03  Acc@1: 93.7500
+2026-04-03 17:46:57 INFO:train:Train: [1:25:10] [Epoch: 58/106] [Iter:  512/562]  Loss_Tot: 2.7020  L_Full: 1.3269  L_Mask: 1.3658  L_Caus: 0.0097  L_Spar: 0.0000  FR: 0.1509  Wgt(C/S): 0.96/0.00  LR: 1.703e-03  Acc@1: 87.5000
+2026-04-03 17:47:03 INFO:train:Train: [1:25:15] [Epoch: 58/106] [Iter:  562/562]  Loss_Tot: 3.4423  L_Full: 1.6890  L_Mask: 1.7361  L_Caus: 0.0181  L_Spar: 0.0000  FR: 0.1458  Wgt(C/S): 0.96/0.00  LR: 1.703e-03  Acc@1: 50.0000
+2026-04-03 17:47:16 INFO:train:Test:  [1:25:28] [Iter:   63/63]  Loss_Tot: 0.8659  L_Caus: 0.0392  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:47:16 INFO:train: * Acc@1 = 76.7000, Acc@5 = 98.2000, loss = 1.5498
+2026-04-03 17:47:16 INFO:train:Training time 1:25:28, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:47:16 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:47:54 INFO:train:Train: [1:26:07] [Epoch: 59/106] [Iter:  256/562]  Loss_Tot: 1.5860  L_Full: 0.7597  L_Mask: 0.8091  L_Caus: 0.0176  L_Spar: 0.0000  FR: 0.1493  Wgt(C/S): 0.98/0.00  LR: 1.626e-03  Acc@1: 87.5000
+2026-04-03 17:48:24 INFO:train:Train: [1:26:36] [Epoch: 59/106] [Iter:  512/562]  Loss_Tot: 1.9748  L_Full: 0.9904  L_Mask: 0.9738  L_Caus: 0.0108  L_Spar: 0.0000  FR: 0.1530  Wgt(C/S): 0.98/0.00  LR: 1.626e-03  Acc@1: 93.7500
+2026-04-03 17:48:30 INFO:train:Train: [1:26:42] [Epoch: 59/106] [Iter:  562/562]  Loss_Tot: 3.2492  L_Full: 1.6300  L_Mask: 1.6111  L_Caus: 0.0083  L_Spar: 0.0000  FR: 0.1449  Wgt(C/S): 0.98/0.00  LR: 1.626e-03  Acc@1: 75.0000
+2026-04-03 17:48:43 INFO:train:Test:  [1:26:55] [Iter:   63/63]  Loss_Tot: 1.3431  L_Caus: 0.0208  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:48:43 INFO:train: * Acc@1 = 76.6000, Acc@5 = 97.7000, loss = 1.6380
+2026-04-03 17:48:43 INFO:train:Training time 1:26:55, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:48:43 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:49:21 INFO:train:Train: [1:27:33] [Epoch: 60/106] [Iter:  256/562]  Loss_Tot: 3.6461  L_Full: 1.8299  L_Mask: 1.8024  L_Caus: 0.0138  L_Spar: 0.0000  FR: 0.1455  Wgt(C/S): 1.00/0.00  LR: 1.550e-03  Acc@1: 62.5000
+2026-04-03 17:49:51 INFO:train:Train: [1:28:03] [Epoch: 60/106] [Iter:  512/562]  Loss_Tot: 1.4035  L_Full: 0.6832  L_Mask: 0.7050  L_Caus: 0.0153  L_Spar: 0.0000  FR: 0.1560  Wgt(C/S): 1.00/0.00  LR: 1.550e-03  Acc@1: 93.7500
+2026-04-03 17:49:56 INFO:train:Train: [1:28:08] [Epoch: 60/106] [Iter:  562/562]  Loss_Tot: 3.5005  L_Full: 1.7200  L_Mask: 1.7605  L_Caus: 0.0201  L_Spar: 0.0000  FR: 0.1483  Wgt(C/S): 1.00/0.00  LR: 1.550e-03  Acc@1: 62.5000
+2026-04-03 17:50:09 INFO:train:Test:  [1:28:21] [Iter:   63/63]  Loss_Tot: 1.1083  L_Caus: 0.0173  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:50:09 INFO:train: * Acc@1 = 74.1000, Acc@5 = 97.6000, loss = 1.7574
+2026-04-03 17:50:09 INFO:train:Training time 1:28:21, max_test_acc1 79.3000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 17:50:09 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:50:48 INFO:train:Train: [1:29:00] [Epoch: 61/106] [Iter:  256/562]  Loss_Tot: 1.9450  L_Full: 0.9708  L_Mask: 0.9649  L_Caus: 0.0093  L_Spar: 0.0000  FR: 0.1531  Wgt(C/S): 1.00/0.00  LR: 1.475e-03  Acc@1: 93.7500
+2026-04-03 17:51:17 INFO:train:Train: [1:29:29] [Epoch: 61/106] [Iter:  512/562]  Loss_Tot: 2.1392  L_Full: 1.0713  L_Mask: 1.0444  L_Caus: 0.0235  L_Spar: 0.0000  FR: 0.1548  Wgt(C/S): 1.00/0.00  LR: 1.475e-03  Acc@1: 87.5000
+2026-04-03 17:51:23 INFO:train:Train: [1:29:35] [Epoch: 61/106] [Iter:  562/562]  Loss_Tot: 1.8906  L_Full: 0.9563  L_Mask: 0.9185  L_Caus: 0.0159  L_Spar: 0.0000  FR: 0.1573  Wgt(C/S): 1.00/0.00  LR: 1.475e-03  Acc@1: 81.2500
+2026-04-03 17:51:36 INFO:train:Test:  [1:29:48] [Iter:   63/63]  Loss_Tot: 0.4813  L_Caus: 0.0263  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:51:36 INFO:train: * Acc@1 = 80.6000, Acc@5 = 98.2000, loss = 1.3897
+2026-04-03 17:51:36 INFO:train:Training time 1:29:48, max_test_acc1 80.6000, test_acc5_at_max_test_acc1 98.2000
+2026-04-03 17:51:36 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:52:14 INFO:train:Train: [1:30:26] [Epoch: 62/106] [Iter:  256/562]  Loss_Tot: 1.6500  L_Full: 0.7908  L_Mask: 0.8413  L_Caus: 0.0179  L_Spar: 0.0000  FR: 0.1492  Wgt(C/S): 1.00/0.00  LR: 1.401e-03  Acc@1: 81.2500
+2026-04-03 17:52:44 INFO:train:Train: [1:30:56] [Epoch: 62/106] [Iter:  512/562]  Loss_Tot: 3.8739  L_Full: 1.9300  L_Mask: 1.9328  L_Caus: 0.0112  L_Spar: 0.0000  FR: 0.1498  Wgt(C/S): 1.00/0.00  LR: 1.401e-03  Acc@1: 43.7500
+2026-04-03 17:52:50 INFO:train:Train: [1:31:02] [Epoch: 62/106] [Iter:  562/562]  Loss_Tot: 1.6091  L_Full: 0.8054  L_Mask: 0.7883  L_Caus: 0.0154  L_Spar: 0.0000  FR: 0.1560  Wgt(C/S): 1.00/0.00  LR: 1.401e-03  Acc@1: 87.5000
+2026-04-03 17:53:02 INFO:train:Test:  [1:31:14] [Iter:   63/63]  Loss_Tot: 0.3247  L_Caus: 0.0212  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:53:03 INFO:train: * Acc@1 = 80.2000, Acc@5 = 98.4000, loss = 1.3644
+2026-04-03 17:53:03 INFO:train:Training time 1:31:15, max_test_acc1 80.6000, test_acc5_at_max_test_acc1 98.2000
+2026-04-03 17:53:03 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:53:41 INFO:train:Train: [1:31:53] [Epoch: 63/106] [Iter:  256/562]  Loss_Tot: 1.2758  L_Full: 0.6425  L_Mask: 0.6262  L_Caus: 0.0071  L_Spar: 0.0000  FR: 0.1534  Wgt(C/S): 1.00/0.00  LR: 1.329e-03  Acc@1: 93.7500
+2026-04-03 17:54:10 INFO:train:Train: [1:32:22] [Epoch: 63/106] [Iter:  512/562]  Loss_Tot: 2.8292  L_Full: 1.4242  L_Mask: 1.3968  L_Caus: 0.0081  L_Spar: 0.0000  FR: 0.1541  Wgt(C/S): 1.00/0.00  LR: 1.329e-03  Acc@1: 87.5000
+2026-04-03 17:54:16 INFO:train:Train: [1:32:28] [Epoch: 63/106] [Iter:  562/562]  Loss_Tot: 2.2135  L_Full: 1.1044  L_Mask: 1.0947  L_Caus: 0.0144  L_Spar: 0.0000  FR: 0.1534  Wgt(C/S): 1.00/0.00  LR: 1.329e-03  Acc@1: 87.5000
+2026-04-03 17:54:29 INFO:train:Test:  [1:32:41] [Iter:   63/63]  Loss_Tot: 0.4999  L_Caus: 0.0226  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:54:29 INFO:train: * Acc@1 = 83.0000, Acc@5 = 98.1000, loss = 1.3634
+2026-04-03 17:54:29 INFO:train:Training time 1:32:41, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:54:29 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:55:08 INFO:train:Train: [1:33:20] [Epoch: 64/106] [Iter:  256/562]  Loss_Tot: 2.3556  L_Full: 1.1752  L_Mask: 1.1732  L_Caus: 0.0072  L_Spar: 0.0000  FR: 0.1511  Wgt(C/S): 1.00/0.00  LR: 1.258e-03  Acc@1: 100.0000
+2026-04-03 17:55:37 INFO:train:Train: [1:33:49] [Epoch: 64/106] [Iter:  512/562]  Loss_Tot: 1.2573  L_Full: 0.6389  L_Mask: 0.6036  L_Caus: 0.0148  L_Spar: 0.0000  FR: 0.1580  Wgt(C/S): 1.00/0.00  LR: 1.258e-03  Acc@1: 100.0000
+2026-04-03 17:55:43 INFO:train:Train: [1:33:55] [Epoch: 64/106] [Iter:  562/562]  Loss_Tot: 3.4180  L_Full: 1.6904  L_Mask: 1.7119  L_Caus: 0.0156  L_Spar: 0.0000  FR: 0.1562  Wgt(C/S): 1.00/0.00  LR: 1.258e-03  Acc@1: 68.7500
+2026-04-03 17:55:56 INFO:train:Test:  [1:34:08] [Iter:   63/63]  Loss_Tot: 1.0744  L_Caus: 0.0201  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:55:56 INFO:train: * Acc@1 = 78.9000, Acc@5 = 98.5000, loss = 1.5134
+2026-04-03 17:55:56 INFO:train:Training time 1:34:08, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:55:56 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:56:34 INFO:train:Train: [1:34:46] [Epoch: 65/106] [Iter:  256/562]  Loss_Tot: 1.4674  L_Full: 0.7419  L_Mask: 0.7136  L_Caus: 0.0119  L_Spar: 0.0000  FR: 0.1615  Wgt(C/S): 1.00/0.00  LR: 1.187e-03  Acc@1: 93.7500
+2026-04-03 17:57:04 INFO:train:Train: [1:35:16] [Epoch: 65/106] [Iter:  512/562]  Loss_Tot: 3.3242  L_Full: 1.6569  L_Mask: 1.6520  L_Caus: 0.0153  L_Spar: 0.0000  FR: 0.1530  Wgt(C/S): 1.00/0.00  LR: 1.187e-03  Acc@1: 56.2500
+2026-04-03 17:57:09 INFO:train:Train: [1:35:22] [Epoch: 65/106] [Iter:  562/562]  Loss_Tot: 2.5906  L_Full: 1.3005  L_Mask: 1.2728  L_Caus: 0.0173  L_Spar: 0.0000  FR: 0.1566  Wgt(C/S): 1.00/0.00  LR: 1.187e-03  Acc@1: 93.7500
+2026-04-03 17:57:22 INFO:train:Test:  [1:35:34] [Iter:   63/63]  Loss_Tot: 0.7008  L_Caus: 0.0160  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 17:57:22 INFO:train: * Acc@1 = 80.7000, Acc@5 = 98.9000, loss = 1.3500
+2026-04-03 17:57:22 INFO:train:Training time 1:35:35, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:57:22 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:58:00 INFO:train:Train: [1:36:12] [Epoch: 66/106] [Iter:  256/562]  Loss_Tot: 3.8712  L_Full: 1.9316  L_Mask: 1.9277  L_Caus: 0.0119  L_Spar: 0.0000  FR: 0.1486  Wgt(C/S): 1.00/0.00  LR: 1.119e-03  Acc@1: 56.2500
+2026-04-03 17:58:30 INFO:train:Train: [1:36:42] [Epoch: 66/106] [Iter:  512/562]  Loss_Tot: 1.9721  L_Full: 0.9845  L_Mask: 0.9743  L_Caus: 0.0133  L_Spar: 0.0000  FR: 0.1578  Wgt(C/S): 1.00/0.00  LR: 1.119e-03  Acc@1: 81.2500
+2026-04-03 17:58:36 INFO:train:Train: [1:36:48] [Epoch: 66/106] [Iter:  562/562]  Loss_Tot: 2.5760  L_Full: 1.2759  L_Mask: 1.2916  L_Caus: 0.0085  L_Spar: 0.0000  FR: 0.1526  Wgt(C/S): 1.00/0.00  LR: 1.119e-03  Acc@1: 87.5000
+2026-04-03 17:58:49 INFO:train:Test:  [1:37:01] [Iter:   63/63]  Loss_Tot: 0.6398  L_Caus: 0.0296  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 17:58:49 INFO:train: * Acc@1 = 81.3000, Acc@5 = 98.1000, loss = 1.3585
+2026-04-03 17:58:49 INFO:train:Training time 1:37:01, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 17:58:49 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 17:59:27 INFO:train:Train: [1:37:39] [Epoch: 67/106] [Iter:  256/562]  Loss_Tot: 2.1216  L_Full: 1.0525  L_Mask: 1.0542  L_Caus: 0.0150  L_Spar: 0.0000  FR: 0.1558  Wgt(C/S): 1.00/0.00  LR: 1.052e-03  Acc@1: 93.7500
+2026-04-03 17:59:56 INFO:train:Train: [1:38:08] [Epoch: 67/106] [Iter:  512/562]  Loss_Tot: 1.1866  L_Full: 0.5842  L_Mask: 0.5964  L_Caus: 0.0060  L_Spar: 0.0000  FR: 0.1598  Wgt(C/S): 1.00/0.00  LR: 1.052e-03  Acc@1: 100.0000
+2026-04-03 18:00:02 INFO:train:Train: [1:38:14] [Epoch: 67/106] [Iter:  562/562]  Loss_Tot: 1.9457  L_Full: 0.9606  L_Mask: 0.9742  L_Caus: 0.0109  L_Spar: 0.0000  FR: 0.1605  Wgt(C/S): 1.00/0.00  LR: 1.052e-03  Acc@1: 81.2500
+2026-04-03 18:00:15 INFO:train:Test:  [1:38:27] [Iter:   63/63]  Loss_Tot: 0.5687  L_Caus: 0.0190  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:00:15 INFO:train: * Acc@1 = 78.6000, Acc@5 = 97.9000, loss = 1.4688
+2026-04-03 18:00:15 INFO:train:Training time 1:38:28, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 18:00:15 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:00:54 INFO:train:Train: [1:39:06] [Epoch: 68/106] [Iter:  256/562]  Loss_Tot: 1.9869  L_Full: 0.9700  L_Mask: 0.9916  L_Caus: 0.0253  L_Spar: 0.0000  FR: 0.1608  Wgt(C/S): 1.00/0.00  LR: 9.861e-04  Acc@1: 81.2500
+2026-04-03 18:01:23 INFO:train:Train: [1:39:36] [Epoch: 68/106] [Iter:  512/562]  Loss_Tot: 1.4721  L_Full: 0.7232  L_Mask: 0.7303  L_Caus: 0.0186  L_Spar: 0.0000  FR: 0.1609  Wgt(C/S): 1.00/0.00  LR: 9.861e-04  Acc@1: 93.7500
+2026-04-03 18:01:29 INFO:train:Train: [1:39:41] [Epoch: 68/106] [Iter:  562/562]  Loss_Tot: 2.1424  L_Full: 1.0657  L_Mask: 1.0695  L_Caus: 0.0072  L_Spar: 0.0000  FR: 0.1555  Wgt(C/S): 1.00/0.00  LR: 9.861e-04  Acc@1: 100.0000
+2026-04-03 18:01:42 INFO:train:Test:  [1:39:54] [Iter:   63/63]  Loss_Tot: 0.6330  L_Caus: 0.0205  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:01:42 INFO:train: * Acc@1 = 80.9000, Acc@5 = 98.5000, loss = 1.3285
+2026-04-03 18:01:42 INFO:train:Training time 1:39:54, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 18:01:42 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:02:21 INFO:train:Train: [1:40:33] [Epoch: 69/106] [Iter:  256/562]  Loss_Tot: 1.3676  L_Full: 0.6763  L_Mask: 0.6752  L_Caus: 0.0161  L_Spar: 0.0000  FR: 0.1626  Wgt(C/S): 1.00/0.00  LR: 9.222e-04  Acc@1: 93.7500
+2026-04-03 18:02:50 INFO:train:Train: [1:41:02] [Epoch: 69/106] [Iter:  512/562]  Loss_Tot: 1.8332  L_Full: 0.9191  L_Mask: 0.9032  L_Caus: 0.0109  L_Spar: 0.0000  FR: 0.1600  Wgt(C/S): 1.00/0.00  LR: 9.222e-04  Acc@1: 93.7500
+2026-04-03 18:02:55 INFO:train:Train: [1:41:07] [Epoch: 69/106] [Iter:  562/562]  Loss_Tot: 1.3735  L_Full: 0.6523  L_Mask: 0.6964  L_Caus: 0.0249  L_Spar: 0.0000  FR: 0.1630  Wgt(C/S): 1.00/0.00  LR: 9.222e-04  Acc@1: 100.0000
+2026-04-03 18:03:08 INFO:train:Test:  [1:41:20] [Iter:   63/63]  Loss_Tot: 0.5287  L_Caus: 0.0147  L_Spar: 0.0000  Acc@1: 87.5000  Acc@5: 100.0000
+2026-04-03 18:03:09 INFO:train: * Acc@1 = 80.1000, Acc@5 = 98.1000, loss = 1.3357
+2026-04-03 18:03:09 INFO:train:Training time 1:41:21, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 18:03:09 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:03:47 INFO:train:Train: [1:41:59] [Epoch: 70/106] [Iter:  256/562]  Loss_Tot: 1.3753  L_Full: 0.6784  L_Mask: 0.6805  L_Caus: 0.0164  L_Spar: 0.0000  FR: 0.1620  Wgt(C/S): 1.00/0.00  LR: 8.599e-04  Acc@1: 93.7500
+2026-04-03 18:04:16 INFO:train:Train: [1:42:28] [Epoch: 70/106] [Iter:  512/562]  Loss_Tot: 3.8300  L_Full: 1.8918  L_Mask: 1.9257  L_Caus: 0.0125  L_Spar: 0.0000  FR: 0.1545  Wgt(C/S): 1.00/0.00  LR: 8.599e-04  Acc@1: 50.0000
+2026-04-03 18:04:22 INFO:train:Train: [1:42:34] [Epoch: 70/106] [Iter:  562/562]  Loss_Tot: 1.3445  L_Full: 0.6671  L_Mask: 0.6676  L_Caus: 0.0098  L_Spar: 0.0000  FR: 0.1615  Wgt(C/S): 1.00/0.00  LR: 8.599e-04  Acc@1: 93.7500
+2026-04-03 18:04:35 INFO:train:Test:  [1:42:47] [Iter:   63/63]  Loss_Tot: 0.7669  L_Caus: 0.0184  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:04:35 INFO:train: * Acc@1 = 79.8000, Acc@5 = 98.3000, loss = 1.4956
+2026-04-03 18:04:35 INFO:train:Training time 1:42:47, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 18:04:35 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:05:13 INFO:train:Train: [1:43:25] [Epoch: 71/106] [Iter:  256/562]  Loss_Tot: 2.5221  L_Full: 1.2518  L_Mask: 1.2571  L_Caus: 0.0132  L_Spar: 0.0000  FR: 0.1578  Wgt(C/S): 1.00/0.00  LR: 7.994e-04  Acc@1: 100.0000
+2026-04-03 18:05:43 INFO:train:Train: [1:43:55] [Epoch: 71/106] [Iter:  512/562]  Loss_Tot: 3.9145  L_Full: 1.9398  L_Mask: 1.9616  L_Caus: 0.0130  L_Spar: 0.0000  FR: 0.1554  Wgt(C/S): 1.00/0.00  LR: 7.994e-04  Acc@1: 37.5000
+2026-04-03 18:05:48 INFO:train:Train: [1:44:00] [Epoch: 71/106] [Iter:  562/562]  Loss_Tot: 1.3394  L_Full: 0.6568  L_Mask: 0.6725  L_Caus: 0.0101  L_Spar: 0.0000  FR: 0.1647  Wgt(C/S): 1.00/0.00  LR: 7.994e-04  Acc@1: 93.7500
+2026-04-03 18:06:02 INFO:train:Test:  [1:44:14] [Iter:   63/63]  Loss_Tot: 1.4880  L_Caus: 0.0281  L_Spar: 0.0000  Acc@1: 75.0000  Acc@5: 100.0000
+2026-04-03 18:06:02 INFO:train: * Acc@1 = 75.8000, Acc@5 = 97.7000, loss = 1.6816
+2026-04-03 18:06:02 INFO:train:Training time 1:44:14, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 18:06:02 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:06:40 INFO:train:Train: [1:44:52] [Epoch: 72/106] [Iter:  256/562]  Loss_Tot: 1.5819  L_Full: 0.7866  L_Mask: 0.7686  L_Caus: 0.0268  L_Spar: 0.0000  FR: 0.1615  Wgt(C/S): 1.00/0.00  LR: 7.408e-04  Acc@1: 100.0000
+2026-04-03 18:07:10 INFO:train:Train: [1:45:22] [Epoch: 72/106] [Iter:  512/562]  Loss_Tot: 3.6694  L_Full: 1.8224  L_Mask: 1.8331  L_Caus: 0.0139  L_Spar: 0.0000  FR: 0.1586  Wgt(C/S): 1.00/0.00  LR: 7.408e-04  Acc@1: 56.2500
+2026-04-03 18:07:15 INFO:train:Train: [1:45:27] [Epoch: 72/106] [Iter:  562/562]  Loss_Tot: 1.1963  L_Full: 0.5990  L_Mask: 0.5868  L_Caus: 0.0105  L_Spar: 0.0000  FR: 0.1665  Wgt(C/S): 1.00/0.00  LR: 7.408e-04  Acc@1: 100.0000
+2026-04-03 18:07:28 INFO:train:Test:  [1:45:40] [Iter:   63/63]  Loss_Tot: 0.4512  L_Caus: 0.0219  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:07:28 INFO:train: * Acc@1 = 82.3000, Acc@5 = 98.6000, loss = 1.2559
+2026-04-03 18:07:28 INFO:train:Training time 1:45:41, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 18:07:28 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:08:15 INFO:train:Train: [1:46:27] [Epoch: 73/106] [Iter:  256/562]  Loss_Tot: 3.0762  L_Full: 1.5298  L_Mask: 1.5318  L_Caus: 0.0145  L_Spar: 0.0000  FR: 0.1605  Wgt(C/S): 1.00/0.00  LR: 6.840e-04  Acc@1: 81.2500
+2026-04-03 18:08:45 INFO:train:Train: [1:46:57] [Epoch: 73/106] [Iter:  512/562]  Loss_Tot: 1.1927  L_Full: 0.5903  L_Mask: 0.5922  L_Caus: 0.0103  L_Spar: 0.0000  FR: 0.1693  Wgt(C/S): 1.00/0.00  LR: 6.840e-04  Acc@1: 100.0000
+2026-04-03 18:08:51 INFO:train:Train: [1:47:03] [Epoch: 73/106] [Iter:  562/562]  Loss_Tot: 1.6852  L_Full: 0.8151  L_Mask: 0.8547  L_Caus: 0.0154  L_Spar: 0.0000  FR: 0.1659  Wgt(C/S): 1.00/0.00  LR: 6.840e-04  Acc@1: 87.5000
+2026-04-03 18:09:04 INFO:train:Test:  [1:47:16] [Iter:   63/63]  Loss_Tot: 0.4377  L_Caus: 0.0432  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:09:04 INFO:train: * Acc@1 = 82.7000, Acc@5 = 98.5000, loss = 1.2370
+2026-04-03 18:09:04 INFO:train:Training time 1:47:17, max_test_acc1 83.0000, test_acc5_at_max_test_acc1 98.1000
+2026-04-03 18:09:04 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:09:43 INFO:train:Train: [1:47:55] [Epoch: 74/106] [Iter:  256/562]  Loss_Tot: 2.5350  L_Full: 1.2601  L_Mask: 1.2605  L_Caus: 0.0144  L_Spar: 0.0000  FR: 0.1671  Wgt(C/S): 1.00/0.00  LR: 6.292e-04  Acc@1: 93.7500
+2026-04-03 18:10:12 INFO:train:Train: [1:48:24] [Epoch: 74/106] [Iter:  512/562]  Loss_Tot: 1.3676  L_Full: 0.6924  L_Mask: 0.6619  L_Caus: 0.0134  L_Spar: 0.0000  FR: 0.1697  Wgt(C/S): 1.00/0.00  LR: 6.292e-04  Acc@1: 93.7500
+2026-04-03 18:10:18 INFO:train:Train: [1:48:30] [Epoch: 74/106] [Iter:  562/562]  Loss_Tot: 1.1805  L_Full: 0.5849  L_Mask: 0.5850  L_Caus: 0.0106  L_Spar: 0.0000  FR: 0.1708  Wgt(C/S): 1.00/0.00  LR: 6.292e-04  Acc@1: 100.0000
+2026-04-03 18:10:31 INFO:train:Test:  [1:48:43] [Iter:   63/63]  Loss_Tot: 0.4733  L_Caus: 0.0181  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:10:31 INFO:train: * Acc@1 = 83.6000, Acc@5 = 98.0000, loss = 1.2888
+2026-04-03 18:10:31 INFO:train:Training time 1:48:43, max_test_acc1 83.6000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 18:10:31 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:11:09 INFO:train:Train: [1:49:21] [Epoch: 75/106] [Iter:  256/562]  Loss_Tot: 1.3746  L_Full: 0.6927  L_Mask: 0.6703  L_Caus: 0.0116  L_Spar: 0.0000  FR: 0.1678  Wgt(C/S): 1.00/0.00  LR: 5.763e-04  Acc@1: 100.0000
+2026-04-03 18:11:39 INFO:train:Train: [1:49:51] [Epoch: 75/106] [Iter:  512/562]  Loss_Tot: 1.3279  L_Full: 0.6689  L_Mask: 0.6395  L_Caus: 0.0195  L_Spar: 0.0000  FR: 0.1686  Wgt(C/S): 1.00/0.00  LR: 5.763e-04  Acc@1: 100.0000
+2026-04-03 18:11:44 INFO:train:Train: [1:49:56] [Epoch: 75/106] [Iter:  562/562]  Loss_Tot: 1.5215  L_Full: 0.7637  L_Mask: 0.7458  L_Caus: 0.0119  L_Spar: 0.0000  FR: 0.1704  Wgt(C/S): 1.00/0.00  LR: 5.763e-04  Acc@1: 93.7500
+2026-04-03 18:11:57 INFO:train:Test:  [1:50:10] [Iter:   63/63]  Loss_Tot: 0.2761  L_Caus: 0.0122  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:11:58 INFO:train: * Acc@1 = 83.1000, Acc@5 = 98.2000, loss = 1.2382
+2026-04-03 18:11:58 INFO:train:Training time 1:50:10, max_test_acc1 83.6000, test_acc5_at_max_test_acc1 98.0000
+2026-04-03 18:11:58 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:12:36 INFO:train:Train: [1:50:48] [Epoch: 76/106] [Iter:  256/562]  Loss_Tot: 1.1261  L_Full: 0.5630  L_Mask: 0.5570  L_Caus: 0.0061  L_Spar: 0.0000  FR: 0.1674  Wgt(C/S): 1.00/0.00  LR: 5.256e-04  Acc@1: 100.0000
+2026-04-03 18:13:06 INFO:train:Train: [1:51:18] [Epoch: 76/106] [Iter:  512/562]  Loss_Tot: 1.1263  L_Full: 0.5585  L_Mask: 0.5589  L_Caus: 0.0088  L_Spar: 0.0000  FR: 0.1691  Wgt(C/S): 1.00/0.00  LR: 5.256e-04  Acc@1: 100.0000
+2026-04-03 18:13:11 INFO:train:Train: [1:51:23] [Epoch: 76/106] [Iter:  562/562]  Loss_Tot: 1.0896  L_Full: 0.5446  L_Mask: 0.5344  L_Caus: 0.0106  L_Spar: 0.0000  FR: 0.1735  Wgt(C/S): 1.00/0.00  LR: 5.256e-04  Acc@1: 100.0000
+2026-04-03 18:13:24 INFO:train:Test:  [1:51:36] [Iter:   63/63]  Loss_Tot: 0.2396  L_Caus: 0.0172  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:13:25 INFO:train: * Acc@1 = 84.0000, Acc@5 = 98.3000, loss = 1.1545
+2026-04-03 18:13:25 INFO:train:Training time 1:51:37, max_test_acc1 84.0000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:13:25 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:14:03 INFO:train:Train: [1:52:15] [Epoch: 77/106] [Iter:  256/562]  Loss_Tot: 1.0728  L_Full: 0.5294  L_Mask: 0.5383  L_Caus: 0.0050  L_Spar: 0.0000  FR: 0.1711  Wgt(C/S): 1.00/0.00  LR: 4.769e-04  Acc@1: 100.0000
+2026-04-03 18:14:32 INFO:train:Train: [1:52:44] [Epoch: 77/106] [Iter:  512/562]  Loss_Tot: 1.1267  L_Full: 0.5531  L_Mask: 0.5647  L_Caus: 0.0089  L_Spar: 0.0000  FR: 0.1713  Wgt(C/S): 1.00/0.00  LR: 4.769e-04  Acc@1: 100.0000
+2026-04-03 18:14:38 INFO:train:Train: [1:52:50] [Epoch: 77/106] [Iter:  562/562]  Loss_Tot: 1.0997  L_Full: 0.5529  L_Mask: 0.5370  L_Caus: 0.0099  L_Spar: 0.0000  FR: 0.1707  Wgt(C/S): 1.00/0.00  LR: 4.769e-04  Acc@1: 100.0000
+2026-04-03 18:14:51 INFO:train:Test:  [1:53:03] [Iter:   63/63]  Loss_Tot: 0.2411  L_Caus: 0.0264  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:14:51 INFO:train: * Acc@1 = 83.8000, Acc@5 = 98.8000, loss = 1.1207
+2026-04-03 18:14:51 INFO:train:Training time 1:53:03, max_test_acc1 84.0000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:14:51 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:15:30 INFO:train:Train: [1:53:42] [Epoch: 78/106] [Iter:  256/562]  Loss_Tot: 1.3709  L_Full: 0.6910  L_Mask: 0.6586  L_Caus: 0.0213  L_Spar: 0.0000  FR: 0.1732  Wgt(C/S): 1.00/0.00  LR: 4.305e-04  Acc@1: 100.0000
+2026-04-03 18:15:59 INFO:train:Train: [1:54:12] [Epoch: 78/106] [Iter:  512/562]  Loss_Tot: 1.1737  L_Full: 0.5878  L_Mask: 0.5804  L_Caus: 0.0055  L_Spar: 0.0000  FR: 0.1714  Wgt(C/S): 1.00/0.00  LR: 4.305e-04  Acc@1: 100.0000
+2026-04-03 18:16:05 INFO:train:Train: [1:54:17] [Epoch: 78/106] [Iter:  562/562]  Loss_Tot: 1.5314  L_Full: 0.7843  L_Mask: 0.7371  L_Caus: 0.0100  L_Spar: 0.0000  FR: 0.1735  Wgt(C/S): 1.00/0.00  LR: 4.305e-04  Acc@1: 87.5000
+2026-04-03 18:16:18 INFO:train:Test:  [1:54:30] [Iter:   63/63]  Loss_Tot: 0.3426  L_Caus: 0.0280  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:16:19 INFO:train: * Acc@1 = 82.6000, Acc@5 = 98.7000, loss = 1.1873
+2026-04-03 18:16:19 INFO:train:Training time 1:54:31, max_test_acc1 84.0000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:16:19 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:16:57 INFO:train:Train: [1:55:09] [Epoch: 79/106] [Iter:  256/562]  Loss_Tot: 1.1570  L_Full: 0.5781  L_Mask: 0.5712  L_Caus: 0.0077  L_Spar: 0.0000  FR: 0.1720  Wgt(C/S): 1.00/0.00  LR: 3.862e-04  Acc@1: 100.0000
+2026-04-03 18:17:27 INFO:train:Train: [1:55:39] [Epoch: 79/106] [Iter:  512/562]  Loss_Tot: 1.2762  L_Full: 0.6552  L_Mask: 0.6137  L_Caus: 0.0073  L_Spar: 0.0000  FR: 0.1744  Wgt(C/S): 1.00/0.00  LR: 3.862e-04  Acc@1: 93.7500
+2026-04-03 18:17:32 INFO:train:Train: [1:55:45] [Epoch: 79/106] [Iter:  562/562]  Loss_Tot: 1.1381  L_Full: 0.5687  L_Mask: 0.5591  L_Caus: 0.0102  L_Spar: 0.0000  FR: 0.1740  Wgt(C/S): 1.00/0.00  LR: 3.862e-04  Acc@1: 100.0000
+2026-04-03 18:17:46 INFO:train:Test:  [1:55:58] [Iter:   63/63]  Loss_Tot: 0.3301  L_Caus: 0.0162  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:17:46 INFO:train: * Acc@1 = 83.4000, Acc@5 = 98.2000, loss = 1.1802
+2026-04-03 18:17:46 INFO:train:Training time 1:55:58, max_test_acc1 84.0000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:17:46 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:18:25 INFO:train:Train: [1:56:37] [Epoch: 80/106] [Iter:  256/562]  Loss_Tot: 1.1262  L_Full: 0.5588  L_Mask: 0.5557  L_Caus: 0.0117  L_Spar: 0.0000  FR: 0.1765  Wgt(C/S): 1.00/0.00  LR: 3.443e-04  Acc@1: 100.0000
+2026-04-03 18:18:55 INFO:train:Train: [1:57:07] [Epoch: 80/106] [Iter:  512/562]  Loss_Tot: 1.3523  L_Full: 0.6794  L_Mask: 0.6656  L_Caus: 0.0073  L_Spar: 0.0000  FR: 0.1746  Wgt(C/S): 1.00/0.00  LR: 3.443e-04  Acc@1: 93.7500
+2026-04-03 18:19:00 INFO:train:Train: [1:57:13] [Epoch: 80/106] [Iter:  562/562]  Loss_Tot: 1.0948  L_Full: 0.5416  L_Mask: 0.5449  L_Caus: 0.0083  L_Spar: 0.0000  FR: 0.1752  Wgt(C/S): 1.00/0.00  LR: 3.443e-04  Acc@1: 100.0000
+2026-04-03 18:19:14 INFO:train:Test:  [1:57:26] [Iter:   63/63]  Loss_Tot: 0.2443  L_Caus: 0.0187  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:19:14 INFO:train: * Acc@1 = 84.2000, Acc@5 = 98.5000, loss = 1.1358
+2026-04-03 18:19:14 INFO:train:Training time 1:57:26, max_test_acc1 84.2000, test_acc5_at_max_test_acc1 98.5000
+2026-04-03 18:19:14 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:19:53 INFO:train:Train: [1:58:05] [Epoch: 81/106] [Iter:  256/562]  Loss_Tot: 1.1140  L_Full: 0.5557  L_Mask: 0.5524  L_Caus: 0.0059  L_Spar: 0.0000  FR: 0.1763  Wgt(C/S): 1.00/0.00  LR: 3.046e-04  Acc@1: 100.0000
+2026-04-03 18:20:23 INFO:train:Train: [1:58:35] [Epoch: 81/106] [Iter:  512/562]  Loss_Tot: 1.1256  L_Full: 0.5612  L_Mask: 0.5553  L_Caus: 0.0092  L_Spar: 0.0000  FR: 0.1761  Wgt(C/S): 1.00/0.00  LR: 3.046e-04  Acc@1: 100.0000
+2026-04-03 18:20:29 INFO:train:Train: [1:58:41] [Epoch: 81/106] [Iter:  562/562]  Loss_Tot: 1.1967  L_Full: 0.6005  L_Mask: 0.5881  L_Caus: 0.0080  L_Spar: 0.0000  FR: 0.1780  Wgt(C/S): 1.00/0.00  LR: 3.046e-04  Acc@1: 100.0000
+2026-04-03 18:20:41 INFO:train:Test:  [1:58:54] [Iter:   63/63]  Loss_Tot: 0.3007  L_Caus: 0.0181  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:20:42 INFO:train: * Acc@1 = 84.2000, Acc@5 = 98.5000, loss = 1.1091
+2026-04-03 18:20:42 INFO:train:Training time 1:58:54, max_test_acc1 84.2000, test_acc5_at_max_test_acc1 98.5000
+2026-04-03 18:20:42 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:21:21 INFO:train:Train: [1:59:33] [Epoch: 82/106] [Iter:  256/562]  Loss_Tot: 1.0998  L_Full: 0.5503  L_Mask: 0.5416  L_Caus: 0.0080  L_Spar: 0.0000  FR: 0.1743  Wgt(C/S): 1.00/0.00  LR: 2.673e-04  Acc@1: 100.0000
+2026-04-03 18:21:50 INFO:train:Train: [2:00:02] [Epoch: 82/106] [Iter:  512/562]  Loss_Tot: 1.1466  L_Full: 0.5726  L_Mask: 0.5648  L_Caus: 0.0092  L_Spar: 0.0000  FR: 0.1793  Wgt(C/S): 1.00/0.00  LR: 2.673e-04  Acc@1: 100.0000
+2026-04-03 18:21:56 INFO:train:Train: [2:00:08] [Epoch: 82/106] [Iter:  562/562]  Loss_Tot: 1.3272  L_Full: 0.6457  L_Mask: 0.6695  L_Caus: 0.0120  L_Spar: 0.0000  FR: 0.1750  Wgt(C/S): 1.00/0.00  LR: 2.673e-04  Acc@1: 93.7500
+2026-04-03 18:22:09 INFO:train:Test:  [2:00:21] [Iter:   63/63]  Loss_Tot: 0.3292  L_Caus: 0.0231  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:22:09 INFO:train: * Acc@1 = 85.0000, Acc@5 = 98.5000, loss = 1.1270
+2026-04-03 18:22:09 INFO:train:Training time 2:00:21, max_test_acc1 85.0000, test_acc5_at_max_test_acc1 98.5000
+2026-04-03 18:22:09 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:22:49 INFO:train:Train: [2:01:01] [Epoch: 83/106] [Iter:  256/562]  Loss_Tot: 1.0988  L_Full: 0.5473  L_Mask: 0.5464  L_Caus: 0.0051  L_Spar: 0.0000  FR: 0.1755  Wgt(C/S): 1.00/0.00  LR: 2.324e-04  Acc@1: 100.0000
+2026-04-03 18:23:18 INFO:train:Train: [2:01:30] [Epoch: 83/106] [Iter:  512/562]  Loss_Tot: 1.1474  L_Full: 0.5766  L_Mask: 0.5614  L_Caus: 0.0094  L_Spar: 0.0000  FR: 0.1769  Wgt(C/S): 1.00/0.00  LR: 2.324e-04  Acc@1: 100.0000
+2026-04-03 18:23:24 INFO:train:Train: [2:01:36] [Epoch: 83/106] [Iter:  562/562]  Loss_Tot: 1.1046  L_Full: 0.5500  L_Mask: 0.5508  L_Caus: 0.0039  L_Spar: 0.0000  FR: 0.1770  Wgt(C/S): 1.00/0.00  LR: 2.324e-04  Acc@1: 100.0000
+2026-04-03 18:23:37 INFO:train:Test:  [2:01:49] [Iter:   63/63]  Loss_Tot: 0.2802  L_Caus: 0.0220  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:23:38 INFO:train: * Acc@1 = 85.2000, Acc@5 = 98.6000, loss = 1.0723
+2026-04-03 18:23:38 INFO:train:Training time 2:01:50, max_test_acc1 85.2000, test_acc5_at_max_test_acc1 98.6000
+2026-04-03 18:23:38 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:24:17 INFO:train:Train: [2:02:29] [Epoch: 84/106] [Iter:  256/562]  Loss_Tot: 1.0628  L_Full: 0.5278  L_Mask: 0.5310  L_Caus: 0.0039  L_Spar: 0.0000  FR: 0.1758  Wgt(C/S): 1.00/0.00  LR: 1.999e-04  Acc@1: 100.0000
+2026-04-03 18:24:47 INFO:train:Train: [2:02:59] [Epoch: 84/106] [Iter:  512/562]  Loss_Tot: 1.1140  L_Full: 0.5446  L_Mask: 0.5610  L_Caus: 0.0084  L_Spar: 0.0000  FR: 0.1761  Wgt(C/S): 1.00/0.00  LR: 1.999e-04  Acc@1: 100.0000
+2026-04-03 18:24:53 INFO:train:Train: [2:03:05] [Epoch: 84/106] [Iter:  562/562]  Loss_Tot: 1.2810  L_Full: 0.6443  L_Mask: 0.6252  L_Caus: 0.0116  L_Spar: 0.0000  FR: 0.1755  Wgt(C/S): 1.00/0.00  LR: 1.999e-04  Acc@1: 93.7500
+2026-04-03 18:25:06 INFO:train:Test:  [2:03:18] [Iter:   63/63]  Loss_Tot: 0.2441  L_Caus: 0.0201  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:25:06 INFO:train: * Acc@1 = 85.7000, Acc@5 = 98.6000, loss = 1.0875
+2026-04-03 18:25:06 INFO:train:Training time 2:03:18, max_test_acc1 85.7000, test_acc5_at_max_test_acc1 98.6000
+2026-04-03 18:25:06 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:25:45 INFO:train:Train: [2:03:57] [Epoch: 85/106] [Iter:  256/562]  Loss_Tot: 1.1353  L_Full: 0.5632  L_Mask: 0.5672  L_Caus: 0.0049  L_Spar: 0.0000  FR: 0.1746  Wgt(C/S): 1.00/0.00  LR: 1.699e-04  Acc@1: 100.0000
+2026-04-03 18:26:15 INFO:train:Train: [2:04:27] [Epoch: 85/106] [Iter:  512/562]  Loss_Tot: 1.1241  L_Full: 0.5486  L_Mask: 0.5681  L_Caus: 0.0073  L_Spar: 0.0000  FR: 0.1753  Wgt(C/S): 1.00/0.00  LR: 1.699e-04  Acc@1: 100.0000
+2026-04-03 18:26:21 INFO:train:Train: [2:04:33] [Epoch: 85/106] [Iter:  562/562]  Loss_Tot: 1.3010  L_Full: 0.6607  L_Mask: 0.6147  L_Caus: 0.0255  L_Spar: 0.0000  FR: 0.1776  Wgt(C/S): 1.00/0.00  LR: 1.699e-04  Acc@1: 100.0000
+2026-04-03 18:26:34 INFO:train:Test:  [2:04:46] [Iter:   63/63]  Loss_Tot: 0.2264  L_Caus: 0.0171  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:26:34 INFO:train: * Acc@1 = 84.7000, Acc@5 = 98.6000, loss = 1.1404
+2026-04-03 18:26:34 INFO:train:Training time 2:04:46, max_test_acc1 85.7000, test_acc5_at_max_test_acc1 98.6000
+2026-04-03 18:26:34 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:27:13 INFO:train:Train: [2:05:25] [Epoch: 86/106] [Iter:  256/562]  Loss_Tot: 1.1158  L_Full: 0.5561  L_Mask: 0.5506  L_Caus: 0.0091  L_Spar: 0.0000  FR: 0.1768  Wgt(C/S): 1.00/0.00  LR: 1.424e-04  Acc@1: 100.0000
+2026-04-03 18:27:42 INFO:train:Train: [2:05:55] [Epoch: 86/106] [Iter:  512/562]  Loss_Tot: 1.1866  L_Full: 0.6009  L_Mask: 0.5730  L_Caus: 0.0128  L_Spar: 0.0000  FR: 0.1743  Wgt(C/S): 1.00/0.00  LR: 1.424e-04  Acc@1: 100.0000
+2026-04-03 18:27:48 INFO:train:Train: [2:06:00] [Epoch: 86/106] [Iter:  562/562]  Loss_Tot: 1.3160  L_Full: 0.6665  L_Mask: 0.6399  L_Caus: 0.0096  L_Spar: 0.0000  FR: 0.1757  Wgt(C/S): 1.00/0.00  LR: 1.424e-04  Acc@1: 93.7500
+2026-04-03 18:28:01 INFO:train:Test:  [2:06:13] [Iter:   63/63]  Loss_Tot: 0.3125  L_Caus: 0.0218  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:28:02 INFO:train: * Acc@1 = 84.2000, Acc@5 = 98.2000, loss = 1.1325
+2026-04-03 18:28:02 INFO:train:Training time 2:06:14, max_test_acc1 85.7000, test_acc5_at_max_test_acc1 98.6000
+2026-04-03 18:28:02 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:28:41 INFO:train:Train: [2:06:53] [Epoch: 87/106] [Iter:  256/562]  Loss_Tot: 1.0691  L_Full: 0.5345  L_Mask: 0.5274  L_Caus: 0.0072  L_Spar: 0.0000  FR: 0.1750  Wgt(C/S): 1.00/0.00  LR: 1.174e-04  Acc@1: 100.0000
+2026-04-03 18:29:10 INFO:train:Train: [2:07:23] [Epoch: 87/106] [Iter:  512/562]  Loss_Tot: 1.1172  L_Full: 0.5617  L_Mask: 0.5458  L_Caus: 0.0097  L_Spar: 0.0000  FR: 0.1771  Wgt(C/S): 1.00/0.00  LR: 1.174e-04  Acc@1: 100.0000
+2026-04-03 18:29:16 INFO:train:Train: [2:07:28] [Epoch: 87/106] [Iter:  562/562]  Loss_Tot: 1.1144  L_Full: 0.5560  L_Mask: 0.5515  L_Caus: 0.0069  L_Spar: 0.0000  FR: 0.1737  Wgt(C/S): 1.00/0.00  LR: 1.174e-04  Acc@1: 100.0000
+2026-04-03 18:29:29 INFO:train:Test:  [2:07:41] [Iter:   63/63]  Loss_Tot: 0.2848  L_Caus: 0.0245  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:29:30 INFO:train: * Acc@1 = 85.7000, Acc@5 = 98.0000, loss = 1.1038
+2026-04-03 18:29:30 INFO:train:Training time 2:07:42, max_test_acc1 85.7000, test_acc5_at_max_test_acc1 98.6000
+2026-04-03 18:29:30 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:30:09 INFO:train:Train: [2:08:21] [Epoch: 88/106] [Iter:  256/562]  Loss_Tot: 1.0778  L_Full: 0.5328  L_Mask: 0.5384  L_Caus: 0.0066  L_Spar: 0.0000  FR: 0.1779  Wgt(C/S): 1.00/0.00  LR: 9.502e-05  Acc@1: 100.0000
+2026-04-03 18:30:39 INFO:train:Train: [2:08:51] [Epoch: 88/106] [Iter:  512/562]  Loss_Tot: 1.1860  L_Full: 0.6055  L_Mask: 0.5663  L_Caus: 0.0141  L_Spar: 0.0000  FR: 0.1769  Wgt(C/S): 1.00/0.00  LR: 9.502e-05  Acc@1: 100.0000
+2026-04-03 18:30:45 INFO:train:Train: [2:08:57] [Epoch: 88/106] [Iter:  562/562]  Loss_Tot: 1.2142  L_Full: 0.5982  L_Mask: 0.6067  L_Caus: 0.0093  L_Spar: 0.0000  FR: 0.1776  Wgt(C/S): 1.00/0.00  LR: 9.502e-05  Acc@1: 100.0000
+2026-04-03 18:30:58 INFO:train:Test:  [2:09:10] [Iter:   63/63]  Loss_Tot: 0.3030  L_Caus: 0.0139  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:30:58 INFO:train: * Acc@1 = 85.8000, Acc@5 = 98.3000, loss = 1.1185
+2026-04-03 18:30:58 INFO:train:Training time 2:09:10, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:30:58 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:31:37 INFO:train:Train: [2:09:49] [Epoch: 89/106] [Iter:  256/562]  Loss_Tot: 1.0944  L_Full: 0.5432  L_Mask: 0.5435  L_Caus: 0.0077  L_Spar: 0.0000  FR: 0.1741  Wgt(C/S): 1.00/0.00  LR: 7.518e-05  Acc@1: 100.0000
+2026-04-03 18:32:07 INFO:train:Train: [2:10:19] [Epoch: 89/106] [Iter:  512/562]  Loss_Tot: 1.1025  L_Full: 0.5496  L_Mask: 0.5451  L_Caus: 0.0079  L_Spar: 0.0000  FR: 0.1810  Wgt(C/S): 1.00/0.00  LR: 7.518e-05  Acc@1: 100.0000
+2026-04-03 18:32:13 INFO:train:Train: [2:10:25] [Epoch: 89/106] [Iter:  562/562]  Loss_Tot: 1.2348  L_Full: 0.6315  L_Mask: 0.5755  L_Caus: 0.0278  L_Spar: 0.0000  FR: 0.1783  Wgt(C/S): 1.00/0.00  LR: 7.518e-05  Acc@1: 100.0000
+2026-04-03 18:32:26 INFO:train:Test:  [2:10:38] [Iter:   63/63]  Loss_Tot: 0.2938  L_Caus: 0.0119  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:32:26 INFO:train: * Acc@1 = 85.0000, Acc@5 = 98.2000, loss = 1.1042
+2026-04-03 18:32:26 INFO:train:Training time 2:10:38, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:32:26 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:33:05 INFO:train:Train: [2:11:17] [Epoch: 90/106] [Iter:  256/562]  Loss_Tot: 1.1106  L_Full: 0.5557  L_Mask: 0.5491  L_Caus: 0.0057  L_Spar: 0.0000  FR: 0.1754  Wgt(C/S): 1.00/0.00  LR: 5.794e-05  Acc@1: 100.0000
+2026-04-03 18:33:35 INFO:train:Train: [2:11:47] [Epoch: 90/106] [Iter:  512/562]  Loss_Tot: 1.1117  L_Full: 0.5496  L_Mask: 0.5546  L_Caus: 0.0075  L_Spar: 0.0000  FR: 0.1771  Wgt(C/S): 1.00/0.00  LR: 5.794e-05  Acc@1: 100.0000
+2026-04-03 18:33:41 INFO:train:Train: [2:11:53] [Epoch: 90/106] [Iter:  562/562]  Loss_Tot: 1.1194  L_Full: 0.5519  L_Mask: 0.5595  L_Caus: 0.0080  L_Spar: 0.0000  FR: 0.1760  Wgt(C/S): 1.00/0.00  LR: 5.794e-05  Acc@1: 100.0000
+2026-04-03 18:33:54 INFO:train:Test:  [2:12:06] [Iter:   63/63]  Loss_Tot: 0.2712  L_Caus: 0.0166  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:33:54 INFO:train: * Acc@1 = 85.4000, Acc@5 = 98.5000, loss = 1.1022
+2026-04-03 18:33:54 INFO:train:Training time 2:12:06, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:33:54 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:34:33 INFO:train:Train: [2:12:45] [Epoch: 91/106] [Iter:  256/562]  Loss_Tot: 1.3188  L_Full: 0.6456  L_Mask: 0.6575  L_Caus: 0.0157  L_Spar: 0.0000  FR: 0.1768  Wgt(C/S): 1.00/0.00  LR: 4.332e-05  Acc@1: 93.7500
+2026-04-03 18:35:03 INFO:train:Train: [2:13:15] [Epoch: 91/106] [Iter:  512/562]  Loss_Tot: 1.0919  L_Full: 0.5464  L_Mask: 0.5401  L_Caus: 0.0054  L_Spar: 0.0000  FR: 0.1792  Wgt(C/S): 1.00/0.00  LR: 4.332e-05  Acc@1: 100.0000
+2026-04-03 18:35:09 INFO:train:Train: [2:13:21] [Epoch: 91/106] [Iter:  562/562]  Loss_Tot: 1.1407  L_Full: 0.5711  L_Mask: 0.5538  L_Caus: 0.0159  L_Spar: 0.0000  FR: 0.1774  Wgt(C/S): 1.00/0.00  LR: 4.332e-05  Acc@1: 100.0000
+2026-04-03 18:35:22 INFO:train:Test:  [2:13:34] [Iter:   63/63]  Loss_Tot: 0.3172  L_Caus: 0.0100  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:35:23 INFO:train: * Acc@1 = 84.9000, Acc@5 = 98.3000, loss = 1.1113
+2026-04-03 18:35:23 INFO:train:Training time 2:13:35, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:35:23 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:36:01 INFO:train:Train: [2:14:13] [Epoch: 92/106] [Iter:  256/562]  Loss_Tot: 1.1422  L_Full: 0.5620  L_Mask: 0.5669  L_Caus: 0.0133  L_Spar: 0.0000  FR: 0.1770  Wgt(C/S): 1.00/0.00  LR: 3.135e-05  Acc@1: 100.0000
+2026-04-03 18:36:32 INFO:train:Train: [2:14:44] [Epoch: 92/106] [Iter:  512/562]  Loss_Tot: 1.1361  L_Full: 0.5586  L_Mask: 0.5694  L_Caus: 0.0081  L_Spar: 0.0000  FR: 0.1760  Wgt(C/S): 1.00/0.00  LR: 3.135e-05  Acc@1: 100.0000
+2026-04-03 18:36:37 INFO:train:Train: [2:14:49] [Epoch: 92/106] [Iter:  562/562]  Loss_Tot: 1.1512  L_Full: 0.5727  L_Mask: 0.5711  L_Caus: 0.0074  L_Spar: 0.0000  FR: 0.1754  Wgt(C/S): 1.00/0.00  LR: 3.135e-05  Acc@1: 100.0000
+2026-04-03 18:36:50 INFO:train:Test:  [2:15:02] [Iter:   63/63]  Loss_Tot: 0.2929  L_Caus: 0.0116  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:36:51 INFO:train: * Acc@1 = 85.8000, Acc@5 = 98.5000, loss = 1.1002
+2026-04-03 18:36:51 INFO:train:Training time 2:15:03, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:36:51 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:37:30 INFO:train:Train: [2:15:42] [Epoch: 93/106] [Iter:  256/562]  Loss_Tot: 1.2501  L_Full: 0.6127  L_Mask: 0.6251  L_Caus: 0.0123  L_Spar: 0.0000  FR: 0.1771  Wgt(C/S): 1.00/0.00  LR: 2.201e-05  Acc@1: 93.7500
+2026-04-03 18:38:07 INFO:train:Train: [2:16:19] [Epoch: 93/106] [Iter:  512/562]  Loss_Tot: 1.3006  L_Full: 0.6456  L_Mask: 0.6409  L_Caus: 0.0141  L_Spar: 0.0000  FR: 0.1769  Wgt(C/S): 1.00/0.00  LR: 2.201e-05  Acc@1: 93.7500
+2026-04-03 18:38:13 INFO:train:Train: [2:16:25] [Epoch: 93/106] [Iter:  562/562]  Loss_Tot: 1.1544  L_Full: 0.5786  L_Mask: 0.5698  L_Caus: 0.0060  L_Spar: 0.0000  FR: 0.1792  Wgt(C/S): 1.00/0.00  LR: 2.201e-05  Acc@1: 93.7500
+2026-04-03 18:38:27 INFO:train:Test:  [2:16:39] [Iter:   63/63]  Loss_Tot: 0.2742  L_Caus: 0.0094  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:38:27 INFO:train: * Acc@1 = 85.4000, Acc@5 = 98.7000, loss = 1.1020
+2026-04-03 18:38:27 INFO:train:Training time 2:16:40, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:38:27 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:39:07 INFO:train:Train: [2:17:19] [Epoch: 94/106] [Iter:  256/562]  Loss_Tot: 1.0572  L_Full: 0.5228  L_Mask: 0.5300  L_Caus: 0.0044  L_Spar: 0.0000  FR: 0.1759  Wgt(C/S): 1.00/0.00  LR: 1.534e-05  Acc@1: 100.0000
+2026-04-03 18:39:38 INFO:train:Train: [2:17:50] [Epoch: 94/106] [Iter:  512/562]  Loss_Tot: 1.1214  L_Full: 0.5642  L_Mask: 0.5444  L_Caus: 0.0128  L_Spar: 0.0000  FR: 0.1729  Wgt(C/S): 1.00/0.00  LR: 1.534e-05  Acc@1: 100.0000
+2026-04-03 18:39:44 INFO:train:Train: [2:17:56] [Epoch: 94/106] [Iter:  562/562]  Loss_Tot: 1.3154  L_Full: 0.6601  L_Mask: 0.6470  L_Caus: 0.0083  L_Spar: 0.0000  FR: 0.1774  Wgt(C/S): 1.00/0.00  LR: 1.534e-05  Acc@1: 93.7500
+2026-04-03 18:39:58 INFO:train:Test:  [2:18:10] [Iter:   63/63]  Loss_Tot: 0.2712  L_Caus: 0.0147  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:39:58 INFO:train: * Acc@1 = 85.1000, Acc@5 = 98.3000, loss = 1.0979
+2026-04-03 18:39:58 INFO:train:Training time 2:18:10, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:39:58 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:40:38 INFO:train:Train: [2:18:50] [Epoch: 95/106] [Iter:  256/562]  Loss_Tot: 1.4547  L_Full: 0.7129  L_Mask: 0.7240  L_Caus: 0.0178  L_Spar: 0.0000  FR: 0.1777  Wgt(C/S): 1.00/0.00  LR: 1.134e-05  Acc@1: 93.7500
+2026-04-03 18:41:08 INFO:train:Train: [2:19:20] [Epoch: 95/106] [Iter:  512/562]  Loss_Tot: 1.2359  L_Full: 0.6238  L_Mask: 0.6036  L_Caus: 0.0084  L_Spar: 0.0000  FR: 0.1775  Wgt(C/S): 1.00/0.00  LR: 1.134e-05  Acc@1: 93.7500
+2026-04-03 18:41:14 INFO:train:Train: [2:19:27] [Epoch: 95/106] [Iter:  562/562]  Loss_Tot: 1.0487  L_Full: 0.5206  L_Mask: 0.5244  L_Caus: 0.0037  L_Spar: 0.0000  FR: 0.1797  Wgt(C/S): 1.00/0.00  LR: 1.134e-05  Acc@1: 100.0000
+2026-04-03 18:41:28 INFO:train:Test:  [2:19:40] [Iter:   63/63]  Loss_Tot: 0.3217  L_Caus: 0.0203  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:41:28 INFO:train: * Acc@1 = 85.1000, Acc@5 = 99.0000, loss = 1.1019
+2026-04-03 18:41:28 INFO:train:Training time 2:19:40, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:41:28 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:42:08 INFO:train:Train: [2:20:20] [Epoch: 96/106] [Iter:  256/562]  Loss_Tot: 1.1436  L_Full: 0.5655  L_Mask: 0.5702  L_Caus: 0.0079  L_Spar: 0.0000  FR: 0.1764  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:42:39 INFO:train:Train: [2:20:51] [Epoch: 96/106] [Iter:  512/562]  Loss_Tot: 1.0570  L_Full: 0.5263  L_Mask: 0.5259  L_Caus: 0.0049  L_Spar: 0.0000  FR: 0.1781  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:42:45 INFO:train:Train: [2:20:57] [Epoch: 96/106] [Iter:  562/562]  Loss_Tot: 1.1544  L_Full: 0.5657  L_Mask: 0.5749  L_Caus: 0.0137  L_Spar: 0.0000  FR: 0.1777  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:42:58 INFO:train:Test:  [2:21:10] [Iter:   63/63]  Loss_Tot: 0.3413  L_Caus: 0.0179  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:42:58 INFO:train: * Acc@1 = 84.8000, Acc@5 = 98.9000, loss = 1.1136
+2026-04-03 18:42:58 INFO:train:Training time 2:21:10, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:42:58 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:43:38 INFO:train:Train: [2:21:50] [Epoch: 97/106] [Iter:  256/562]  Loss_Tot: 1.2949  L_Full: 0.6533  L_Mask: 0.6302  L_Caus: 0.0114  L_Spar: 0.0000  FR: 0.1788  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-04-03 18:44:09 INFO:train:Train: [2:22:21] [Epoch: 97/106] [Iter:  512/562]  Loss_Tot: 1.0508  L_Full: 0.5229  L_Mask: 0.5241  L_Caus: 0.0038  L_Spar: 0.0000  FR: 0.1761  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:44:15 INFO:train:Train: [2:22:27] [Epoch: 97/106] [Iter:  562/562]  Loss_Tot: 1.1204  L_Full: 0.5527  L_Mask: 0.5599  L_Caus: 0.0078  L_Spar: 0.0000  FR: 0.1775  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:44:28 INFO:train:Test:  [2:22:40] [Iter:   63/63]  Loss_Tot: 0.3518  L_Caus: 0.0166  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:44:29 INFO:train: * Acc@1 = 85.4000, Acc@5 = 98.7000, loss = 1.0903
+2026-04-03 18:44:29 INFO:train:Training time 2:22:41, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:44:29 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:45:09 INFO:train:Train: [2:23:21] [Epoch: 98/106] [Iter:  256/562]  Loss_Tot: 1.1496  L_Full: 0.5688  L_Mask: 0.5690  L_Caus: 0.0119  L_Spar: 0.0000  FR: 0.1782  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:45:39 INFO:train:Train: [2:23:51] [Epoch: 98/106] [Iter:  512/562]  Loss_Tot: 1.0941  L_Full: 0.5443  L_Mask: 0.5442  L_Caus: 0.0056  L_Spar: 0.0000  FR: 0.1809  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:45:45 INFO:train:Train: [2:23:57] [Epoch: 98/106] [Iter:  562/562]  Loss_Tot: 1.1569  L_Full: 0.5762  L_Mask: 0.5729  L_Caus: 0.0077  L_Spar: 0.0000  FR: 0.1781  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-04-03 18:45:59 INFO:train:Test:  [2:24:11] [Iter:   63/63]  Loss_Tot: 0.2520  L_Caus: 0.0146  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:45:59 INFO:train: * Acc@1 = 83.6000, Acc@5 = 98.2000, loss = 1.1314
+2026-04-03 18:45:59 INFO:train:Training time 2:24:11, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:45:59 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:46:39 INFO:train:Train: [2:24:51] [Epoch: 99/106] [Iter:  256/562]  Loss_Tot: 1.1114  L_Full: 0.5631  L_Mask: 0.5373  L_Caus: 0.0109  L_Spar: 0.0000  FR: 0.1781  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:47:10 INFO:train:Train: [2:25:22] [Epoch: 99/106] [Iter:  512/562]  Loss_Tot: 1.2616  L_Full: 0.6370  L_Mask: 0.6178  L_Caus: 0.0067  L_Spar: 0.0000  FR: 0.1766  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:47:16 INFO:train:Train: [2:25:28] [Epoch: 99/106] [Iter:  562/562]  Loss_Tot: 1.2457  L_Full: 0.6199  L_Mask: 0.6145  L_Caus: 0.0113  L_Spar: 0.0000  FR: 0.1794  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:47:30 INFO:train:Test:  [2:25:42] [Iter:   63/63]  Loss_Tot: 0.3672  L_Caus: 0.0353  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:47:30 INFO:train: * Acc@1 = 85.6000, Acc@5 = 99.0000, loss = 1.0958
+2026-04-03 18:47:30 INFO:train:Training time 2:25:42, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:47:30 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:48:10 INFO:train:Train: [2:26:22] [Epoch: 100/106] [Iter:  256/562]  Loss_Tot: 1.3329  L_Full: 0.6568  L_Mask: 0.6552  L_Caus: 0.0209  L_Spar: 0.0000  FR: 0.1774  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:48:41 INFO:train:Train: [2:26:53] [Epoch: 100/106] [Iter:  512/562]  Loss_Tot: 1.0656  L_Full: 0.5304  L_Mask: 0.5289  L_Caus: 0.0063  L_Spar: 0.0000  FR: 0.1765  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:48:47 INFO:train:Train: [2:26:59] [Epoch: 100/106] [Iter:  562/562]  Loss_Tot: 1.1061  L_Full: 0.5528  L_Mask: 0.5375  L_Caus: 0.0158  L_Spar: 0.0000  FR: 0.1782  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:49:00 INFO:train:Test:  [2:27:12] [Iter:   63/63]  Loss_Tot: 0.2564  L_Caus: 0.0114  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:49:01 INFO:train: * Acc@1 = 84.4000, Acc@5 = 98.4000, loss = 1.1402
+2026-04-03 18:49:01 INFO:train:Training time 2:27:13, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:49:01 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:49:41 INFO:train:Train: [2:27:53] [Epoch: 101/106] [Iter:  256/562]  Loss_Tot: 1.0825  L_Full: 0.5396  L_Mask: 0.5369  L_Caus: 0.0061  L_Spar: 0.0000  FR: 0.1783  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:50:11 INFO:train:Train: [2:28:23] [Epoch: 101/106] [Iter:  512/562]  Loss_Tot: 1.4621  L_Full: 0.7291  L_Mask: 0.7226  L_Caus: 0.0104  L_Spar: 0.0000  FR: 0.1783  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 87.5000
+2026-04-03 18:50:17 INFO:train:Train: [2:28:29] [Epoch: 101/106] [Iter:  562/562]  Loss_Tot: 1.0673  L_Full: 0.5296  L_Mask: 0.5342  L_Caus: 0.0034  L_Spar: 0.0000  FR: 0.1798  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:50:30 INFO:train:Test:  [2:28:42] [Iter:   63/63]  Loss_Tot: 0.3317  L_Caus: 0.0320  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:50:31 INFO:train: * Acc@1 = 85.5000, Acc@5 = 98.8000, loss = 1.1039
+2026-04-03 18:50:31 INFO:train:Training time 2:28:43, max_test_acc1 85.8000, test_acc5_at_max_test_acc1 98.3000
+2026-04-03 18:50:31 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:51:10 INFO:train:Train: [2:29:23] [Epoch: 102/106] [Iter:  256/562]  Loss_Tot: 1.0554  L_Full: 0.5230  L_Mask: 0.5289  L_Caus: 0.0036  L_Spar: 0.0000  FR: 0.1797  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:51:41 INFO:train:Train: [2:29:53] [Epoch: 102/106] [Iter:  512/562]  Loss_Tot: 1.2068  L_Full: 0.6033  L_Mask: 0.5947  L_Caus: 0.0089  L_Spar: 0.0000  FR: 0.1768  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:51:47 INFO:train:Train: [2:29:59] [Epoch: 102/106] [Iter:  562/562]  Loss_Tot: 1.2180  L_Full: 0.5968  L_Mask: 0.6079  L_Caus: 0.0133  L_Spar: 0.0000  FR: 0.1799  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:52:00 INFO:train:Test:  [2:30:13] [Iter:   63/63]  Loss_Tot: 0.3376  L_Caus: 0.0248  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:52:01 INFO:train: * Acc@1 = 86.0000, Acc@5 = 98.8000, loss = 1.0979
+2026-04-03 18:52:01 INFO:train:Training time 2:30:13, max_test_acc1 86.0000, test_acc5_at_max_test_acc1 98.8000
+2026-04-03 18:52:01 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:52:41 INFO:train:Train: [2:30:53] [Epoch: 103/106] [Iter:  256/562]  Loss_Tot: 1.0685  L_Full: 0.5333  L_Mask: 0.5307  L_Caus: 0.0045  L_Spar: 0.0000  FR: 0.1782  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:53:11 INFO:train:Train: [2:31:23] [Epoch: 103/106] [Iter:  512/562]  Loss_Tot: 1.0890  L_Full: 0.5462  L_Mask: 0.5367  L_Caus: 0.0062  L_Spar: 0.0000  FR: 0.1785  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:53:17 INFO:train:Train: [2:31:29] [Epoch: 103/106] [Iter:  562/562]  Loss_Tot: 1.1270  L_Full: 0.5657  L_Mask: 0.5548  L_Caus: 0.0064  L_Spar: 0.0000  FR: 0.1786  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:53:31 INFO:train:Test:  [2:31:43] [Iter:   63/63]  Loss_Tot: 0.3120  L_Caus: 0.0134  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:53:31 INFO:train: * Acc@1 = 84.4000, Acc@5 = 98.7000, loss = 1.1178
+2026-04-03 18:53:31 INFO:train:Training time 2:31:43, max_test_acc1 86.0000, test_acc5_at_max_test_acc1 98.8000
+2026-04-03 18:53:31 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:54:11 INFO:train:Train: [2:32:23] [Epoch: 104/106] [Iter:  256/562]  Loss_Tot: 1.0551  L_Full: 0.5251  L_Mask: 0.5264  L_Caus: 0.0035  L_Spar: 0.0000  FR: 0.1760  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:54:42 INFO:train:Train: [2:32:54] [Epoch: 104/106] [Iter:  512/562]  Loss_Tot: 1.1267  L_Full: 0.5612  L_Mask: 0.5591  L_Caus: 0.0064  L_Spar: 0.0000  FR: 0.1743  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:54:48 INFO:train:Train: [2:33:00] [Epoch: 104/106] [Iter:  562/562]  Loss_Tot: 1.0675  L_Full: 0.5328  L_Mask: 0.5305  L_Caus: 0.0043  L_Spar: 0.0000  FR: 0.1774  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:55:01 INFO:train:Test:  [2:33:13] [Iter:   63/63]  Loss_Tot: 0.3152  L_Caus: 0.0157  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:55:02 INFO:train: * Acc@1 = 85.3000, Acc@5 = 98.3000, loss = 1.0970
+2026-04-03 18:55:02 INFO:train:Training time 2:33:14, max_test_acc1 86.0000, test_acc5_at_max_test_acc1 98.8000
+2026-04-03 18:55:02 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD
+2026-04-03 18:55:42 INFO:train:Train: [2:33:54] [Epoch: 105/106] [Iter:  256/562]  Loss_Tot: 1.3817  L_Full: 0.6886  L_Mask: 0.6854  L_Caus: 0.0077  L_Spar: 0.0000  FR: 0.1790  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 93.7500
+2026-04-03 18:56:12 INFO:train:Train: [2:34:25] [Epoch: 105/106] [Iter:  512/562]  Loss_Tot: 1.0787  L_Full: 0.5336  L_Mask: 0.5355  L_Caus: 0.0096  L_Spar: 0.0000  FR: 0.1788  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:56:19 INFO:train:Train: [2:34:31] [Epoch: 105/106] [Iter:  562/562]  Loss_Tot: 1.0887  L_Full: 0.5356  L_Mask: 0.5405  L_Caus: 0.0126  L_Spar: 0.0000  FR: 0.1764  Wgt(C/S): 1.00/0.00  LR: 1.000e-05  Acc@1: 100.0000
+2026-04-03 18:56:32 INFO:train:Test:  [2:34:44] [Iter:   63/63]  Loss_Tot: 0.3058  L_Caus: 0.0146  L_Spar: 0.0000  Acc@1: 100.0000  Acc@5: 100.0000
+2026-04-03 18:56:33 INFO:train: * Acc@1 = 85.4000, Acc@5 = 98.4000, loss = 1.1023
+2026-04-03 18:56:33 INFO:train:Training time 2:34:45, max_test_acc1 86.0000, test_acc5_at_max_test_acc1 98.8000
+2026-04-03 18:56:33 INFO:train:Current Run Directory: ./output/train_causal\20260403-162047_QKFormer_b16_T16_wd0.06_adamw_cnf_ADD

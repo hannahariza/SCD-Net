@@ -1,0 +1,1237 @@
+2026-04-03 15:32:18 INFO:train:Logging to file: ./output/train_logs\train_20260403-153218.log
+2026-04-03 15:32:18 INFO:train:Training with a single process on 1 GPUs.
+2026-04-03 15:32:18 INFO:train:Model vitsnn created, param count:6771418
+2026-04-03 15:32:18 INFO:train:Using native Torch AMP. Training in mixed precision.
+2026-04-03 15:32:18 INFO:train:Scheduled epochs: 410
+2026-04-03 15:32:18 INFO:train:Log file moved to: ./output/train_causal\20260403-153218-vitsnn-32\train_20260403-153218.log
+2026-04-03 15:34:53 INFO:train:Train: 0:02:34 [Epoch: 0/410] [Iter:  781/781]  Loss_Tot: 4.4328  L_Full: 2.2149  L_Mask: 2.2178  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0097, 0.2594, 0.3905, 0.8777]  Wgt(C/S): 0.00/0.00  LR: 1.000e-05
+2026-04-03 15:35:07 INFO:train:Test: [0:02:48] [ 156/156]  Loss_Tot: 3.9065  L_Caus: 0.0285  L_Spar: 0.5104  Acc@1: 37.5000 (29.5000)  Acc@5: 87.5000 (84.2300)
+2026-04-03 15:35:07 INFO:train:*** Best metric: 29.5 (epoch 0)
+2026-04-03 15:37:31 INFO:train:Train: 0:05:12 [Epoch: 1/410] [Iter:  781/781]  Loss_Tot: 4.1086  L_Full: 2.0540  L_Mask: 2.0546  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0068, 0.2415, 0.4731, 0.8617]  Wgt(C/S): 0.00/0.00  LR: 5.950e-05
+2026-04-03 15:37:42 INFO:train:Test: [0:05:23] [ 156/156]  Loss_Tot: 3.4062  L_Caus: 0.0619  L_Spar: 0.5167  Acc@1: 43.7500 (38.2700)  Acc@5: 75.0000 (89.0200)
+2026-04-03 15:37:42 INFO:train:*** Best metric: 38.27 (epoch 1)
+2026-04-03 15:40:04 INFO:train:Train: 0:07:45 [Epoch: 2/410] [Iter:  781/781]  Loss_Tot: 3.8502  L_Full: 1.9254  L_Mask: 1.9248  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0058, 0.2492, 0.4984, 0.8374]  Wgt(C/S): 0.00/0.00  LR: 1.090e-04
+2026-04-03 15:40:15 INFO:train:Test: [0:07:56] [ 156/156]  Loss_Tot: 2.8675  L_Caus: 0.0661  L_Spar: 0.5212  Acc@1: 50.0000 (53.4100)  Acc@5: 93.7500 (93.3800)
+2026-04-03 15:40:15 INFO:train:*** Best metric: 53.41 (epoch 2)
+2026-04-03 15:42:34 INFO:train:Train: 0:10:15 [Epoch: 3/410] [Iter:  781/781]  Loss_Tot: 3.6879  L_Full: 1.8437  L_Mask: 1.8441  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0034, 0.2538, 0.5048, 0.8912]  Wgt(C/S): 0.00/0.00  LR: 1.585e-04
+2026-04-03 15:42:45 INFO:train:Test: [0:10:26] [ 156/156]  Loss_Tot: 2.7302  L_Caus: 0.1024  L_Spar: 0.5259  Acc@1: 43.7500 (53.7600)  Acc@5: 100.0000 (93.9100)
+2026-04-03 15:42:45 INFO:train:*** Best metric: 53.76 (epoch 3)
+2026-04-03 15:45:04 INFO:train:Train: 0:12:45 [Epoch: 4/410] [Iter:  781/781]  Loss_Tot: 3.5492  L_Full: 1.7744  L_Mask: 1.7748  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0025, 0.2590, 0.4990, 0.8764]  Wgt(C/S): 0.00/0.00  LR: 2.080e-04
+2026-04-03 15:45:15 INFO:train:Test: [0:12:56] [ 156/156]  Loss_Tot: 2.5176  L_Caus: 0.0571  L_Spar: 0.5333  Acc@1: 75.0000 (60.2900)  Acc@5: 100.0000 (94.9700)
+2026-04-03 15:45:15 INFO:train:*** Best metric: 60.29 (epoch 4)
+2026-04-03 15:47:35 INFO:train:Train: 0:15:16 [Epoch: 5/410] [Iter:  781/781]  Loss_Tot: 3.4565  L_Full: 1.7281  L_Mask: 1.7284  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0018, 0.2966, 0.4875, 0.8374]  Wgt(C/S): 0.00/0.00  LR: 2.575e-04
+2026-04-03 15:47:45 INFO:train:Test: [0:15:27] [ 156/156]  Loss_Tot: 2.2558  L_Caus: 0.0410  L_Spar: 0.5415  Acc@1: 75.0000 (64.9300)  Acc@5: 100.0000 (95.9800)
+2026-04-03 15:47:46 INFO:train:*** Best metric: 64.93 (epoch 5)
+2026-04-03 15:50:07 INFO:train:Train: 0:17:48 [Epoch: 6/410] [Iter:  781/781]  Loss_Tot: 3.3188  L_Full: 1.6595  L_Mask: 1.6592  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0016, 0.3451, 0.4657, 0.7260]  Wgt(C/S): 0.00/0.00  LR: 3.070e-04
+2026-04-03 15:50:18 INFO:train:Test: [0:18:00] [ 156/156]  Loss_Tot: 2.0115  L_Caus: 0.0512  L_Spar: 0.5499  Acc@1: 62.5000 (70.8800)  Acc@5: 100.0000 (98.0300)
+2026-04-03 15:50:18 INFO:train:*** Best metric: 70.88 (epoch 6)
+2026-04-03 15:52:42 INFO:train:Train: 0:20:23 [Epoch: 7/410] [Iter:  781/781]  Loss_Tot: 3.2408  L_Full: 1.6202  L_Mask: 1.6206  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0012, 0.4043, 0.4245, 0.6857]  Wgt(C/S): 0.00/0.00  LR: 3.565e-04
+2026-04-03 15:52:53 INFO:train:Test: [0:20:35] [ 156/156]  Loss_Tot: 2.0504  L_Caus: 0.0342  L_Spar: 0.5501  Acc@1: 62.5000 (70.7000)  Acc@5: 100.0000 (97.5300)
+2026-04-03 15:52:54 INFO:train:*** Best metric: 70.88 (epoch 6)
+2026-04-03 15:55:17 INFO:train:Train: 0:22:58 [Epoch: 8/410] [Iter:  781/781]  Loss_Tot: 3.1898  L_Full: 1.5948  L_Mask: 1.5951  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0008, 0.4222, 0.3908, 0.6300]  Wgt(C/S): 0.00/0.00  LR: 4.060e-04
+2026-04-03 15:55:29 INFO:train:Test: [0:23:10] [ 156/156]  Loss_Tot: 1.8134  L_Caus: 0.0273  L_Spar: 0.5565  Acc@1: 87.5000 (76.1700)  Acc@5: 100.0000 (98.4900)
+2026-04-03 15:55:29 INFO:train:*** Best metric: 76.17 (epoch 8)
+2026-04-03 15:57:52 INFO:train:Train: 0:25:33 [Epoch: 9/410] [Iter:  781/781]  Loss_Tot: 3.1546  L_Full: 1.5771  L_Mask: 1.5775  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0006, 0.4251, 0.3723, 0.5845]  Wgt(C/S): 0.00/0.00  LR: 4.555e-04
+2026-04-03 15:58:04 INFO:train:Test: [0:25:45] [ 156/156]  Loss_Tot: 1.7995  L_Caus: 0.0351  L_Spar: 0.5604  Acc@1: 81.2500 (74.1100)  Acc@5: 100.0000 (98.0600)
+2026-04-03 15:58:04 INFO:train:*** Best metric: 76.17 (epoch 8)
+2026-04-03 16:00:28 INFO:train:Train: 0:28:09 [Epoch: 10/410] [Iter:  781/781]  Loss_Tot: 3.1047  L_Full: 1.5521  L_Mask: 1.5526  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0005, 0.4235, 0.3675, 0.5480]  Wgt(C/S): 0.00/0.00  LR: 5.050e-04
+2026-04-03 16:00:39 INFO:train:Test: [0:28:20] [ 156/156]  Loss_Tot: 1.6264  L_Caus: 0.0205  L_Spar: 0.5691  Acc@1: 75.0000 (77.9700)  Acc@5: 100.0000 (98.7800)
+2026-04-03 16:00:39 INFO:train:*** Best metric: 77.97 (epoch 10)
+2026-04-03 16:03:02 INFO:train:Train: 0:30:43 [Epoch: 11/410] [Iter:  781/781]  Loss_Tot: 3.0424  L_Full: 1.5214  L_Mask: 1.5210  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0004, 0.4097, 0.3560, 0.5227]  Wgt(C/S): 0.00/0.00  LR: 5.545e-04
+2026-04-03 16:03:13 INFO:train:Test: [0:30:54] [ 156/156]  Loss_Tot: 1.6013  L_Caus: 0.0227  L_Spar: 0.5756  Acc@1: 81.2500 (78.9100)  Acc@5: 100.0000 (98.3400)
+2026-04-03 16:03:13 INFO:train:*** Best metric: 78.91 (epoch 11)
+2026-04-03 16:05:36 INFO:train:Train: 0:33:18 [Epoch: 12/410] [Iter:  781/781]  Loss_Tot: 3.0115  L_Full: 1.5056  L_Mask: 1.5058  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0003, 0.4139, 0.3387, 0.5099]  Wgt(C/S): 0.00/0.00  LR: 6.040e-04
+2026-04-03 16:05:48 INFO:train:Test: [0:33:29] [ 156/156]  Loss_Tot: 1.5148  L_Caus: 0.0206  L_Spar: 0.5755  Acc@1: 87.5000 (79.6100)  Acc@5: 100.0000 (98.5600)
+2026-04-03 16:05:48 INFO:train:*** Best metric: 79.61 (epoch 12)
+2026-04-03 16:08:12 INFO:train:Train: 0:35:53 [Epoch: 13/410] [Iter:  781/781]  Loss_Tot: 2.9465  L_Full: 1.4728  L_Mask: 1.4737  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0002, 0.3937, 0.3065, 0.4974]  Wgt(C/S): 0.00/0.00  LR: 6.535e-04
+2026-04-03 16:08:23 INFO:train:Test: [0:36:04] [ 156/156]  Loss_Tot: 1.3615  L_Caus: 0.0183  L_Spar: 0.5826  Acc@1: 81.2500 (81.5300)  Acc@5: 100.0000 (99.1600)
+2026-04-03 16:08:23 INFO:train:*** Best metric: 81.53 (epoch 13)
+2026-04-03 16:10:47 INFO:train:Train: 0:38:28 [Epoch: 14/410] [Iter:  781/781]  Loss_Tot: 2.9566  L_Full: 1.4783  L_Mask: 1.4783  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3768, 0.2934, 0.4923]  Wgt(C/S): 0.00/0.00  LR: 7.030e-04
+2026-04-03 16:10:58 INFO:train:Test: [0:38:39] [ 156/156]  Loss_Tot: 1.5332  L_Caus: 0.0173  L_Spar: 0.5944  Acc@1: 81.2500 (80.5500)  Acc@5: 100.0000 (98.7400)
+2026-04-03 16:10:58 INFO:train:*** Best metric: 81.53 (epoch 13)
+2026-04-03 16:13:22 INFO:train:Train: 0:41:03 [Epoch: 15/410] [Iter:  781/781]  Loss_Tot: 2.9295  L_Full: 1.4644  L_Mask: 1.4650  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3857, 0.2812, 0.4770]  Wgt(C/S): 0.00/0.00  LR: 7.525e-04
+2026-04-03 16:13:33 INFO:train:Test: [0:41:15] [ 156/156]  Loss_Tot: 1.3968  L_Caus: 0.0147  L_Spar: 0.5933  Acc@1: 75.0000 (82.6500)  Acc@5: 100.0000 (99.0300)
+2026-04-03 16:13:34 INFO:train:*** Best metric: 82.65 (epoch 15)
+2026-04-03 16:15:54 INFO:train:Train: 0:43:35 [Epoch: 16/410] [Iter:  781/781]  Loss_Tot: 2.8697  L_Full: 1.4349  L_Mask: 1.4349  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3659, 0.2642, 0.4754]  Wgt(C/S): 0.00/0.00  LR: 8.020e-04
+2026-04-03 16:16:05 INFO:train:Test: [0:43:46] [ 156/156]  Loss_Tot: 1.4938  L_Caus: 0.0122  L_Spar: 0.6047  Acc@1: 87.5000 (81.5000)  Acc@5: 100.0000 (98.8100)
+2026-04-03 16:16:05 INFO:train:*** Best metric: 82.65 (epoch 15)
+2026-04-03 16:18:24 INFO:train:Train: 0:46:05 [Epoch: 17/410] [Iter:  781/781]  Loss_Tot: 2.8823  L_Full: 1.4412  L_Mask: 1.4410  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3556, 0.2588, 0.4638]  Wgt(C/S): 0.00/0.00  LR: 8.515e-04
+2026-04-03 16:18:35 INFO:train:Test: [0:46:16] [ 156/156]  Loss_Tot: 1.3146  L_Caus: 0.0145  L_Spar: 0.6036  Acc@1: 87.5000 (84.0300)  Acc@5: 100.0000 (99.2300)
+2026-04-03 16:18:35 INFO:train:*** Best metric: 84.03 (epoch 17)
+2026-04-03 16:20:54 INFO:train:Train: 0:48:35 [Epoch: 18/410] [Iter:  781/781]  Loss_Tot: 2.8898  L_Full: 1.4444  L_Mask: 1.4454  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3508, 0.2495, 0.4369]  Wgt(C/S): 0.00/0.00  LR: 9.010e-04
+2026-04-03 16:21:05 INFO:train:Test: [0:48:46] [ 156/156]  Loss_Tot: 1.3320  L_Caus: 0.0144  L_Spar: 0.6055  Acc@1: 75.0000 (82.7300)  Acc@5: 100.0000 (99.1300)
+2026-04-03 16:21:05 INFO:train:*** Best metric: 84.03 (epoch 17)
+2026-04-03 16:23:25 INFO:train:Train: 0:51:06 [Epoch: 19/410] [Iter:  781/781]  Loss_Tot: 2.8246  L_Full: 1.4121  L_Mask: 1.4125  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3496, 0.2470, 0.4152]  Wgt(C/S): 0.00/0.00  LR: 9.505e-04
+2026-04-03 16:23:36 INFO:train:Test: [0:51:17] [ 156/156]  Loss_Tot: 1.2593  L_Caus: 0.0155  L_Spar: 0.6165  Acc@1: 81.2500 (83.6200)  Acc@5: 100.0000 (98.8000)
+2026-04-03 16:23:36 INFO:train:*** Best metric: 84.03 (epoch 17)
+2026-04-03 16:25:55 INFO:train:Train: 0:53:36 [Epoch: 20/410] [Iter:  781/781]  Loss_Tot: 2.8314  L_Full: 1.4155  L_Mask: 1.4158  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3332, 0.2378, 0.4145]  Wgt(C/S): 0.00/0.00  LR: 9.939e-04
+2026-04-03 16:26:06 INFO:train:Test: [0:53:47] [ 156/156]  Loss_Tot: 1.2147  L_Caus: 0.0140  L_Spar: 0.6341  Acc@1: 87.5000 (85.0900)  Acc@5: 100.0000 (99.1700)
+2026-04-03 16:26:06 INFO:train:*** Best metric: 85.09 (epoch 20)
+2026-04-03 16:28:25 INFO:train:Train: 0:56:06 [Epoch: 21/410] [Iter:  781/781]  Loss_Tot: 2.7947  L_Full: 1.3972  L_Mask: 1.3975  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3316, 0.2241, 0.4142]  Wgt(C/S): 0.00/0.00  LR: 9.933e-04
+2026-04-03 16:28:36 INFO:train:Test: [0:56:17] [ 156/156]  Loss_Tot: 1.2381  L_Caus: 0.0143  L_Spar: 0.6363  Acc@1: 75.0000 (83.6300)  Acc@5: 100.0000 (98.9800)
+2026-04-03 16:28:36 INFO:train:*** Best metric: 85.09 (epoch 20)
+2026-04-03 16:30:56 INFO:train:Train: 0:58:37 [Epoch: 22/410] [Iter:  781/781]  Loss_Tot: 2.7759  L_Full: 1.3879  L_Mask: 1.3880  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3294, 0.2133, 0.4052]  Wgt(C/S): 0.00/0.00  LR: 9.926e-04
+2026-04-03 16:31:07 INFO:train:Test: [0:58:48] [ 156/156]  Loss_Tot: 1.1365  L_Caus: 0.0129  L_Spar: 0.6421  Acc@1: 81.2500 (85.7800)  Acc@5: 100.0000 (99.2700)
+2026-04-03 16:31:07 INFO:train:*** Best metric: 85.78 (epoch 22)
+2026-04-03 16:33:26 INFO:train:Train: 1:01:07 [Epoch: 23/410] [Iter:  781/781]  Loss_Tot: 2.8062  L_Full: 1.4028  L_Mask: 1.4034  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0002, 0.3383, 0.2057, 0.4004]  Wgt(C/S): 0.00/0.00  LR: 9.919e-04
+2026-04-03 16:33:37 INFO:train:Test: [1:01:18] [ 156/156]  Loss_Tot: 1.4303  L_Caus: 0.0120  L_Spar: 0.6474  Acc@1: 68.7500 (83.8100)  Acc@5: 100.0000 (98.8900)
+2026-04-03 16:33:37 INFO:train:*** Best metric: 85.78 (epoch 22)
+2026-04-03 16:35:56 INFO:train:Train: 1:03:38 [Epoch: 24/410] [Iter:  781/781]  Loss_Tot: 2.7136  L_Full: 1.3567  L_Mask: 1.3570  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0001, 0.3158, 0.1885, 0.4011]  Wgt(C/S): 0.00/0.00  LR: 9.912e-04
+2026-04-03 16:36:07 INFO:train:Test: [1:03:48] [ 156/156]  Loss_Tot: 1.1992  L_Caus: 0.0121  L_Spar: 0.6615  Acc@1: 93.7500 (85.6300)  Acc@5: 100.0000 (99.1600)
+2026-04-03 16:36:07 INFO:train:*** Best metric: 85.78 (epoch 22)
+2026-04-03 16:38:27 INFO:train:Train: 1:06:08 [Epoch: 25/410] [Iter:  781/781]  Loss_Tot: 2.7107  L_Full: 1.3552  L_Mask: 1.3555  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0007, 0.3196, 0.1922, 0.3832]  Wgt(C/S): 0.00/0.00  LR: 9.905e-04
+2026-04-03 16:38:38 INFO:train:Test: [1:06:19] [ 156/156]  Loss_Tot: 1.0166  L_Caus: 0.0176  L_Spar: 0.6630  Acc@1: 81.2500 (86.3800)  Acc@5: 100.0000 (99.2300)
+2026-04-03 16:38:38 INFO:train:*** Best metric: 86.38 (epoch 25)
+2026-04-03 16:40:57 INFO:train:Train: 1:08:38 [Epoch: 26/410] [Iter:  781/781]  Loss_Tot: 2.7231  L_Full: 1.3612  L_Mask: 1.3619  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0005, 0.3174, 0.1869, 0.3742]  Wgt(C/S): 0.00/0.00  LR: 9.897e-04
+2026-04-03 16:41:08 INFO:train:Test: [1:08:49] [ 156/156]  Loss_Tot: 1.1232  L_Caus: 0.0140  L_Spar: 0.6681  Acc@1: 93.7500 (86.1600)  Acc@5: 100.0000 (99.4000)
+2026-04-03 16:41:08 INFO:train:*** Best metric: 86.38 (epoch 25)
+2026-04-03 16:43:28 INFO:train:Train: 1:11:09 [Epoch: 27/410] [Iter:  781/781]  Loss_Tot: 2.6792  L_Full: 1.3391  L_Mask: 1.3401  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0008, 0.3145, 0.1780, 0.3713]  Wgt(C/S): 0.00/0.00  LR: 9.889e-04
+2026-04-03 16:43:38 INFO:train:Test: [1:11:20] [ 156/156]  Loss_Tot: 1.0367  L_Caus: 0.0181  L_Spar: 0.6737  Acc@1: 81.2500 (85.4600)  Acc@5: 93.7500 (99.0500)
+2026-04-03 16:43:39 INFO:train:*** Best metric: 86.38 (epoch 25)
+2026-04-03 16:45:58 INFO:train:Train: 1:13:39 [Epoch: 28/410] [Iter:  781/781]  Loss_Tot: 2.6970  L_Full: 1.3481  L_Mask: 1.3489  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0013, 0.3223, 0.1799, 0.3720]  Wgt(C/S): 0.00/0.00  LR: 9.881e-04
+2026-04-03 16:46:09 INFO:train:Test: [1:13:50] [ 156/156]  Loss_Tot: 1.2085  L_Caus: 0.0105  L_Spar: 0.6716  Acc@1: 81.2500 (87.7200)  Acc@5: 100.0000 (99.4100)
+2026-04-03 16:46:09 INFO:train:*** Best metric: 87.72 (epoch 28)
+2026-04-03 16:48:28 INFO:train:Train: 1:16:09 [Epoch: 29/410] [Iter:  781/781]  Loss_Tot: 2.7108  L_Full: 1.3553  L_Mask: 1.3555  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0019, 0.3140, 0.1767, 0.3739]  Wgt(C/S): 0.00/0.00  LR: 9.872e-04
+2026-04-03 16:48:39 INFO:train:Test: [1:16:20] [ 156/156]  Loss_Tot: 1.2312  L_Caus: 0.0112  L_Spar: 0.6690  Acc@1: 93.7500 (86.5600)  Acc@5: 100.0000 (99.3900)
+2026-04-03 16:48:39 INFO:train:*** Best metric: 87.72 (epoch 28)
+2026-04-03 16:50:58 INFO:train:Train: 1:18:39 [Epoch: 30/410] [Iter:  781/781]  Loss_Tot: 2.6888  L_Full: 1.3443  L_Mask: 1.3445  L_Caus: 0.0000  L_Spar: 0.0000  FR: [0.0025, 0.3161, 0.1725, 0.3585]  Wgt(C/S): 0.00/0.00  LR: 9.863e-04
+2026-04-03 16:51:09 INFO:train:Test: [1:18:50] [ 156/156]  Loss_Tot: 1.2348  L_Caus: 0.0135  L_Spar: 0.6802  Acc@1: 81.2500 (85.2200)  Acc@5: 100.0000 (99.3500)
+2026-04-03 16:51:09 INFO:train:*** Best metric: 87.72 (epoch 28)
+2026-04-03 16:53:28 INFO:train:Train: 1:21:09 [Epoch: 31/410] [Iter:  781/781]  Loss_Tot: 2.6364  L_Full: 1.3172  L_Mask: 1.3187  L_Caus: 0.0164  L_Spar: 0.6765  FR: [0.0033, 0.3196, 0.1673, 0.3576]  Wgt(C/S): 0.03/0.00  LR: 9.854e-04
+2026-04-03 16:53:39 INFO:train:Test: [1:21:20] [ 156/156]  Loss_Tot: 0.9655  L_Caus: 0.0144  L_Spar: 0.6816  Acc@1: 75.0000 (88.2400)  Acc@5: 100.0000 (99.5500)
+2026-04-03 16:53:39 INFO:train:*** Best metric: 88.24 (epoch 31)
+2026-04-03 16:55:59 INFO:train:Train: 1:23:40 [Epoch: 32/410] [Iter:  781/781]  Loss_Tot: 2.6610  L_Full: 1.3303  L_Mask: 1.3296  L_Caus: 0.0161  L_Spar: 0.6830  FR: [0.0034, 0.3219, 0.1709, 0.3560]  Wgt(C/S): 0.07/0.00  LR: 9.844e-04
+2026-04-03 16:56:10 INFO:train:Test: [1:23:51] [ 156/156]  Loss_Tot: 1.0443  L_Caus: 0.0120  L_Spar: 0.6908  Acc@1: 81.2500 (88.9700)  Acc@5: 100.0000 (99.4700)
+2026-04-03 16:56:10 INFO:train:*** Best metric: 88.97 (epoch 32)
+2026-04-03 16:58:29 INFO:train:Train: 1:26:10 [Epoch: 33/410] [Iter:  781/781]  Loss_Tot: 2.6514  L_Full: 1.3249  L_Mask: 1.3249  L_Caus: 0.0163  L_Spar: 0.6852  FR: [0.0034, 0.3163, 0.1705, 0.3540]  Wgt(C/S): 0.10/0.00  LR: 9.835e-04
+2026-04-03 16:58:40 INFO:train:Test: [1:26:21] [ 156/156]  Loss_Tot: 0.9852  L_Caus: 0.0143  L_Spar: 0.6883  Acc@1: 87.5000 (88.5700)  Acc@5: 100.0000 (99.5200)
+2026-04-03 16:58:40 INFO:train:*** Best metric: 88.97 (epoch 32)
+2026-04-03 17:00:59 INFO:train:Train: 1:28:41 [Epoch: 34/410] [Iter:  781/781]  Loss_Tot: 2.6537  L_Full: 1.3255  L_Mask: 1.3261  L_Caus: 0.0158  L_Spar: 0.6908  FR: [0.0038, 0.3150, 0.1709, 0.3540]  Wgt(C/S): 0.13/0.00  LR: 9.825e-04
+2026-04-03 17:01:10 INFO:train:Test: [1:28:51] [ 156/156]  Loss_Tot: 1.0437  L_Caus: 0.0115  L_Spar: 0.6958  Acc@1: 75.0000 (89.1800)  Acc@5: 100.0000 (99.6000)
+2026-04-03 17:01:10 INFO:train:*** Best metric: 89.18 (epoch 34)
+2026-04-03 17:03:30 INFO:train:Train: 1:31:11 [Epoch: 35/410] [Iter:  781/781]  Loss_Tot: 2.6128  L_Full: 1.3053  L_Mask: 1.3049  L_Caus: 0.0159  L_Spar: 0.6899  FR: [0.0046, 0.3084, 0.1674, 0.3553]  Wgt(C/S): 0.17/0.00  LR: 9.814e-04
+2026-04-03 17:03:41 INFO:train:Test: [1:31:22] [ 156/156]  Loss_Tot: 0.9984  L_Caus: 0.0147  L_Spar: 0.6963  Acc@1: 87.5000 (87.9900)  Acc@5: 100.0000 (99.2400)
+2026-04-03 17:03:41 INFO:train:*** Best metric: 89.18 (epoch 34)
+2026-04-03 17:06:00 INFO:train:Train: 1:33:41 [Epoch: 36/410] [Iter:  781/781]  Loss_Tot: 2.6164  L_Full: 1.3063  L_Mask: 1.3069  L_Caus: 0.0162  L_Spar: 0.6911  FR: [0.0052, 0.3217, 0.1706, 0.3508]  Wgt(C/S): 0.20/0.00  LR: 9.803e-04
+2026-04-03 17:06:11 INFO:train:Test: [1:33:52] [ 156/156]  Loss_Tot: 0.9233  L_Caus: 0.0128  L_Spar: 0.6927  Acc@1: 100.0000 (89.1400)  Acc@5: 100.0000 (99.5600)
+2026-04-03 17:06:11 INFO:train:*** Best metric: 89.18 (epoch 34)
+2026-04-03 17:08:31 INFO:train:Train: 1:36:12 [Epoch: 37/410] [Iter:  781/781]  Loss_Tot: 2.6241  L_Full: 1.3104  L_Mask: 1.3099  L_Caus: 0.0164  L_Spar: 0.6898  FR: [0.0065, 0.3204, 0.1732, 0.3544]  Wgt(C/S): 0.23/0.00  LR: 9.792e-04
+2026-04-03 17:08:41 INFO:train:Test: [1:36:23] [ 156/156]  Loss_Tot: 1.0907  L_Caus: 0.0113  L_Spar: 0.7017  Acc@1: 87.5000 (88.5800)  Acc@5: 100.0000 (99.5600)
+2026-04-03 17:08:42 INFO:train:*** Best metric: 89.18 (epoch 34)
+2026-04-03 17:11:01 INFO:train:Train: 1:38:42 [Epoch: 38/410] [Iter:  781/781]  Loss_Tot: 2.5775  L_Full: 1.2867  L_Mask: 1.2864  L_Caus: 0.0164  L_Spar: 0.6942  FR: [0.0082, 0.3230, 0.1751, 0.3438]  Wgt(C/S): 0.27/0.00  LR: 9.781e-04
+2026-04-03 17:11:12 INFO:train:Test: [1:38:53] [ 156/156]  Loss_Tot: 1.1008  L_Caus: 0.0112  L_Spar: 0.6954  Acc@1: 93.7500 (89.6000)  Acc@5: 100.0000 (99.4700)
+2026-04-03 17:11:12 INFO:train:*** Best metric: 89.6 (epoch 38)
+2026-04-03 17:13:31 INFO:train:Train: 1:41:12 [Epoch: 39/410] [Iter:  781/781]  Loss_Tot: 2.6057  L_Full: 1.3002  L_Mask: 1.3006  L_Caus: 0.0163  L_Spar: 0.6987  FR: [0.0079, 0.3145, 0.1751, 0.3441]  Wgt(C/S): 0.30/0.00  LR: 9.770e-04
+2026-04-03 17:13:42 INFO:train:Test: [1:41:23] [ 156/156]  Loss_Tot: 1.0620  L_Caus: 0.0114  L_Spar: 0.6922  Acc@1: 87.5000 (89.2300)  Acc@5: 93.7500 (99.4300)
+2026-04-03 17:13:42 INFO:train:*** Best metric: 89.6 (epoch 38)
+2026-04-03 17:16:01 INFO:train:Train: 1:43:42 [Epoch: 40/410] [Iter:  781/781]  Loss_Tot: 2.5961  L_Full: 1.2954  L_Mask: 1.2954  L_Caus: 0.0160  L_Spar: 0.6984  FR: [0.0097, 0.3265, 0.1772, 0.3492]  Wgt(C/S): 0.33/0.00  LR: 9.758e-04
+2026-04-03 17:16:12 INFO:train:Test: [1:43:53] [ 156/156]  Loss_Tot: 0.8351  L_Caus: 0.0130  L_Spar: 0.7040  Acc@1: 87.5000 (90.1100)  Acc@5: 100.0000 (99.6500)
+2026-04-03 17:16:12 INFO:train:*** Best metric: 90.11 (epoch 40)
+2026-04-03 17:18:32 INFO:train:Train: 1:46:13 [Epoch: 41/410] [Iter:  781/781]  Loss_Tot: 2.6068  L_Full: 1.3002  L_Mask: 1.3007  L_Caus: 0.0159  L_Spar: 0.6950  FR: [0.0087, 0.3132, 0.1759, 0.3425]  Wgt(C/S): 0.37/0.00  LR: 9.746e-04
+2026-04-03 17:18:42 INFO:train:Test: [1:46:24] [ 156/156]  Loss_Tot: 0.9082  L_Caus: 0.0144  L_Spar: 0.7012  Acc@1: 93.7500 (89.6900)  Acc@5: 100.0000 (99.5900)
+2026-04-03 17:18:43 INFO:train:*** Best metric: 90.11 (epoch 40)
+2026-04-03 17:21:02 INFO:train:Train: 1:48:43 [Epoch: 42/410] [Iter:  781/781]  Loss_Tot: 2.5733  L_Full: 1.2831  L_Mask: 1.2838  L_Caus: 0.0159  L_Spar: 0.6983  FR: [0.0114, 0.3326, 0.1764, 0.3441]  Wgt(C/S): 0.40/0.00  LR: 9.733e-04
+2026-04-03 17:21:13 INFO:train:Test: [1:48:54] [ 156/156]  Loss_Tot: 0.9209  L_Caus: 0.0126  L_Spar: 0.7067  Acc@1: 87.5000 (90.3700)  Acc@5: 100.0000 (99.6000)
+2026-04-03 17:21:13 INFO:train:*** Best metric: 90.37 (epoch 42)
+2026-04-03 17:23:32 INFO:train:Train: 1:51:13 [Epoch: 43/410] [Iter:  781/781]  Loss_Tot: 2.5920  L_Full: 1.2922  L_Mask: 1.2926  L_Caus: 0.0163  L_Spar: 0.7001  FR: [0.0115, 0.3255, 0.1754, 0.3422]  Wgt(C/S): 0.43/0.00  LR: 9.720e-04
+2026-04-03 17:23:43 INFO:train:Test: [1:51:24] [ 156/156]  Loss_Tot: 1.0108  L_Caus: 0.0109  L_Spar: 0.7074  Acc@1: 93.7500 (90.1200)  Acc@5: 100.0000 (99.6000)
+2026-04-03 17:23:43 INFO:train:*** Best metric: 90.37 (epoch 42)
+2026-04-03 17:26:02 INFO:train:Train: 1:53:43 [Epoch: 44/410] [Iter:  781/781]  Loss_Tot: 2.6185  L_Full: 1.3056  L_Mask: 1.3056  L_Caus: 0.0156  L_Spar: 0.6989  FR: [0.0134, 0.3217, 0.1810, 0.3448]  Wgt(C/S): 0.47/0.00  LR: 9.707e-04
+2026-04-03 17:26:13 INFO:train:Test: [1:53:54] [ 156/156]  Loss_Tot: 0.9843  L_Caus: 0.0108  L_Spar: 0.7141  Acc@1: 87.5000 (90.5700)  Acc@5: 100.0000 (99.5700)
+2026-04-03 17:26:13 INFO:train:*** Best metric: 90.57 (epoch 44)
+2026-04-03 17:28:32 INFO:train:Train: 1:56:14 [Epoch: 45/410] [Iter:  781/781]  Loss_Tot: 2.5830  L_Full: 1.2876  L_Mask: 1.2874  L_Caus: 0.0160  L_Spar: 0.6944  FR: [0.0153, 0.3294, 0.1882, 0.3419]  Wgt(C/S): 0.50/0.00  LR: 9.694e-04
+2026-04-03 17:28:43 INFO:train:Test: [1:56:24] [ 156/156]  Loss_Tot: 0.9004  L_Caus: 0.0139  L_Spar: 0.6964  Acc@1: 87.5000 (89.0400)  Acc@5: 100.0000 (99.4600)
+2026-04-03 17:28:43 INFO:train:*** Best metric: 90.57 (epoch 44)
+2026-04-03 17:31:03 INFO:train:Train: 1:58:44 [Epoch: 46/410] [Iter:  781/781]  Loss_Tot: 2.5893  L_Full: 1.2906  L_Mask: 1.2901  L_Caus: 0.0160  L_Spar: 0.6932  FR: [0.0160, 0.3235, 0.1871, 0.3438]  Wgt(C/S): 0.53/0.00  LR: 9.680e-04
+2026-04-03 17:31:14 INFO:train:Test: [1:58:55] [ 156/156]  Loss_Tot: 1.0482  L_Caus: 0.0100  L_Spar: 0.6903  Acc@1: 81.2500 (89.7300)  Acc@5: 100.0000 (99.5600)
+2026-04-03 17:31:14 INFO:train:*** Best metric: 90.57 (epoch 44)
+2026-04-03 17:33:33 INFO:train:Train: 2:01:14 [Epoch: 47/410] [Iter:  781/781]  Loss_Tot: 2.5394  L_Full: 1.2649  L_Mask: 1.2653  L_Caus: 0.0162  L_Spar: 0.6964  FR: [0.0172, 0.3351, 0.1839, 0.3419]  Wgt(C/S): 0.57/0.00  LR: 9.667e-04
+2026-04-03 17:33:44 INFO:train:Test: [2:01:25] [ 156/156]  Loss_Tot: 0.8407  L_Caus: 0.0127  L_Spar: 0.7041  Acc@1: 87.5000 (90.8800)  Acc@5: 100.0000 (99.7000)
+2026-04-03 17:33:44 INFO:train:*** Best metric: 90.88 (epoch 47)
+2026-04-03 17:36:03 INFO:train:Train: 2:03:44 [Epoch: 48/410] [Iter:  781/781]  Loss_Tot: 2.5315  L_Full: 1.2611  L_Mask: 1.2608  L_Caus: 0.0161  L_Spar: 0.6990  FR: [0.0168, 0.3276, 0.1793, 0.3399]  Wgt(C/S): 0.60/0.00  LR: 9.652e-04
+2026-04-03 17:36:14 INFO:train:Test: [2:03:55] [ 156/156]  Loss_Tot: 0.9556  L_Caus: 0.0106  L_Spar: 0.6954  Acc@1: 81.2500 (90.7500)  Acc@5: 100.0000 (99.5700)
+2026-04-03 17:36:14 INFO:train:*** Best metric: 90.88 (epoch 47)
+2026-04-03 17:38:33 INFO:train:Train: 2:06:14 [Epoch: 49/410] [Iter:  781/781]  Loss_Tot: 2.5202  L_Full: 1.2550  L_Mask: 1.2552  L_Caus: 0.0157  L_Spar: 0.6984  FR: [0.0213, 0.3265, 0.1817, 0.3323]  Wgt(C/S): 0.63/0.00  LR: 9.638e-04
+2026-04-03 17:38:44 INFO:train:Test: [2:06:25] [ 156/156]  Loss_Tot: 0.9768  L_Caus: 0.0108  L_Spar: 0.6948  Acc@1: 100.0000 (89.8900)  Acc@5: 100.0000 (99.7200)
+2026-04-03 17:38:44 INFO:train:*** Best metric: 90.88 (epoch 47)
+2026-04-03 17:41:03 INFO:train:Train: 2:08:45 [Epoch: 50/410] [Iter:  781/781]  Loss_Tot: 2.5429  L_Full: 1.2663  L_Mask: 1.2662  L_Caus: 0.0156  L_Spar: 0.6999  FR: [0.0197, 0.3276, 0.1927, 0.3332]  Wgt(C/S): 0.67/0.00  LR: 9.623e-04
+2026-04-03 17:41:14 INFO:train:Test: [2:08:55] [ 156/156]  Loss_Tot: 1.0374  L_Caus: 0.0107  L_Spar: 0.7143  Acc@1: 100.0000 (89.7500)  Acc@5: 100.0000 (99.6000)
+2026-04-03 17:41:14 INFO:train:*** Best metric: 90.88 (epoch 47)
+2026-04-03 17:43:34 INFO:train:Train: 2:11:15 [Epoch: 51/410] [Iter:  781/781]  Loss_Tot: 2.5642  L_Full: 1.2770  L_Mask: 1.2766  L_Caus: 0.0151  L_Spar: 0.7008  FR: [0.0229, 0.3188, 0.1956, 0.3303]  Wgt(C/S): 0.70/0.00  LR: 9.608e-04
+2026-04-03 17:43:45 INFO:train:Test: [2:11:26] [ 156/156]  Loss_Tot: 1.1034  L_Caus: 0.0097  L_Spar: 0.7120  Acc@1: 93.7500 (90.1500)  Acc@5: 100.0000 (99.5500)
+2026-04-03 17:43:45 INFO:train:*** Best metric: 90.88 (epoch 47)
+2026-04-03 17:46:04 INFO:train:Train: 2:13:45 [Epoch: 52/410] [Iter:  781/781]  Loss_Tot: 2.5311  L_Full: 1.2598  L_Mask: 1.2598  L_Caus: 0.0155  L_Spar: 0.6940  FR: [0.0225, 0.3190, 0.1887, 0.3310]  Wgt(C/S): 0.73/0.00  LR: 9.593e-04
+2026-04-03 17:46:15 INFO:train:Test: [2:13:56] [ 156/156]  Loss_Tot: 0.9022  L_Caus: 0.0115  L_Spar: 0.6956  Acc@1: 93.7500 (90.9400)  Acc@5: 100.0000 (99.6200)
+2026-04-03 17:46:15 INFO:train:*** Best metric: 90.94 (epoch 52)
+2026-04-03 17:48:34 INFO:train:Train: 2:16:15 [Epoch: 53/410] [Iter:  781/781]  Loss_Tot: 2.5150  L_Full: 1.2514  L_Mask: 1.2516  L_Caus: 0.0156  L_Spar: 0.6882  FR: [0.0243, 0.3207, 0.1981, 0.3233]  Wgt(C/S): 0.77/0.00  LR: 9.577e-04
+2026-04-03 17:48:45 INFO:train:Test: [2:16:26] [ 156/156]  Loss_Tot: 0.9692  L_Caus: 0.0129  L_Spar: 0.6885  Acc@1: 81.2500 (89.4400)  Acc@5: 100.0000 (99.4200)
+2026-04-03 17:48:45 INFO:train:*** Best metric: 90.94 (epoch 52)
+2026-04-03 17:51:04 INFO:train:Train: 2:18:46 [Epoch: 54/410] [Iter:  781/781]  Loss_Tot: 2.5537  L_Full: 1.2706  L_Mask: 1.2706  L_Caus: 0.0156  L_Spar: 0.6794  FR: [0.0275, 0.3203, 0.2018, 0.3281]  Wgt(C/S): 0.80/0.00  LR: 9.561e-04
+2026-04-03 17:51:15 INFO:train:Test: [2:18:56] [ 156/156]  Loss_Tot: 0.9109  L_Caus: 0.0115  L_Spar: 0.6810  Acc@1: 93.7500 (91.0900)  Acc@5: 100.0000 (99.6700)
+2026-04-03 17:51:15 INFO:train:*** Best metric: 91.09 (epoch 54)
+2026-04-03 17:53:34 INFO:train:Train: 2:21:16 [Epoch: 55/410] [Iter:  781/781]  Loss_Tot: 2.4887  L_Full: 1.2373  L_Mask: 1.2384  L_Caus: 0.0156  L_Spar: 0.6830  FR: [0.0280, 0.3159, 0.1965, 0.3275]  Wgt(C/S): 0.83/0.00  LR: 9.545e-04
+2026-04-03 17:53:45 INFO:train:Test: [2:21:26] [ 156/156]  Loss_Tot: 0.9128  L_Caus: 0.0115  L_Spar: 0.7004  Acc@1: 93.7500 (90.7500)  Acc@5: 100.0000 (99.7200)
+2026-04-03 17:53:45 INFO:train:*** Best metric: 91.09 (epoch 54)
+2026-04-03 17:56:05 INFO:train:Train: 2:23:46 [Epoch: 56/410] [Iter:  781/781]  Loss_Tot: 2.5700  L_Full: 1.2785  L_Mask: 1.2787  L_Caus: 0.0147  L_Spar: 0.6880  FR: [0.0319, 0.3201, 0.1975, 0.3307]  Wgt(C/S): 0.87/0.00  LR: 9.529e-04
+2026-04-03 17:56:16 INFO:train:Test: [2:23:57] [ 156/156]  Loss_Tot: 0.8661  L_Caus: 0.0114  L_Spar: 0.6971  Acc@1: 93.7500 (90.7500)  Acc@5: 100.0000 (99.5800)
+2026-04-03 17:56:16 INFO:train:*** Best metric: 91.09 (epoch 54)
+2026-04-03 17:58:35 INFO:train:Train: 2:26:16 [Epoch: 57/410] [Iter:  781/781]  Loss_Tot: 2.5355  L_Full: 1.2611  L_Mask: 1.2609  L_Caus: 0.0150  L_Spar: 0.6897  FR: [0.0333, 0.3187, 0.1981, 0.3108]  Wgt(C/S): 0.90/0.00  LR: 9.512e-04
+2026-04-03 17:58:46 INFO:train:Test: [2:26:27] [ 156/156]  Loss_Tot: 0.8585  L_Caus: 0.0126  L_Spar: 0.6945  Acc@1: 87.5000 (90.4500)  Acc@5: 100.0000 (99.6100)
+2026-04-03 17:58:46 INFO:train:*** Best metric: 91.09 (epoch 54)
+2026-04-03 18:01:05 INFO:train:Train: 2:28:47 [Epoch: 58/410] [Iter:  781/781]  Loss_Tot: 2.5350  L_Full: 1.2604  L_Mask: 1.2605  L_Caus: 0.0150  L_Spar: 0.6876  FR: [0.0356, 0.3196, 0.1999, 0.3131]  Wgt(C/S): 0.93/0.00  LR: 9.495e-04
+2026-04-03 18:01:16 INFO:train:Test: [2:28:57] [ 156/156]  Loss_Tot: 0.9258  L_Caus: 0.0107  L_Spar: 0.6921  Acc@1: 100.0000 (91.0000)  Acc@5: 100.0000 (99.4800)
+2026-04-03 18:01:16 INFO:train:*** Best metric: 91.09 (epoch 54)
+2026-04-03 18:03:36 INFO:train:Train: 2:31:17 [Epoch: 59/410] [Iter:  781/781]  Loss_Tot: 2.5541  L_Full: 1.2699  L_Mask: 1.2700  L_Caus: 0.0146  L_Spar: 0.6866  FR: [0.0411, 0.3291, 0.2069, 0.3153]  Wgt(C/S): 0.97/0.00  LR: 9.478e-04
+2026-04-03 18:03:47 INFO:train:Test: [2:31:28] [ 156/156]  Loss_Tot: 0.9825  L_Caus: 0.0110  L_Spar: 0.6925  Acc@1: 87.5000 (89.8600)  Acc@5: 100.0000 (99.4800)
+2026-04-03 18:03:47 INFO:train:*** Best metric: 91.09 (epoch 54)
+2026-04-03 18:06:06 INFO:train:Train: 2:33:47 [Epoch: 60/410] [Iter:  781/781]  Loss_Tot: 2.5022  L_Full: 1.2436  L_Mask: 1.2437  L_Caus: 0.0148  L_Spar: 0.6881  FR: [0.0376, 0.3118, 0.2026, 0.2980]  Wgt(C/S): 1.00/0.00  LR: 9.460e-04
+2026-04-03 18:06:17 INFO:train:Test: [2:33:58] [ 156/156]  Loss_Tot: 0.8602  L_Caus: 0.0113  L_Spar: 0.6853  Acc@1: 93.7500 (91.4900)  Acc@5: 100.0000 (99.7900)
+2026-04-03 18:06:17 INFO:train:*** Best metric: 91.49 (epoch 60)
+2026-04-03 18:08:36 INFO:train:Train: 2:36:17 [Epoch: 61/410] [Iter:  781/781]  Loss_Tot: 2.4720  L_Full: 1.2278  L_Mask: 1.2287  L_Caus: 0.0149  L_Spar: 0.6885  FR: [0.0446, 0.3263, 0.2076, 0.2903]  Wgt(C/S): 1.03/0.00  LR: 9.443e-04
+2026-04-03 18:08:47 INFO:train:Test: [2:36:28] [ 156/156]  Loss_Tot: 0.9181  L_Caus: 0.0098  L_Spar: 0.6924  Acc@1: 93.7500 (91.3200)  Acc@5: 100.0000 (99.6400)
+2026-04-03 18:08:47 INFO:train:*** Best metric: 91.49 (epoch 60)
+2026-04-03 18:11:06 INFO:train:Train: 2:38:48 [Epoch: 62/410] [Iter:  781/781]  Loss_Tot: 2.5649  L_Full: 1.2743  L_Mask: 1.2751  L_Caus: 0.0144  L_Spar: 0.6889  FR: [0.0447, 0.3121, 0.2061, 0.3094]  Wgt(C/S): 1.07/0.00  LR: 9.425e-04
+2026-04-03 18:11:17 INFO:train:Test: [2:38:58] [ 156/156]  Loss_Tot: 1.0049  L_Caus: 0.0090  L_Spar: 0.6874  Acc@1: 100.0000 (90.7200)  Acc@5: 100.0000 (99.6400)
+2026-04-03 18:11:17 INFO:train:*** Best metric: 91.49 (epoch 60)
+2026-04-03 18:13:37 INFO:train:Train: 2:41:18 [Epoch: 63/410] [Iter:  781/781]  Loss_Tot: 2.5257  L_Full: 1.2543  L_Mask: 1.2552  L_Caus: 0.0147  L_Spar: 0.6844  FR: [0.0511, 0.3105, 0.2114, 0.2996]  Wgt(C/S): 1.10/0.00  LR: 9.406e-04
+2026-04-03 18:13:48 INFO:train:Test: [2:41:29] [ 156/156]  Loss_Tot: 0.9680  L_Caus: 0.0106  L_Spar: 0.6864  Acc@1: 81.2500 (91.2200)  Acc@5: 100.0000 (99.6900)
+2026-04-03 18:13:48 INFO:train:*** Best metric: 91.49 (epoch 60)
+2026-04-03 18:16:07 INFO:train:Train: 2:43:48 [Epoch: 64/410] [Iter:  781/781]  Loss_Tot: 2.5088  L_Full: 1.2455  L_Mask: 1.2463  L_Caus: 0.0150  L_Spar: 0.6845  FR: [0.0557, 0.3116, 0.2246, 0.2983]  Wgt(C/S): 1.13/0.00  LR: 9.388e-04
+2026-04-03 18:16:18 INFO:train:Test: [2:43:59] [ 156/156]  Loss_Tot: 1.1066  L_Caus: 0.0080  L_Spar: 0.6880  Acc@1: 93.7500 (91.7700)  Acc@5: 100.0000 (99.6400)
+2026-04-03 18:16:18 INFO:train:*** Best metric: 91.77 (epoch 64)
+2026-04-03 18:18:37 INFO:train:Train: 2:46:19 [Epoch: 65/410] [Iter:  781/781]  Loss_Tot: 2.5182  L_Full: 1.2505  L_Mask: 1.2505  L_Caus: 0.0147  L_Spar: 0.6888  FR: [0.0553, 0.3083, 0.2215, 0.2951]  Wgt(C/S): 1.17/0.00  LR: 9.369e-04
+2026-04-03 18:18:48 INFO:train:Test: [2:46:29] [ 156/156]  Loss_Tot: 0.8858  L_Caus: 0.0110  L_Spar: 0.6983  Acc@1: 93.7500 (91.3700)  Acc@5: 100.0000 (99.6800)
+2026-04-03 18:18:48 INFO:train:*** Best metric: 91.77 (epoch 64)
+2026-04-03 18:21:08 INFO:train:Train: 2:48:49 [Epoch: 66/410] [Iter:  781/781]  Loss_Tot: 2.4855  L_Full: 1.2338  L_Mask: 1.2338  L_Caus: 0.0149  L_Spar: 0.6919  FR: [0.0601, 0.3105, 0.2201, 0.2921]  Wgt(C/S): 1.20/0.00  LR: 9.350e-04
+2026-04-03 18:21:19 INFO:train:Test: [2:49:00] [ 156/156]  Loss_Tot: 0.8354  L_Caus: 0.0117  L_Spar: 0.6868  Acc@1: 87.5000 (91.7500)  Acc@5: 100.0000 (99.6600)
+2026-04-03 18:21:19 INFO:train:*** Best metric: 91.77 (epoch 64)
+2026-04-03 18:23:39 INFO:train:Train: 2:51:20 [Epoch: 67/410] [Iter:  781/781]  Loss_Tot: 2.4838  L_Full: 1.2332  L_Mask: 1.2323  L_Caus: 0.0147  L_Spar: 0.6907  FR: [0.0617, 0.3057, 0.2239, 0.2940]  Wgt(C/S): 1.23/0.00  LR: 9.330e-04
+2026-04-03 18:23:50 INFO:train:Test: [2:51:31] [ 156/156]  Loss_Tot: 0.8441  L_Caus: 0.0113  L_Spar: 0.6976  Acc@1: 93.7500 (91.3000)  Acc@5: 100.0000 (99.7000)
+2026-04-03 18:23:50 INFO:train:*** Best metric: 91.77 (epoch 64)
+2026-04-03 18:26:09 INFO:train:Train: 2:53:50 [Epoch: 68/410] [Iter:  781/781]  Loss_Tot: 2.4812  L_Full: 1.2315  L_Mask: 1.2312  L_Caus: 0.0145  L_Spar: 0.6903  FR: [0.0676, 0.3001, 0.2270, 0.2844]  Wgt(C/S): 1.27/0.00  LR: 9.311e-04
+2026-04-03 18:26:20 INFO:train:Test: [2:54:01] [ 156/156]  Loss_Tot: 0.9067  L_Caus: 0.0103  L_Spar: 0.6942  Acc@1: 87.5000 (91.6400)  Acc@5: 100.0000 (99.5800)
+2026-04-03 18:26:20 INFO:train:*** Best metric: 91.77 (epoch 64)
+2026-04-03 18:28:40 INFO:train:Train: 2:56:21 [Epoch: 69/410] [Iter:  781/781]  Loss_Tot: 2.5282  L_Full: 1.2541  L_Mask: 1.2549  L_Caus: 0.0147  L_Spar: 0.6886  FR: [0.0745, 0.2980, 0.2345, 0.2875]  Wgt(C/S): 1.30/0.00  LR: 9.291e-04
+2026-04-03 18:28:51 INFO:train:Test: [2:56:32] [ 156/156]  Loss_Tot: 0.9594  L_Caus: 0.0087  L_Spar: 0.6833  Acc@1: 93.7500 (91.9400)  Acc@5: 100.0000 (99.6700)
+2026-04-03 18:28:51 INFO:train:*** Best metric: 91.94 (epoch 69)
+2026-04-03 18:31:11 INFO:train:Train: 2:58:52 [Epoch: 70/410] [Iter:  781/781]  Loss_Tot: 2.4917  L_Full: 1.2363  L_Mask: 1.2360  L_Caus: 0.0145  L_Spar: 0.6867  FR: [0.0788, 0.2951, 0.2319, 0.2878]  Wgt(C/S): 1.33/0.00  LR: 9.271e-04
+2026-04-03 18:31:22 INFO:train:Test: [2:59:03] [ 156/156]  Loss_Tot: 0.8584  L_Caus: 0.0108  L_Spar: 0.6973  Acc@1: 100.0000 (92.0100)  Acc@5: 100.0000 (99.6800)
+2026-04-03 18:31:22 INFO:train:*** Best metric: 92.01 (epoch 70)
+2026-04-03 18:33:41 INFO:train:Train: 3:01:22 [Epoch: 71/410] [Iter:  781/781]  Loss_Tot: 2.4388  L_Full: 1.2094  L_Mask: 1.2098  L_Caus: 0.0143  L_Spar: 0.6868  FR: [0.0763, 0.2977, 0.2329, 0.2871]  Wgt(C/S): 1.37/0.00  LR: 9.250e-04
+2026-04-03 18:33:52 INFO:train:Test: [3:01:33] [ 156/156]  Loss_Tot: 0.8633  L_Caus: 0.0112  L_Spar: 0.6834  Acc@1: 87.5000 (92.0800)  Acc@5: 100.0000 (99.6900)
+2026-04-03 18:33:52 INFO:train:*** Best metric: 92.08 (epoch 71)
+2026-04-03 18:36:12 INFO:train:Train: 3:03:53 [Epoch: 72/410] [Iter:  781/781]  Loss_Tot: 2.4486  L_Full: 1.2140  L_Mask: 1.2134  L_Caus: 0.0151  L_Spar: 0.6865  FR: [0.0774, 0.3023, 0.2230, 0.2963]  Wgt(C/S): 1.40/0.00  LR: 9.229e-04
+2026-04-03 18:36:23 INFO:train:Test: [3:04:04] [ 156/156]  Loss_Tot: 0.7909  L_Caus: 0.0109  L_Spar: 0.6974  Acc@1: 93.7500 (92.5900)  Acc@5: 100.0000 (99.7700)
+2026-04-03 18:36:23 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:38:43 INFO:train:Train: 3:06:24 [Epoch: 73/410] [Iter:  781/781]  Loss_Tot: 2.4824  L_Full: 1.2300  L_Mask: 1.2311  L_Caus: 0.0148  L_Spar: 0.6869  FR: [0.0810, 0.2963, 0.2346, 0.2967]  Wgt(C/S): 1.43/0.00  LR: 9.208e-04
+2026-04-03 18:38:54 INFO:train:Test: [3:06:35] [ 156/156]  Loss_Tot: 0.9765  L_Caus: 0.0103  L_Spar: 0.6868  Acc@1: 100.0000 (91.8300)  Acc@5: 100.0000 (99.6800)
+2026-04-03 18:38:54 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:41:14 INFO:train:Train: 3:08:55 [Epoch: 74/410] [Iter:  781/781]  Loss_Tot: 2.4818  L_Full: 1.2302  L_Mask: 1.2303  L_Caus: 0.0144  L_Spar: 0.6866  FR: [0.0847, 0.3019, 0.2249, 0.2921]  Wgt(C/S): 1.47/0.00  LR: 9.187e-04
+2026-04-03 18:41:25 INFO:train:Test: [3:09:06] [ 156/156]  Loss_Tot: 0.9308  L_Caus: 0.0108  L_Spar: 0.6902  Acc@1: 81.2500 (91.6500)  Acc@5: 100.0000 (99.7200)
+2026-04-03 18:41:25 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:43:45 INFO:train:Train: 3:11:26 [Epoch: 75/410] [Iter:  781/781]  Loss_Tot: 2.4503  L_Full: 1.2134  L_Mask: 1.2140  L_Caus: 0.0152  L_Spar: 0.6855  FR: [0.0908, 0.2964, 0.2292, 0.2814]  Wgt(C/S): 1.50/0.00  LR: 9.166e-04
+2026-04-03 18:43:56 INFO:train:Test: [3:11:37] [ 156/156]  Loss_Tot: 0.8716  L_Caus: 0.0105  L_Spar: 0.6976  Acc@1: 93.7500 (91.7000)  Acc@5: 100.0000 (99.6500)
+2026-04-03 18:43:56 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:46:16 INFO:train:Train: 3:13:57 [Epoch: 76/410] [Iter:  781/781]  Loss_Tot: 2.4665  L_Full: 1.2225  L_Mask: 1.2220  L_Caus: 0.0143  L_Spar: 0.6872  FR: [0.0922, 0.2902, 0.2388, 0.2871]  Wgt(C/S): 1.53/0.00  LR: 9.144e-04
+2026-04-03 18:46:26 INFO:train:Test: [3:14:08] [ 156/156]  Loss_Tot: 0.9178  L_Caus: 0.0090  L_Spar: 0.6976  Acc@1: 87.5000 (91.8000)  Acc@5: 100.0000 (99.7200)
+2026-04-03 18:46:27 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:48:46 INFO:train:Train: 3:16:27 [Epoch: 77/410] [Iter:  781/781]  Loss_Tot: 2.4847  L_Full: 1.2313  L_Mask: 1.2313  L_Caus: 0.0140  L_Spar: 0.6881  FR: [0.1019, 0.2883, 0.2398, 0.2835]  Wgt(C/S): 1.57/0.00  LR: 9.122e-04
+2026-04-03 18:48:57 INFO:train:Test: [3:16:38] [ 156/156]  Loss_Tot: 0.8620  L_Caus: 0.0110  L_Spar: 0.6935  Acc@1: 81.2500 (91.6800)  Acc@5: 100.0000 (99.6900)
+2026-04-03 18:48:57 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:51:17 INFO:train:Train: 3:18:58 [Epoch: 78/410] [Iter:  781/781]  Loss_Tot: 2.4179  L_Full: 1.1975  L_Mask: 1.1972  L_Caus: 0.0144  L_Spar: 0.6855  FR: [0.1037, 0.2935, 0.2377, 0.2892]  Wgt(C/S): 1.60/0.00  LR: 9.100e-04
+2026-04-03 18:51:28 INFO:train:Test: [3:19:09] [ 156/156]  Loss_Tot: 0.9830  L_Caus: 0.0102  L_Spar: 0.6827  Acc@1: 87.5000 (91.8800)  Acc@5: 100.0000 (99.6400)
+2026-04-03 18:51:28 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:53:48 INFO:train:Train: 3:21:29 [Epoch: 79/410] [Iter:  781/781]  Loss_Tot: 2.5045  L_Full: 1.2409  L_Mask: 1.2409  L_Caus: 0.0138  L_Spar: 0.6813  FR: [0.1067, 0.2833, 0.2383, 0.2931]  Wgt(C/S): 1.63/0.00  LR: 9.077e-04
+2026-04-03 18:53:59 INFO:train:Test: [3:21:40] [ 156/156]  Loss_Tot: 0.7834  L_Caus: 0.0111  L_Spar: 0.6946  Acc@1: 93.7500 (92.1300)  Acc@5: 100.0000 (99.6700)
+2026-04-03 18:53:59 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:56:18 INFO:train:Train: 3:24:00 [Epoch: 80/410] [Iter:  781/781]  Loss_Tot: 2.5161  L_Full: 1.2461  L_Mask: 1.2470  L_Caus: 0.0137  L_Spar: 0.6852  FR: [0.1077, 0.2782, 0.2372, 0.2835]  Wgt(C/S): 1.67/0.00  LR: 9.055e-04
+2026-04-03 18:56:29 INFO:train:Test: [3:24:10] [ 156/156]  Loss_Tot: 0.8493  L_Caus: 0.0098  L_Spar: 0.7029  Acc@1: 100.0000 (92.2800)  Acc@5: 100.0000 (99.7400)
+2026-04-03 18:56:29 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 18:58:49 INFO:train:Train: 3:26:30 [Epoch: 81/410] [Iter:  781/781]  Loss_Tot: 2.4664  L_Full: 1.2204  L_Mask: 1.2214  L_Caus: 0.0144  L_Spar: 0.6856  FR: [0.1073, 0.2817, 0.2350, 0.2827]  Wgt(C/S): 1.70/0.00  LR: 9.032e-04
+2026-04-03 18:59:00 INFO:train:Test: [3:26:41] [ 156/156]  Loss_Tot: 0.9522  L_Caus: 0.0096  L_Spar: 0.6812  Acc@1: 93.7500 (92.3600)  Acc@5: 100.0000 (99.5200)
+2026-04-03 18:59:00 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 19:01:20 INFO:train:Train: 3:29:01 [Epoch: 82/410] [Iter:  781/781]  Loss_Tot: 2.4784  L_Full: 1.2267  L_Mask: 1.2271  L_Caus: 0.0141  L_Spar: 0.6828  FR: [0.1066, 0.2767, 0.2335, 0.2857]  Wgt(C/S): 1.73/0.00  LR: 9.008e-04
+2026-04-03 19:01:31 INFO:train:Test: [3:29:12] [ 156/156]  Loss_Tot: 0.9006  L_Caus: 0.0100  L_Spar: 0.6934  Acc@1: 87.5000 (92.5600)  Acc@5: 100.0000 (99.7600)
+2026-04-03 19:01:31 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 19:03:51 INFO:train:Train: 3:31:32 [Epoch: 83/410] [Iter:  781/781]  Loss_Tot: 2.4636  L_Full: 1.2193  L_Mask: 1.2196  L_Caus: 0.0139  L_Spar: 0.6775  FR: [0.1084, 0.2716, 0.2279, 0.2865]  Wgt(C/S): 1.77/0.00  LR: 8.985e-04
+2026-04-03 19:04:02 INFO:train:Test: [3:31:43] [ 156/156]  Loss_Tot: 0.8449  L_Caus: 0.0094  L_Spar: 0.6772  Acc@1: 93.7500 (92.5300)  Acc@5: 100.0000 (99.8000)
+2026-04-03 19:04:02 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 19:06:22 INFO:train:Train: 3:34:03 [Epoch: 84/410] [Iter:  781/781]  Loss_Tot: 2.4389  L_Full: 1.2066  L_Mask: 1.2069  L_Caus: 0.0140  L_Spar: 0.6754  FR: [0.1063, 0.2770, 0.2223, 0.2907]  Wgt(C/S): 1.80/0.00  LR: 8.961e-04
+2026-04-03 19:06:32 INFO:train:Test: [3:34:14] [ 156/156]  Loss_Tot: 0.8349  L_Caus: 0.0111  L_Spar: 0.6790  Acc@1: 93.7500 (91.9400)  Acc@5: 100.0000 (99.7600)
+2026-04-03 19:06:33 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 19:08:52 INFO:train:Train: 3:36:34 [Epoch: 85/410] [Iter:  781/781]  Loss_Tot: 2.4740  L_Full: 1.2243  L_Mask: 1.2247  L_Caus: 0.0136  L_Spar: 0.6764  FR: [0.1198, 0.2750, 0.2351, 0.2918]  Wgt(C/S): 1.83/0.00  LR: 8.937e-04
+2026-04-03 19:09:03 INFO:train:Test: [3:36:44] [ 156/156]  Loss_Tot: 0.8201  L_Caus: 0.0099  L_Spar: 0.6922  Acc@1: 93.7500 (92.4500)  Acc@5: 100.0000 (99.6100)
+2026-04-03 19:09:03 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 19:11:23 INFO:train:Train: 3:39:04 [Epoch: 86/410] [Iter:  781/781]  Loss_Tot: 2.4254  L_Full: 1.2000  L_Mask: 1.2001  L_Caus: 0.0135  L_Spar: 0.6767  FR: [0.1116, 0.2746, 0.2255, 0.2919]  Wgt(C/S): 1.87/0.00  LR: 8.913e-04
+2026-04-03 19:11:34 INFO:train:Test: [3:39:15] [ 156/156]  Loss_Tot: 0.8296  L_Caus: 0.0109  L_Spar: 0.6781  Acc@1: 100.0000 (91.7500)  Acc@5: 100.0000 (99.6800)
+2026-04-03 19:11:34 INFO:train:*** Best metric: 92.59 (epoch 72)
+2026-04-03 19:13:54 INFO:train:Train: 3:41:35 [Epoch: 87/410] [Iter:  781/781]  Loss_Tot: 2.4403  L_Full: 1.2075  L_Mask: 1.2073  L_Caus: 0.0134  L_Spar: 0.6817  FR: [0.1155, 0.2764, 0.2300, 0.2955]  Wgt(C/S): 1.90/0.00  LR: 8.889e-04
+2026-04-03 19:14:05 INFO:train:Test: [3:41:46] [ 156/156]  Loss_Tot: 0.9204  L_Caus: 0.0083  L_Spar: 0.6843  Acc@1: 100.0000 (92.8400)  Acc@5: 100.0000 (99.7000)
+2026-04-03 19:14:05 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:16:25 INFO:train:Train: 3:44:06 [Epoch: 88/410] [Iter:  781/781]  Loss_Tot: 2.4235  L_Full: 1.1983  L_Mask: 1.1990  L_Caus: 0.0135  L_Spar: 0.6788  FR: [0.1136, 0.2769, 0.2313, 0.2956]  Wgt(C/S): 1.93/0.00  LR: 8.864e-04
+2026-04-03 19:16:36 INFO:train:Test: [3:44:17] [ 156/156]  Loss_Tot: 0.8496  L_Caus: 0.0096  L_Spar: 0.6871  Acc@1: 100.0000 (92.2400)  Acc@5: 100.0000 (99.7000)
+2026-04-03 19:16:36 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:18:56 INFO:train:Train: 3:46:37 [Epoch: 89/410] [Iter:  781/781]  Loss_Tot: 2.4399  L_Full: 1.2064  L_Mask: 1.2066  L_Caus: 0.0136  L_Spar: 0.6774  FR: [0.1240, 0.2737, 0.2370, 0.2903]  Wgt(C/S): 1.97/0.00  LR: 8.839e-04
+2026-04-03 19:19:07 INFO:train:Test: [3:46:48] [ 156/156]  Loss_Tot: 0.7769  L_Caus: 0.0107  L_Spar: 0.6793  Acc@1: 100.0000 (92.5300)  Acc@5: 100.0000 (99.5600)
+2026-04-03 19:19:07 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:21:27 INFO:train:Train: 3:49:08 [Epoch: 90/410] [Iter:  781/781]  Loss_Tot: 2.4273  L_Full: 1.1996  L_Mask: 1.2006  L_Caus: 0.0135  L_Spar: 0.6776  FR: [0.1197, 0.2697, 0.2340, 0.2857]  Wgt(C/S): 2.00/0.00  LR: 8.814e-04
+2026-04-03 19:21:38 INFO:train:Test: [3:49:19] [ 156/156]  Loss_Tot: 0.8782  L_Caus: 0.0087  L_Spar: 0.6793  Acc@1: 93.7500 (92.2200)  Acc@5: 100.0000 (99.6800)
+2026-04-03 19:21:38 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:23:57 INFO:train:Train: 3:51:39 [Epoch: 91/410] [Iter:  781/781]  Loss_Tot: 2.4405  L_Full: 1.2065  L_Mask: 1.2067  L_Caus: 0.0134  L_Spar: 0.6756  FR: [0.1255, 0.2690, 0.2410, 0.2812]  Wgt(C/S): 2.03/0.00  LR: 8.789e-04
+2026-04-03 19:24:08 INFO:train:Test: [3:51:49] [ 156/156]  Loss_Tot: 0.8619  L_Caus: 0.0099  L_Spar: 0.6757  Acc@1: 87.5000 (92.1000)  Acc@5: 100.0000 (99.7000)
+2026-04-03 19:24:08 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:26:28 INFO:train:Train: 3:54:09 [Epoch: 92/410] [Iter:  781/781]  Loss_Tot: 2.4381  L_Full: 1.2052  L_Mask: 1.2058  L_Caus: 0.0130  L_Spar: 0.6771  FR: [0.1205, 0.2732, 0.2367, 0.2849]  Wgt(C/S): 2.07/0.00  LR: 8.763e-04
+2026-04-03 19:26:39 INFO:train:Test: [3:54:20] [ 156/156]  Loss_Tot: 0.7482  L_Caus: 0.0105  L_Spar: 0.6855  Acc@1: 100.0000 (92.6300)  Acc@5: 100.0000 (99.7800)
+2026-04-03 19:26:39 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:28:59 INFO:train:Train: 3:56:40 [Epoch: 93/410] [Iter:  781/781]  Loss_Tot: 2.4652  L_Full: 1.2184  L_Mask: 1.2196  L_Caus: 0.0129  L_Spar: 0.6833  FR: [0.1241, 0.2721, 0.2420, 0.2827]  Wgt(C/S): 2.10/0.00  LR: 8.737e-04
+2026-04-03 19:29:10 INFO:train:Test: [3:56:51] [ 156/156]  Loss_Tot: 0.8638  L_Caus: 0.0101  L_Spar: 0.6741  Acc@1: 100.0000 (92.1300)  Acc@5: 100.0000 (99.6400)
+2026-04-03 19:29:10 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:31:30 INFO:train:Train: 3:59:11 [Epoch: 94/410] [Iter:  781/781]  Loss_Tot: 2.4357  L_Full: 1.2032  L_Mask: 1.2036  L_Caus: 0.0134  L_Spar: 0.6808  FR: [0.1236, 0.2682, 0.2362, 0.2827]  Wgt(C/S): 2.13/0.00  LR: 8.711e-04
+2026-04-03 19:31:41 INFO:train:Test: [3:59:22] [ 156/156]  Loss_Tot: 0.7497  L_Caus: 0.0111  L_Spar: 0.6860  Acc@1: 87.5000 (92.7100)  Acc@5: 100.0000 (99.7800)
+2026-04-03 19:31:41 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:34:01 INFO:train:Train: 4:01:42 [Epoch: 95/410] [Iter:  781/781]  Loss_Tot: 2.4248  L_Full: 1.1977  L_Mask: 1.1982  L_Caus: 0.0132  L_Spar: 0.6780  FR: [0.1247, 0.2726, 0.2393, 0.2849]  Wgt(C/S): 2.17/0.00  LR: 8.685e-04
+2026-04-03 19:34:12 INFO:train:Test: [4:01:53] [ 156/156]  Loss_Tot: 0.9295  L_Caus: 0.0094  L_Spar: 0.6773  Acc@1: 93.7500 (92.3300)  Acc@5: 100.0000 (99.7800)
+2026-04-03 19:34:12 INFO:train:*** Best metric: 92.84 (epoch 87)
+2026-04-03 19:36:32 INFO:train:Train: 4:04:13 [Epoch: 96/410] [Iter:  781/781]  Loss_Tot: 2.4550  L_Full: 1.2133  L_Mask: 1.2129  L_Caus: 0.0130  L_Spar: 0.6768  FR: [0.1236, 0.2770, 0.2358, 0.2862]  Wgt(C/S): 2.20/0.00  LR: 8.658e-04
+2026-04-03 19:36:42 INFO:train:Test: [4:04:24] [ 156/156]  Loss_Tot: 0.7607  L_Caus: 0.0104  L_Spar: 0.6885  Acc@1: 93.7500 (93.0000)  Acc@5: 100.0000 (99.7800)
+2026-04-03 19:36:42 INFO:train:*** Best metric: 93.0 (epoch 96)
+2026-04-03 19:39:02 INFO:train:Train: 4:06:43 [Epoch: 97/410] [Iter:  781/781]  Loss_Tot: 2.4701  L_Full: 1.2203  L_Mask: 1.2203  L_Caus: 0.0132  L_Spar: 0.6737  FR: [0.1252, 0.2710, 0.2407, 0.2823]  Wgt(C/S): 2.23/0.00  LR: 8.632e-04
+2026-04-03 19:39:13 INFO:train:Test: [4:06:54] [ 156/156]  Loss_Tot: 0.8080  L_Caus: 0.0098  L_Spar: 0.6721  Acc@1: 100.0000 (92.5700)  Acc@5: 100.0000 (99.7400)
+2026-04-03 19:39:13 INFO:train:*** Best metric: 93.0 (epoch 96)
+2026-04-03 19:41:33 INFO:train:Train: 4:09:15 [Epoch: 98/410] [Iter:  781/781]  Loss_Tot: 2.3895  L_Full: 1.1792  L_Mask: 1.1805  L_Caus: 0.0131  L_Spar: 0.6724  FR: [0.1293, 0.2746, 0.2385, 0.2815]  Wgt(C/S): 2.27/0.00  LR: 8.605e-04
+2026-04-03 19:41:44 INFO:train:Test: [4:09:25] [ 156/156]  Loss_Tot: 0.7861  L_Caus: 0.0109  L_Spar: 0.6738  Acc@1: 93.7500 (92.3900)  Acc@5: 100.0000 (99.6800)
+2026-04-03 19:41:44 INFO:train:*** Best metric: 93.0 (epoch 96)
+2026-04-03 19:44:04 INFO:train:Train: 4:11:45 [Epoch: 99/410] [Iter:  781/781]  Loss_Tot: 2.4462  L_Full: 1.2080  L_Mask: 1.2081  L_Caus: 0.0130  L_Spar: 0.6747  FR: [0.1260, 0.2746, 0.2380, 0.2819]  Wgt(C/S): 2.30/0.00  LR: 8.578e-04
+2026-04-03 19:44:15 INFO:train:Test: [4:11:56] [ 156/156]  Loss_Tot: 0.8372  L_Caus: 0.0090  L_Spar: 0.6850  Acc@1: 93.7500 (92.4000)  Acc@5: 100.0000 (99.6500)
+2026-04-03 19:44:15 INFO:train:*** Best metric: 93.0 (epoch 96)
+2026-04-03 19:46:35 INFO:train:Train: 4:14:16 [Epoch: 100/410] [Iter:  781/781]  Loss_Tot: 2.4553  L_Full: 1.2135  L_Mask: 1.2128  L_Caus: 0.0123  L_Spar: 0.6748  FR: [0.1327, 0.2718, 0.2359, 0.2788]  Wgt(C/S): 2.33/0.00  LR: 8.550e-04
+2026-04-03 19:46:46 INFO:train:Test: [4:14:27] [ 156/156]  Loss_Tot: 0.9005  L_Caus: 0.0081  L_Spar: 0.6844  Acc@1: 100.0000 (92.8700)  Acc@5: 100.0000 (99.6800)
+2026-04-03 19:46:46 INFO:train:*** Best metric: 93.0 (epoch 96)
+2026-04-03 19:49:06 INFO:train:Train: 4:16:47 [Epoch: 101/410] [Iter:  781/781]  Loss_Tot: 2.4642  L_Full: 1.2176  L_Mask: 1.2177  L_Caus: 0.0121  L_Spar: 0.6735  FR: [0.1296, 0.2734, 0.2326, 0.2802]  Wgt(C/S): 2.37/0.00  LR: 8.523e-04
+2026-04-03 19:49:17 INFO:train:Test: [4:16:58] [ 156/156]  Loss_Tot: 0.8481  L_Caus: 0.0082  L_Spar: 0.6806  Acc@1: 93.7500 (92.8300)  Acc@5: 100.0000 (99.7600)
+2026-04-03 19:49:17 INFO:train:*** Best metric: 93.0 (epoch 96)
+2026-04-03 19:51:36 INFO:train:Train: 4:19:18 [Epoch: 102/410] [Iter:  781/781]  Loss_Tot: 2.3941  L_Full: 1.1816  L_Mask: 1.1817  L_Caus: 0.0128  L_Spar: 0.6724  FR: [0.1317, 0.2729, 0.2326, 0.2817]  Wgt(C/S): 2.40/0.00  LR: 8.495e-04
+2026-04-03 19:51:47 INFO:train:Test: [4:19:28] [ 156/156]  Loss_Tot: 0.8626  L_Caus: 0.0083  L_Spar: 0.6836  Acc@1: 100.0000 (92.4600)  Acc@5: 100.0000 (99.7700)
+2026-04-03 19:51:47 INFO:train:*** Best metric: 93.0 (epoch 96)
+2026-04-03 19:54:07 INFO:train:Train: 4:21:48 [Epoch: 103/410] [Iter:  781/781]  Loss_Tot: 2.4470  L_Full: 1.2082  L_Mask: 1.2084  L_Caus: 0.0124  L_Spar: 0.6776  FR: [0.1325, 0.2743, 0.2332, 0.2835]  Wgt(C/S): 2.43/0.00  LR: 8.467e-04
+2026-04-03 19:54:18 INFO:train:Test: [4:21:59] [ 156/156]  Loss_Tot: 0.9209  L_Caus: 0.0084  L_Spar: 0.6768  Acc@1: 100.0000 (92.7900)  Acc@5: 100.0000 (99.7800)
+2026-04-03 19:54:18 INFO:train:*** Best metric: 93.0 (epoch 96)
+2026-04-03 19:56:38 INFO:train:Train: 4:24:19 [Epoch: 104/410] [Iter:  781/781]  Loss_Tot: 2.4700  L_Full: 1.2201  L_Mask: 1.2199  L_Caus: 0.0121  L_Spar: 0.6730  FR: [0.1296, 0.2742, 0.2361, 0.2822]  Wgt(C/S): 2.47/0.00  LR: 8.439e-04
+2026-04-03 19:56:49 INFO:train:Test: [4:24:30] [ 156/156]  Loss_Tot: 0.8157  L_Caus: 0.0094  L_Spar: 0.6842  Acc@1: 93.7500 (93.2200)  Acc@5: 100.0000 (99.7800)
+2026-04-03 19:56:49 INFO:train:*** Best metric: 93.22 (epoch 104)
+2026-04-03 19:59:09 INFO:train:Train: 4:26:50 [Epoch: 105/410] [Iter:  781/781]  Loss_Tot: 2.4526  L_Full: 1.2109  L_Mask: 1.2107  L_Caus: 0.0123  L_Spar: 0.6774  FR: [0.1343, 0.2756, 0.2310, 0.2806]  Wgt(C/S): 2.50/0.00  LR: 8.410e-04
+2026-04-03 19:59:20 INFO:train:Test: [4:27:01] [ 156/156]  Loss_Tot: 0.7002  L_Caus: 0.0099  L_Spar: 0.6864  Acc@1: 100.0000 (93.1400)  Acc@5: 100.0000 (99.8200)
+2026-04-03 19:59:20 INFO:train:*** Best metric: 93.22 (epoch 104)
+2026-04-03 20:01:39 INFO:train:Train: 4:29:21 [Epoch: 106/410] [Iter:  781/781]  Loss_Tot: 2.4527  L_Full: 1.2106  L_Mask: 1.2105  L_Caus: 0.0124  L_Spar: 0.6774  FR: [0.1335, 0.2724, 0.2321, 0.2833]  Wgt(C/S): 2.53/0.00  LR: 8.381e-04
+2026-04-03 20:01:50 INFO:train:Test: [4:29:31] [ 156/156]  Loss_Tot: 0.9162  L_Caus: 0.0084  L_Spar: 0.6797  Acc@1: 100.0000 (92.6500)  Acc@5: 100.0000 (99.7700)
+2026-04-03 20:01:50 INFO:train:*** Best metric: 93.22 (epoch 104)
+2026-04-03 20:04:10 INFO:train:Train: 4:31:51 [Epoch: 107/410] [Iter:  781/781]  Loss_Tot: 2.4201  L_Full: 1.1944  L_Mask: 1.1943  L_Caus: 0.0122  L_Spar: 0.6766  FR: [0.1329, 0.2745, 0.2289, 0.2809]  Wgt(C/S): 2.57/0.00  LR: 8.353e-04
+2026-04-03 20:04:21 INFO:train:Test: [4:32:02] [ 156/156]  Loss_Tot: 0.8597  L_Caus: 0.0087  L_Spar: 0.6788  Acc@1: 100.0000 (92.9000)  Acc@5: 100.0000 (99.6800)
+2026-04-03 20:04:21 INFO:train:*** Best metric: 93.22 (epoch 104)
+2026-04-03 20:06:41 INFO:train:Train: 4:34:22 [Epoch: 108/410] [Iter:  781/781]  Loss_Tot: 2.4010  L_Full: 1.1850  L_Mask: 1.1842  L_Caus: 0.0122  L_Spar: 0.6810  FR: [0.1358, 0.2729, 0.2324, 0.2862]  Wgt(C/S): 2.60/0.00  LR: 8.323e-04
+2026-04-03 20:06:52 INFO:train:Test: [4:34:33] [ 156/156]  Loss_Tot: 0.7693  L_Caus: 0.0085  L_Spar: 0.6927  Acc@1: 93.7500 (93.3700)  Acc@5: 100.0000 (99.6500)
+2026-04-03 20:06:52 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:09:12 INFO:train:Train: 4:36:53 [Epoch: 109/410] [Iter:  781/781]  Loss_Tot: 2.4241  L_Full: 1.1961  L_Mask: 1.1955  L_Caus: 0.0123  L_Spar: 0.6812  FR: [0.1308, 0.2780, 0.2290, 0.2857]  Wgt(C/S): 2.63/0.00  LR: 8.294e-04
+2026-04-03 20:09:23 INFO:train:Test: [4:37:04] [ 156/156]  Loss_Tot: 0.7861  L_Caus: 0.0095  L_Spar: 0.6739  Acc@1: 87.5000 (92.7300)  Acc@5: 93.7500 (99.7500)
+2026-04-03 20:09:23 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:11:43 INFO:train:Train: 4:39:24 [Epoch: 110/410] [Iter:  781/781]  Loss_Tot: 2.4515  L_Full: 1.2095  L_Mask: 1.2098  L_Caus: 0.0120  L_Spar: 0.6762  FR: [0.1351, 0.2745, 0.2286, 0.2817]  Wgt(C/S): 2.67/0.00  LR: 8.265e-04
+2026-04-03 20:11:54 INFO:train:Test: [4:39:35] [ 156/156]  Loss_Tot: 0.8522  L_Caus: 0.0077  L_Spar: 0.6811  Acc@1: 93.7500 (93.2300)  Acc@5: 100.0000 (99.7000)
+2026-04-03 20:11:54 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:14:14 INFO:train:Train: 4:41:55 [Epoch: 111/410] [Iter:  781/781]  Loss_Tot: 2.4585  L_Full: 1.2128  L_Mask: 1.2127  L_Caus: 0.0122  L_Spar: 0.6723  FR: [0.1352, 0.2764, 0.2334, 0.2875]  Wgt(C/S): 2.70/0.00  LR: 8.235e-04
+2026-04-03 20:14:25 INFO:train:Test: [4:42:06] [ 156/156]  Loss_Tot: 0.7574  L_Caus: 0.0099  L_Spar: 0.6712  Acc@1: 93.7500 (93.2700)  Acc@5: 100.0000 (99.7200)
+2026-04-03 20:14:25 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:16:44 INFO:train:Train: 4:44:26 [Epoch: 112/410] [Iter:  781/781]  Loss_Tot: 2.3939  L_Full: 1.1803  L_Mask: 1.1808  L_Caus: 0.0120  L_Spar: 0.6789  FR: [0.1380, 0.2738, 0.2361, 0.2817]  Wgt(C/S): 2.73/0.00  LR: 8.205e-04
+2026-04-03 20:16:55 INFO:train:Test: [4:44:36] [ 156/156]  Loss_Tot: 0.8606  L_Caus: 0.0086  L_Spar: 0.6882  Acc@1: 93.7500 (92.7000)  Acc@5: 100.0000 (99.6300)
+2026-04-03 20:16:55 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:19:15 INFO:train:Train: 4:46:56 [Epoch: 113/410] [Iter:  781/781]  Loss_Tot: 2.3877  L_Full: 1.1771  L_Mask: 1.1774  L_Caus: 0.0119  L_Spar: 0.6810  FR: [0.1400, 0.2700, 0.2334, 0.2859]  Wgt(C/S): 2.77/0.00  LR: 8.175e-04
+2026-04-03 20:19:26 INFO:train:Test: [4:47:07] [ 156/156]  Loss_Tot: 0.6901  L_Caus: 0.0092  L_Spar: 0.6825  Acc@1: 93.7500 (93.1400)  Acc@5: 100.0000 (99.6900)
+2026-04-03 20:19:26 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:21:46 INFO:train:Train: 4:49:27 [Epoch: 114/410] [Iter:  781/781]  Loss_Tot: 2.4468  L_Full: 1.2076  L_Mask: 1.2070  L_Caus: 0.0114  L_Spar: 0.6835  FR: [0.1368, 0.2716, 0.2362, 0.2881]  Wgt(C/S): 2.80/0.00  LR: 8.145e-04
+2026-04-03 20:21:57 INFO:train:Test: [4:49:38] [ 156/156]  Loss_Tot: 0.8532  L_Caus: 0.0087  L_Spar: 0.6830  Acc@1: 93.7500 (92.7700)  Acc@5: 100.0000 (99.7300)
+2026-04-03 20:21:57 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:24:17 INFO:train:Train: 4:51:58 [Epoch: 115/410] [Iter:  781/781]  Loss_Tot: 2.4115  L_Full: 1.1891  L_Mask: 1.1892  L_Caus: 0.0116  L_Spar: 0.6797  FR: [0.1372, 0.2721, 0.2399, 0.2814]  Wgt(C/S): 2.83/0.00  LR: 8.115e-04
+2026-04-03 20:24:28 INFO:train:Test: [4:52:09] [ 156/156]  Loss_Tot: 0.7343  L_Caus: 0.0091  L_Spar: 0.6838  Acc@1: 100.0000 (93.2700)  Acc@5: 100.0000 (99.7500)
+2026-04-03 20:24:28 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:26:48 INFO:train:Train: 4:54:29 [Epoch: 116/410] [Iter:  781/781]  Loss_Tot: 2.4169  L_Full: 1.1913  L_Mask: 1.1918  L_Caus: 0.0117  L_Spar: 0.6794  FR: [0.1392, 0.2702, 0.2378, 0.2809]  Wgt(C/S): 2.87/0.00  LR: 8.084e-04
+2026-04-03 20:26:59 INFO:train:Test: [4:54:40] [ 156/156]  Loss_Tot: 0.8346  L_Caus: 0.0086  L_Spar: 0.6812  Acc@1: 87.5000 (92.5400)  Acc@5: 100.0000 (99.6900)
+2026-04-03 20:26:59 INFO:train:*** Best metric: 93.37 (epoch 108)
+2026-04-03 20:29:19 INFO:train:Train: 4:57:00 [Epoch: 117/410] [Iter:  781/781]  Loss_Tot: 2.3997  L_Full: 1.1822  L_Mask: 1.1829  L_Caus: 0.0119  L_Spar: 0.6789  FR: [0.1380, 0.2719, 0.2372, 0.2786]  Wgt(C/S): 2.90/0.00  LR: 8.053e-04
+2026-04-03 20:29:29 INFO:train:Test: [4:57:11] [ 156/156]  Loss_Tot: 0.8393  L_Caus: 0.0080  L_Spar: 0.6782  Acc@1: 100.0000 (93.4500)  Acc@5: 100.0000 (99.7600)
+2026-04-03 20:29:29 INFO:train:*** Best metric: 93.45 (epoch 117)
+2026-04-03 20:31:49 INFO:train:Train: 4:59:30 [Epoch: 118/410] [Iter:  781/781]  Loss_Tot: 2.4222  L_Full: 1.1936  L_Mask: 1.1935  L_Caus: 0.0119  L_Spar: 0.6779  FR: [0.1366, 0.2698, 0.2362, 0.2796]  Wgt(C/S): 2.93/0.00  LR: 8.022e-04
+2026-04-03 20:32:00 INFO:train:Test: [4:59:41] [ 156/156]  Loss_Tot: 0.8447  L_Caus: 0.0091  L_Spar: 0.6889  Acc@1: 100.0000 (92.6400)  Acc@5: 100.0000 (99.7700)
+2026-04-03 20:32:00 INFO:train:*** Best metric: 93.45 (epoch 117)
+2026-04-03 20:34:20 INFO:train:Train: 5:02:01 [Epoch: 119/410] [Iter:  781/781]  Loss_Tot: 2.3779  L_Full: 1.1714  L_Mask: 1.1713  L_Caus: 0.0118  L_Spar: 0.6784  FR: [0.1414, 0.2690, 0.2391, 0.2839]  Wgt(C/S): 2.97/0.00  LR: 7.991e-04
+2026-04-03 20:34:31 INFO:train:Test: [5:02:12] [ 156/156]  Loss_Tot: 0.7336  L_Caus: 0.0090  L_Spar: 0.6795  Acc@1: 93.7500 (93.2400)  Acc@5: 100.0000 (99.7900)
+2026-04-03 20:34:31 INFO:train:*** Best metric: 93.45 (epoch 117)
+2026-04-03 20:36:51 INFO:train:Train: 5:04:32 [Epoch: 120/410] [Iter:  781/781]  Loss_Tot: 2.3859  L_Full: 1.1747  L_Mask: 1.1755  L_Caus: 0.0118  L_Spar: 0.6775  FR: [0.1428, 0.2702, 0.2399, 0.2819]  Wgt(C/S): 3.00/0.00  LR: 7.960e-04
+2026-04-03 20:37:01 INFO:train:Test: [5:04:43] [ 156/156]  Loss_Tot: 0.7802  L_Caus: 0.0089  L_Spar: 0.6809  Acc@1: 81.2500 (93.0700)  Acc@5: 100.0000 (99.7300)
+2026-04-03 20:37:02 INFO:train:*** Best metric: 93.45 (epoch 117)
+2026-04-03 20:39:22 INFO:train:Train: 5:07:03 [Epoch: 121/410] [Iter:  781/781]  Loss_Tot: 2.4916  L_Full: 1.2288  L_Mask: 1.2286  L_Caus: 0.0112  L_Spar: 0.6757  FR: [0.1438, 0.2716, 0.2417, 0.2854]  Wgt(C/S): 3.03/0.00  LR: 7.928e-04
+2026-04-03 20:39:32 INFO:train:Test: [5:07:14] [ 156/156]  Loss_Tot: 0.7456  L_Caus: 0.0083  L_Spar: 0.6732  Acc@1: 93.7500 (93.5900)  Acc@5: 100.0000 (99.7100)
+2026-04-03 20:39:32 INFO:train:*** Best metric: 93.59 (epoch 121)
+2026-04-03 20:41:52 INFO:train:Train: 5:09:33 [Epoch: 122/410] [Iter:  781/781]  Loss_Tot: 2.4145  L_Full: 1.1895  L_Mask: 1.1894  L_Caus: 0.0115  L_Spar: 0.6729  FR: [0.1424, 0.2727, 0.2399, 0.2849]  Wgt(C/S): 3.07/0.00  LR: 7.896e-04
+2026-04-03 20:42:03 INFO:train:Test: [5:09:44] [ 156/156]  Loss_Tot: 0.8652  L_Caus: 0.0076  L_Spar: 0.6782  Acc@1: 93.7500 (92.7500)  Acc@5: 100.0000 (99.7500)
+2026-04-03 20:42:03 INFO:train:*** Best metric: 93.59 (epoch 121)
+2026-04-03 20:44:23 INFO:train:Train: 5:12:04 [Epoch: 123/410] [Iter:  781/781]  Loss_Tot: 2.4140  L_Full: 1.1891  L_Mask: 1.1898  L_Caus: 0.0112  L_Spar: 0.6745  FR: [0.1445, 0.2753, 0.2418, 0.2891]  Wgt(C/S): 3.10/0.00  LR: 7.864e-04
+2026-04-03 20:44:34 INFO:train:Test: [5:12:15] [ 156/156]  Loss_Tot: 0.8293  L_Caus: 0.0075  L_Spar: 0.6845  Acc@1: 100.0000 (93.6200)  Acc@5: 100.0000 (99.6400)
+2026-04-03 20:44:34 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 20:46:54 INFO:train:Train: 5:14:35 [Epoch: 124/410] [Iter:  781/781]  Loss_Tot: 2.4063  L_Full: 1.1854  L_Mask: 1.1857  L_Caus: 0.0112  L_Spar: 0.6752  FR: [0.1428, 0.2738, 0.2420, 0.2867]  Wgt(C/S): 3.13/0.00  LR: 7.832e-04
+2026-04-03 20:47:05 INFO:train:Test: [5:14:46] [ 156/156]  Loss_Tot: 0.7773  L_Caus: 0.0082  L_Spar: 0.6807  Acc@1: 93.7500 (92.9900)  Acc@5: 100.0000 (99.6600)
+2026-04-03 20:47:05 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 20:49:24 INFO:train:Train: 5:17:06 [Epoch: 125/410] [Iter:  781/781]  Loss_Tot: 2.4049  L_Full: 1.1840  L_Mask: 1.1850  L_Caus: 0.0113  L_Spar: 0.6777  FR: [0.1421, 0.2750, 0.2425, 0.2825]  Wgt(C/S): 3.17/0.00  LR: 7.800e-04
+2026-04-03 20:49:35 INFO:train:Test: [5:17:16] [ 156/156]  Loss_Tot: 0.7816  L_Caus: 0.0089  L_Spar: 0.6893  Acc@1: 93.7500 (93.1800)  Acc@5: 100.0000 (99.6500)
+2026-04-03 20:49:35 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 20:51:55 INFO:train:Train: 5:19:36 [Epoch: 126/410] [Iter:  781/781]  Loss_Tot: 2.3974  L_Full: 1.1808  L_Mask: 1.1813  L_Caus: 0.0110  L_Spar: 0.6787  FR: [0.1432, 0.2742, 0.2428, 0.2833]  Wgt(C/S): 3.20/0.00  LR: 7.768e-04
+2026-04-03 20:52:06 INFO:train:Test: [5:19:47] [ 156/156]  Loss_Tot: 0.8170  L_Caus: 0.0076  L_Spar: 0.6872  Acc@1: 87.5000 (92.9100)  Acc@5: 100.0000 (99.7200)
+2026-04-03 20:52:06 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 20:54:26 INFO:train:Train: 5:22:07 [Epoch: 127/410] [Iter:  781/781]  Loss_Tot: 2.4314  L_Full: 1.1983  L_Mask: 1.1976  L_Caus: 0.0109  L_Spar: 0.6779  FR: [0.1428, 0.2764, 0.2425, 0.2847]  Wgt(C/S): 3.23/0.00  LR: 7.735e-04
+2026-04-03 20:54:37 INFO:train:Test: [5:22:18] [ 156/156]  Loss_Tot: 0.7688  L_Caus: 0.0082  L_Spar: 0.6785  Acc@1: 93.7500 (93.3600)  Acc@5: 100.0000 (99.7400)
+2026-04-03 20:54:37 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 20:56:57 INFO:train:Train: 5:24:38 [Epoch: 128/410] [Iter:  781/781]  Loss_Tot: 2.3878  L_Full: 1.1751  L_Mask: 1.1756  L_Caus: 0.0113  L_Spar: 0.6813  FR: [0.1464, 0.2770, 0.2406, 0.2921]  Wgt(C/S): 3.27/0.00  LR: 7.702e-04
+2026-04-03 20:57:08 INFO:train:Test: [5:24:49] [ 156/156]  Loss_Tot: 0.7355  L_Caus: 0.0096  L_Spar: 0.6772  Acc@1: 93.7500 (93.1300)  Acc@5: 100.0000 (99.7000)
+2026-04-03 20:57:08 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 20:59:28 INFO:train:Train: 5:27:09 [Epoch: 129/410] [Iter:  781/781]  Loss_Tot: 2.3954  L_Full: 1.1793  L_Mask: 1.1794  L_Caus: 0.0111  L_Spar: 0.6817  FR: [0.1483, 0.2777, 0.2410, 0.2852]  Wgt(C/S): 3.30/0.00  LR: 7.669e-04
+2026-04-03 20:59:39 INFO:train:Test: [5:27:20] [ 156/156]  Loss_Tot: 0.8400  L_Caus: 0.0074  L_Spar: 0.6880  Acc@1: 87.5000 (93.3000)  Acc@5: 100.0000 (99.6600)
+2026-04-03 20:59:39 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 21:01:59 INFO:train:Train: 5:29:40 [Epoch: 130/410] [Iter:  781/781]  Loss_Tot: 2.4014  L_Full: 1.1816  L_Mask: 1.1820  L_Caus: 0.0113  L_Spar: 0.6792  FR: [0.1448, 0.2790, 0.2404, 0.2857]  Wgt(C/S): 3.33/0.00  LR: 7.636e-04
+2026-04-03 21:02:09 INFO:train:Test: [5:29:51] [ 156/156]  Loss_Tot: 0.8293  L_Caus: 0.0086  L_Spar: 0.6820  Acc@1: 100.0000 (92.9800)  Acc@5: 100.0000 (99.7700)
+2026-04-03 21:02:10 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 21:04:29 INFO:train:Train: 5:32:11 [Epoch: 131/410] [Iter:  781/781]  Loss_Tot: 2.4125  L_Full: 1.1880  L_Mask: 1.1882  L_Caus: 0.0107  L_Spar: 0.6813  FR: [0.1469, 0.2766, 0.2401, 0.2835]  Wgt(C/S): 3.37/0.00  LR: 7.603e-04
+2026-04-03 21:04:40 INFO:train:Test: [5:32:21] [ 156/156]  Loss_Tot: 0.7222  L_Caus: 0.0089  L_Spar: 0.6847  Acc@1: 100.0000 (93.2900)  Acc@5: 100.0000 (99.7600)
+2026-04-03 21:04:40 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 21:07:00 INFO:train:Train: 5:34:41 [Epoch: 132/410] [Iter:  781/781]  Loss_Tot: 2.4353  L_Full: 1.1991  L_Mask: 1.1990  L_Caus: 0.0108  L_Spar: 0.6830  FR: [0.1455, 0.2777, 0.2425, 0.2833]  Wgt(C/S): 3.40/0.00  LR: 7.570e-04
+2026-04-03 21:07:11 INFO:train:Test: [5:34:52] [ 156/156]  Loss_Tot: 0.8730  L_Caus: 0.0069  L_Spar: 0.6900  Acc@1: 93.7500 (93.2300)  Acc@5: 100.0000 (99.6800)
+2026-04-03 21:07:11 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 21:09:31 INFO:train:Train: 5:37:12 [Epoch: 133/410] [Iter:  781/781]  Loss_Tot: 2.4143  L_Full: 1.1884  L_Mask: 1.1882  L_Caus: 0.0109  L_Spar: 0.6783  FR: [0.1508, 0.2759, 0.2430, 0.2827]  Wgt(C/S): 3.43/0.00  LR: 7.536e-04
+2026-04-03 21:09:42 INFO:train:Test: [5:37:23] [ 156/156]  Loss_Tot: 0.9461  L_Caus: 0.0066  L_Spar: 0.6802  Acc@1: 100.0000 (93.5400)  Acc@5: 100.0000 (99.8000)
+2026-04-03 21:09:42 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 21:12:02 INFO:train:Train: 5:39:43 [Epoch: 134/410] [Iter:  781/781]  Loss_Tot: 2.4080  L_Full: 1.1852  L_Mask: 1.1853  L_Caus: 0.0107  L_Spar: 0.6774  FR: [0.1537, 0.2766, 0.2447, 0.2822]  Wgt(C/S): 3.47/0.00  LR: 7.503e-04
+2026-04-03 21:12:13 INFO:train:Test: [5:39:54] [ 156/156]  Loss_Tot: 0.7800  L_Caus: 0.0087  L_Spar: 0.6751  Acc@1: 93.7500 (93.0400)  Acc@5: 100.0000 (99.6300)
+2026-04-03 21:12:13 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 21:14:32 INFO:train:Train: 5:42:14 [Epoch: 135/410] [Iter:  781/781]  Loss_Tot: 2.3781  L_Full: 1.1696  L_Mask: 1.1702  L_Caus: 0.0109  L_Spar: 0.6739  FR: [0.1563, 0.2758, 0.2460, 0.2830]  Wgt(C/S): 3.50/0.00  LR: 7.469e-04
+2026-04-03 21:14:43 INFO:train:Test: [5:42:24] [ 156/156]  Loss_Tot: 0.8753  L_Caus: 0.0071  L_Spar: 0.6781  Acc@1: 87.5000 (93.3300)  Acc@5: 100.0000 (99.8000)
+2026-04-03 21:14:43 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 21:17:03 INFO:train:Train: 5:44:44 [Epoch: 136/410] [Iter:  781/781]  Loss_Tot: 2.4019  L_Full: 1.1811  L_Mask: 1.1825  L_Caus: 0.0108  L_Spar: 0.6819  FR: [0.1530, 0.2767, 0.2415, 0.2846]  Wgt(C/S): 3.53/0.00  LR: 7.435e-04
+2026-04-03 21:17:14 INFO:train:Test: [5:44:55] [ 156/156]  Loss_Tot: 0.9475  L_Caus: 0.0065  L_Spar: 0.6914  Acc@1: 93.7500 (93.2000)  Acc@5: 100.0000 (99.7600)
+2026-04-03 21:17:14 INFO:train:*** Best metric: 93.62 (epoch 123)
+2026-04-03 21:19:34 INFO:train:Train: 5:47:15 [Epoch: 137/410] [Iter:  781/781]  Loss_Tot: 2.3359  L_Full: 1.1484  L_Mask: 1.1482  L_Caus: 0.0109  L_Spar: 0.6811  FR: [0.1597, 0.2775, 0.2431, 0.2875]  Wgt(C/S): 3.57/0.00  LR: 7.401e-04
+2026-04-03 21:19:45 INFO:train:Test: [5:47:26] [ 156/156]  Loss_Tot: 0.7265  L_Caus: 0.0084  L_Spar: 0.6757  Acc@1: 87.5000 (93.7500)  Acc@5: 100.0000 (99.8400)
+2026-04-03 21:19:45 INFO:train:*** Best metric: 93.75 (epoch 137)
+2026-04-03 21:22:05 INFO:train:Train: 5:49:46 [Epoch: 138/410] [Iter:  781/781]  Loss_Tot: 2.3774  L_Full: 1.1693  L_Mask: 1.1691  L_Caus: 0.0108  L_Spar: 0.6772  FR: [0.1524, 0.2788, 0.2442, 0.2905]  Wgt(C/S): 3.60/0.00  LR: 7.366e-04
+2026-04-03 21:22:16 INFO:train:Test: [5:49:57] [ 156/156]  Loss_Tot: 0.8725  L_Caus: 0.0086  L_Spar: 0.6799  Acc@1: 100.0000 (92.8300)  Acc@5: 100.0000 (99.5700)
+2026-04-03 21:22:16 INFO:train:*** Best metric: 93.75 (epoch 137)
+2026-04-03 21:24:36 INFO:train:Train: 5:52:17 [Epoch: 139/410] [Iter:  781/781]  Loss_Tot: 2.3770  L_Full: 1.1685  L_Mask: 1.1688  L_Caus: 0.0109  L_Spar: 0.6770  FR: [0.1580, 0.2772, 0.2425, 0.2918]  Wgt(C/S): 3.63/0.00  LR: 7.332e-04
+2026-04-03 21:24:47 INFO:train:Test: [5:52:28] [ 156/156]  Loss_Tot: 0.9691  L_Caus: 0.0065  L_Spar: 0.6774  Acc@1: 93.7500 (93.0400)  Acc@5: 100.0000 (99.7500)
+2026-04-03 21:24:47 INFO:train:*** Best metric: 93.75 (epoch 137)
+2026-04-03 21:27:07 INFO:train:Train: 5:54:48 [Epoch: 140/410] [Iter:  781/781]  Loss_Tot: 2.3890  L_Full: 1.1749  L_Mask: 1.1745  L_Caus: 0.0107  L_Spar: 0.6766  FR: [0.1522, 0.2786, 0.2418, 0.2921]  Wgt(C/S): 3.67/0.00  LR: 7.297e-04
+2026-04-03 21:27:17 INFO:train:Test: [5:54:59] [ 156/156]  Loss_Tot: 0.7861  L_Caus: 0.0082  L_Spar: 0.6741  Acc@1: 100.0000 (93.7000)  Acc@5: 100.0000 (99.8300)
+2026-04-03 21:27:18 INFO:train:*** Best metric: 93.75 (epoch 137)
+2026-04-03 21:29:37 INFO:train:Train: 5:57:18 [Epoch: 141/410] [Iter:  781/781]  Loss_Tot: 2.3791  L_Full: 1.1696  L_Mask: 1.1697  L_Caus: 0.0107  L_Spar: 0.6783  FR: [0.1591, 0.2794, 0.2452, 0.2931]  Wgt(C/S): 3.70/0.00  LR: 7.263e-04
+2026-04-03 21:29:48 INFO:train:Test: [5:57:29] [ 156/156]  Loss_Tot: 0.7477  L_Caus: 0.0079  L_Spar: 0.6834  Acc@1: 93.7500 (93.6900)  Acc@5: 100.0000 (99.7300)
+2026-04-03 21:29:48 INFO:train:*** Best metric: 93.75 (epoch 137)
+2026-04-03 21:32:08 INFO:train:Train: 5:59:49 [Epoch: 142/410] [Iter:  781/781]  Loss_Tot: 2.3931  L_Full: 1.1765  L_Mask: 1.1763  L_Caus: 0.0107  L_Spar: 0.6765  FR: [0.1562, 0.2772, 0.2441, 0.2863]  Wgt(C/S): 3.73/0.00  LR: 7.228e-04
+2026-04-03 21:32:19 INFO:train:Test: [6:00:00] [ 156/156]  Loss_Tot: 0.7370  L_Caus: 0.0081  L_Spar: 0.6742  Acc@1: 93.7500 (93.9300)  Acc@5: 100.0000 (99.7100)
+2026-04-03 21:32:19 INFO:train:*** Best metric: 93.93 (epoch 142)
+2026-04-03 21:34:39 INFO:train:Train: 6:02:20 [Epoch: 143/410] [Iter:  781/781]  Loss_Tot: 2.3683  L_Full: 1.1638  L_Mask: 1.1643  L_Caus: 0.0106  L_Spar: 0.6753  FR: [0.1543, 0.2786, 0.2447, 0.2875]  Wgt(C/S): 3.77/0.00  LR: 7.193e-04
+2026-04-03 21:34:50 INFO:train:Test: [6:02:31] [ 156/156]  Loss_Tot: 0.8026  L_Caus: 0.0081  L_Spar: 0.6838  Acc@1: 93.7500 (93.1300)  Acc@5: 100.0000 (99.7500)
+2026-04-03 21:34:50 INFO:train:*** Best metric: 93.93 (epoch 142)
+2026-04-03 21:37:10 INFO:train:Train: 6:04:51 [Epoch: 144/410] [Iter:  781/781]  Loss_Tot: 2.3836  L_Full: 1.1724  L_Mask: 1.1720  L_Caus: 0.0102  L_Spar: 0.6775  FR: [0.1607, 0.2780, 0.2439, 0.2887]  Wgt(C/S): 3.80/0.00  LR: 7.158e-04
+2026-04-03 21:37:20 INFO:train:Test: [6:05:02] [ 156/156]  Loss_Tot: 0.7633  L_Caus: 0.0077  L_Spar: 0.6913  Acc@1: 87.5000 (93.7500)  Acc@5: 100.0000 (99.7700)
+2026-04-03 21:37:21 INFO:train:*** Best metric: 93.93 (epoch 142)
+2026-04-03 21:39:40 INFO:train:Train: 6:07:21 [Epoch: 145/410] [Iter:  781/781]  Loss_Tot: 2.3692  L_Full: 1.1638  L_Mask: 1.1639  L_Caus: 0.0108  L_Spar: 0.6786  FR: [0.1618, 0.2793, 0.2462, 0.2857]  Wgt(C/S): 3.83/0.00  LR: 7.122e-04
+2026-04-03 21:39:51 INFO:train:Test: [6:07:32] [ 156/156]  Loss_Tot: 0.8380  L_Caus: 0.0074  L_Spar: 0.6817  Acc@1: 100.0000 (93.6300)  Acc@5: 100.0000 (99.7100)
+2026-04-03 21:39:51 INFO:train:*** Best metric: 93.93 (epoch 142)
+2026-04-03 21:42:11 INFO:train:Train: 6:09:52 [Epoch: 146/410] [Iter:  781/781]  Loss_Tot: 2.4448  L_Full: 1.2021  L_Mask: 1.2026  L_Caus: 0.0103  L_Spar: 0.6730  FR: [0.1614, 0.2796, 0.2447, 0.2958]  Wgt(C/S): 3.87/0.00  LR: 7.087e-04
+2026-04-03 21:42:22 INFO:train:Test: [6:10:03] [ 156/156]  Loss_Tot: 0.8713  L_Caus: 0.0066  L_Spar: 0.6795  Acc@1: 100.0000 (93.5100)  Acc@5: 100.0000 (99.7100)
+2026-04-03 21:42:22 INFO:train:*** Best metric: 93.93 (epoch 142)
+2026-04-03 21:44:42 INFO:train:Train: 6:12:23 [Epoch: 147/410] [Iter:  781/781]  Loss_Tot: 2.3640  L_Full: 1.1620  L_Mask: 1.1616  L_Caus: 0.0103  L_Spar: 0.6745  FR: [0.1583, 0.2815, 0.2457, 0.2943]  Wgt(C/S): 3.90/0.00  LR: 7.052e-04
+2026-04-03 21:44:53 INFO:train:Test: [6:12:34] [ 156/156]  Loss_Tot: 0.8558  L_Caus: 0.0071  L_Spar: 0.6774  Acc@1: 93.7500 (93.1800)  Acc@5: 100.0000 (99.6700)
+2026-04-03 21:44:53 INFO:train:*** Best metric: 93.93 (epoch 142)
+2026-04-03 21:47:13 INFO:train:Train: 6:14:54 [Epoch: 148/410] [Iter:  781/781]  Loss_Tot: 2.4050  L_Full: 1.1818  L_Mask: 1.1821  L_Caus: 0.0104  L_Spar: 0.6716  FR: [0.1645, 0.2791, 0.2447, 0.2937]  Wgt(C/S): 3.93/0.00  LR: 7.016e-04
+2026-04-03 21:47:24 INFO:train:Test: [6:15:05] [ 156/156]  Loss_Tot: 0.7765  L_Caus: 0.0075  L_Spar: 0.6795  Acc@1: 93.7500 (93.8000)  Acc@5: 100.0000 (99.7300)
+2026-04-03 21:47:24 INFO:train:*** Best metric: 93.93 (epoch 142)
+2026-04-03 21:49:44 INFO:train:Train: 6:17:25 [Epoch: 149/410] [Iter:  781/781]  Loss_Tot: 2.4050  L_Full: 1.1823  L_Mask: 1.1822  L_Caus: 0.0101  L_Spar: 0.6742  FR: [0.1660, 0.2815, 0.2465, 0.2974]  Wgt(C/S): 3.97/0.00  LR: 6.980e-04
+2026-04-03 21:49:54 INFO:train:Test: [6:17:36] [ 156/156]  Loss_Tot: 0.9458  L_Caus: 0.0062  L_Spar: 0.6756  Acc@1: 93.7500 (94.0400)  Acc@5: 100.0000 (99.6500)
+2026-04-03 21:49:55 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 21:52:14 INFO:train:Train: 6:19:56 [Epoch: 150/410] [Iter:  781/781]  Loss_Tot: 2.3614  L_Full: 1.1600  L_Mask: 1.1600  L_Caus: 0.0103  L_Spar: 0.6749  FR: [0.1657, 0.2791, 0.2458, 0.2903]  Wgt(C/S): 4.00/0.00  LR: 6.944e-04
+2026-04-03 21:52:25 INFO:train:Test: [6:20:06] [ 156/156]  Loss_Tot: 0.7566  L_Caus: 0.0075  L_Spar: 0.6777  Acc@1: 93.7500 (93.4300)  Acc@5: 100.0000 (99.7100)
+2026-04-03 21:52:25 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 21:54:45 INFO:train:Train: 6:22:26 [Epoch: 151/410] [Iter:  781/781]  Loss_Tot: 2.4006  L_Full: 1.1797  L_Mask: 1.1796  L_Caus: 0.0102  L_Spar: 0.6810  FR: [0.1665, 0.2819, 0.2460, 0.2931]  Wgt(C/S): 4.03/0.00  LR: 6.908e-04
+2026-04-03 21:54:56 INFO:train:Test: [6:22:37] [ 156/156]  Loss_Tot: 0.7095  L_Caus: 0.0083  L_Spar: 0.6848  Acc@1: 100.0000 (93.8600)  Acc@5: 100.0000 (99.6900)
+2026-04-03 21:54:56 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 21:57:16 INFO:train:Train: 6:24:57 [Epoch: 152/410] [Iter:  781/781]  Loss_Tot: 2.3341  L_Full: 1.1464  L_Mask: 1.1461  L_Caus: 0.0102  L_Spar: 0.6765  FR: [0.1698, 0.2780, 0.2466, 0.2876]  Wgt(C/S): 4.07/0.00  LR: 6.872e-04
+2026-04-03 21:57:27 INFO:train:Test: [6:25:08] [ 156/156]  Loss_Tot: 0.7806  L_Caus: 0.0076  L_Spar: 0.6785  Acc@1: 100.0000 (93.7500)  Acc@5: 100.0000 (99.8000)
+2026-04-03 21:57:27 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 21:59:47 INFO:train:Train: 6:27:28 [Epoch: 153/410] [Iter:  781/781]  Loss_Tot: 2.3453  L_Full: 1.1514  L_Mask: 1.1521  L_Caus: 0.0101  L_Spar: 0.6756  FR: [0.1673, 0.2796, 0.2470, 0.2913]  Wgt(C/S): 4.10/0.00  LR: 6.836e-04
+2026-04-03 21:59:58 INFO:train:Test: [6:27:39] [ 156/156]  Loss_Tot: 0.7210  L_Caus: 0.0078  L_Spar: 0.6759  Acc@1: 87.5000 (93.6800)  Acc@5: 100.0000 (99.7500)
+2026-04-03 21:59:58 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:02:17 INFO:train:Train: 6:29:58 [Epoch: 154/410] [Iter:  781/781]  Loss_Tot: 2.3409  L_Full: 1.1491  L_Mask: 1.1491  L_Caus: 0.0103  L_Spar: 0.6747  FR: [0.1684, 0.2799, 0.2474, 0.2915]  Wgt(C/S): 4.13/0.00  LR: 6.800e-04
+2026-04-03 22:02:28 INFO:train:Test: [6:30:09] [ 156/156]  Loss_Tot: 0.7320  L_Caus: 0.0072  L_Spar: 0.6866  Acc@1: 93.7500 (93.7400)  Acc@5: 100.0000 (99.7100)
+2026-04-03 22:02:28 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:04:48 INFO:train:Train: 6:32:29 [Epoch: 155/410] [Iter:  781/781]  Loss_Tot: 2.3892  L_Full: 1.1734  L_Mask: 1.1735  L_Caus: 0.0101  L_Spar: 0.6722  FR: [0.1674, 0.2801, 0.2481, 0.2918]  Wgt(C/S): 4.17/0.00  LR: 6.763e-04
+2026-04-03 22:04:59 INFO:train:Test: [6:32:40] [ 156/156]  Loss_Tot: 0.7500  L_Caus: 0.0072  L_Spar: 0.6824  Acc@1: 100.0000 (94.0200)  Acc@5: 100.0000 (99.7000)
+2026-04-03 22:04:59 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:07:19 INFO:train:Train: 6:35:00 [Epoch: 156/410] [Iter:  781/781]  Loss_Tot: 2.3944  L_Full: 1.1760  L_Mask: 1.1760  L_Caus: 0.0100  L_Spar: 0.6730  FR: [0.1698, 0.2814, 0.2476, 0.2948]  Wgt(C/S): 4.20/0.00  LR: 6.727e-04
+2026-04-03 22:07:30 INFO:train:Test: [6:35:11] [ 156/156]  Loss_Tot: 0.8130  L_Caus: 0.0065  L_Spar: 0.6673  Acc@1: 93.7500 (93.7600)  Acc@5: 100.0000 (99.7700)
+2026-04-03 22:07:30 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:09:49 INFO:train:Train: 6:37:31 [Epoch: 157/410] [Iter:  781/781]  Loss_Tot: 2.3531  L_Full: 1.1550  L_Mask: 1.1555  L_Caus: 0.0100  L_Spar: 0.6750  FR: [0.1679, 0.2820, 0.2476, 0.2940]  Wgt(C/S): 4.23/0.00  LR: 6.690e-04
+2026-04-03 22:10:00 INFO:train:Test: [6:37:41] [ 156/156]  Loss_Tot: 0.7833  L_Caus: 0.0074  L_Spar: 0.6796  Acc@1: 93.7500 (93.4200)  Acc@5: 100.0000 (99.7700)
+2026-04-03 22:10:00 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:12:20 INFO:train:Train: 6:40:01 [Epoch: 158/410] [Iter:  781/781]  Loss_Tot: 2.4020  L_Full: 1.1797  L_Mask: 1.1800  L_Caus: 0.0098  L_Spar: 0.6769  FR: [0.1657, 0.2791, 0.2474, 0.2910]  Wgt(C/S): 4.27/0.00  LR: 6.653e-04
+2026-04-03 22:12:31 INFO:train:Test: [6:40:12] [ 156/156]  Loss_Tot: 0.7493  L_Caus: 0.0072  L_Spar: 0.6737  Acc@1: 93.7500 (93.9700)  Acc@5: 100.0000 (99.7200)
+2026-04-03 22:12:31 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:14:51 INFO:train:Train: 6:42:32 [Epoch: 159/410] [Iter:  781/781]  Loss_Tot: 2.4180  L_Full: 1.1872  L_Mask: 1.1872  L_Caus: 0.0101  L_Spar: 0.6743  FR: [0.1690, 0.2822, 0.2474, 0.2982]  Wgt(C/S): 4.30/0.00  LR: 6.617e-04
+2026-04-03 22:15:02 INFO:train:Test: [6:42:43] [ 156/156]  Loss_Tot: 0.7999  L_Caus: 0.0069  L_Spar: 0.6782  Acc@1: 75.0000 (93.4100)  Acc@5: 100.0000 (99.6300)
+2026-04-03 22:15:02 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:17:22 INFO:train:Train: 6:45:03 [Epoch: 160/410] [Iter:  781/781]  Loss_Tot: 2.3174  L_Full: 1.1367  L_Mask: 1.1367  L_Caus: 0.0101  L_Spar: 0.6714  FR: [0.1689, 0.2831, 0.2479, 0.2902]  Wgt(C/S): 4.33/0.00  LR: 6.580e-04
+2026-04-03 22:17:33 INFO:train:Test: [6:45:14] [ 156/156]  Loss_Tot: 0.8368  L_Caus: 0.0067  L_Spar: 0.6757  Acc@1: 93.7500 (93.7500)  Acc@5: 100.0000 (99.6900)
+2026-04-03 22:17:33 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:19:52 INFO:train:Train: 6:47:34 [Epoch: 161/410] [Iter:  781/781]  Loss_Tot: 2.3640  L_Full: 1.1594  L_Mask: 1.1599  L_Caus: 0.0102  L_Spar: 0.6689  FR: [0.1716, 0.2827, 0.2489, 0.2910]  Wgt(C/S): 4.37/0.00  LR: 6.543e-04
+2026-04-03 22:20:03 INFO:train:Test: [6:47:44] [ 156/156]  Loss_Tot: 0.7896  L_Caus: 0.0075  L_Spar: 0.6751  Acc@1: 100.0000 (93.5600)  Acc@5: 100.0000 (99.7300)
+2026-04-03 22:20:03 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:22:23 INFO:train:Train: 6:50:04 [Epoch: 162/410] [Iter:  781/781]  Loss_Tot: 2.3575  L_Full: 1.1566  L_Mask: 1.1571  L_Caus: 0.0099  L_Spar: 0.6725  FR: [0.1721, 0.2815, 0.2490, 0.2889]  Wgt(C/S): 4.40/0.00  LR: 6.505e-04
+2026-04-03 22:22:34 INFO:train:Test: [6:50:15] [ 156/156]  Loss_Tot: 0.8571  L_Caus: 0.0066  L_Spar: 0.6825  Acc@1: 93.7500 (93.1800)  Acc@5: 100.0000 (99.7300)
+2026-04-03 22:22:34 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:24:54 INFO:train:Train: 6:52:35 [Epoch: 163/410] [Iter:  781/781]  Loss_Tot: 2.4150  L_Full: 1.1857  L_Mask: 1.1851  L_Caus: 0.0099  L_Spar: 0.6746  FR: [0.1738, 0.2820, 0.2490, 0.2905]  Wgt(C/S): 4.43/0.00  LR: 6.468e-04
+2026-04-03 22:25:05 INFO:train:Test: [6:52:46] [ 156/156]  Loss_Tot: 0.7357  L_Caus: 0.0075  L_Spar: 0.6786  Acc@1: 93.7500 (93.6300)  Acc@5: 100.0000 (99.7200)
+2026-04-03 22:25:05 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:27:25 INFO:train:Train: 6:55:06 [Epoch: 164/410] [Iter:  781/781]  Loss_Tot: 2.3932  L_Full: 1.1751  L_Mask: 1.1744  L_Caus: 0.0097  L_Spar: 0.6775  FR: [0.1719, 0.2865, 0.2489, 0.2963]  Wgt(C/S): 4.47/0.00  LR: 6.431e-04
+2026-04-03 22:27:35 INFO:train:Test: [6:55:17] [ 156/156]  Loss_Tot: 0.6746  L_Caus: 0.0081  L_Spar: 0.6871  Acc@1: 93.7500 (93.5700)  Acc@5: 100.0000 (99.7500)
+2026-04-03 22:27:35 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:29:55 INFO:train:Train: 6:57:37 [Epoch: 165/410] [Iter:  781/781]  Loss_Tot: 2.3808  L_Full: 1.1683  L_Mask: 1.1684  L_Caus: 0.0097  L_Spar: 0.6790  FR: [0.1741, 0.2903, 0.2489, 0.2948]  Wgt(C/S): 4.50/0.00  LR: 6.394e-04
+2026-04-03 22:30:06 INFO:train:Test: [6:57:47] [ 156/156]  Loss_Tot: 0.6855  L_Caus: 0.0084  L_Spar: 0.6859  Acc@1: 93.7500 (93.7400)  Acc@5: 100.0000 (99.7300)
+2026-04-03 22:30:06 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:32:26 INFO:train:Train: 7:00:07 [Epoch: 166/410] [Iter:  781/781]  Loss_Tot: 2.3645  L_Full: 1.1590  L_Mask: 1.1603  L_Caus: 0.0099  L_Spar: 0.6772  FR: [0.1732, 0.2879, 0.2498, 0.2987]  Wgt(C/S): 4.53/0.00  LR: 6.356e-04
+2026-04-03 22:32:37 INFO:train:Test: [7:00:18] [ 156/156]  Loss_Tot: 0.9119  L_Caus: 0.0062  L_Spar: 0.6824  Acc@1: 100.0000 (93.6000)  Acc@5: 100.0000 (99.8600)
+2026-04-03 22:32:37 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:34:59 INFO:train:Train: 7:02:40 [Epoch: 167/410] [Iter:  781/781]  Loss_Tot: 2.3707  L_Full: 1.1625  L_Mask: 1.1634  L_Caus: 0.0097  L_Spar: 0.6769  FR: [0.1732, 0.2875, 0.2494, 0.2961]  Wgt(C/S): 4.57/0.00  LR: 6.319e-04
+2026-04-03 22:35:10 INFO:train:Test: [7:02:51] [ 156/156]  Loss_Tot: 0.8446  L_Caus: 0.0066  L_Spar: 0.6802  Acc@1: 93.7500 (93.6900)  Acc@5: 100.0000 (99.7900)
+2026-04-03 22:35:10 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:37:30 INFO:train:Train: 7:05:11 [Epoch: 168/410] [Iter:  781/781]  Loss_Tot: 2.3835  L_Full: 1.1690  L_Mask: 1.1685  L_Caus: 0.0099  L_Spar: 0.6721  FR: [0.1721, 0.2939, 0.2497, 0.2996]  Wgt(C/S): 4.60/0.00  LR: 6.281e-04
+2026-04-03 22:37:41 INFO:train:Test: [7:05:22] [ 156/156]  Loss_Tot: 0.8995  L_Caus: 0.0067  L_Spar: 0.6699  Acc@1: 93.7500 (93.7600)  Acc@5: 100.0000 (99.7600)
+2026-04-03 22:37:41 INFO:train:*** Best metric: 94.04 (epoch 149)
+2026-04-03 22:40:01 INFO:train:Train: 7:07:42 [Epoch: 169/410] [Iter:  781/781]  Loss_Tot: 2.3722  L_Full: 1.1640  L_Mask: 1.1642  L_Caus: 0.0094  L_Spar: 0.6668  FR: [0.1697, 0.2964, 0.2490, 0.3036]  Wgt(C/S): 4.63/0.00  LR: 6.243e-04
+2026-04-03 22:40:12 INFO:train:Test: [7:07:53] [ 156/156]  Loss_Tot: 0.9278  L_Caus: 0.0058  L_Spar: 0.6735  Acc@1: 100.0000 (94.0600)  Acc@5: 100.0000 (99.7700)
+2026-04-03 22:40:12 INFO:train:*** Best metric: 94.06 (epoch 169)
+2026-04-03 22:42:32 INFO:train:Train: 7:10:13 [Epoch: 170/410] [Iter:  781/781]  Loss_Tot: 2.4107  L_Full: 1.1826  L_Mask: 1.1832  L_Caus: 0.0095  L_Spar: 0.6707  FR: [0.1745, 0.2865, 0.2497, 0.2990]  Wgt(C/S): 4.67/0.00  LR: 6.206e-04
+2026-04-03 22:42:42 INFO:train:Test: [7:10:24] [ 156/156]  Loss_Tot: 0.8114  L_Caus: 0.0061  L_Spar: 0.6694  Acc@1: 87.5000 (94.2500)  Acc@5: 100.0000 (99.8100)
+2026-04-03 22:42:42 INFO:train:*** Best metric: 94.25 (epoch 170)
+2026-04-03 22:45:02 INFO:train:Train: 7:12:44 [Epoch: 171/410] [Iter:  781/781]  Loss_Tot: 2.3936  L_Full: 1.1748  L_Mask: 1.1752  L_Caus: 0.0092  L_Spar: 0.6768  FR: [0.1733, 0.2923, 0.2502, 0.3023]  Wgt(C/S): 4.70/0.00  LR: 6.168e-04
+2026-04-03 22:45:13 INFO:train:Test: [7:12:54] [ 156/156]  Loss_Tot: 0.8164  L_Caus: 0.0062  L_Spar: 0.6781  Acc@1: 100.0000 (94.2500)  Acc@5: 100.0000 (99.7000)
+2026-04-03 22:45:13 INFO:train:*** Best metric: 94.25 (epoch 170)
+2026-04-03 22:47:33 INFO:train:Train: 7:15:14 [Epoch: 172/410] [Iter:  781/781]  Loss_Tot: 2.3555  L_Full: 1.1558  L_Mask: 1.1556  L_Caus: 0.0093  L_Spar: 0.6762  FR: [0.1764, 0.2895, 0.2494, 0.3027]  Wgt(C/S): 4.73/0.00  LR: 6.130e-04
+2026-04-03 22:47:44 INFO:train:Test: [7:15:25] [ 156/156]  Loss_Tot: 0.8589  L_Caus: 0.0065  L_Spar: 0.6801  Acc@1: 100.0000 (93.4700)  Acc@5: 100.0000 (99.7200)
+2026-04-03 22:47:44 INFO:train:*** Best metric: 94.25 (epoch 170)
+2026-04-03 22:50:04 INFO:train:Train: 7:17:45 [Epoch: 173/410] [Iter:  781/781]  Loss_Tot: 2.3586  L_Full: 1.1565  L_Mask: 1.1568  L_Caus: 0.0094  L_Spar: 0.6783  FR: [0.1764, 0.2923, 0.2498, 0.3012]  Wgt(C/S): 4.77/0.00  LR: 6.092e-04
+2026-04-03 22:50:15 INFO:train:Test: [7:17:56] [ 156/156]  Loss_Tot: 0.6555  L_Caus: 0.0079  L_Spar: 0.6761  Acc@1: 93.7500 (94.1800)  Acc@5: 100.0000 (99.7900)
+2026-04-03 22:50:15 INFO:train:*** Best metric: 94.25 (epoch 170)
+2026-04-03 22:52:35 INFO:train:Train: 7:20:16 [Epoch: 174/410] [Iter:  781/781]  Loss_Tot: 2.3639  L_Full: 1.1590  L_Mask: 1.1591  L_Caus: 0.0095  L_Spar: 0.6800  FR: [0.1764, 0.2963, 0.2498, 0.3043]  Wgt(C/S): 4.80/0.00  LR: 6.054e-04
+2026-04-03 22:52:45 INFO:train:Test: [7:20:27] [ 156/156]  Loss_Tot: 0.9771  L_Caus: 0.0061  L_Spar: 0.6812  Acc@1: 93.7500 (93.2000)  Acc@5: 100.0000 (99.7300)
+2026-04-03 22:52:46 INFO:train:*** Best metric: 94.25 (epoch 170)
+2026-04-03 22:55:05 INFO:train:Train: 7:22:47 [Epoch: 175/410] [Iter:  781/781]  Loss_Tot: 2.3326  L_Full: 1.1435  L_Mask: 1.1435  L_Caus: 0.0094  L_Spar: 0.6780  FR: [0.1791, 0.2964, 0.2502, 0.3004]  Wgt(C/S): 4.83/0.00  LR: 6.016e-04
+2026-04-03 22:55:16 INFO:train:Test: [7:22:57] [ 156/156]  Loss_Tot: 0.9791  L_Caus: 0.0056  L_Spar: 0.6730  Acc@1: 93.7500 (94.3900)  Acc@5: 100.0000 (99.6500)
+2026-04-03 22:55:16 INFO:train:*** Best metric: 94.39 (epoch 175)
+2026-04-03 22:57:36 INFO:train:Train: 7:25:17 [Epoch: 176/410] [Iter:  781/781]  Loss_Tot: 2.2994  L_Full: 1.1268  L_Mask: 1.1269  L_Caus: 0.0093  L_Spar: 0.6749  FR: [0.1797, 0.2878, 0.2506, 0.2975]  Wgt(C/S): 4.87/0.00  LR: 5.978e-04
+2026-04-03 22:57:47 INFO:train:Test: [7:25:28] [ 156/156]  Loss_Tot: 0.7482  L_Caus: 0.0078  L_Spar: 0.6706  Acc@1: 93.7500 (93.3600)  Acc@5: 100.0000 (99.8100)
+2026-04-03 22:57:47 INFO:train:*** Best metric: 94.39 (epoch 175)
+2026-04-03 23:00:07 INFO:train:Train: 7:27:48 [Epoch: 177/410] [Iter:  781/781]  Loss_Tot: 2.3621  L_Full: 1.1583  L_Mask: 1.1581  L_Caus: 0.0093  L_Spar: 0.6719  FR: [0.1796, 0.2935, 0.2503, 0.2991]  Wgt(C/S): 4.90/0.00  LR: 5.939e-04
+2026-04-03 23:00:18 INFO:train:Test: [7:27:59] [ 156/156]  Loss_Tot: 0.8346  L_Caus: 0.0063  L_Spar: 0.6704  Acc@1: 100.0000 (94.1700)  Acc@5: 100.0000 (99.7900)
+2026-04-03 23:00:18 INFO:train:*** Best metric: 94.39 (epoch 175)
+2026-04-03 23:02:38 INFO:train:Train: 7:30:19 [Epoch: 178/410] [Iter:  781/781]  Loss_Tot: 2.3456  L_Full: 1.1493  L_Mask: 1.1501  L_Caus: 0.0093  L_Spar: 0.6739  FR: [0.1793, 0.3001, 0.2508, 0.3023]  Wgt(C/S): 4.93/0.00  LR: 5.901e-04
+2026-04-03 23:02:48 INFO:train:Test: [7:30:30] [ 156/156]  Loss_Tot: 0.7408  L_Caus: 0.0069  L_Spar: 0.6768  Acc@1: 93.7500 (94.2000)  Acc@5: 100.0000 (99.8000)
+2026-04-03 23:02:49 INFO:train:*** Best metric: 94.39 (epoch 175)
+2026-04-03 23:05:08 INFO:train:Train: 7:32:49 [Epoch: 179/410] [Iter:  781/781]  Loss_Tot: 2.3668  L_Full: 1.1608  L_Mask: 1.1604  L_Caus: 0.0091  L_Spar: 0.6753  FR: [0.1802, 0.2999, 0.2508, 0.3044]  Wgt(C/S): 4.97/0.00  LR: 5.863e-04
+2026-04-03 23:05:19 INFO:train:Test: [7:33:00] [ 156/156]  Loss_Tot: 0.7120  L_Caus: 0.0069  L_Spar: 0.6786  Acc@1: 93.7500 (94.0500)  Acc@5: 100.0000 (99.7200)
+2026-04-03 23:05:19 INFO:train:*** Best metric: 94.39 (epoch 175)
+2026-04-03 23:07:39 INFO:train:Train: 7:35:20 [Epoch: 180/410] [Iter:  781/781]  Loss_Tot: 2.3248  L_Full: 1.1384  L_Mask: 1.1389  L_Caus: 0.0094  L_Spar: 0.6749  FR: [0.1826, 0.2971, 0.2510, 0.3003]  Wgt(C/S): 5.00/0.00  LR: 5.824e-04
+2026-04-03 23:07:50 INFO:train:Test: [7:35:31] [ 156/156]  Loss_Tot: 0.7841  L_Caus: 0.0066  L_Spar: 0.6713  Acc@1: 93.7500 (94.0800)  Acc@5: 100.0000 (99.7000)
+2026-04-03 23:07:50 INFO:train:*** Best metric: 94.39 (epoch 175)
+2026-04-03 23:10:10 INFO:train:Train: 7:37:51 [Epoch: 181/410] [Iter:  781/781]  Loss_Tot: 2.3532  L_Full: 1.1534  L_Mask: 1.1530  L_Caus: 0.0093  L_Spar: 0.6737  FR: [0.1781, 0.3071, 0.2505, 0.2998]  Wgt(C/S): 5.00/0.00  LR: 5.786e-04
+2026-04-03 23:10:21 INFO:train:Test: [7:38:02] [ 156/156]  Loss_Tot: 0.8236  L_Caus: 0.0064  L_Spar: 0.6675  Acc@1: 93.7500 (94.1500)  Acc@5: 100.0000 (99.7700)
+2026-04-03 23:10:21 INFO:train:*** Best metric: 94.39 (epoch 175)
+2026-04-03 23:12:40 INFO:train:Train: 7:40:22 [Epoch: 182/410] [Iter:  781/781]  Loss_Tot: 2.3442  L_Full: 1.1489  L_Mask: 1.1487  L_Caus: 0.0092  L_Spar: 0.6742  FR: [0.1818, 0.3108, 0.2511, 0.3025]  Wgt(C/S): 5.00/0.00  LR: 5.747e-04
+2026-04-03 23:12:51 INFO:train:Test: [7:40:32] [ 156/156]  Loss_Tot: 0.7482  L_Caus: 0.0065  L_Spar: 0.6797  Acc@1: 100.0000 (94.4200)  Acc@5: 100.0000 (99.8300)
+2026-04-03 23:12:51 INFO:train:*** Best metric: 94.42 (epoch 182)
+2026-04-03 23:15:11 INFO:train:Train: 7:42:52 [Epoch: 183/410] [Iter:  781/781]  Loss_Tot: 2.3798  L_Full: 1.1666  L_Mask: 1.1669  L_Caus: 0.0092  L_Spar: 0.6765  FR: [0.1809, 0.3094, 0.2526, 0.3068]  Wgt(C/S): 5.00/0.00  LR: 5.709e-04
+2026-04-03 23:15:22 INFO:train:Test: [7:43:03] [ 156/156]  Loss_Tot: 0.7366  L_Caus: 0.0066  L_Spar: 0.6722  Acc@1: 100.0000 (94.1800)  Acc@5: 100.0000 (99.7600)
+2026-04-03 23:15:22 INFO:train:*** Best metric: 94.42 (epoch 182)
+2026-04-03 23:17:42 INFO:train:Train: 7:45:23 [Epoch: 184/410] [Iter:  781/781]  Loss_Tot: 2.3183  L_Full: 1.1354  L_Mask: 1.1355  L_Caus: 0.0094  L_Spar: 0.6784  FR: [0.1836, 0.3038, 0.2514, 0.3027]  Wgt(C/S): 5.00/0.00  LR: 5.670e-04
+2026-04-03 23:17:53 INFO:train:Test: [7:45:34] [ 156/156]  Loss_Tot: 0.6991  L_Caus: 0.0064  L_Spar: 0.6748  Acc@1: 93.7500 (94.2400)  Acc@5: 100.0000 (99.7400)
+2026-04-03 23:17:53 INFO:train:*** Best metric: 94.42 (epoch 182)
+2026-04-03 23:20:13 INFO:train:Train: 7:47:54 [Epoch: 185/410] [Iter:  781/781]  Loss_Tot: 2.3599  L_Full: 1.1568  L_Mask: 1.1570  L_Caus: 0.0092  L_Spar: 0.6768  FR: [0.1829, 0.3063, 0.2519, 0.3031]  Wgt(C/S): 5.00/0.00  LR: 5.632e-04
+2026-04-03 23:20:24 INFO:train:Test: [7:48:05] [ 156/156]  Loss_Tot: 0.6092  L_Caus: 0.0078  L_Spar: 0.6844  Acc@1: 93.7500 (94.3800)  Acc@5: 100.0000 (99.7600)
+2026-04-03 23:20:24 INFO:train:*** Best metric: 94.42 (epoch 182)
+2026-04-03 23:22:43 INFO:train:Train: 7:50:24 [Epoch: 186/410] [Iter:  781/781]  Loss_Tot: 2.3410  L_Full: 1.1475  L_Mask: 1.1471  L_Caus: 0.0092  L_Spar: 0.6774  FR: [0.1828, 0.3009, 0.2521, 0.3022]  Wgt(C/S): 5.00/0.00  LR: 5.593e-04
+2026-04-03 23:22:54 INFO:train:Test: [7:50:35] [ 156/156]  Loss_Tot: 0.7174  L_Caus: 0.0070  L_Spar: 0.6743  Acc@1: 93.7500 (94.5800)  Acc@5: 100.0000 (99.7600)
+2026-04-03 23:22:54 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:25:14 INFO:train:Train: 7:52:55 [Epoch: 187/410] [Iter:  781/781]  Loss_Tot: 2.3738  L_Full: 1.1644  L_Mask: 1.1648  L_Caus: 0.0089  L_Spar: 0.6789  FR: [0.1839, 0.3033, 0.2529, 0.3030]  Wgt(C/S): 5.00/0.00  LR: 5.555e-04
+2026-04-03 23:25:25 INFO:train:Test: [7:53:06] [ 156/156]  Loss_Tot: 0.7507  L_Caus: 0.0064  L_Spar: 0.6715  Acc@1: 100.0000 (94.1500)  Acc@5: 100.0000 (99.7600)
+2026-04-03 23:25:25 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:27:45 INFO:train:Train: 7:55:26 [Epoch: 188/410] [Iter:  781/781]  Loss_Tot: 2.3247  L_Full: 1.1394  L_Mask: 1.1393  L_Caus: 0.0091  L_Spar: 0.6803  FR: [0.1831, 0.2966, 0.2527, 0.3009]  Wgt(C/S): 5.00/0.00  LR: 5.516e-04
+2026-04-03 23:27:56 INFO:train:Test: [7:55:37] [ 156/156]  Loss_Tot: 0.8186  L_Caus: 0.0064  L_Spar: 0.6786  Acc@1: 93.7500 (94.1100)  Acc@5: 100.0000 (99.6700)
+2026-04-03 23:27:56 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:30:15 INFO:train:Train: 7:57:56 [Epoch: 189/410] [Iter:  781/781]  Loss_Tot: 2.3367  L_Full: 1.1454  L_Mask: 1.1451  L_Caus: 0.0092  L_Spar: 0.6769  FR: [0.1837, 0.3012, 0.2527, 0.2982]  Wgt(C/S): 5.00/0.00  LR: 5.477e-04
+2026-04-03 23:30:26 INFO:train:Test: [7:58:07] [ 156/156]  Loss_Tot: 0.8519  L_Caus: 0.0061  L_Spar: 0.6765  Acc@1: 100.0000 (94.0800)  Acc@5: 100.0000 (99.8000)
+2026-04-03 23:30:26 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:32:46 INFO:train:Train: 8:00:27 [Epoch: 190/410] [Iter:  781/781]  Loss_Tot: 2.3411  L_Full: 1.1476  L_Mask: 1.1476  L_Caus: 0.0091  L_Spar: 0.6787  FR: [0.1865, 0.3124, 0.2550, 0.3030]  Wgt(C/S): 5.00/0.00  LR: 5.438e-04
+2026-04-03 23:32:57 INFO:train:Test: [8:00:38] [ 156/156]  Loss_Tot: 0.9143  L_Caus: 0.0055  L_Spar: 0.6832  Acc@1: 87.5000 (94.0900)  Acc@5: 100.0000 (99.6900)
+2026-04-03 23:32:57 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:35:17 INFO:train:Train: 8:02:58 [Epoch: 191/410] [Iter:  781/781]  Loss_Tot: 2.3699  L_Full: 1.1625  L_Mask: 1.1625  L_Caus: 0.0089  L_Spar: 0.6808  FR: [0.1850, 0.3153, 0.2553, 0.3043]  Wgt(C/S): 5.00/0.00  LR: 5.400e-04
+2026-04-03 23:35:28 INFO:train:Test: [8:03:09] [ 156/156]  Loss_Tot: 0.9006  L_Caus: 0.0056  L_Spar: 0.6867  Acc@1: 87.5000 (94.0000)  Acc@5: 100.0000 (99.7000)
+2026-04-03 23:35:28 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:37:48 INFO:train:Train: 8:05:29 [Epoch: 192/410] [Iter:  781/781]  Loss_Tot: 2.3368  L_Full: 1.1458  L_Mask: 1.1456  L_Caus: 0.0090  L_Spar: 0.6807  FR: [0.1833, 0.3143, 0.2538, 0.3052]  Wgt(C/S): 5.00/0.00  LR: 5.361e-04
+2026-04-03 23:37:58 INFO:train:Test: [8:05:40] [ 156/156]  Loss_Tot: 0.8192  L_Caus: 0.0059  L_Spar: 0.6815  Acc@1: 93.7500 (94.0500)  Acc@5: 100.0000 (99.6900)
+2026-04-03 23:37:58 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:40:18 INFO:train:Train: 8:07:59 [Epoch: 193/410] [Iter:  781/781]  Loss_Tot: 2.3245  L_Full: 1.1395  L_Mask: 1.1392  L_Caus: 0.0091  L_Spar: 0.6813  FR: [0.1837, 0.3190, 0.2554, 0.3092]  Wgt(C/S): 5.00/0.00  LR: 5.322e-04
+2026-04-03 23:40:29 INFO:train:Test: [8:08:10] [ 156/156]  Loss_Tot: 0.8317  L_Caus: 0.0059  L_Spar: 0.6860  Acc@1: 87.5000 (93.9900)  Acc@5: 100.0000 (99.8100)
+2026-04-03 23:40:29 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:42:49 INFO:train:Train: 8:10:30 [Epoch: 194/410] [Iter:  781/781]  Loss_Tot: 2.3351  L_Full: 1.1439  L_Mask: 1.1450  L_Caus: 0.0092  L_Spar: 0.6788  FR: [0.1874, 0.3047, 0.2562, 0.3052]  Wgt(C/S): 5.00/0.00  LR: 5.283e-04
+2026-04-03 23:43:00 INFO:train:Test: [8:10:41] [ 156/156]  Loss_Tot: 0.7528  L_Caus: 0.0059  L_Spar: 0.6747  Acc@1: 93.7500 (94.4400)  Acc@5: 100.0000 (99.8100)
+2026-04-03 23:43:00 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:45:20 INFO:train:Train: 8:13:01 [Epoch: 195/410] [Iter:  781/781]  Loss_Tot: 2.3519  L_Full: 1.1523  L_Mask: 1.1523  L_Caus: 0.0094  L_Spar: 0.6760  FR: [0.1905, 0.3055, 0.2561, 0.3086]  Wgt(C/S): 5.00/0.00  LR: 5.244e-04
+2026-04-03 23:45:30 INFO:train:Test: [8:13:12] [ 156/156]  Loss_Tot: 0.8875  L_Caus: 0.0057  L_Spar: 0.6727  Acc@1: 100.0000 (94.2700)  Acc@5: 100.0000 (99.7900)
+2026-04-03 23:45:31 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:47:50 INFO:train:Train: 8:15:32 [Epoch: 196/410] [Iter:  781/781]  Loss_Tot: 2.3234  L_Full: 1.1380  L_Mask: 1.1387  L_Caus: 0.0093  L_Spar: 0.6761  FR: [0.1897, 0.3166, 0.2561, 0.3089]  Wgt(C/S): 5.00/0.00  LR: 5.205e-04
+2026-04-03 23:48:01 INFO:train:Test: [8:15:42] [ 156/156]  Loss_Tot: 0.8320  L_Caus: 0.0058  L_Spar: 0.6737  Acc@1: 100.0000 (94.3200)  Acc@5: 100.0000 (99.8100)
+2026-04-03 23:48:01 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:50:21 INFO:train:Train: 8:18:02 [Epoch: 197/410] [Iter:  781/781]  Loss_Tot: 2.3438  L_Full: 1.1490  L_Mask: 1.1486  L_Caus: 0.0092  L_Spar: 0.6766  FR: [0.1890, 0.3207, 0.2558, 0.3107]  Wgt(C/S): 5.00/0.00  LR: 5.167e-04
+2026-04-03 23:50:32 INFO:train:Test: [8:18:13] [ 156/156]  Loss_Tot: 0.7620  L_Caus: 0.0067  L_Spar: 0.6777  Acc@1: 100.0000 (94.3000)  Acc@5: 100.0000 (99.7700)
+2026-04-03 23:50:32 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:52:52 INFO:train:Train: 8:20:33 [Epoch: 198/410] [Iter:  781/781]  Loss_Tot: 2.3428  L_Full: 1.1486  L_Mask: 1.1485  L_Caus: 0.0091  L_Spar: 0.6796  FR: [0.1941, 0.3254, 0.2583, 0.3105]  Wgt(C/S): 5.00/0.00  LR: 5.128e-04
+2026-04-03 23:53:03 INFO:train:Test: [8:20:44] [ 156/156]  Loss_Tot: 0.8123  L_Caus: 0.0060  L_Spar: 0.6730  Acc@1: 100.0000 (94.4300)  Acc@5: 100.0000 (99.8200)
+2026-04-03 23:53:03 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:55:23 INFO:train:Train: 8:23:04 [Epoch: 199/410] [Iter:  781/781]  Loss_Tot: 2.3600  L_Full: 1.1574  L_Mask: 1.1578  L_Caus: 0.0089  L_Spar: 0.6792  FR: [0.1930, 0.3215, 0.2591, 0.3145]  Wgt(C/S): 5.00/0.00  LR: 5.089e-04
+2026-04-03 23:55:33 INFO:train:Test: [8:23:15] [ 156/156]  Loss_Tot: 0.7436  L_Caus: 0.0062  L_Spar: 0.6872  Acc@1: 93.7500 (94.3200)  Acc@5: 100.0000 (99.7800)
+2026-04-03 23:55:34 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-03 23:57:53 INFO:train:Train: 8:25:34 [Epoch: 200/410] [Iter:  781/781]  Loss_Tot: 2.2814  L_Full: 1.1175  L_Mask: 1.1176  L_Caus: 0.0092  L_Spar: 0.6798  FR: [0.1959, 0.3251, 0.2586, 0.3151]  Wgt(C/S): 5.00/0.00  LR: 5.050e-04
+2026-04-03 23:58:04 INFO:train:Test: [8:25:45] [ 156/156]  Loss_Tot: 0.7084  L_Caus: 0.0068  L_Spar: 0.6822  Acc@1: 81.2500 (93.8700)  Acc@5: 100.0000 (99.6500)
+2026-04-03 23:58:04 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-04 00:00:24 INFO:train:Train: 8:28:05 [Epoch: 201/410] [Iter:  781/781]  Loss_Tot: 2.3326  L_Full: 1.1432  L_Mask: 1.1433  L_Caus: 0.0091  L_Spar: 0.6812  FR: [0.1903, 0.3300, 0.2575, 0.3148]  Wgt(C/S): 5.00/0.00  LR: 5.011e-04
+2026-04-04 00:00:35 INFO:train:Test: [8:28:16] [ 156/156]  Loss_Tot: 0.7979  L_Caus: 0.0061  L_Spar: 0.6762  Acc@1: 100.0000 (94.4200)  Acc@5: 100.0000 (99.7600)
+2026-04-04 00:00:35 INFO:train:*** Best metric: 94.58 (epoch 186)
+2026-04-04 00:02:55 INFO:train:Train: 8:30:36 [Epoch: 202/410] [Iter:  781/781]  Loss_Tot: 2.3707  L_Full: 1.1621  L_Mask: 1.1619  L_Caus: 0.0093  L_Spar: 0.6762  FR: [0.1889, 0.3335, 0.2583, 0.3193]  Wgt(C/S): 5.00/0.00  LR: 4.972e-04
+2026-04-04 00:03:06 INFO:train:Test: [8:30:47] [ 156/156]  Loss_Tot: 0.8407  L_Caus: 0.0059  L_Spar: 0.6772  Acc@1: 93.7500 (94.6600)  Acc@5: 100.0000 (99.7300)
+2026-04-04 00:03:06 INFO:train:*** Best metric: 94.66 (epoch 202)
+2026-04-04 00:05:26 INFO:train:Train: 8:33:07 [Epoch: 203/410] [Iter:  781/781]  Loss_Tot: 2.3253  L_Full: 1.1391  L_Mask: 1.1392  L_Caus: 0.0093  L_Spar: 0.6763  FR: [0.1887, 0.3361, 0.2596, 0.3131]  Wgt(C/S): 5.00/0.00  LR: 4.933e-04
+2026-04-04 00:05:36 INFO:train:Test: [8:33:18] [ 156/156]  Loss_Tot: 0.7117  L_Caus: 0.0066  L_Spar: 0.6781  Acc@1: 100.0000 (94.2900)  Acc@5: 100.0000 (99.7200)
+2026-04-04 00:05:37 INFO:train:*** Best metric: 94.66 (epoch 202)
+2026-04-04 00:07:56 INFO:train:Train: 8:35:37 [Epoch: 204/410] [Iter:  781/781]  Loss_Tot: 2.3050  L_Full: 1.1291  L_Mask: 1.1294  L_Caus: 0.0092  L_Spar: 0.6755  FR: [0.1885, 0.3284, 0.2590, 0.3123]  Wgt(C/S): 5.00/0.00  LR: 4.895e-04
+2026-04-04 00:08:07 INFO:train:Test: [8:35:48] [ 156/156]  Loss_Tot: 0.9016  L_Caus: 0.0060  L_Spar: 0.6739  Acc@1: 87.5000 (93.8200)  Acc@5: 100.0000 (99.6600)
+2026-04-04 00:08:07 INFO:train:*** Best metric: 94.66 (epoch 202)
+2026-04-04 00:10:27 INFO:train:Train: 8:38:08 [Epoch: 205/410] [Iter:  781/781]  Loss_Tot: 2.3526  L_Full: 1.1529  L_Mask: 1.1531  L_Caus: 0.0092  L_Spar: 0.6748  FR: [0.1885, 0.3351, 0.2583, 0.3183]  Wgt(C/S): 5.00/0.00  LR: 4.856e-04
+2026-04-04 00:10:38 INFO:train:Test: [8:38:19] [ 156/156]  Loss_Tot: 0.8218  L_Caus: 0.0059  L_Spar: 0.6787  Acc@1: 87.5000 (94.7500)  Acc@5: 100.0000 (99.7700)
+2026-04-04 00:10:38 INFO:train:*** Best metric: 94.75 (epoch 205)
+2026-04-04 00:12:58 INFO:train:Train: 8:40:39 [Epoch: 206/410] [Iter:  781/781]  Loss_Tot: 2.3275  L_Full: 1.1411  L_Mask: 1.1407  L_Caus: 0.0091  L_Spar: 0.6736  FR: [0.1887, 0.3310, 0.2575, 0.3142]  Wgt(C/S): 5.00/0.00  LR: 4.817e-04
+2026-04-04 00:13:08 INFO:train:Test: [8:40:50] [ 156/156]  Loss_Tot: 0.8944  L_Caus: 0.0057  L_Spar: 0.6755  Acc@1: 100.0000 (94.2000)  Acc@5: 100.0000 (99.7500)
+2026-04-04 00:13:09 INFO:train:*** Best metric: 94.75 (epoch 205)
+2026-04-04 00:15:28 INFO:train:Train: 8:43:09 [Epoch: 207/410] [Iter:  781/781]  Loss_Tot: 2.3294  L_Full: 1.1414  L_Mask: 1.1420  L_Caus: 0.0091  L_Spar: 0.6754  FR: [0.1917, 0.3383, 0.2594, 0.3291]  Wgt(C/S): 5.00/0.00  LR: 4.778e-04
+2026-04-04 00:15:39 INFO:train:Test: [8:43:20] [ 156/156]  Loss_Tot: 0.7643  L_Caus: 0.0060  L_Spar: 0.6772  Acc@1: 100.0000 (94.3500)  Acc@5: 100.0000 (99.8700)
+2026-04-04 00:15:39 INFO:train:*** Best metric: 94.75 (epoch 205)
+2026-04-04 00:17:59 INFO:train:Train: 8:45:40 [Epoch: 208/410] [Iter:  781/781]  Loss_Tot: 2.3095  L_Full: 1.1318  L_Mask: 1.1326  L_Caus: 0.0089  L_Spar: 0.6748  FR: [0.1887, 0.3393, 0.2601, 0.3332]  Wgt(C/S): 5.00/0.00  LR: 4.739e-04
+2026-04-04 00:18:10 INFO:train:Test: [8:45:51] [ 156/156]  Loss_Tot: 0.8439  L_Caus: 0.0063  L_Spar: 0.6735  Acc@1: 87.5000 (94.0700)  Acc@5: 100.0000 (99.7600)
+2026-04-04 00:18:10 INFO:train:*** Best metric: 94.75 (epoch 205)
+2026-04-04 00:20:30 INFO:train:Train: 8:48:11 [Epoch: 209/410] [Iter:  781/781]  Loss_Tot: 2.2996  L_Full: 1.1271  L_Mask: 1.1273  L_Caus: 0.0090  L_Spar: 0.6743  FR: [0.1879, 0.3387, 0.2617, 0.3265]  Wgt(C/S): 5.00/0.00  LR: 4.700e-04
+2026-04-04 00:20:41 INFO:train:Test: [8:48:22] [ 156/156]  Loss_Tot: 0.6772  L_Caus: 0.0069  L_Spar: 0.6760  Acc@1: 93.7500 (94.3400)  Acc@5: 100.0000 (99.7700)
+2026-04-04 00:20:41 INFO:train:*** Best metric: 94.75 (epoch 205)
+2026-04-04 00:23:01 INFO:train:Train: 8:50:42 [Epoch: 210/410] [Iter:  781/781]  Loss_Tot: 2.2903  L_Full: 1.1223  L_Mask: 1.1223  L_Caus: 0.0091  L_Spar: 0.6765  FR: [0.1938, 0.3396, 0.2612, 0.3374]  Wgt(C/S): 5.00/0.00  LR: 4.662e-04
+2026-04-04 00:23:12 INFO:train:Test: [8:50:53] [ 156/156]  Loss_Tot: 0.7495  L_Caus: 0.0065  L_Spar: 0.6784  Acc@1: 93.7500 (94.3100)  Acc@5: 100.0000 (99.6500)
+2026-04-04 00:23:12 INFO:train:*** Best metric: 94.75 (epoch 205)
+2026-04-04 00:25:31 INFO:train:Train: 8:53:12 [Epoch: 211/410] [Iter:  781/781]  Loss_Tot: 2.2795  L_Full: 1.1169  L_Mask: 1.1172  L_Caus: 0.0090  L_Spar: 0.6787  FR: [0.1941, 0.3390, 0.2625, 0.3358]  Wgt(C/S): 5.00/0.00  LR: 4.623e-04
+2026-04-04 00:25:42 INFO:train:Test: [8:53:23] [ 156/156]  Loss_Tot: 0.6821  L_Caus: 0.0066  L_Spar: 0.6849  Acc@1: 100.0000 (94.5500)  Acc@5: 100.0000 (99.8200)
+2026-04-04 00:25:42 INFO:train:*** Best metric: 94.75 (epoch 205)
+2026-04-04 00:28:02 INFO:train:Train: 8:55:43 [Epoch: 212/410] [Iter:  781/781]  Loss_Tot: 2.3247  L_Full: 1.1405  L_Mask: 1.1397  L_Caus: 0.0088  L_Spar: 0.6792  FR: [0.1965, 0.3380, 0.2606, 0.3332]  Wgt(C/S): 5.00/0.00  LR: 4.584e-04
+2026-04-04 00:28:13 INFO:train:Test: [8:55:54] [ 156/156]  Loss_Tot: 0.8805  L_Caus: 0.0054  L_Spar: 0.6821  Acc@1: 93.7500 (94.7600)  Acc@5: 100.0000 (99.8000)
+2026-04-04 00:28:13 INFO:train:*** Best metric: 94.76 (epoch 212)
+2026-04-04 00:30:33 INFO:train:Train: 8:58:14 [Epoch: 213/410] [Iter:  781/781]  Loss_Tot: 2.3127  L_Full: 1.1338  L_Mask: 1.1343  L_Caus: 0.0089  L_Spar: 0.6788  FR: [0.2007, 0.3374, 0.2628, 0.3355]  Wgt(C/S): 5.00/0.00  LR: 4.545e-04
+2026-04-04 00:30:44 INFO:train:Test: [8:58:25] [ 156/156]  Loss_Tot: 0.7053  L_Caus: 0.0072  L_Spar: 0.6713  Acc@1: 100.0000 (94.5300)  Acc@5: 100.0000 (99.7400)
+2026-04-04 00:30:44 INFO:train:*** Best metric: 94.76 (epoch 212)
+2026-04-04 00:33:04 INFO:train:Train: 9:00:45 [Epoch: 214/410] [Iter:  781/781]  Loss_Tot: 2.2786  L_Full: 1.1160  L_Mask: 1.1162  L_Caus: 0.0092  L_Spar: 0.6753  FR: [0.2021, 0.3393, 0.2618, 0.3367]  Wgt(C/S): 5.00/0.00  LR: 4.507e-04
+2026-04-04 00:33:15 INFO:train:Test: [9:00:56] [ 156/156]  Loss_Tot: 0.9863  L_Caus: 0.0056  L_Spar: 0.6724  Acc@1: 100.0000 (94.4300)  Acc@5: 100.0000 (99.7200)
+2026-04-04 00:33:15 INFO:train:*** Best metric: 94.76 (epoch 212)
+2026-04-04 00:35:34 INFO:train:Train: 9:03:16 [Epoch: 215/410] [Iter:  781/781]  Loss_Tot: 2.3241  L_Full: 1.1398  L_Mask: 1.1395  L_Caus: 0.0089  L_Spar: 0.6732  FR: [0.2031, 0.3399, 0.2636, 0.3345]  Wgt(C/S): 5.00/0.00  LR: 4.468e-04
+2026-04-04 00:35:45 INFO:train:Test: [9:03:26] [ 156/156]  Loss_Tot: 0.8052  L_Caus: 0.0058  L_Spar: 0.6727  Acc@1: 93.7500 (94.8500)  Acc@5: 100.0000 (99.8200)
+2026-04-04 00:35:45 INFO:train:*** Best metric: 94.85 (epoch 215)
+2026-04-04 00:38:05 INFO:train:Train: 9:05:46 [Epoch: 216/410] [Iter:  781/781]  Loss_Tot: 2.2217  L_Full: 1.0878  L_Mask: 1.0883  L_Caus: 0.0091  L_Spar: 0.6734  FR: [0.2004, 0.3403, 0.2631, 0.3377]  Wgt(C/S): 5.00/0.00  LR: 4.430e-04
+2026-04-04 00:38:16 INFO:train:Test: [9:05:57] [ 156/156]  Loss_Tot: 0.7388  L_Caus: 0.0062  L_Spar: 0.6708  Acc@1: 93.7500 (94.4800)  Acc@5: 100.0000 (99.7500)
+2026-04-04 00:38:16 INFO:train:*** Best metric: 94.85 (epoch 215)
+2026-04-04 00:40:36 INFO:train:Train: 9:08:17 [Epoch: 217/410] [Iter:  781/781]  Loss_Tot: 2.3130  L_Full: 1.1332  L_Mask: 1.1339  L_Caus: 0.0091  L_Spar: 0.6702  FR: [0.1999, 0.3412, 0.2626, 0.3355]  Wgt(C/S): 5.00/0.00  LR: 4.391e-04
+2026-04-04 00:40:47 INFO:train:Test: [9:08:28] [ 156/156]  Loss_Tot: 0.8039  L_Caus: 0.0060  L_Spar: 0.6734  Acc@1: 100.0000 (94.6600)  Acc@5: 100.0000 (99.7800)
+2026-04-04 00:40:47 INFO:train:*** Best metric: 94.85 (epoch 215)
+2026-04-04 00:43:06 INFO:train:Train: 9:10:48 [Epoch: 218/410] [Iter:  781/781]  Loss_Tot: 2.2909  L_Full: 1.1228  L_Mask: 1.1222  L_Caus: 0.0091  L_Spar: 0.6701  FR: [0.2026, 0.3406, 0.2639, 0.3374]  Wgt(C/S): 5.00/0.00  LR: 4.353e-04
+2026-04-04 00:43:17 INFO:train:Test: [9:10:58] [ 156/156]  Loss_Tot: 0.8446  L_Caus: 0.0060  L_Spar: 0.6662  Acc@1: 93.7500 (94.4600)  Acc@5: 100.0000 (99.8200)
+2026-04-04 00:43:17 INFO:train:*** Best metric: 94.85 (epoch 215)
+2026-04-04 00:45:37 INFO:train:Train: 9:13:18 [Epoch: 219/410] [Iter:  781/781]  Loss_Tot: 2.2658  L_Full: 1.1100  L_Mask: 1.1102  L_Caus: 0.0090  L_Spar: 0.6704  FR: [0.2053, 0.3406, 0.2639, 0.3387]  Wgt(C/S): 5.00/0.00  LR: 4.314e-04
+2026-04-04 00:45:48 INFO:train:Test: [9:13:29] [ 156/156]  Loss_Tot: 0.7739  L_Caus: 0.0065  L_Spar: 0.6698  Acc@1: 93.7500 (94.2600)  Acc@5: 100.0000 (99.7000)
+2026-04-04 00:45:48 INFO:train:*** Best metric: 94.85 (epoch 215)
+2026-04-04 00:48:08 INFO:train:Train: 9:15:49 [Epoch: 220/410] [Iter:  781/781]  Loss_Tot: 2.3605  L_Full: 1.1571  L_Mask: 1.1579  L_Caus: 0.0090  L_Spar: 0.6737  FR: [0.2079, 0.3399, 0.2652, 0.3377]  Wgt(C/S): 5.00/0.00  LR: 4.276e-04
+2026-04-04 00:48:19 INFO:train:Test: [9:16:00] [ 156/156]  Loss_Tot: 0.9296  L_Caus: 0.0055  L_Spar: 0.6738  Acc@1: 93.7500 (94.5600)  Acc@5: 100.0000 (99.7400)
+2026-04-04 00:48:19 INFO:train:*** Best metric: 94.85 (epoch 215)
+2026-04-04 00:50:39 INFO:train:Train: 9:18:20 [Epoch: 221/410] [Iter:  781/781]  Loss_Tot: 2.2878  L_Full: 1.1213  L_Mask: 1.1213  L_Caus: 0.0090  L_Spar: 0.6764  FR: [0.2095, 0.3415, 0.2647, 0.3403]  Wgt(C/S): 5.00/0.00  LR: 4.237e-04
+2026-04-04 00:50:49 INFO:train:Test: [9:18:31] [ 156/156]  Loss_Tot: 0.6359  L_Caus: 0.0068  L_Spar: 0.6761  Acc@1: 93.7500 (94.8500)  Acc@5: 100.0000 (99.8000)
+2026-04-04 00:50:49 INFO:train:*** Best metric: 94.85 (epoch 215)
+2026-04-04 00:53:09 INFO:train:Train: 9:20:51 [Epoch: 222/410] [Iter:  781/781]  Loss_Tot: 2.2937  L_Full: 1.1247  L_Mask: 1.1246  L_Caus: 0.0088  L_Spar: 0.6771  FR: [0.2045, 0.3428, 0.2673, 0.3425]  Wgt(C/S): 5.00/0.00  LR: 4.199e-04
+2026-04-04 00:53:20 INFO:train:Test: [9:21:01] [ 156/156]  Loss_Tot: 0.8030  L_Caus: 0.0057  L_Spar: 0.6753  Acc@1: 93.7500 (95.0000)  Acc@5: 100.0000 (99.7400)
+2026-04-04 00:53:20 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 00:55:40 INFO:train:Train: 9:23:21 [Epoch: 223/410] [Iter:  781/781]  Loss_Tot: 2.3192  L_Full: 1.1374  L_Mask: 1.1376  L_Caus: 0.0088  L_Spar: 0.6747  FR: [0.2034, 0.3435, 0.2689, 0.3399]  Wgt(C/S): 5.00/0.00  LR: 4.161e-04
+2026-04-04 00:55:51 INFO:train:Test: [9:23:32] [ 156/156]  Loss_Tot: 0.7861  L_Caus: 0.0057  L_Spar: 0.6704  Acc@1: 93.7500 (94.6000)  Acc@5: 100.0000 (99.7700)
+2026-04-04 00:55:51 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 00:58:11 INFO:train:Train: 9:25:52 [Epoch: 224/410] [Iter:  781/781]  Loss_Tot: 2.2948  L_Full: 1.1246  L_Mask: 1.1246  L_Caus: 0.0090  L_Spar: 0.6738  FR: [0.2119, 0.3422, 0.2710, 0.3415]  Wgt(C/S): 5.00/0.00  LR: 4.122e-04
+2026-04-04 00:58:21 INFO:train:Test: [9:26:03] [ 156/156]  Loss_Tot: 0.6229  L_Caus: 0.0070  L_Spar: 0.6709  Acc@1: 93.7500 (94.7400)  Acc@5: 100.0000 (99.8100)
+2026-04-04 00:58:22 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:00:41 INFO:train:Train: 9:28:22 [Epoch: 225/410] [Iter:  781/781]  Loss_Tot: 2.3092  L_Full: 1.1320  L_Mask: 1.1313  L_Caus: 0.0091  L_Spar: 0.6720  FR: [0.2124, 0.3419, 0.2702, 0.3419]  Wgt(C/S): 5.00/0.00  LR: 4.084e-04
+2026-04-04 01:00:52 INFO:train:Test: [9:28:33] [ 156/156]  Loss_Tot: 0.8015  L_Caus: 0.0063  L_Spar: 0.6728  Acc@1: 93.7500 (94.1400)  Acc@5: 100.0000 (99.7000)
+2026-04-04 01:00:52 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:03:12 INFO:train:Train: 9:30:53 [Epoch: 226/410] [Iter:  781/781]  Loss_Tot: 2.2791  L_Full: 1.1167  L_Mask: 1.1168  L_Caus: 0.0091  L_Spar: 0.6712  FR: [0.2066, 0.3441, 0.2710, 0.3431]  Wgt(C/S): 5.00/0.00  LR: 4.046e-04
+2026-04-04 01:03:23 INFO:train:Test: [9:31:04] [ 156/156]  Loss_Tot: 0.8088  L_Caus: 0.0057  L_Spar: 0.6700  Acc@1: 93.7500 (94.8600)  Acc@5: 100.0000 (99.7800)
+2026-04-04 01:03:23 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:05:43 INFO:train:Train: 9:33:24 [Epoch: 227/410] [Iter:  781/781]  Loss_Tot: 2.2728  L_Full: 1.1142  L_Mask: 1.1144  L_Caus: 0.0088  L_Spar: 0.6737  FR: [0.2073, 0.3444, 0.2702, 0.3431]  Wgt(C/S): 5.00/0.00  LR: 4.008e-04
+2026-04-04 01:05:54 INFO:train:Test: [9:33:35] [ 156/156]  Loss_Tot: 0.6680  L_Caus: 0.0065  L_Spar: 0.6778  Acc@1: 87.5000 (94.7800)  Acc@5: 100.0000 (99.8000)
+2026-04-04 01:05:54 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:08:14 INFO:train:Train: 9:35:55 [Epoch: 228/410] [Iter:  781/781]  Loss_Tot: 2.2622  L_Full: 1.1089  L_Mask: 1.1090  L_Caus: 0.0088  L_Spar: 0.6739  FR: [0.2082, 0.3435, 0.2710, 0.3428]  Wgt(C/S): 5.00/0.00  LR: 3.970e-04
+2026-04-04 01:08:25 INFO:train:Test: [9:36:06] [ 156/156]  Loss_Tot: 0.8050  L_Caus: 0.0061  L_Spar: 0.6669  Acc@1: 100.0000 (94.7900)  Acc@5: 100.0000 (99.7200)
+2026-04-04 01:08:25 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:10:44 INFO:train:Train: 9:38:26 [Epoch: 229/410] [Iter:  781/781]  Loss_Tot: 2.2426  L_Full: 1.0997  L_Mask: 1.0994  L_Caus: 0.0086  L_Spar: 0.6732  FR: [0.2124, 0.3431, 0.2702, 0.3412]  Wgt(C/S): 5.00/0.00  LR: 3.932e-04
+2026-04-04 01:10:55 INFO:train:Test: [9:38:36] [ 156/156]  Loss_Tot: 0.8584  L_Caus: 0.0057  L_Spar: 0.6702  Acc@1: 93.7500 (94.8100)  Acc@5: 100.0000 (99.7600)
+2026-04-04 01:10:55 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:13:15 INFO:train:Train: 9:40:56 [Epoch: 230/410] [Iter:  781/781]  Loss_Tot: 2.2720  L_Full: 1.1131  L_Mask: 1.1139  L_Caus: 0.0089  L_Spar: 0.6714  FR: [0.2121, 0.3435, 0.2745, 0.3422]  Wgt(C/S): 5.00/0.00  LR: 3.894e-04
+2026-04-04 01:13:26 INFO:train:Test: [9:41:07] [ 156/156]  Loss_Tot: 0.8113  L_Caus: 0.0061  L_Spar: 0.6709  Acc@1: 100.0000 (94.6400)  Acc@5: 100.0000 (99.7700)
+2026-04-04 01:13:26 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:15:46 INFO:train:Train: 9:43:27 [Epoch: 231/410] [Iter:  781/781]  Loss_Tot: 2.2737  L_Full: 1.1150  L_Mask: 1.1142  L_Caus: 0.0088  L_Spar: 0.6702  FR: [0.2137, 0.3451, 0.2737, 0.3451]  Wgt(C/S): 5.00/0.00  LR: 3.857e-04
+2026-04-04 01:15:57 INFO:train:Test: [9:43:38] [ 156/156]  Loss_Tot: 0.6586  L_Caus: 0.0068  L_Spar: 0.6680  Acc@1: 93.7500 (94.8900)  Acc@5: 100.0000 (99.7400)
+2026-04-04 01:15:57 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:18:17 INFO:train:Train: 9:45:58 [Epoch: 232/410] [Iter:  781/781]  Loss_Tot: 2.2848  L_Full: 1.1192  L_Mask: 1.1198  L_Caus: 0.0091  L_Spar: 0.6687  FR: [0.2133, 0.3448, 0.2743, 0.3438]  Wgt(C/S): 5.00/0.00  LR: 3.819e-04
+2026-04-04 01:18:28 INFO:train:Test: [9:46:09] [ 156/156]  Loss_Tot: 0.7058  L_Caus: 0.0065  L_Spar: 0.6632  Acc@1: 100.0000 (94.9100)  Acc@5: 100.0000 (99.7900)
+2026-04-04 01:18:28 INFO:train:*** Best metric: 95.0 (epoch 222)
+2026-04-04 01:20:47 INFO:train:Train: 9:48:28 [Epoch: 233/410] [Iter:  781/781]  Loss_Tot: 2.2474  L_Full: 1.1005  L_Mask: 1.1011  L_Caus: 0.0091  L_Spar: 0.6681  FR: [0.2140, 0.3457, 0.2753, 0.3448]  Wgt(C/S): 5.00/0.00  LR: 3.781e-04
+2026-04-04 01:20:58 INFO:train:Test: [9:48:39] [ 156/156]  Loss_Tot: 0.8550  L_Caus: 0.0052  L_Spar: 0.6677  Acc@1: 100.0000 (95.1100)  Acc@5: 100.0000 (99.7700)
+2026-04-04 01:20:58 INFO:train:*** Best metric: 95.11 (epoch 233)
+2026-04-04 01:23:18 INFO:train:Train: 9:50:59 [Epoch: 234/410] [Iter:  781/781]  Loss_Tot: 2.2638  L_Full: 1.1096  L_Mask: 1.1091  L_Caus: 0.0089  L_Spar: 0.6664  FR: [0.2119, 0.3460, 0.2758, 0.3444]  Wgt(C/S): 5.00/0.00  LR: 3.744e-04
+2026-04-04 01:23:29 INFO:train:Test: [9:51:10] [ 156/156]  Loss_Tot: 0.7859  L_Caus: 0.0056  L_Spar: 0.6625  Acc@1: 100.0000 (95.1300)  Acc@5: 100.0000 (99.7400)
+2026-04-04 01:23:29 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:25:49 INFO:train:Train: 9:53:30 [Epoch: 235/410] [Iter:  781/781]  Loss_Tot: 2.3182  L_Full: 1.1364  L_Mask: 1.1362  L_Caus: 0.0091  L_Spar: 0.6664  FR: [0.2138, 0.3467, 0.2761, 0.3454]  Wgt(C/S): 5.00/0.00  LR: 3.706e-04
+2026-04-04 01:26:00 INFO:train:Test: [9:53:41] [ 156/156]  Loss_Tot: 0.8407  L_Caus: 0.0058  L_Spar: 0.6608  Acc@1: 100.0000 (95.1100)  Acc@5: 100.0000 (99.7600)
+2026-04-04 01:26:00 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:28:20 INFO:train:Train: 9:56:01 [Epoch: 236/410] [Iter:  781/781]  Loss_Tot: 2.2813  L_Full: 1.1172  L_Mask: 1.1180  L_Caus: 0.0092  L_Spar: 0.6636  FR: [0.2143, 0.3457, 0.2775, 0.3441]  Wgt(C/S): 5.00/0.00  LR: 3.669e-04
+2026-04-04 01:28:30 INFO:train:Test: [9:56:12] [ 156/156]  Loss_Tot: 0.7124  L_Caus: 0.0061  L_Spar: 0.6620  Acc@1: 93.7500 (94.7300)  Acc@5: 100.0000 (99.7500)
+2026-04-04 01:28:31 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:30:50 INFO:train:Train: 9:58:31 [Epoch: 237/410] [Iter:  781/781]  Loss_Tot: 2.2473  L_Full: 1.1005  L_Mask: 1.1013  L_Caus: 0.0090  L_Spar: 0.6640  FR: [0.2181, 0.3454, 0.2798, 0.3438]  Wgt(C/S): 5.00/0.00  LR: 3.632e-04
+2026-04-04 01:31:01 INFO:train:Test: [9:58:42] [ 156/156]  Loss_Tot: 0.7720  L_Caus: 0.0061  L_Spar: 0.6689  Acc@1: 100.0000 (94.7700)  Acc@5: 100.0000 (99.7900)
+2026-04-04 01:31:01 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:33:21 INFO:train:Train: 10:01:02 [Epoch: 238/410] [Iter:  781/781]  Loss_Tot: 2.2616  L_Full: 1.1083  L_Mask: 1.1086  L_Caus: 0.0089  L_Spar: 0.6639  FR: [0.2194, 0.3457, 0.2783, 0.3441]  Wgt(C/S): 5.00/0.00  LR: 3.595e-04
+2026-04-04 01:33:32 INFO:train:Test: [10:01:13] [ 156/156]  Loss_Tot: 0.6727  L_Caus: 0.0065  L_Spar: 0.6637  Acc@1: 93.7500 (94.8700)  Acc@5: 100.0000 (99.7700)
+2026-04-04 01:33:32 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:35:52 INFO:train:Train: 10:03:33 [Epoch: 239/410] [Iter:  781/781]  Loss_Tot: 2.2613  L_Full: 1.1083  L_Mask: 1.1084  L_Caus: 0.0089  L_Spar: 0.6665  FR: [0.2207, 0.3467, 0.2793, 0.3448]  Wgt(C/S): 5.00/0.00  LR: 3.557e-04
+2026-04-04 01:36:03 INFO:train:Test: [10:03:44] [ 156/156]  Loss_Tot: 0.7258  L_Caus: 0.0061  L_Spar: 0.6661  Acc@1: 100.0000 (95.0600)  Acc@5: 100.0000 (99.8700)
+2026-04-04 01:36:03 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:38:22 INFO:train:Train: 10:06:03 [Epoch: 240/410] [Iter:  781/781]  Loss_Tot: 2.2690  L_Full: 1.1120  L_Mask: 1.1117  L_Caus: 0.0090  L_Spar: 0.6686  FR: [0.2220, 0.3467, 0.2798, 0.3441]  Wgt(C/S): 5.00/0.00  LR: 3.520e-04
+2026-04-04 01:38:33 INFO:train:Test: [10:06:14] [ 156/156]  Loss_Tot: 0.7161  L_Caus: 0.0068  L_Spar: 0.6700  Acc@1: 93.7500 (94.9700)  Acc@5: 100.0000 (99.7500)
+2026-04-04 01:38:33 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:40:53 INFO:train:Train: 10:08:34 [Epoch: 241/410] [Iter:  781/781]  Loss_Tot: 2.2244  L_Full: 1.0898  L_Mask: 1.0899  L_Caus: 0.0089  L_Spar: 0.6696  FR: [0.2207, 0.3483, 0.2782, 0.3464]  Wgt(C/S): 5.00/0.00  LR: 3.483e-04
+2026-04-04 01:41:04 INFO:train:Test: [10:08:45] [ 156/156]  Loss_Tot: 0.8004  L_Caus: 0.0058  L_Spar: 0.6714  Acc@1: 93.7500 (95.0000)  Acc@5: 100.0000 (99.8100)
+2026-04-04 01:41:04 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:43:24 INFO:train:Train: 10:11:05 [Epoch: 242/410] [Iter:  781/781]  Loss_Tot: 2.2838  L_Full: 1.1194  L_Mask: 1.1201  L_Caus: 0.0088  L_Spar: 0.6694  FR: [0.2223, 0.3480, 0.2791, 0.3460]  Wgt(C/S): 5.00/0.00  LR: 3.447e-04
+2026-04-04 01:43:35 INFO:train:Test: [10:11:16] [ 156/156]  Loss_Tot: 0.8809  L_Caus: 0.0054  L_Spar: 0.6641  Acc@1: 93.7500 (94.9900)  Acc@5: 100.0000 (99.7000)
+2026-04-04 01:43:35 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:45:54 INFO:train:Train: 10:13:35 [Epoch: 243/410] [Iter:  781/781]  Loss_Tot: 2.2182  L_Full: 1.0862  L_Mask: 1.0869  L_Caus: 0.0089  L_Spar: 0.6705  FR: [0.2210, 0.3476, 0.2810, 0.3448]  Wgt(C/S): 5.00/0.00  LR: 3.410e-04
+2026-04-04 01:46:05 INFO:train:Test: [10:13:46] [ 156/156]  Loss_Tot: 0.7370  L_Caus: 0.0057  L_Spar: 0.6675  Acc@1: 93.7500 (95.1200)  Acc@5: 100.0000 (99.8200)
+2026-04-04 01:46:05 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:48:25 INFO:train:Train: 10:16:06 [Epoch: 244/410] [Iter:  781/781]  Loss_Tot: 2.2692  L_Full: 1.1119  L_Mask: 1.1119  L_Caus: 0.0090  L_Spar: 0.6720  FR: [0.2140, 0.3505, 0.2798, 0.3470]  Wgt(C/S): 5.00/0.00  LR: 3.373e-04
+2026-04-04 01:48:36 INFO:train:Test: [10:16:17] [ 156/156]  Loss_Tot: 0.8755  L_Caus: 0.0055  L_Spar: 0.6698  Acc@1: 100.0000 (95.1000)  Acc@5: 100.0000 (99.7800)
+2026-04-04 01:48:36 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:50:56 INFO:train:Train: 10:18:37 [Epoch: 245/410] [Iter:  781/781]  Loss_Tot: 2.2871  L_Full: 1.1214  L_Mask: 1.1213  L_Caus: 0.0088  L_Spar: 0.6700  FR: [0.2226, 0.3492, 0.2812, 0.3470]  Wgt(C/S): 5.00/0.00  LR: 3.337e-04
+2026-04-04 01:51:07 INFO:train:Test: [10:18:48] [ 156/156]  Loss_Tot: 0.7123  L_Caus: 0.0063  L_Spar: 0.6651  Acc@1: 100.0000 (95.0700)  Acc@5: 100.0000 (99.7900)
+2026-04-04 01:51:07 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:53:27 INFO:train:Train: 10:21:08 [Epoch: 246/410] [Iter:  781/781]  Loss_Tot: 2.2735  L_Full: 1.1137  L_Mask: 1.1135  L_Caus: 0.0092  L_Spar: 0.6683  FR: [0.2233, 0.3499, 0.2835, 0.3473]  Wgt(C/S): 5.00/0.00  LR: 3.300e-04
+2026-04-04 01:53:38 INFO:train:Test: [10:21:19] [ 156/156]  Loss_Tot: 0.8544  L_Caus: 0.0052  L_Spar: 0.6681  Acc@1: 93.7500 (94.9400)  Acc@5: 100.0000 (99.7800)
+2026-04-04 01:53:38 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:55:57 INFO:train:Train: 10:23:39 [Epoch: 247/410] [Iter:  781/781]  Loss_Tot: 2.2997  L_Full: 1.1277  L_Mask: 1.1277  L_Caus: 0.0088  L_Spar: 0.6696  FR: [0.2239, 0.3489, 0.2828, 0.3470]  Wgt(C/S): 5.00/0.00  LR: 3.264e-04
+2026-04-04 01:56:08 INFO:train:Test: [10:23:49] [ 156/156]  Loss_Tot: 0.7020  L_Caus: 0.0069  L_Spar: 0.6645  Acc@1: 100.0000 (95.0700)  Acc@5: 100.0000 (99.7600)
+2026-04-04 01:56:08 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 01:58:28 INFO:train:Train: 10:26:09 [Epoch: 248/410] [Iter:  781/781]  Loss_Tot: 2.2972  L_Full: 1.1264  L_Mask: 1.1266  L_Caus: 0.0088  L_Spar: 0.6688  FR: [0.2273, 0.3515, 0.2886, 0.3476]  Wgt(C/S): 5.00/0.00  LR: 3.228e-04
+2026-04-04 01:58:39 INFO:train:Test: [10:26:20] [ 156/156]  Loss_Tot: 0.7230  L_Caus: 0.0062  L_Spar: 0.6662  Acc@1: 100.0000 (94.9100)  Acc@5: 100.0000 (99.6900)
+2026-04-04 01:58:39 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 02:00:59 INFO:train:Train: 10:28:40 [Epoch: 249/410] [Iter:  781/781]  Loss_Tot: 2.2522  L_Full: 1.1043  L_Mask: 1.1040  L_Caus: 0.0087  L_Spar: 0.6685  FR: [0.2290, 0.3505, 0.2878, 0.3473]  Wgt(C/S): 5.00/0.00  LR: 3.192e-04
+2026-04-04 02:01:10 INFO:train:Test: [10:28:51] [ 156/156]  Loss_Tot: 0.7492  L_Caus: 0.0057  L_Spar: 0.6719  Acc@1: 93.7500 (95.1200)  Acc@5: 100.0000 (99.7600)
+2026-04-04 02:01:10 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 02:03:30 INFO:train:Train: 10:31:11 [Epoch: 250/410] [Iter:  781/781]  Loss_Tot: 2.2604  L_Full: 1.1082  L_Mask: 1.1084  L_Caus: 0.0087  L_Spar: 0.6686  FR: [0.2290, 0.3521, 0.2868, 0.3473]  Wgt(C/S): 5.00/0.00  LR: 3.156e-04
+2026-04-04 02:03:41 INFO:train:Test: [10:31:22] [ 156/156]  Loss_Tot: 0.7525  L_Caus: 0.0060  L_Spar: 0.6719  Acc@1: 93.7500 (95.1100)  Acc@5: 100.0000 (99.7500)
+2026-04-04 02:03:41 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 02:06:00 INFO:train:Train: 10:33:42 [Epoch: 251/410] [Iter:  781/781]  Loss_Tot: 2.2057  L_Full: 1.0801  L_Mask: 1.0804  L_Caus: 0.0090  L_Spar: 0.6701  FR: [0.2322, 0.3544, 0.2854, 0.3483]  Wgt(C/S): 5.00/0.00  LR: 3.120e-04
+2026-04-04 02:06:11 INFO:train:Test: [10:33:52] [ 156/156]  Loss_Tot: 0.7310  L_Caus: 0.0065  L_Spar: 0.6677  Acc@1: 87.5000 (94.7000)  Acc@5: 100.0000 (99.7700)
+2026-04-04 02:06:11 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 02:08:31 INFO:train:Train: 10:36:12 [Epoch: 252/410] [Iter:  781/781]  Loss_Tot: 2.2759  L_Full: 1.1159  L_Mask: 1.1153  L_Caus: 0.0089  L_Spar: 0.6692  FR: [0.2324, 0.3521, 0.2927, 0.3480]  Wgt(C/S): 5.00/0.00  LR: 3.084e-04
+2026-04-04 02:08:42 INFO:train:Test: [10:36:23] [ 156/156]  Loss_Tot: 0.7849  L_Caus: 0.0063  L_Spar: 0.6694  Acc@1: 100.0000 (94.9500)  Acc@5: 100.0000 (99.8400)
+2026-04-04 02:08:42 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 02:11:02 INFO:train:Train: 10:38:43 [Epoch: 253/410] [Iter:  781/781]  Loss_Tot: 2.2471  L_Full: 1.1009  L_Mask: 1.1010  L_Caus: 0.0090  L_Spar: 0.6684  FR: [0.2353, 0.3544, 0.2907, 0.3486]  Wgt(C/S): 5.00/0.00  LR: 3.048e-04
+2026-04-04 02:11:12 INFO:train:Test: [10:38:54] [ 156/156]  Loss_Tot: 0.8129  L_Caus: 0.0057  L_Spar: 0.6667  Acc@1: 87.5000 (94.9900)  Acc@5: 100.0000 (99.7800)
+2026-04-04 02:11:13 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 02:13:32 INFO:train:Train: 10:41:13 [Epoch: 254/410] [Iter:  781/781]  Loss_Tot: 2.2662  L_Full: 1.1101  L_Mask: 1.1106  L_Caus: 0.0090  L_Spar: 0.6684  FR: [0.2359, 0.3540, 0.2979, 0.3502]  Wgt(C/S): 5.00/0.00  LR: 3.013e-04
+2026-04-04 02:13:43 INFO:train:Test: [10:41:24] [ 156/156]  Loss_Tot: 0.7629  L_Caus: 0.0059  L_Spar: 0.6673  Acc@1: 100.0000 (95.0900)  Acc@5: 100.0000 (99.8100)
+2026-04-04 02:13:43 INFO:train:*** Best metric: 95.13 (epoch 234)
+2026-04-04 02:16:03 INFO:train:Train: 10:43:44 [Epoch: 255/410] [Iter:  781/781]  Loss_Tot: 2.2343  L_Full: 1.0944  L_Mask: 1.0947  L_Caus: 0.0090  L_Spar: 0.6690  FR: [0.2388, 0.3521, 0.2931, 0.3480]  Wgt(C/S): 5.00/0.00  LR: 2.978e-04
+2026-04-04 02:16:14 INFO:train:Test: [10:43:55] [ 156/156]  Loss_Tot: 0.6263  L_Caus: 0.0066  L_Spar: 0.6676  Acc@1: 93.7500 (95.2300)  Acc@5: 100.0000 (99.8000)
+2026-04-04 02:16:14 INFO:train:*** Best metric: 95.23 (epoch 255)
+2026-04-04 02:18:34 INFO:train:Train: 10:46:15 [Epoch: 256/410] [Iter:  781/781]  Loss_Tot: 2.2376  L_Full: 1.0957  L_Mask: 1.0962  L_Caus: 0.0091  L_Spar: 0.6697  FR: [0.2409, 0.3544, 0.2991, 0.3499]  Wgt(C/S): 5.00/0.00  LR: 2.942e-04
+2026-04-04 02:18:44 INFO:train:Test: [10:46:26] [ 156/156]  Loss_Tot: 0.7697  L_Caus: 0.0062  L_Spar: 0.6717  Acc@1: 93.7500 (94.9400)  Acc@5: 100.0000 (99.7800)
+2026-04-04 02:18:45 INFO:train:*** Best metric: 95.23 (epoch 255)
+2026-04-04 02:21:04 INFO:train:Train: 10:48:45 [Epoch: 257/410] [Iter:  781/781]  Loss_Tot: 2.2488  L_Full: 1.1015  L_Mask: 1.1020  L_Caus: 0.0090  L_Spar: 0.6696  FR: [0.2415, 0.3547, 0.2947, 0.3499]  Wgt(C/S): 5.00/0.00  LR: 2.907e-04
+2026-04-04 02:21:15 INFO:train:Test: [10:48:56] [ 156/156]  Loss_Tot: 0.7457  L_Caus: 0.0057  L_Spar: 0.6719  Acc@1: 100.0000 (95.3100)  Acc@5: 100.0000 (99.7300)
+2026-04-04 02:21:15 INFO:train:*** Best metric: 95.31 (epoch 257)
+2026-04-04 02:23:35 INFO:train:Train: 10:51:16 [Epoch: 258/410] [Iter:  781/781]  Loss_Tot: 2.2668  L_Full: 1.1110  L_Mask: 1.1114  L_Caus: 0.0088  L_Spar: 0.6705  FR: [0.2417, 0.3544, 0.2983, 0.3489]  Wgt(C/S): 5.00/0.00  LR: 2.872e-04
+2026-04-04 02:23:46 INFO:train:Test: [10:51:27] [ 156/156]  Loss_Tot: 0.8622  L_Caus: 0.0052  L_Spar: 0.6684  Acc@1: 93.7500 (95.2700)  Acc@5: 100.0000 (99.7600)
+2026-04-04 02:23:46 INFO:train:*** Best metric: 95.31 (epoch 257)
+2026-04-04 02:26:06 INFO:train:Train: 10:53:47 [Epoch: 259/410] [Iter:  781/781]  Loss_Tot: 2.2265  L_Full: 1.0910  L_Mask: 1.0906  L_Caus: 0.0089  L_Spar: 0.6704  FR: [0.2428, 0.3547, 0.2979, 0.3489]  Wgt(C/S): 5.00/0.00  LR: 2.837e-04
+2026-04-04 02:26:17 INFO:train:Test: [10:53:58] [ 156/156]  Loss_Tot: 0.7199  L_Caus: 0.0062  L_Spar: 0.6688  Acc@1: 93.7500 (95.2200)  Acc@5: 100.0000 (99.7900)
+2026-04-04 02:26:17 INFO:train:*** Best metric: 95.31 (epoch 257)
+2026-04-04 02:28:36 INFO:train:Train: 10:56:18 [Epoch: 260/410] [Iter:  781/781]  Loss_Tot: 2.1759  L_Full: 1.0658  L_Mask: 1.0658  L_Caus: 0.0088  L_Spar: 0.6716  FR: [0.2442, 0.3560, 0.2951, 0.3496]  Wgt(C/S): 5.00/0.00  LR: 2.803e-04
+2026-04-04 02:28:47 INFO:train:Test: [10:56:28] [ 156/156]  Loss_Tot: 0.7522  L_Caus: 0.0059  L_Spar: 0.6745  Acc@1: 100.0000 (95.3000)  Acc@5: 100.0000 (99.8200)
+2026-04-04 02:28:47 INFO:train:*** Best metric: 95.31 (epoch 257)
+2026-04-04 02:31:07 INFO:train:Train: 10:58:48 [Epoch: 261/410] [Iter:  781/781]  Loss_Tot: 2.2237  L_Full: 1.0898  L_Mask: 1.0888  L_Caus: 0.0090  L_Spar: 0.6706  FR: [0.2441, 0.3588, 0.2988, 0.3508]  Wgt(C/S): 5.00/0.00  LR: 2.768e-04
+2026-04-04 02:31:18 INFO:train:Test: [10:58:59] [ 156/156]  Loss_Tot: 0.6913  L_Caus: 0.0061  L_Spar: 0.6716  Acc@1: 100.0000 (95.3200)  Acc@5: 100.0000 (99.8300)
+2026-04-04 02:31:18 INFO:train:*** Best metric: 95.32 (epoch 261)
+2026-04-04 02:33:38 INFO:train:Train: 11:01:19 [Epoch: 262/410] [Iter:  781/781]  Loss_Tot: 2.1789  L_Full: 1.0677  L_Mask: 1.0675  L_Caus: 0.0087  L_Spar: 0.6710  FR: [0.2431, 0.3569, 0.2972, 0.3496]  Wgt(C/S): 5.00/0.00  LR: 2.734e-04
+2026-04-04 02:33:49 INFO:train:Test: [11:01:30] [ 156/156]  Loss_Tot: 0.7604  L_Caus: 0.0055  L_Spar: 0.6735  Acc@1: 93.7500 (94.8500)  Acc@5: 100.0000 (99.7100)
+2026-04-04 02:33:49 INFO:train:*** Best metric: 95.32 (epoch 261)
+2026-04-04 02:36:09 INFO:train:Train: 11:03:50 [Epoch: 263/410] [Iter:  781/781]  Loss_Tot: 2.2630  L_Full: 1.1083  L_Mask: 1.1086  L_Caus: 0.0092  L_Spar: 0.6697  FR: [0.2446, 0.3579, 0.3014, 0.3508]  Wgt(C/S): 5.00/0.00  LR: 2.699e-04
+2026-04-04 02:36:19 INFO:train:Test: [11:04:01] [ 156/156]  Loss_Tot: 0.7101  L_Caus: 0.0061  L_Spar: 0.6688  Acc@1: 93.7500 (95.2200)  Acc@5: 100.0000 (99.7400)
+2026-04-04 02:36:20 INFO:train:*** Best metric: 95.32 (epoch 261)
+2026-04-04 02:38:39 INFO:train:Train: 11:06:20 [Epoch: 264/410] [Iter:  781/781]  Loss_Tot: 2.2282  L_Full: 1.0919  L_Mask: 1.0919  L_Caus: 0.0088  L_Spar: 0.6693  FR: [0.2430, 0.3566, 0.3060, 0.3502]  Wgt(C/S): 5.00/0.00  LR: 2.665e-04
+2026-04-04 02:38:50 INFO:train:Test: [11:06:31] [ 156/156]  Loss_Tot: 0.8130  L_Caus: 0.0053  L_Spar: 0.6662  Acc@1: 100.0000 (95.3800)  Acc@5: 100.0000 (99.7400)
+2026-04-04 02:38:50 INFO:train:*** Best metric: 95.38 (epoch 264)
+2026-04-04 02:41:10 INFO:train:Train: 11:08:51 [Epoch: 265/410] [Iter:  781/781]  Loss_Tot: 2.2274  L_Full: 1.0910  L_Mask: 1.0918  L_Caus: 0.0088  L_Spar: 0.6693  FR: [0.2447, 0.3585, 0.3043, 0.3515]  Wgt(C/S): 5.00/0.00  LR: 2.631e-04
+2026-04-04 02:41:21 INFO:train:Test: [11:09:02] [ 156/156]  Loss_Tot: 0.8717  L_Caus: 0.0051  L_Spar: 0.6665  Acc@1: 100.0000 (95.1900)  Acc@5: 100.0000 (99.8200)
+2026-04-04 02:41:21 INFO:train:*** Best metric: 95.38 (epoch 264)
+2026-04-04 02:43:41 INFO:train:Train: 11:11:22 [Epoch: 266/410] [Iter:  781/781]  Loss_Tot: 2.2713  L_Full: 1.1130  L_Mask: 1.1132  L_Caus: 0.0089  L_Spar: 0.6694  FR: [0.2439, 0.3611, 0.3126, 0.3550]  Wgt(C/S): 5.00/0.00  LR: 2.597e-04
+2026-04-04 02:43:52 INFO:train:Test: [11:11:33] [ 156/156]  Loss_Tot: 0.9330  L_Caus: 0.0050  L_Spar: 0.6673  Acc@1: 87.5000 (94.8000)  Acc@5: 100.0000 (99.7700)
+2026-04-04 02:43:52 INFO:train:*** Best metric: 95.38 (epoch 264)
+2026-04-04 02:46:12 INFO:train:Train: 11:13:53 [Epoch: 267/410] [Iter:  781/781]  Loss_Tot: 2.2401  L_Full: 1.0976  L_Mask: 1.0980  L_Caus: 0.0088  L_Spar: 0.6685  FR: [0.2438, 0.3611, 0.3097, 0.3537]  Wgt(C/S): 5.00/0.00  LR: 2.564e-04
+2026-04-04 02:46:22 INFO:train:Test: [11:14:04] [ 156/156]  Loss_Tot: 0.7621  L_Caus: 0.0060  L_Spar: 0.6676  Acc@1: 93.7500 (95.2300)  Acc@5: 100.0000 (99.8400)
+2026-04-04 02:46:23 INFO:train:*** Best metric: 95.38 (epoch 264)
+2026-04-04 02:48:42 INFO:train:Train: 11:16:23 [Epoch: 268/410] [Iter:  781/781]  Loss_Tot: 2.2209  L_Full: 1.0881  L_Mask: 1.0886  L_Caus: 0.0088  L_Spar: 0.6705  FR: [0.2430, 0.3595, 0.3148, 0.3508]  Wgt(C/S): 5.00/0.00  LR: 2.530e-04
+2026-04-04 02:48:53 INFO:train:Test: [11:16:34] [ 156/156]  Loss_Tot: 0.6396  L_Caus: 0.0065  L_Spar: 0.6668  Acc@1: 93.7500 (95.6200)  Acc@5: 100.0000 (99.8500)
+2026-04-04 02:48:53 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 02:51:13 INFO:train:Train: 11:18:54 [Epoch: 269/410] [Iter:  781/781]  Loss_Tot: 2.2198  L_Full: 1.0869  L_Mask: 1.0872  L_Caus: 0.0091  L_Spar: 0.6699  FR: [0.2466, 0.3585, 0.3111, 0.3550]  Wgt(C/S): 5.00/0.00  LR: 2.497e-04
+2026-04-04 02:51:24 INFO:train:Test: [11:19:05] [ 156/156]  Loss_Tot: 0.7045  L_Caus: 0.0058  L_Spar: 0.6683  Acc@1: 93.7500 (95.3500)  Acc@5: 100.0000 (99.7800)
+2026-04-04 02:51:24 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 02:53:44 INFO:train:Train: 11:21:25 [Epoch: 270/410] [Iter:  781/781]  Loss_Tot: 2.2401  L_Full: 1.0975  L_Mask: 1.0972  L_Caus: 0.0090  L_Spar: 0.6687  FR: [0.2452, 0.3611, 0.3180, 0.3537]  Wgt(C/S): 5.00/0.00  LR: 2.464e-04
+2026-04-04 02:53:55 INFO:train:Test: [11:21:36] [ 156/156]  Loss_Tot: 0.7686  L_Caus: 0.0062  L_Spar: 0.6662  Acc@1: 100.0000 (95.2400)  Acc@5: 100.0000 (99.7800)
+2026-04-04 02:53:55 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 02:56:15 INFO:train:Train: 11:23:56 [Epoch: 271/410] [Iter:  781/781]  Loss_Tot: 2.2467  L_Full: 1.1005  L_Mask: 1.1005  L_Caus: 0.0091  L_Spar: 0.6700  FR: [0.2474, 0.3627, 0.3223, 0.3582]  Wgt(C/S): 5.00/0.00  LR: 2.431e-04
+2026-04-04 02:56:25 INFO:train:Test: [11:24:07] [ 156/156]  Loss_Tot: 0.7238  L_Caus: 0.0054  L_Spar: 0.6700  Acc@1: 93.7500 (95.4000)  Acc@5: 100.0000 (99.8100)
+2026-04-04 02:56:25 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 02:58:45 INFO:train:Train: 11:26:26 [Epoch: 272/410] [Iter:  781/781]  Loss_Tot: 2.2316  L_Full: 1.0927  L_Mask: 1.0927  L_Caus: 0.0092  L_Spar: 0.6699  FR: [0.2454, 0.3643, 0.3287, 0.3604]  Wgt(C/S): 5.00/0.00  LR: 2.398e-04
+2026-04-04 02:58:56 INFO:train:Test: [11:26:37] [ 156/156]  Loss_Tot: 0.7788  L_Caus: 0.0060  L_Spar: 0.6674  Acc@1: 93.7500 (95.2200)  Acc@5: 100.0000 (99.7400)
+2026-04-04 02:58:56 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 03:01:16 INFO:train:Train: 11:28:57 [Epoch: 273/410] [Iter:  781/781]  Loss_Tot: 2.2215  L_Full: 1.0879  L_Mask: 1.0874  L_Caus: 0.0092  L_Spar: 0.6683  FR: [0.2457, 0.3630, 0.3227, 0.3598]  Wgt(C/S): 5.00/0.00  LR: 2.365e-04
+2026-04-04 03:01:27 INFO:train:Test: [11:29:08] [ 156/156]  Loss_Tot: 0.7337  L_Caus: 0.0056  L_Spar: 0.6661  Acc@1: 100.0000 (95.4000)  Acc@5: 100.0000 (99.7900)
+2026-04-04 03:01:27 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 03:03:47 INFO:train:Train: 11:31:28 [Epoch: 274/410] [Iter:  781/781]  Loss_Tot: 2.2301  L_Full: 1.0925  L_Mask: 1.0926  L_Caus: 0.0089  L_Spar: 0.6686  FR: [0.2452, 0.3646, 0.3235, 0.3592]  Wgt(C/S): 5.00/0.00  LR: 2.332e-04
+2026-04-04 03:03:58 INFO:train:Test: [11:31:39] [ 156/156]  Loss_Tot: 0.6278  L_Caus: 0.0063  L_Spar: 0.6681  Acc@1: 93.7500 (95.2600)  Acc@5: 100.0000 (99.7400)
+2026-04-04 03:03:58 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 03:06:17 INFO:train:Train: 11:33:58 [Epoch: 275/410] [Iter:  781/781]  Loss_Tot: 2.1963  L_Full: 1.0760  L_Mask: 1.0766  L_Caus: 0.0087  L_Spar: 0.6692  FR: [0.2466, 0.3659, 0.3297, 0.3617]  Wgt(C/S): 5.00/0.00  LR: 2.300e-04
+2026-04-04 03:06:28 INFO:train:Test: [11:34:09] [ 156/156]  Loss_Tot: 0.7283  L_Caus: 0.0059  L_Spar: 0.6674  Acc@1: 93.7500 (95.3100)  Acc@5: 100.0000 (99.8100)
+2026-04-04 03:06:28 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 03:08:48 INFO:train:Train: 11:36:29 [Epoch: 276/410] [Iter:  781/781]  Loss_Tot: 2.1640  L_Full: 1.0595  L_Mask: 1.0594  L_Caus: 0.0090  L_Spar: 0.6678  FR: [0.2466, 0.3630, 0.3323, 0.3576]  Wgt(C/S): 5.00/0.00  LR: 2.268e-04
+2026-04-04 03:08:59 INFO:train:Test: [11:36:40] [ 156/156]  Loss_Tot: 0.7580  L_Caus: 0.0057  L_Spar: 0.6646  Acc@1: 93.7500 (95.4000)  Acc@5: 100.0000 (99.7800)
+2026-04-04 03:08:59 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 03:11:19 INFO:train:Train: 11:39:00 [Epoch: 277/410] [Iter:  781/781]  Loss_Tot: 2.2511  L_Full: 1.1025  L_Mask: 1.1021  L_Caus: 0.0092  L_Spar: 0.6673  FR: [0.2484, 0.3665, 0.3348, 0.3611]  Wgt(C/S): 5.00/0.00  LR: 2.236e-04
+2026-04-04 03:11:30 INFO:train:Test: [11:39:11] [ 156/156]  Loss_Tot: 0.7731  L_Caus: 0.0059  L_Spar: 0.6641  Acc@1: 93.7500 (95.0200)  Acc@5: 100.0000 (99.7600)
+2026-04-04 03:11:30 INFO:train:*** Best metric: 95.62 (epoch 268)
+2026-04-04 03:13:50 INFO:train:Train: 11:41:31 [Epoch: 278/410] [Iter:  781/781]  Loss_Tot: 2.2118  L_Full: 1.0837  L_Mask: 1.0834  L_Caus: 0.0089  L_Spar: 0.6690  FR: [0.2482, 0.3646, 0.3351, 0.3614]  Wgt(C/S): 5.00/0.00  LR: 2.204e-04
+2026-04-04 03:14:00 INFO:train:Test: [11:41:42] [ 156/156]  Loss_Tot: 0.6913  L_Caus: 0.0061  L_Spar: 0.6666  Acc@1: 100.0000 (95.6800)  Acc@5: 100.0000 (99.8100)
+2026-04-04 03:14:01 INFO:train:*** Best metric: 95.68 (epoch 278)
+2026-04-04 03:16:20 INFO:train:Train: 11:44:02 [Epoch: 279/410] [Iter:  781/781]  Loss_Tot: 2.2406  L_Full: 1.0976  L_Mask: 1.0974  L_Caus: 0.0090  L_Spar: 0.6681  FR: [0.2481, 0.3688, 0.3380, 0.3659]  Wgt(C/S): 5.00/0.00  LR: 2.172e-04
+2026-04-04 03:16:31 INFO:train:Test: [11:44:12] [ 156/156]  Loss_Tot: 0.7662  L_Caus: 0.0056  L_Spar: 0.6682  Acc@1: 93.7500 (95.4300)  Acc@5: 100.0000 (99.7800)
+2026-04-04 03:16:31 INFO:train:*** Best metric: 95.68 (epoch 278)
+2026-04-04 03:18:51 INFO:train:Train: 11:46:32 [Epoch: 280/410] [Iter:  781/781]  Loss_Tot: 2.2446  L_Full: 1.1000  L_Mask: 1.1000  L_Caus: 0.0089  L_Spar: 0.6692  FR: [0.2470, 0.3652, 0.3390, 0.3633]  Wgt(C/S): 5.00/0.00  LR: 2.140e-04
+2026-04-04 03:19:02 INFO:train:Test: [11:46:43] [ 156/156]  Loss_Tot: 0.6955  L_Caus: 0.0059  L_Spar: 0.6673  Acc@1: 100.0000 (95.3500)  Acc@5: 100.0000 (99.7900)
+2026-04-04 03:19:02 INFO:train:*** Best metric: 95.68 (epoch 278)
+2026-04-04 03:21:22 INFO:train:Train: 11:49:03 [Epoch: 281/410] [Iter:  781/781]  Loss_Tot: 2.1966  L_Full: 1.0758  L_Mask: 1.0759  L_Caus: 0.0089  L_Spar: 0.6695  FR: [0.2481, 0.3675, 0.3396, 0.3649]  Wgt(C/S): 5.00/0.00  LR: 2.109e-04
+2026-04-04 03:21:33 INFO:train:Test: [11:49:14] [ 156/156]  Loss_Tot: 0.6886  L_Caus: 0.0059  L_Spar: 0.6676  Acc@1: 93.7500 (95.6100)  Acc@5: 100.0000 (99.7500)
+2026-04-04 03:21:33 INFO:train:*** Best metric: 95.68 (epoch 278)
+2026-04-04 03:23:53 INFO:train:Train: 11:51:34 [Epoch: 282/410] [Iter:  781/781]  Loss_Tot: 2.1561  L_Full: 1.0556  L_Mask: 1.0559  L_Caus: 0.0089  L_Spar: 0.6690  FR: [0.2487, 0.3681, 0.3399, 0.3646]  Wgt(C/S): 5.00/0.00  LR: 2.078e-04
+2026-04-04 03:24:04 INFO:train:Test: [11:51:45] [ 156/156]  Loss_Tot: 0.7591  L_Caus: 0.0060  L_Spar: 0.6659  Acc@1: 100.0000 (95.5600)  Acc@5: 100.0000 (99.8000)
+2026-04-04 03:24:04 INFO:train:*** Best metric: 95.68 (epoch 278)
+2026-04-04 03:26:24 INFO:train:Train: 11:54:05 [Epoch: 283/410] [Iter:  781/781]  Loss_Tot: 2.2083  L_Full: 1.0817  L_Mask: 1.0816  L_Caus: 0.0089  L_Spar: 0.6681  FR: [0.2497, 0.3688, 0.3406, 0.3656]  Wgt(C/S): 5.00/0.00  LR: 2.047e-04
+2026-04-04 03:26:35 INFO:train:Test: [11:54:16] [ 156/156]  Loss_Tot: 0.5984  L_Caus: 0.0070  L_Spar: 0.6673  Acc@1: 100.0000 (95.7100)  Acc@5: 100.0000 (99.7800)
+2026-04-04 03:26:35 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:28:54 INFO:train:Train: 11:56:36 [Epoch: 284/410] [Iter:  781/781]  Loss_Tot: 2.1992  L_Full: 1.0769  L_Mask: 1.0773  L_Caus: 0.0089  L_Spar: 0.6675  FR: [0.2497, 0.3697, 0.3415, 0.3643]  Wgt(C/S): 5.00/0.00  LR: 2.016e-04
+2026-04-04 03:29:05 INFO:train:Test: [11:56:46] [ 156/156]  Loss_Tot: 0.7309  L_Caus: 0.0057  L_Spar: 0.6647  Acc@1: 100.0000 (95.4600)  Acc@5: 100.0000 (99.7500)
+2026-04-04 03:29:05 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:31:25 INFO:train:Train: 11:59:06 [Epoch: 285/410] [Iter:  781/781]  Loss_Tot: 2.1982  L_Full: 1.0760  L_Mask: 1.0764  L_Caus: 0.0091  L_Spar: 0.6653  FR: [0.2490, 0.3688, 0.3419, 0.3636]  Wgt(C/S): 5.00/0.00  LR: 1.985e-04
+2026-04-04 03:31:36 INFO:train:Test: [11:59:17] [ 156/156]  Loss_Tot: 0.6883  L_Caus: 0.0063  L_Spar: 0.6608  Acc@1: 100.0000 (95.4800)  Acc@5: 100.0000 (99.8400)
+2026-04-04 03:31:36 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:33:56 INFO:train:Train: 12:01:37 [Epoch: 286/410] [Iter:  781/781]  Loss_Tot: 2.1776  L_Full: 1.0654  L_Mask: 1.0658  L_Caus: 0.0092  L_Spar: 0.6644  FR: [0.2498, 0.3691, 0.3419, 0.3633]  Wgt(C/S): 5.00/0.00  LR: 1.955e-04
+2026-04-04 03:34:07 INFO:train:Test: [12:01:48] [ 156/156]  Loss_Tot: 0.7186  L_Caus: 0.0060  L_Spar: 0.6636  Acc@1: 100.0000 (95.5800)  Acc@5: 100.0000 (99.8000)
+2026-04-04 03:34:07 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:36:27 INFO:train:Train: 12:04:08 [Epoch: 287/410] [Iter:  781/781]  Loss_Tot: 2.1583  L_Full: 1.0572  L_Mask: 1.0568  L_Caus: 0.0088  L_Spar: 0.6640  FR: [0.2503, 0.3675, 0.3419, 0.3624]  Wgt(C/S): 5.00/0.00  LR: 1.925e-04
+2026-04-04 03:36:38 INFO:train:Test: [12:04:19] [ 156/156]  Loss_Tot: 0.7726  L_Caus: 0.0061  L_Spar: 0.6632  Acc@1: 93.7500 (95.3500)  Acc@5: 100.0000 (99.7200)
+2026-04-04 03:36:38 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:38:57 INFO:train:Train: 12:06:38 [Epoch: 288/410] [Iter:  781/781]  Loss_Tot: 2.2021  L_Full: 1.0785  L_Mask: 1.0781  L_Caus: 0.0091  L_Spar: 0.6646  FR: [0.2502, 0.3723, 0.3438, 0.3662]  Wgt(C/S): 5.00/0.00  LR: 1.895e-04
+2026-04-04 03:39:08 INFO:train:Test: [12:06:49] [ 156/156]  Loss_Tot: 0.8127  L_Caus: 0.0055  L_Spar: 0.6644  Acc@1: 100.0000 (95.6800)  Acc@5: 100.0000 (99.8300)
+2026-04-04 03:39:08 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:41:28 INFO:train:Train: 12:09:09 [Epoch: 289/410] [Iter:  781/781]  Loss_Tot: 2.1981  L_Full: 1.0769  L_Mask: 1.0762  L_Caus: 0.0089  L_Spar: 0.6653  FR: [0.2500, 0.3723, 0.3438, 0.3681]  Wgt(C/S): 5.00/0.00  LR: 1.865e-04
+2026-04-04 03:41:39 INFO:train:Test: [12:09:20] [ 156/156]  Loss_Tot: 0.7169  L_Caus: 0.0058  L_Spar: 0.6635  Acc@1: 100.0000 (95.5200)  Acc@5: 100.0000 (99.7700)
+2026-04-04 03:41:39 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:43:59 INFO:train:Train: 12:11:40 [Epoch: 290/410] [Iter:  781/781]  Loss_Tot: 2.1921  L_Full: 1.0737  L_Mask: 1.0738  L_Caus: 0.0089  L_Spar: 0.6656  FR: [0.2505, 0.3780, 0.3441, 0.3713]  Wgt(C/S): 5.00/0.00  LR: 1.835e-04
+2026-04-04 03:44:10 INFO:train:Test: [12:11:51] [ 156/156]  Loss_Tot: 0.8467  L_Caus: 0.0056  L_Spar: 0.6648  Acc@1: 100.0000 (95.7000)  Acc@5: 100.0000 (99.7300)
+2026-04-04 03:44:10 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:46:29 INFO:train:Train: 12:14:11 [Epoch: 291/410] [Iter:  781/781]  Loss_Tot: 2.2029  L_Full: 1.0790  L_Mask: 1.0789  L_Caus: 0.0089  L_Spar: 0.6651  FR: [0.2513, 0.3758, 0.3448, 0.3697]  Wgt(C/S): 5.00/0.00  LR: 1.806e-04
+2026-04-04 03:46:40 INFO:train:Test: [12:14:21] [ 156/156]  Loss_Tot: 0.8349  L_Caus: 0.0055  L_Spar: 0.6605  Acc@1: 100.0000 (95.5100)  Acc@5: 100.0000 (99.7800)
+2026-04-04 03:46:40 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:49:00 INFO:train:Train: 12:16:41 [Epoch: 292/410] [Iter:  781/781]  Loss_Tot: 2.1983  L_Full: 1.0762  L_Mask: 1.0762  L_Caus: 0.0091  L_Spar: 0.6631  FR: [0.2511, 0.3803, 0.3444, 0.3684]  Wgt(C/S): 5.00/0.00  LR: 1.777e-04
+2026-04-04 03:49:11 INFO:train:Test: [12:16:52] [ 156/156]  Loss_Tot: 0.6902  L_Caus: 0.0067  L_Spar: 0.6632  Acc@1: 100.0000 (95.5000)  Acc@5: 100.0000 (99.8700)
+2026-04-04 03:49:11 INFO:train:*** Best metric: 95.71 (epoch 283)
+2026-04-04 03:51:31 INFO:train:Train: 12:19:12 [Epoch: 293/410] [Iter:  781/781]  Loss_Tot: 2.1960  L_Full: 1.0750  L_Mask: 1.0750  L_Caus: 0.0091  L_Spar: 0.6633  FR: [0.2505, 0.3787, 0.3454, 0.3681]  Wgt(C/S): 5.00/0.00  LR: 1.747e-04
+2026-04-04 03:51:42 INFO:train:Test: [12:19:23] [ 156/156]  Loss_Tot: 0.7405  L_Caus: 0.0056  L_Spar: 0.6617  Acc@1: 100.0000 (95.7600)  Acc@5: 100.0000 (99.7900)
+2026-04-04 03:51:42 INFO:train:*** Best metric: 95.76 (epoch 293)
+2026-04-04 03:54:02 INFO:train:Train: 12:21:43 [Epoch: 294/410] [Iter:  781/781]  Loss_Tot: 2.1795  L_Full: 1.0673  L_Mask: 1.0673  L_Caus: 0.0089  L_Spar: 0.6636  FR: [0.2503, 0.3780, 0.3454, 0.3700]  Wgt(C/S): 5.00/0.00  LR: 1.719e-04
+2026-04-04 03:54:13 INFO:train:Test: [12:21:54] [ 156/156]  Loss_Tot: 0.7749  L_Caus: 0.0056  L_Spar: 0.6649  Acc@1: 93.7500 (95.7800)  Acc@5: 100.0000 (99.7000)
+2026-04-04 03:54:13 INFO:train:*** Best metric: 95.78 (epoch 294)
+2026-04-04 03:56:32 INFO:train:Train: 12:24:14 [Epoch: 295/410] [Iter:  781/781]  Loss_Tot: 2.1635  L_Full: 1.0596  L_Mask: 1.0595  L_Caus: 0.0088  L_Spar: 0.6655  FR: [0.2508, 0.3758, 0.3460, 0.3681]  Wgt(C/S): 5.00/0.00  LR: 1.690e-04
+2026-04-04 03:56:43 INFO:train:Test: [12:24:24] [ 156/156]  Loss_Tot: 0.7922  L_Caus: 0.0055  L_Spar: 0.6650  Acc@1: 93.7500 (95.7300)  Acc@5: 100.0000 (99.7900)
+2026-04-04 03:56:43 INFO:train:*** Best metric: 95.78 (epoch 294)
+2026-04-04 03:59:03 INFO:train:Train: 12:26:44 [Epoch: 296/410] [Iter:  781/781]  Loss_Tot: 2.1944  L_Full: 1.0751  L_Mask: 1.0746  L_Caus: 0.0089  L_Spar: 0.6675  FR: [0.2514, 0.3800, 0.3460, 0.3688]  Wgt(C/S): 5.00/0.00  LR: 1.661e-04
+2026-04-04 03:59:14 INFO:train:Test: [12:26:55] [ 156/156]  Loss_Tot: 0.7303  L_Caus: 0.0056  L_Spar: 0.6686  Acc@1: 93.7500 (95.8800)  Acc@5: 100.0000 (99.7900)
+2026-04-04 03:59:14 INFO:train:*** Best metric: 95.88 (epoch 296)
+2026-04-04 04:01:34 INFO:train:Train: 12:29:15 [Epoch: 297/410] [Iter:  781/781]  Loss_Tot: 2.1887  L_Full: 1.0724  L_Mask: 1.0726  L_Caus: 0.0087  L_Spar: 0.6692  FR: [0.2514, 0.3803, 0.3464, 0.3700]  Wgt(C/S): 5.00/0.00  LR: 1.633e-04
+2026-04-04 04:01:45 INFO:train:Test: [12:29:26] [ 156/156]  Loss_Tot: 0.5901  L_Caus: 0.0063  L_Spar: 0.6709  Acc@1: 100.0000 (95.7500)  Acc@5: 100.0000 (99.8200)
+2026-04-04 04:01:45 INFO:train:*** Best metric: 95.88 (epoch 296)
+2026-04-04 04:04:05 INFO:train:Train: 12:31:46 [Epoch: 298/410] [Iter:  781/781]  Loss_Tot: 2.2149  L_Full: 1.0848  L_Mask: 1.0849  L_Caus: 0.0090  L_Spar: 0.6677  FR: [0.2511, 0.3828, 0.3470, 0.3713]  Wgt(C/S): 5.00/0.00  LR: 1.605e-04
+2026-04-04 04:04:15 INFO:train:Test: [12:31:57] [ 156/156]  Loss_Tot: 0.7560  L_Caus: 0.0054  L_Spar: 0.6681  Acc@1: 93.7500 (95.8600)  Acc@5: 100.0000 (99.8000)
+2026-04-04 04:04:15 INFO:train:*** Best metric: 95.88 (epoch 296)
+2026-04-04 04:06:35 INFO:train:Train: 12:34:16 [Epoch: 299/410] [Iter:  781/781]  Loss_Tot: 2.1695  L_Full: 1.0624  L_Mask: 1.0625  L_Caus: 0.0089  L_Spar: 0.6666  FR: [0.2519, 0.3828, 0.3464, 0.3694]  Wgt(C/S): 5.00/0.00  LR: 1.577e-04
+2026-04-04 04:06:46 INFO:train:Test: [12:34:27] [ 156/156]  Loss_Tot: 0.6721  L_Caus: 0.0060  L_Spar: 0.6645  Acc@1: 93.7500 (95.9400)  Acc@5: 100.0000 (99.8200)
+2026-04-04 04:06:46 INFO:train:*** Best metric: 95.94 (epoch 299)
+2026-04-04 04:09:06 INFO:train:Train: 12:36:47 [Epoch: 300/410] [Iter:  781/781]  Loss_Tot: 2.1512  L_Full: 1.0533  L_Mask: 1.0533  L_Caus: 0.0088  L_Spar: 0.6652  FR: [0.2519, 0.3819, 0.3457, 0.3704]  Wgt(C/S): 5.00/0.00  LR: 1.550e-04
+2026-04-04 04:09:17 INFO:train:Test: [12:36:58] [ 156/156]  Loss_Tot: 0.6529  L_Caus: 0.0058  L_Spar: 0.6654  Acc@1: 100.0000 (95.8700)  Acc@5: 100.0000 (99.8700)
+2026-04-04 04:09:17 INFO:train:*** Best metric: 95.94 (epoch 299)
+2026-04-04 04:11:37 INFO:train:Train: 12:39:18 [Epoch: 301/410] [Iter:  781/781]  Loss_Tot: 2.1780  L_Full: 1.0666  L_Mask: 1.0669  L_Caus: 0.0088  L_Spar: 0.6647  FR: [0.2524, 0.3835, 0.3457, 0.3707]  Wgt(C/S): 5.00/0.00  LR: 1.522e-04
+2026-04-04 04:11:48 INFO:train:Test: [12:39:29] [ 156/156]  Loss_Tot: 0.8046  L_Caus: 0.0056  L_Spar: 0.6664  Acc@1: 100.0000 (95.9600)  Acc@5: 100.0000 (99.8000)
+2026-04-04 04:11:48 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:14:08 INFO:train:Train: 12:41:49 [Epoch: 302/410] [Iter:  781/781]  Loss_Tot: 2.1911  L_Full: 1.0734  L_Mask: 1.0729  L_Caus: 0.0089  L_Spar: 0.6644  FR: [0.2535, 0.3835, 0.3473, 0.3752]  Wgt(C/S): 5.00/0.00  LR: 1.495e-04
+2026-04-04 04:14:18 INFO:train:Test: [12:42:00] [ 156/156]  Loss_Tot: 0.6933  L_Caus: 0.0058  L_Spar: 0.6630  Acc@1: 100.0000 (95.6300)  Acc@5: 100.0000 (99.7700)
+2026-04-04 04:14:19 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:16:38 INFO:train:Train: 12:44:19 [Epoch: 303/410] [Iter:  781/781]  Loss_Tot: 2.1394  L_Full: 1.0473  L_Mask: 1.0476  L_Caus: 0.0088  L_Spar: 0.6634  FR: [0.2545, 0.3880, 0.3467, 0.3723]  Wgt(C/S): 5.00/0.00  LR: 1.468e-04
+2026-04-04 04:16:49 INFO:train:Test: [12:44:30] [ 156/156]  Loss_Tot: 0.8316  L_Caus: 0.0053  L_Spar: 0.6635  Acc@1: 93.7500 (95.8200)  Acc@5: 100.0000 (99.7900)
+2026-04-04 04:16:49 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:19:09 INFO:train:Train: 12:46:50 [Epoch: 304/410] [Iter:  781/781]  Loss_Tot: 2.2167  L_Full: 1.0856  L_Mask: 1.0856  L_Caus: 0.0091  L_Spar: 0.6623  FR: [0.2534, 0.3864, 0.3483, 0.3758]  Wgt(C/S): 5.00/0.00  LR: 1.442e-04
+2026-04-04 04:19:20 INFO:train:Test: [12:47:01] [ 156/156]  Loss_Tot: 0.6796  L_Caus: 0.0057  L_Spar: 0.6668  Acc@1: 93.7500 (95.6700)  Acc@5: 100.0000 (99.7700)
+2026-04-04 04:19:20 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:21:40 INFO:train:Train: 12:49:21 [Epoch: 305/410] [Iter:  781/781]  Loss_Tot: 2.1983  L_Full: 1.0763  L_Mask: 1.0765  L_Caus: 0.0090  L_Spar: 0.6625  FR: [0.2545, 0.3924, 0.3476, 0.3761]  Wgt(C/S): 5.00/0.00  LR: 1.415e-04
+2026-04-04 04:21:50 INFO:train:Test: [12:49:32] [ 156/156]  Loss_Tot: 0.7425  L_Caus: 0.0060  L_Spar: 0.6632  Acc@1: 100.0000 (95.7000)  Acc@5: 100.0000 (99.8400)
+2026-04-04 04:21:51 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:24:10 INFO:train:Train: 12:51:51 [Epoch: 306/410] [Iter:  781/781]  Loss_Tot: 2.1280  L_Full: 1.0418  L_Mask: 1.0421  L_Caus: 0.0088  L_Spar: 0.6619  FR: [0.2559, 0.3908, 0.3489, 0.3742]  Wgt(C/S): 5.00/0.00  LR: 1.389e-04
+2026-04-04 04:24:21 INFO:train:Test: [12:52:02] [ 156/156]  Loss_Tot: 0.6968  L_Caus: 0.0054  L_Spar: 0.6607  Acc@1: 93.7500 (95.7800)  Acc@5: 100.0000 (99.8500)
+2026-04-04 04:24:21 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:26:41 INFO:train:Train: 12:54:22 [Epoch: 307/410] [Iter:  781/781]  Loss_Tot: 2.1640  L_Full: 1.0599  L_Mask: 1.0599  L_Caus: 0.0088  L_Spar: 0.6616  FR: [0.2554, 0.3950, 0.3486, 0.3768]  Wgt(C/S): 5.00/0.00  LR: 1.363e-04
+2026-04-04 04:26:52 INFO:train:Test: [12:54:33] [ 156/156]  Loss_Tot: 0.6990  L_Caus: 0.0055  L_Spar: 0.6600  Acc@1: 93.7500 (95.9300)  Acc@5: 100.0000 (99.8200)
+2026-04-04 04:26:52 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:29:12 INFO:train:Train: 12:56:53 [Epoch: 308/410] [Iter:  781/781]  Loss_Tot: 2.1452  L_Full: 1.0499  L_Mask: 1.0497  L_Caus: 0.0091  L_Spar: 0.6617  FR: [0.2572, 0.3966, 0.3486, 0.3771]  Wgt(C/S): 5.00/0.00  LR: 1.337e-04
+2026-04-04 04:29:23 INFO:train:Test: [12:57:04] [ 156/156]  Loss_Tot: 0.6973  L_Caus: 0.0057  L_Spar: 0.6599  Acc@1: 100.0000 (95.8900)  Acc@5: 100.0000 (99.8800)
+2026-04-04 04:29:23 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:31:42 INFO:train:Train: 12:59:23 [Epoch: 309/410] [Iter:  781/781]  Loss_Tot: 2.1547  L_Full: 1.0542  L_Mask: 1.0545  L_Caus: 0.0091  L_Spar: 0.6617  FR: [0.2572, 0.3934, 0.3496, 0.3736]  Wgt(C/S): 5.00/0.00  LR: 1.311e-04
+2026-04-04 04:31:53 INFO:train:Test: [12:59:34] [ 156/156]  Loss_Tot: 0.6840  L_Caus: 0.0055  L_Spar: 0.6591  Acc@1: 93.7500 (95.8400)  Acc@5: 100.0000 (99.7900)
+2026-04-04 04:31:53 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:34:13 INFO:train:Train: 13:01:54 [Epoch: 310/410] [Iter:  781/781]  Loss_Tot: 2.1224  L_Full: 1.0391  L_Mask: 1.0397  L_Caus: 0.0087  L_Spar: 0.6606  FR: [0.2572, 0.3956, 0.3508, 0.3771]  Wgt(C/S): 5.00/0.00  LR: 1.286e-04
+2026-04-04 04:34:24 INFO:train:Test: [13:02:05] [ 156/156]  Loss_Tot: 0.7050  L_Caus: 0.0055  L_Spar: 0.6613  Acc@1: 100.0000 (95.8600)  Acc@5: 100.0000 (99.7600)
+2026-04-04 04:34:24 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:36:44 INFO:train:Train: 13:04:25 [Epoch: 311/410] [Iter:  781/781]  Loss_Tot: 2.1796  L_Full: 1.0681  L_Mask: 1.0673  L_Caus: 0.0088  L_Spar: 0.6614  FR: [0.2577, 0.3972, 0.3508, 0.3774]  Wgt(C/S): 5.00/0.00  LR: 1.261e-04
+2026-04-04 04:36:55 INFO:train:Test: [13:04:36] [ 156/156]  Loss_Tot: 0.7172  L_Caus: 0.0054  L_Spar: 0.6625  Acc@1: 100.0000 (95.8500)  Acc@5: 100.0000 (99.7700)
+2026-04-04 04:36:55 INFO:train:*** Best metric: 95.96 (epoch 301)
+2026-04-04 04:39:15 INFO:train:Train: 13:06:56 [Epoch: 312/410] [Iter:  781/781]  Loss_Tot: 2.0753  L_Full: 1.0158  L_Mask: 1.0161  L_Caus: 0.0086  L_Spar: 0.6613  FR: [0.2586, 0.3963, 0.3512, 0.3777]  Wgt(C/S): 5.00/0.00  LR: 1.236e-04
+2026-04-04 04:39:25 INFO:train:Test: [13:07:07] [ 156/156]  Loss_Tot: 0.7390  L_Caus: 0.0056  L_Spar: 0.6654  Acc@1: 100.0000 (96.1100)  Acc@5: 100.0000 (99.8200)
+2026-04-04 04:39:26 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 04:41:45 INFO:train:Train: 13:09:26 [Epoch: 313/410] [Iter:  781/781]  Loss_Tot: 2.1435  L_Full: 1.0499  L_Mask: 1.0496  L_Caus: 0.0087  L_Spar: 0.6620  FR: [0.2583, 0.3985, 0.3528, 0.3819]  Wgt(C/S): 5.00/0.00  LR: 1.211e-04
+2026-04-04 04:41:56 INFO:train:Test: [13:09:37] [ 156/156]  Loss_Tot: 0.6936  L_Caus: 0.0054  L_Spar: 0.6621  Acc@1: 93.7500 (95.9900)  Acc@5: 100.0000 (99.8000)
+2026-04-04 04:41:56 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 04:44:16 INFO:train:Train: 13:11:57 [Epoch: 314/410] [Iter:  781/781]  Loss_Tot: 2.1960  L_Full: 1.0754  L_Mask: 1.0755  L_Caus: 0.0090  L_Spar: 0.6620  FR: [0.2578, 0.3988, 0.3537, 0.3816]  Wgt(C/S): 5.00/0.00  LR: 1.187e-04
+2026-04-04 04:44:27 INFO:train:Test: [13:12:08] [ 156/156]  Loss_Tot: 0.6714  L_Caus: 0.0056  L_Spar: 0.6642  Acc@1: 93.7500 (96.0200)  Acc@5: 100.0000 (99.8000)
+2026-04-04 04:44:27 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 04:46:47 INFO:train:Train: 13:14:28 [Epoch: 315/410] [Iter:  781/781]  Loss_Tot: 2.1766  L_Full: 1.0660  L_Mask: 1.0663  L_Caus: 0.0088  L_Spar: 0.6617  FR: [0.2572, 0.3998, 0.3540, 0.3812]  Wgt(C/S): 5.00/0.00  LR: 1.163e-04
+2026-04-04 04:46:58 INFO:train:Test: [13:14:39] [ 156/156]  Loss_Tot: 0.7235  L_Caus: 0.0057  L_Spar: 0.6612  Acc@1: 100.0000 (95.7400)  Acc@5: 100.0000 (99.8000)
+2026-04-04 04:46:58 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 04:49:17 INFO:train:Train: 13:16:58 [Epoch: 316/410] [Iter:  781/781]  Loss_Tot: 2.1120  L_Full: 1.0340  L_Mask: 1.0337  L_Caus: 0.0088  L_Spar: 0.6603  FR: [0.2567, 0.4011, 0.3528, 0.3803]  Wgt(C/S): 5.00/0.00  LR: 1.139e-04
+2026-04-04 04:49:28 INFO:train:Test: [13:17:09] [ 156/156]  Loss_Tot: 0.5684  L_Caus: 0.0059  L_Spar: 0.6608  Acc@1: 93.7500 (95.9300)  Acc@5: 100.0000 (99.8000)
+2026-04-04 04:49:28 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 04:51:48 INFO:train:Train: 13:19:29 [Epoch: 317/410] [Iter:  781/781]  Loss_Tot: 2.1705  L_Full: 1.0628  L_Mask: 1.0631  L_Caus: 0.0089  L_Spar: 0.6605  FR: [0.2601, 0.3988, 0.3576, 0.3848]  Wgt(C/S): 5.00/0.00  LR: 1.115e-04
+2026-04-04 04:51:59 INFO:train:Test: [13:19:40] [ 156/156]  Loss_Tot: 0.6976  L_Caus: 0.0055  L_Spar: 0.6623  Acc@1: 100.0000 (95.9000)  Acc@5: 100.0000 (99.8100)
+2026-04-04 04:51:59 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 04:54:19 INFO:train:Train: 13:22:00 [Epoch: 318/410] [Iter:  781/781]  Loss_Tot: 2.1594  L_Full: 1.0572  L_Mask: 1.0576  L_Caus: 0.0089  L_Spar: 0.6600  FR: [0.2591, 0.4011, 0.3569, 0.3857]  Wgt(C/S): 5.00/0.00  LR: 1.092e-04
+2026-04-04 04:54:30 INFO:train:Test: [13:22:11] [ 156/156]  Loss_Tot: 0.7523  L_Caus: 0.0056  L_Spar: 0.6592  Acc@1: 100.0000 (95.9900)  Acc@5: 100.0000 (99.7700)
+2026-04-04 04:54:30 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 04:56:50 INFO:train:Train: 13:24:31 [Epoch: 319/410] [Iter:  781/781]  Loss_Tot: 2.1277  L_Full: 1.0421  L_Mask: 1.0416  L_Caus: 0.0087  L_Spar: 0.6589  FR: [0.2598, 0.3998, 0.3579, 0.3864]  Wgt(C/S): 5.00/0.00  LR: 1.068e-04
+2026-04-04 04:57:00 INFO:train:Test: [13:24:42] [ 156/156]  Loss_Tot: 0.8789  L_Caus: 0.0055  L_Spar: 0.6613  Acc@1: 93.7500 (95.7000)  Acc@5: 100.0000 (99.7700)
+2026-04-04 04:57:01 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 04:59:20 INFO:train:Train: 13:27:01 [Epoch: 320/410] [Iter:  781/781]  Loss_Tot: 2.1501  L_Full: 1.0531  L_Mask: 1.0529  L_Caus: 0.0087  L_Spar: 0.6601  FR: [0.2599, 0.3985, 0.3569, 0.3851]  Wgt(C/S): 5.00/0.00  LR: 1.045e-04
+2026-04-04 04:59:31 INFO:train:Test: [13:27:12] [ 156/156]  Loss_Tot: 0.5826  L_Caus: 0.0060  L_Spar: 0.6596  Acc@1: 93.7500 (96.0800)  Acc@5: 100.0000 (99.8400)
+2026-04-04 04:59:31 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 05:01:51 INFO:train:Train: 13:29:32 [Epoch: 321/410] [Iter:  781/781]  Loss_Tot: 2.1572  L_Full: 1.0567  L_Mask: 1.0566  L_Caus: 0.0087  L_Spar: 0.6609  FR: [0.2610, 0.4017, 0.3582, 0.3844]  Wgt(C/S): 5.00/0.00  LR: 1.023e-04
+2026-04-04 05:02:02 INFO:train:Test: [13:29:43] [ 156/156]  Loss_Tot: 0.7746  L_Caus: 0.0057  L_Spar: 0.6582  Acc@1: 100.0000 (96.0400)  Acc@5: 100.0000 (99.7700)
+2026-04-04 05:02:02 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 05:04:22 INFO:train:Train: 13:32:03 [Epoch: 322/410] [Iter:  781/781]  Loss_Tot: 2.1844  L_Full: 1.0688  L_Mask: 1.0693  L_Caus: 0.0092  L_Spar: 0.6596  FR: [0.2614, 0.4008, 0.3611, 0.3886]  Wgt(C/S): 5.00/0.00  LR: 1.000e-04
+2026-04-04 05:04:33 INFO:train:Test: [13:32:14] [ 156/156]  Loss_Tot: 0.7955  L_Caus: 0.0058  L_Spar: 0.6557  Acc@1: 93.7500 (96.0200)  Acc@5: 100.0000 (99.7900)
+2026-04-04 05:04:33 INFO:train:*** Best metric: 96.11 (epoch 312)
+2026-04-04 05:06:53 INFO:train:Train: 13:34:34 [Epoch: 323/410] [Iter:  781/781]  Loss_Tot: 2.2097  L_Full: 1.0815  L_Mask: 1.0818  L_Caus: 0.0092  L_Spar: 0.6588  FR: [0.2639, 0.4024, 0.3604, 0.3969]  Wgt(C/S): 5.00/0.00  LR: 9.779e-05
+2026-04-04 05:07:03 INFO:train:Test: [13:34:45] [ 156/156]  Loss_Tot: 0.6836  L_Caus: 0.0058  L_Spar: 0.6572  Acc@1: 93.7500 (96.2000)  Acc@5: 100.0000 (99.8400)
+2026-04-04 05:07:04 INFO:train:*** Best metric: 96.2 (epoch 323)
+2026-04-04 05:09:24 INFO:train:Train: 13:37:05 [Epoch: 324/410] [Iter:  781/781]  Loss_Tot: 2.0838  L_Full: 1.0199  L_Mask: 1.0199  L_Caus: 0.0087  L_Spar: 0.6595  FR: [0.2622, 0.4001, 0.3582, 0.3940]  Wgt(C/S): 5.00/0.00  LR: 9.560e-05
+2026-04-04 05:09:34 INFO:train:Test: [13:37:16] [ 156/156]  Loss_Tot: 0.7123  L_Caus: 0.0059  L_Spar: 0.6579  Acc@1: 100.0000 (95.9100)  Acc@5: 100.0000 (99.8400)
+2026-04-04 05:09:35 INFO:train:*** Best metric: 96.2 (epoch 323)
+2026-04-04 05:11:54 INFO:train:Train: 13:39:35 [Epoch: 325/410] [Iter:  781/781]  Loss_Tot: 2.1247  L_Full: 1.0403  L_Mask: 1.0400  L_Caus: 0.0088  L_Spar: 0.6590  FR: [0.2620, 0.4024, 0.3598, 0.3960]  Wgt(C/S): 5.00/0.00  LR: 9.342e-05
+2026-04-04 05:12:05 INFO:train:Test: [13:39:46] [ 156/156]  Loss_Tot: 0.7794  L_Caus: 0.0054  L_Spar: 0.6578  Acc@1: 93.7500 (96.1000)  Acc@5: 100.0000 (99.8300)
+2026-04-04 05:12:05 INFO:train:*** Best metric: 96.2 (epoch 323)
+2026-04-04 05:14:25 INFO:train:Train: 13:42:06 [Epoch: 326/410] [Iter:  781/781]  Loss_Tot: 2.1503  L_Full: 1.0526  L_Mask: 1.0523  L_Caus: 0.0090  L_Spar: 0.6590  FR: [0.2634, 0.4020, 0.3617, 0.3956]  Wgt(C/S): 5.00/0.00  LR: 9.128e-05
+2026-04-04 05:14:36 INFO:train:Test: [13:42:17] [ 156/156]  Loss_Tot: 0.5865  L_Caus: 0.0060  L_Spar: 0.6574  Acc@1: 93.7500 (96.3200)  Acc@5: 100.0000 (99.7900)
+2026-04-04 05:14:36 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:16:56 INFO:train:Train: 13:44:37 [Epoch: 327/410] [Iter:  781/781]  Loss_Tot: 2.1290  L_Full: 1.0420  L_Mask: 1.0417  L_Caus: 0.0090  L_Spar: 0.6586  FR: [0.2674, 0.4030, 0.3608, 0.3979]  Wgt(C/S): 5.00/0.00  LR: 8.915e-05
+2026-04-04 05:17:06 INFO:train:Test: [13:44:48] [ 156/156]  Loss_Tot: 0.6732  L_Caus: 0.0058  L_Spar: 0.6599  Acc@1: 100.0000 (96.1900)  Acc@5: 100.0000 (99.7900)
+2026-04-04 05:17:07 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:19:26 INFO:train:Train: 13:47:07 [Epoch: 328/410] [Iter:  781/781]  Loss_Tot: 2.1461  L_Full: 1.0503  L_Mask: 1.0501  L_Caus: 0.0091  L_Spar: 0.6588  FR: [0.2657, 0.4043, 0.3627, 0.4001]  Wgt(C/S): 5.00/0.00  LR: 8.706e-05
+2026-04-04 05:19:37 INFO:train:Test: [13:47:18] [ 156/156]  Loss_Tot: 0.7730  L_Caus: 0.0053  L_Spar: 0.6594  Acc@1: 100.0000 (96.2200)  Acc@5: 100.0000 (99.7400)
+2026-04-04 05:19:37 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:21:57 INFO:train:Train: 13:49:38 [Epoch: 329/410] [Iter:  781/781]  Loss_Tot: 2.1272  L_Full: 1.0410  L_Mask: 1.0415  L_Caus: 0.0089  L_Spar: 0.6588  FR: [0.2658, 0.4056, 0.3624, 0.4011]  Wgt(C/S): 5.00/0.00  LR: 8.499e-05
+2026-04-04 05:22:08 INFO:train:Test: [13:49:49] [ 156/156]  Loss_Tot: 0.6475  L_Caus: 0.0058  L_Spar: 0.6616  Acc@1: 93.7500 (96.1600)  Acc@5: 100.0000 (99.8200)
+2026-04-04 05:22:08 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:24:27 INFO:train:Train: 13:52:09 [Epoch: 330/410] [Iter:  781/781]  Loss_Tot: 2.1433  L_Full: 1.0490  L_Mask: 1.0494  L_Caus: 0.0089  L_Spar: 0.6588  FR: [0.2657, 0.4033, 0.3614, 0.3992]  Wgt(C/S): 5.00/0.00  LR: 8.294e-05
+2026-04-04 05:24:38 INFO:train:Test: [13:52:19] [ 156/156]  Loss_Tot: 0.6845  L_Caus: 0.0056  L_Spar: 0.6587  Acc@1: 100.0000 (96.1000)  Acc@5: 100.0000 (99.6900)
+2026-04-04 05:24:38 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:26:58 INFO:train:Train: 13:54:39 [Epoch: 331/410] [Iter:  781/781]  Loss_Tot: 2.1458  L_Full: 1.0499  L_Mask: 1.0503  L_Caus: 0.0091  L_Spar: 0.6586  FR: [0.2670, 0.4072, 0.3640, 0.3998]  Wgt(C/S): 5.00/0.00  LR: 8.092e-05
+2026-04-04 05:27:09 INFO:train:Test: [13:54:50] [ 156/156]  Loss_Tot: 0.6730  L_Caus: 0.0056  L_Spar: 0.6580  Acc@1: 100.0000 (96.2200)  Acc@5: 100.0000 (99.8200)
+2026-04-04 05:27:09 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:29:29 INFO:train:Train: 13:57:10 [Epoch: 332/410] [Iter:  781/781]  Loss_Tot: 2.1175  L_Full: 1.0363  L_Mask: 1.0364  L_Caus: 0.0089  L_Spar: 0.6589  FR: [0.2690, 0.4049, 0.3617, 0.3998]  Wgt(C/S): 5.00/0.00  LR: 7.893e-05
+2026-04-04 05:29:40 INFO:train:Test: [13:57:21] [ 156/156]  Loss_Tot: 0.6656  L_Caus: 0.0056  L_Spar: 0.6586  Acc@1: 100.0000 (96.0700)  Acc@5: 100.0000 (99.7500)
+2026-04-04 05:29:40 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:31:59 INFO:train:Train: 13:59:41 [Epoch: 333/410] [Iter:  781/781]  Loss_Tot: 2.1553  L_Full: 1.0555  L_Mask: 1.0546  L_Caus: 0.0090  L_Spar: 0.6584  FR: [0.2676, 0.4094, 0.3640, 0.4020]  Wgt(C/S): 5.00/0.00  LR: 7.697e-05
+2026-04-04 05:32:10 INFO:train:Test: [13:59:51] [ 156/156]  Loss_Tot: 0.7161  L_Caus: 0.0056  L_Spar: 0.6607  Acc@1: 100.0000 (95.8800)  Acc@5: 100.0000 (99.8000)
+2026-04-04 05:32:10 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:34:30 INFO:train:Train: 14:02:11 [Epoch: 334/410] [Iter:  781/781]  Loss_Tot: 2.1518  L_Full: 1.0532  L_Mask: 1.0531  L_Caus: 0.0090  L_Spar: 0.6581  FR: [0.2684, 0.4113, 0.3643, 0.4049]  Wgt(C/S): 5.00/0.00  LR: 7.503e-05
+2026-04-04 05:34:41 INFO:train:Test: [14:02:22] [ 156/156]  Loss_Tot: 0.6931  L_Caus: 0.0053  L_Spar: 0.6587  Acc@1: 100.0000 (96.2300)  Acc@5: 100.0000 (99.7700)
+2026-04-04 05:34:41 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:37:01 INFO:train:Train: 14:04:42 [Epoch: 335/410] [Iter:  781/781]  Loss_Tot: 2.1453  L_Full: 1.0501  L_Mask: 1.0506  L_Caus: 0.0089  L_Spar: 0.6582  FR: [0.2682, 0.4081, 0.3656, 0.4020]  Wgt(C/S): 5.00/0.00  LR: 7.311e-05
+2026-04-04 05:37:12 INFO:train:Test: [14:04:53] [ 156/156]  Loss_Tot: 0.6845  L_Caus: 0.0053  L_Spar: 0.6600  Acc@1: 100.0000 (96.0900)  Acc@5: 100.0000 (99.8100)
+2026-04-04 05:37:12 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:39:32 INFO:train:Train: 14:07:13 [Epoch: 336/410] [Iter:  781/781]  Loss_Tot: 2.1623  L_Full: 1.0590  L_Mask: 1.0584  L_Caus: 0.0089  L_Spar: 0.6581  FR: [0.2695, 0.4075, 0.3697, 0.4027]  Wgt(C/S): 5.00/0.00  LR: 7.123e-05
+2026-04-04 05:39:42 INFO:train:Test: [14:07:24] [ 156/156]  Loss_Tot: 0.6301  L_Caus: 0.0060  L_Spar: 0.6583  Acc@1: 100.0000 (96.1000)  Acc@5: 100.0000 (99.8600)
+2026-04-04 05:39:42 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:42:02 INFO:train:Train: 14:09:43 [Epoch: 337/410] [Iter:  781/781]  Loss_Tot: 2.1378  L_Full: 1.0462  L_Mask: 1.0464  L_Caus: 0.0090  L_Spar: 0.6578  FR: [0.2727, 0.4104, 0.3633, 0.4033]  Wgt(C/S): 5.00/0.00  LR: 6.937e-05
+2026-04-04 05:42:13 INFO:train:Test: [14:09:54] [ 156/156]  Loss_Tot: 0.7223  L_Caus: 0.0054  L_Spar: 0.6591  Acc@1: 100.0000 (96.2400)  Acc@5: 100.0000 (99.7700)
+2026-04-04 05:42:13 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:44:33 INFO:train:Train: 14:12:14 [Epoch: 338/410] [Iter:  781/781]  Loss_Tot: 2.1264  L_Full: 1.0415  L_Mask: 1.0413  L_Caus: 0.0087  L_Spar: 0.6580  FR: [0.2730, 0.4085, 0.3675, 0.4030]  Wgt(C/S): 5.00/0.00  LR: 6.754e-05
+2026-04-04 05:44:44 INFO:train:Test: [14:12:25] [ 156/156]  Loss_Tot: 0.7845  L_Caus: 0.0054  L_Spar: 0.6603  Acc@1: 100.0000 (96.0600)  Acc@5: 100.0000 (99.8100)
+2026-04-04 05:44:44 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:47:03 INFO:train:Train: 14:14:44 [Epoch: 339/410] [Iter:  781/781]  Loss_Tot: 2.1203  L_Full: 1.0378  L_Mask: 1.0377  L_Caus: 0.0089  L_Spar: 0.6581  FR: [0.2742, 0.4088, 0.3656, 0.4036]  Wgt(C/S): 5.00/0.00  LR: 6.573e-05
+2026-04-04 05:47:14 INFO:train:Test: [14:14:55] [ 156/156]  Loss_Tot: 0.7185  L_Caus: 0.0055  L_Spar: 0.6588  Acc@1: 93.7500 (96.1200)  Acc@5: 100.0000 (99.8600)
+2026-04-04 05:47:14 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:49:34 INFO:train:Train: 14:17:15 [Epoch: 340/410] [Iter:  781/781]  Loss_Tot: 2.1017  L_Full: 1.0289  L_Mask: 1.0287  L_Caus: 0.0087  L_Spar: 0.6581  FR: [0.2743, 0.4110, 0.3668, 0.4049]  Wgt(C/S): 5.00/0.00  LR: 6.395e-05
+2026-04-04 05:49:45 INFO:train:Test: [14:17:26] [ 156/156]  Loss_Tot: 0.7918  L_Caus: 0.0052  L_Spar: 0.6601  Acc@1: 100.0000 (96.0500)  Acc@5: 100.0000 (99.8300)
+2026-04-04 05:49:45 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:52:05 INFO:train:Train: 14:19:46 [Epoch: 341/410] [Iter:  781/781]  Loss_Tot: 2.1342  L_Full: 1.0446  L_Mask: 1.0443  L_Caus: 0.0090  L_Spar: 0.6576  FR: [0.2750, 0.4120, 0.3649, 0.4062]  Wgt(C/S): 5.00/0.00  LR: 6.220e-05
+2026-04-04 05:52:16 INFO:train:Test: [14:19:57] [ 156/156]  Loss_Tot: 0.6698  L_Caus: 0.0055  L_Spar: 0.6578  Acc@1: 100.0000 (96.3100)  Acc@5: 100.0000 (99.8400)
+2026-04-04 05:52:16 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:54:35 INFO:train:Train: 14:22:16 [Epoch: 342/410] [Iter:  781/781]  Loss_Tot: 2.1263  L_Full: 1.0410  L_Mask: 1.0405  L_Caus: 0.0089  L_Spar: 0.6575  FR: [0.2753, 0.4123, 0.3633, 0.4081]  Wgt(C/S): 5.00/0.00  LR: 6.048e-05
+2026-04-04 05:54:46 INFO:train:Test: [14:22:27] [ 156/156]  Loss_Tot: 0.5468  L_Caus: 0.0062  L_Spar: 0.6563  Acc@1: 93.7500 (96.1700)  Acc@5: 100.0000 (99.8600)
+2026-04-04 05:54:46 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:57:06 INFO:train:Train: 14:24:47 [Epoch: 343/410] [Iter:  781/781]  Loss_Tot: 2.1420  L_Full: 1.0479  L_Mask: 1.0483  L_Caus: 0.0091  L_Spar: 0.6573  FR: [0.2762, 0.4155, 0.3659, 0.4101]  Wgt(C/S): 5.00/0.00  LR: 5.878e-05
+2026-04-04 05:57:17 INFO:train:Test: [14:24:58] [ 156/156]  Loss_Tot: 0.5977  L_Caus: 0.0060  L_Spar: 0.6568  Acc@1: 100.0000 (96.2200)  Acc@5: 100.0000 (99.8200)
+2026-04-04 05:57:17 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 05:59:37 INFO:train:Train: 14:27:18 [Epoch: 344/410] [Iter:  781/781]  Loss_Tot: 2.1234  L_Full: 1.0392  L_Mask: 1.0396  L_Caus: 0.0089  L_Spar: 0.6572  FR: [0.2766, 0.4142, 0.3659, 0.4069]  Wgt(C/S): 5.00/0.00  LR: 5.711e-05
+2026-04-04 05:59:48 INFO:train:Test: [14:27:29] [ 156/156]  Loss_Tot: 0.6742  L_Caus: 0.0056  L_Spar: 0.6593  Acc@1: 93.7500 (96.2700)  Acc@5: 100.0000 (99.7500)
+2026-04-04 05:59:48 INFO:train:*** Best metric: 96.32 (epoch 326)
+2026-04-04 06:02:07 INFO:train:Train: 14:29:48 [Epoch: 345/410] [Iter:  781/781]  Loss_Tot: 2.1606  L_Full: 1.0575  L_Mask: 1.0576  L_Caus: 0.0090  L_Spar: 0.6570  FR: [0.2767, 0.4145, 0.3688, 0.4088]  Wgt(C/S): 5.00/0.00  LR: 5.547e-05
+2026-04-04 06:02:18 INFO:train:Test: [14:29:59] [ 156/156]  Loss_Tot: 0.7541  L_Caus: 0.0053  L_Spar: 0.6577  Acc@1: 93.7500 (96.3300)  Acc@5: 100.0000 (99.8200)
+2026-04-04 06:02:18 INFO:train:*** Best metric: 96.33 (epoch 345)
+2026-04-04 06:04:38 INFO:train:Train: 14:32:19 [Epoch: 346/410] [Iter:  781/781]  Loss_Tot: 2.1097  L_Full: 1.0319  L_Mask: 1.0316  L_Caus: 0.0092  L_Spar: 0.6572  FR: [0.2754, 0.4152, 0.3684, 0.4075]  Wgt(C/S): 5.00/0.00  LR: 5.386e-05
+2026-04-04 06:04:49 INFO:train:Test: [14:32:30] [ 156/156]  Loss_Tot: 0.7469  L_Caus: 0.0054  L_Spar: 0.6589  Acc@1: 100.0000 (96.2000)  Acc@5: 100.0000 (99.7400)
+2026-04-04 06:04:49 INFO:train:*** Best metric: 96.33 (epoch 345)
+2026-04-04 06:07:09 INFO:train:Train: 14:34:50 [Epoch: 347/410] [Iter:  781/781]  Loss_Tot: 2.1101  L_Full: 1.0325  L_Mask: 1.0325  L_Caus: 0.0089  L_Spar: 0.6571  FR: [0.2766, 0.4145, 0.3700, 0.4081]  Wgt(C/S): 5.00/0.00  LR: 5.227e-05
+2026-04-04 06:07:20 INFO:train:Test: [14:35:01] [ 156/156]  Loss_Tot: 0.6188  L_Caus: 0.0057  L_Spar: 0.6595  Acc@1: 100.0000 (96.3400)  Acc@5: 100.0000 (99.7900)
+2026-04-04 06:07:20 INFO:train:*** Best metric: 96.34 (epoch 347)
+2026-04-04 06:09:39 INFO:train:Train: 14:37:20 [Epoch: 348/410] [Iter:  781/781]  Loss_Tot: 2.1093  L_Full: 1.0323  L_Mask: 1.0319  L_Caus: 0.0089  L_Spar: 0.6571  FR: [0.2772, 0.4174, 0.3704, 0.4117]  Wgt(C/S): 5.00/0.00  LR: 5.071e-05
+2026-04-04 06:09:50 INFO:train:Test: [14:37:31] [ 156/156]  Loss_Tot: 0.7988  L_Caus: 0.0055  L_Spar: 0.6572  Acc@1: 100.0000 (96.2600)  Acc@5: 100.0000 (99.8100)
+2026-04-04 06:09:50 INFO:train:*** Best metric: 96.34 (epoch 347)
+2026-04-04 06:12:10 INFO:train:Train: 14:39:51 [Epoch: 349/410] [Iter:  781/781]  Loss_Tot: 2.1070  L_Full: 1.0315  L_Mask: 1.0312  L_Caus: 0.0088  L_Spar: 0.6571  FR: [0.2777, 0.4139, 0.3652, 0.4088]  Wgt(C/S): 5.00/0.00  LR: 4.918e-05
+2026-04-04 06:12:21 INFO:train:Test: [14:40:02] [ 156/156]  Loss_Tot: 0.7334  L_Caus: 0.0052  L_Spar: 0.6581  Acc@1: 100.0000 (96.4900)  Acc@5: 100.0000 (99.7500)
+2026-04-04 06:12:21 INFO:train:*** Best metric: 96.49 (epoch 349)
+2026-04-04 06:14:41 INFO:train:Train: 14:42:22 [Epoch: 350/410] [Iter:  781/781]  Loss_Tot: 2.0854  L_Full: 1.0205  L_Mask: 1.0200  L_Caus: 0.0089  L_Spar: 0.6572  FR: [0.2778, 0.4145, 0.3678, 0.4094]  Wgt(C/S): 5.00/0.00  LR: 4.768e-05
+2026-04-04 06:14:52 INFO:train:Test: [14:42:33] [ 156/156]  Loss_Tot: 0.6613  L_Caus: 0.0054  L_Spar: 0.6590  Acc@1: 100.0000 (96.4100)  Acc@5: 100.0000 (99.7700)
+2026-04-04 06:14:52 INFO:train:*** Best metric: 96.49 (epoch 349)
+2026-04-04 06:17:11 INFO:train:Train: 14:44:52 [Epoch: 351/410] [Iter:  781/781]  Loss_Tot: 2.1068  L_Full: 1.0313  L_Mask: 1.0310  L_Caus: 0.0088  L_Spar: 0.6573  FR: [0.2778, 0.4133, 0.3684, 0.4085]  Wgt(C/S): 5.00/0.00  LR: 4.621e-05
+2026-04-04 06:17:22 INFO:train:Test: [14:45:03] [ 156/156]  Loss_Tot: 0.6741  L_Caus: 0.0060  L_Spar: 0.6589  Acc@1: 93.7500 (96.2400)  Acc@5: 100.0000 (99.7200)
+2026-04-04 06:17:22 INFO:train:*** Best metric: 96.49 (epoch 349)
+2026-04-04 06:19:42 INFO:train:Train: 14:47:23 [Epoch: 352/410] [Iter:  781/781]  Loss_Tot: 2.0957  L_Full: 1.0256  L_Mask: 1.0257  L_Caus: 0.0088  L_Spar: 0.6572  FR: [0.2785, 0.4181, 0.3678, 0.4113]  Wgt(C/S): 5.00/0.00  LR: 4.476e-05
+2026-04-04 06:19:53 INFO:train:Test: [14:47:34] [ 156/156]  Loss_Tot: 0.6692  L_Caus: 0.0052  L_Spar: 0.6569  Acc@1: 93.7500 (96.4600)  Acc@5: 100.0000 (99.8300)
+2026-04-04 06:19:53 INFO:train:*** Best metric: 96.49 (epoch 349)
+2026-04-04 06:22:13 INFO:train:Train: 14:49:54 [Epoch: 353/410] [Iter:  781/781]  Loss_Tot: 2.0590  L_Full: 1.0082  L_Mask: 1.0078  L_Caus: 0.0085  L_Spar: 0.6569  FR: [0.2791, 0.4161, 0.3688, 0.4097]  Wgt(C/S): 5.00/0.00  LR: 4.334e-05
+2026-04-04 06:22:24 INFO:train:Test: [14:50:05] [ 156/156]  Loss_Tot: 0.7487  L_Caus: 0.0055  L_Spar: 0.6593  Acc@1: 100.0000 (96.2900)  Acc@5: 100.0000 (99.8200)
+2026-04-04 06:22:24 INFO:train:*** Best metric: 96.49 (epoch 349)
+2026-04-04 06:24:44 INFO:train:Train: 14:52:25 [Epoch: 354/410] [Iter:  781/781]  Loss_Tot: 2.0873  L_Full: 1.0215  L_Mask: 1.0217  L_Caus: 0.0088  L_Spar: 0.6573  FR: [0.2785, 0.4165, 0.3688, 0.4117]  Wgt(C/S): 5.00/0.00  LR: 4.196e-05
+2026-04-04 06:24:54 INFO:train:Test: [14:52:36] [ 156/156]  Loss_Tot: 0.6082  L_Caus: 0.0059  L_Spar: 0.6586  Acc@1: 93.7500 (96.4000)  Acc@5: 100.0000 (99.8200)
+2026-04-04 06:24:55 INFO:train:*** Best metric: 96.49 (epoch 349)
+2026-04-04 06:27:14 INFO:train:Train: 14:54:55 [Epoch: 355/410] [Iter:  781/781]  Loss_Tot: 2.1324  L_Full: 1.0444  L_Mask: 1.0432  L_Caus: 0.0089  L_Spar: 0.6574  FR: [0.2785, 0.4168, 0.3672, 0.4126]  Wgt(C/S): 5.00/0.00  LR: 4.060e-05
+2026-04-04 06:27:25 INFO:train:Test: [14:55:06] [ 156/156]  Loss_Tot: 0.6088  L_Caus: 0.0055  L_Spar: 0.6582  Acc@1: 93.7500 (96.2900)  Acc@5: 100.0000 (99.7700)
+2026-04-04 06:27:25 INFO:train:*** Best metric: 96.49 (epoch 349)
+2026-04-04 06:29:45 INFO:train:Train: 14:57:26 [Epoch: 356/410] [Iter:  781/781]  Loss_Tot: 2.0959  L_Full: 1.0257  L_Mask: 1.0257  L_Caus: 0.0088  L_Spar: 0.6572  FR: [0.2794, 0.4197, 0.3700, 0.4149]  Wgt(C/S): 5.00/0.00  LR: 3.926e-05
+2026-04-04 06:29:56 INFO:train:Test: [14:57:37] [ 156/156]  Loss_Tot: 0.6470  L_Caus: 0.0056  L_Spar: 0.6583  Acc@1: 93.7500 (96.5200)  Acc@5: 100.0000 (99.8300)
+2026-04-04 06:29:56 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:32:16 INFO:train:Train: 14:59:57 [Epoch: 357/410] [Iter:  781/781]  Loss_Tot: 2.0773  L_Full: 1.0167  L_Mask: 1.0167  L_Caus: 0.0087  L_Spar: 0.6573  FR: [0.2796, 0.4165, 0.3716, 0.4110]  Wgt(C/S): 5.00/0.00  LR: 3.796e-05
+2026-04-04 06:32:27 INFO:train:Test: [15:00:08] [ 156/156]  Loss_Tot: 0.8129  L_Caus: 0.0055  L_Spar: 0.6591  Acc@1: 100.0000 (96.3500)  Acc@5: 100.0000 (99.7800)
+2026-04-04 06:32:27 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:34:46 INFO:train:Train: 15:02:27 [Epoch: 358/410] [Iter:  781/781]  Loss_Tot: 2.1025  L_Full: 1.0291  L_Mask: 1.0289  L_Caus: 0.0088  L_Spar: 0.6574  FR: [0.2791, 0.4197, 0.3716, 0.4136]  Wgt(C/S): 5.00/0.00  LR: 3.669e-05
+2026-04-04 06:34:57 INFO:train:Test: [15:02:38] [ 156/156]  Loss_Tot: 0.7422  L_Caus: 0.0052  L_Spar: 0.6606  Acc@1: 93.7500 (96.4700)  Acc@5: 100.0000 (99.7700)
+2026-04-04 06:34:57 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:37:17 INFO:train:Train: 15:04:58 [Epoch: 359/410] [Iter:  781/781]  Loss_Tot: 2.1089  L_Full: 1.0320  L_Mask: 1.0323  L_Caus: 0.0088  L_Spar: 0.6571  FR: [0.2798, 0.4197, 0.3716, 0.4149]  Wgt(C/S): 5.00/0.00  LR: 3.544e-05
+2026-04-04 06:37:28 INFO:train:Test: [15:05:09] [ 156/156]  Loss_Tot: 0.6681  L_Caus: 0.0053  L_Spar: 0.6585  Acc@1: 100.0000 (96.2900)  Acc@5: 100.0000 (99.8100)
+2026-04-04 06:37:28 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:39:48 INFO:train:Train: 15:07:29 [Epoch: 360/410] [Iter:  781/781]  Loss_Tot: 2.0949  L_Full: 1.0254  L_Mask: 1.0260  L_Caus: 0.0086  L_Spar: 0.6569  FR: [0.2799, 0.4190, 0.3732, 0.4126]  Wgt(C/S): 5.00/0.00  LR: 3.423e-05
+2026-04-04 06:39:59 INFO:train:Test: [15:07:40] [ 156/156]  Loss_Tot: 0.8376  L_Caus: 0.0052  L_Spar: 0.6594  Acc@1: 93.7500 (96.2000)  Acc@5: 100.0000 (99.8200)
+2026-04-04 06:39:59 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:42:18 INFO:train:Train: 15:09:59 [Epoch: 361/410] [Iter:  781/781]  Loss_Tot: 2.0448  L_Full: 1.0002  L_Mask: 1.0002  L_Caus: 0.0088  L_Spar: 0.6566  FR: [0.2804, 0.4206, 0.3694, 0.4155]  Wgt(C/S): 5.00/0.00  LR: 3.304e-05
+2026-04-04 06:42:29 INFO:train:Test: [15:10:10] [ 156/156]  Loss_Tot: 0.6928  L_Caus: 0.0055  L_Spar: 0.6588  Acc@1: 100.0000 (96.4100)  Acc@5: 100.0000 (99.8000)
+2026-04-04 06:42:29 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:44:49 INFO:train:Train: 15:12:30 [Epoch: 362/410] [Iter:  781/781]  Loss_Tot: 2.0962  L_Full: 1.0257  L_Mask: 1.0260  L_Caus: 0.0089  L_Spar: 0.6564  FR: [0.2806, 0.4248, 0.3723, 0.4171]  Wgt(C/S): 5.00/0.00  LR: 3.188e-05
+2026-04-04 06:45:00 INFO:train:Test: [15:12:41] [ 156/156]  Loss_Tot: 0.7936  L_Caus: 0.0051  L_Spar: 0.6586  Acc@1: 100.0000 (96.3000)  Acc@5: 100.0000 (99.7600)
+2026-04-04 06:45:00 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:47:20 INFO:train:Train: 15:15:01 [Epoch: 363/410] [Iter:  781/781]  Loss_Tot: 2.1093  L_Full: 1.0324  L_Mask: 1.0316  L_Caus: 0.0090  L_Spar: 0.6563  FR: [0.2810, 0.4254, 0.3710, 0.4193]  Wgt(C/S): 5.00/0.00  LR: 3.075e-05
+2026-04-04 06:47:31 INFO:train:Test: [15:15:12] [ 156/156]  Loss_Tot: 0.8155  L_Caus: 0.0051  L_Spar: 0.6588  Acc@1: 100.0000 (96.2100)  Acc@5: 100.0000 (99.7300)
+2026-04-04 06:47:31 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:49:50 INFO:train:Train: 15:17:31 [Epoch: 364/410] [Iter:  781/781]  Loss_Tot: 2.0842  L_Full: 1.0195  L_Mask: 1.0196  L_Caus: 0.0090  L_Spar: 0.6564  FR: [0.2809, 0.4267, 0.3723, 0.4203]  Wgt(C/S): 5.00/0.00  LR: 2.965e-05
+2026-04-04 06:50:01 INFO:train:Test: [15:17:42] [ 156/156]  Loss_Tot: 0.6681  L_Caus: 0.0057  L_Spar: 0.6574  Acc@1: 93.7500 (96.4700)  Acc@5: 100.0000 (99.8000)
+2026-04-04 06:50:01 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:52:21 INFO:train:Train: 15:20:02 [Epoch: 365/410] [Iter:  781/781]  Loss_Tot: 2.0709  L_Full: 1.0135  L_Mask: 1.0131  L_Caus: 0.0088  L_Spar: 0.6563  FR: [0.2806, 0.4219, 0.3704, 0.4158]  Wgt(C/S): 5.00/0.00  LR: 2.858e-05
+2026-04-04 06:52:32 INFO:train:Test: [15:20:13] [ 156/156]  Loss_Tot: 0.6835  L_Caus: 0.0053  L_Spar: 0.6599  Acc@1: 100.0000 (96.3900)  Acc@5: 100.0000 (99.7900)
+2026-04-04 06:52:32 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:54:52 INFO:train:Train: 15:22:33 [Epoch: 366/410] [Iter:  781/781]  Loss_Tot: 2.0629  L_Full: 1.0088  L_Mask: 1.0093  L_Caus: 0.0089  L_Spar: 0.6565  FR: [0.2812, 0.4251, 0.3752, 0.4158]  Wgt(C/S): 5.00/0.00  LR: 2.754e-05
+2026-04-04 06:55:03 INFO:train:Test: [15:22:44] [ 156/156]  Loss_Tot: 0.8409  L_Caus: 0.0054  L_Spar: 0.6588  Acc@1: 100.0000 (96.0300)  Acc@5: 100.0000 (99.7900)
+2026-04-04 06:55:03 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:57:23 INFO:train:Train: 15:25:04 [Epoch: 367/410] [Iter:  781/781]  Loss_Tot: 2.0527  L_Full: 1.0042  L_Mask: 1.0039  L_Caus: 0.0088  L_Spar: 0.6565  FR: [0.2820, 0.4241, 0.3704, 0.4161]  Wgt(C/S): 5.00/0.00  LR: 2.653e-05
+2026-04-04 06:57:33 INFO:train:Test: [15:25:15] [ 156/156]  Loss_Tot: 0.6100  L_Caus: 0.0055  L_Spar: 0.6576  Acc@1: 100.0000 (96.2400)  Acc@5: 100.0000 (99.7400)
+2026-04-04 06:57:34 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 06:59:53 INFO:train:Train: 15:27:34 [Epoch: 368/410] [Iter:  781/781]  Loss_Tot: 2.0973  L_Full: 1.0265  L_Mask: 1.0262  L_Caus: 0.0089  L_Spar: 0.6563  FR: [0.2814, 0.4257, 0.3723, 0.4174]  Wgt(C/S): 5.00/0.00  LR: 2.555e-05
+2026-04-04 07:00:04 INFO:train:Test: [15:27:45] [ 156/156]  Loss_Tot: 0.8582  L_Caus: 0.0054  L_Spar: 0.6588  Acc@1: 100.0000 (96.1500)  Acc@5: 100.0000 (99.7500)
+2026-04-04 07:00:04 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 07:02:24 INFO:train:Train: 15:30:05 [Epoch: 369/410] [Iter:  781/781]  Loss_Tot: 2.0929  L_Full: 1.0239  L_Mask: 1.0241  L_Caus: 0.0089  L_Spar: 0.6560  FR: [0.2807, 0.4273, 0.3739, 0.4181]  Wgt(C/S): 5.00/0.00  LR: 2.460e-05
+2026-04-04 07:02:35 INFO:train:Test: [15:30:16] [ 156/156]  Loss_Tot: 0.7848  L_Caus: 0.0054  L_Spar: 0.6600  Acc@1: 100.0000 (96.2700)  Acc@5: 100.0000 (99.7900)
+2026-04-04 07:02:35 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 07:04:55 INFO:train:Train: 15:32:36 [Epoch: 370/410] [Iter:  781/781]  Loss_Tot: 2.1251  L_Full: 1.0398  L_Mask: 1.0399  L_Caus: 0.0090  L_Spar: 0.6563  FR: [0.2810, 0.4289, 0.3739, 0.4197]  Wgt(C/S): 5.00/0.00  LR: 2.368e-05
+2026-04-04 07:05:06 INFO:train:Test: [15:32:47] [ 156/156]  Loss_Tot: 0.7267  L_Caus: 0.0056  L_Spar: 0.6582  Acc@1: 100.0000 (96.3300)  Acc@5: 100.0000 (99.8200)
+2026-04-04 07:05:06 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 07:07:25 INFO:train:Train: 15:35:07 [Epoch: 371/410] [Iter:  781/781]  Loss_Tot: 2.0874  L_Full: 1.0210  L_Mask: 1.0213  L_Caus: 0.0090  L_Spar: 0.6565  FR: [0.2833, 0.4254, 0.3768, 0.4177]  Wgt(C/S): 5.00/0.00  LR: 2.278e-05
+2026-04-04 07:07:36 INFO:train:Test: [15:35:17] [ 156/156]  Loss_Tot: 0.6732  L_Caus: 0.0057  L_Spar: 0.6594  Acc@1: 100.0000 (96.2900)  Acc@5: 100.0000 (99.7600)
+2026-04-04 07:07:36 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 07:09:56 INFO:train:Train: 15:37:37 [Epoch: 372/410] [Iter:  781/781]  Loss_Tot: 2.1048  L_Full: 1.0298  L_Mask: 1.0292  L_Caus: 0.0091  L_Spar: 0.6564  FR: [0.2825, 0.4273, 0.3752, 0.4177]  Wgt(C/S): 5.00/0.00  LR: 2.192e-05
+2026-04-04 07:10:07 INFO:train:Test: [15:37:48] [ 156/156]  Loss_Tot: 0.6142  L_Caus: 0.0055  L_Spar: 0.6596  Acc@1: 100.0000 (96.4000)  Acc@5: 100.0000 (99.7400)
+2026-04-04 07:10:07 INFO:train:*** Best metric: 96.52 (epoch 356)
+2026-04-04 07:12:27 INFO:train:Train: 15:40:08 [Epoch: 373/410] [Iter:  781/781]  Loss_Tot: 2.1038  L_Full: 1.0290  L_Mask: 1.0296  L_Caus: 0.0090  L_Spar: 0.6566  FR: [0.2843, 0.4299, 0.3758, 0.4197]  Wgt(C/S): 5.00/0.00  LR: 2.109e-05
+2026-04-04 07:12:38 INFO:train:Test: [15:40:19] [ 156/156]  Loss_Tot: 0.6209  L_Caus: 0.0060  L_Spar: 0.6596  Acc@1: 100.0000 (96.5300)  Acc@5: 100.0000 (99.8000)
+2026-04-04 07:12:38 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:14:57 INFO:train:Train: 15:42:39 [Epoch: 374/410] [Iter:  781/781]  Loss_Tot: 2.0983  L_Full: 1.0266  L_Mask: 1.0265  L_Caus: 0.0090  L_Spar: 0.6568  FR: [0.2831, 0.4248, 0.3764, 0.4171]  Wgt(C/S): 5.00/0.00  LR: 2.028e-05
+2026-04-04 07:15:08 INFO:train:Test: [15:42:49] [ 156/156]  Loss_Tot: 0.6976  L_Caus: 0.0055  L_Spar: 0.6603  Acc@1: 100.0000 (96.4900)  Acc@5: 100.0000 (99.8100)
+2026-04-04 07:15:08 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:17:28 INFO:train:Train: 15:45:09 [Epoch: 375/410] [Iter:  781/781]  Loss_Tot: 2.0936  L_Full: 1.0241  L_Mask: 1.0248  L_Caus: 0.0089  L_Spar: 0.6569  FR: [0.2839, 0.4280, 0.3758, 0.4200]  Wgt(C/S): 5.00/0.00  LR: 1.951e-05
+2026-04-04 07:17:39 INFO:train:Test: [15:45:20] [ 156/156]  Loss_Tot: 0.7806  L_Caus: 0.0054  L_Spar: 0.6608  Acc@1: 100.0000 (96.4300)  Acc@5: 100.0000 (99.7600)
+2026-04-04 07:17:39 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:19:59 INFO:train:Train: 15:47:40 [Epoch: 376/410] [Iter:  781/781]  Loss_Tot: 2.1183  L_Full: 1.0368  L_Mask: 1.0362  L_Caus: 0.0090  L_Spar: 0.6568  FR: [0.2862, 0.4277, 0.3784, 0.4203]  Wgt(C/S): 5.00/0.00  LR: 1.877e-05
+2026-04-04 07:20:10 INFO:train:Test: [15:47:51] [ 156/156]  Loss_Tot: 0.7162  L_Caus: 0.0056  L_Spar: 0.6599  Acc@1: 100.0000 (96.5100)  Acc@5: 100.0000 (99.8000)
+2026-04-04 07:20:10 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:22:29 INFO:train:Train: 15:50:11 [Epoch: 377/410] [Iter:  781/781]  Loss_Tot: 2.0639  L_Full: 1.0094  L_Mask: 1.0093  L_Caus: 0.0090  L_Spar: 0.6567  FR: [0.2859, 0.4309, 0.3761, 0.4203]  Wgt(C/S): 5.00/0.00  LR: 1.805e-05
+2026-04-04 07:22:40 INFO:train:Test: [15:50:21] [ 156/156]  Loss_Tot: 0.5268  L_Caus: 0.0064  L_Spar: 0.6590  Acc@1: 93.7500 (96.3700)  Acc@5: 100.0000 (99.8200)
+2026-04-04 07:22:40 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:25:00 INFO:train:Train: 15:52:41 [Epoch: 378/410] [Iter:  781/781]  Loss_Tot: 2.1198  L_Full: 1.0368  L_Mask: 1.0367  L_Caus: 0.0092  L_Spar: 0.6567  FR: [0.2860, 0.4309, 0.3784, 0.4222]  Wgt(C/S): 5.00/0.00  LR: 1.737e-05
+2026-04-04 07:25:11 INFO:train:Test: [15:52:52] [ 156/156]  Loss_Tot: 0.7645  L_Caus: 0.0052  L_Spar: 0.6596  Acc@1: 93.7500 (96.3600)  Acc@5: 100.0000 (99.7400)
+2026-04-04 07:25:11 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:27:31 INFO:train:Train: 15:55:12 [Epoch: 379/410] [Iter:  781/781]  Loss_Tot: 2.0815  L_Full: 1.0186  L_Mask: 1.0181  L_Caus: 0.0089  L_Spar: 0.6567  FR: [0.2875, 0.4312, 0.3758, 0.4225]  Wgt(C/S): 5.00/0.00  LR: 1.672e-05
+2026-04-04 07:27:42 INFO:train:Test: [15:55:23] [ 156/156]  Loss_Tot: 0.6717  L_Caus: 0.0055  L_Spar: 0.6599  Acc@1: 100.0000 (96.3100)  Acc@5: 100.0000 (99.8500)
+2026-04-04 07:27:42 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:30:01 INFO:train:Train: 15:57:42 [Epoch: 380/410] [Iter:  781/781]  Loss_Tot: 2.1014  L_Full: 1.0284  L_Mask: 1.0285  L_Caus: 0.0089  L_Spar: 0.6566  FR: [0.2873, 0.4296, 0.3780, 0.4216]  Wgt(C/S): 5.00/0.00  LR: 1.609e-05
+2026-04-04 07:30:12 INFO:train:Test: [15:57:53] [ 156/156]  Loss_Tot: 0.7024  L_Caus: 0.0054  L_Spar: 0.6595  Acc@1: 100.0000 (96.4600)  Acc@5: 100.0000 (99.8000)
+2026-04-04 07:30:12 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:32:32 INFO:train:Train: 16:00:13 [Epoch: 381/410] [Iter:  781/781]  Loss_Tot: 2.0622  L_Full: 1.0090  L_Mask: 1.0093  L_Caus: 0.0087  L_Spar: 0.6566  FR: [0.2870, 0.4293, 0.3764, 0.4213]  Wgt(C/S): 5.00/0.00  LR: 1.550e-05
+2026-04-04 07:32:43 INFO:train:Test: [16:00:24] [ 156/156]  Loss_Tot: 0.5799  L_Caus: 0.0059  L_Spar: 0.6594  Acc@1: 100.0000 (96.2600)  Acc@5: 100.0000 (99.7900)
+2026-04-04 07:32:43 INFO:train:*** Best metric: 96.53 (epoch 373)
+2026-04-04 07:35:03 INFO:train:Train: 16:02:44 [Epoch: 382/410] [Iter:  781/781]  Loss_Tot: 2.0973  L_Full: 1.0259  L_Mask: 1.0258  L_Caus: 0.0090  L_Spar: 0.6566  FR: [0.2905, 0.4286, 0.3784, 0.4219]  Wgt(C/S): 5.00/0.00  LR: 1.494e-05
+2026-04-04 07:35:14 INFO:train:Test: [16:02:55] [ 156/156]  Loss_Tot: 0.6495  L_Caus: 0.0057  L_Spar: 0.6589  Acc@1: 100.0000 (96.5900)  Acc@5: 100.0000 (99.8100)
+2026-04-04 07:35:14 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:37:34 INFO:train:Train: 16:05:15 [Epoch: 383/410] [Iter:  781/781]  Loss_Tot: 2.0684  L_Full: 1.0122  L_Mask: 1.0115  L_Caus: 0.0089  L_Spar: 0.6564  FR: [0.2889, 0.4286, 0.3768, 0.4203]  Wgt(C/S): 5.00/0.00  LR: 1.441e-05
+2026-04-04 07:37:44 INFO:train:Test: [16:05:26] [ 156/156]  Loss_Tot: 0.6693  L_Caus: 0.0054  L_Spar: 0.6593  Acc@1: 100.0000 (96.4500)  Acc@5: 100.0000 (99.7900)
+2026-04-04 07:37:45 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:40:04 INFO:train:Train: 16:07:45 [Epoch: 384/410] [Iter:  781/781]  Loss_Tot: 2.0845  L_Full: 1.0200  L_Mask: 1.0198  L_Caus: 0.0089  L_Spar: 0.6564  FR: [0.2921, 0.4296, 0.3777, 0.4206]  Wgt(C/S): 5.00/0.00  LR: 1.390e-05
+2026-04-04 07:40:15 INFO:train:Test: [16:07:56] [ 156/156]  Loss_Tot: 0.7744  L_Caus: 0.0055  L_Spar: 0.6599  Acc@1: 100.0000 (96.4800)  Acc@5: 100.0000 (99.8500)
+2026-04-04 07:40:15 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:42:35 INFO:train:Train: 16:10:16 [Epoch: 385/410] [Iter:  781/781]  Loss_Tot: 2.1025  L_Full: 1.0289  L_Mask: 1.0283  L_Caus: 0.0090  L_Spar: 0.6562  FR: [0.2892, 0.4309, 0.3787, 0.4206]  Wgt(C/S): 5.00/0.00  LR: 1.343e-05
+2026-04-04 07:42:46 INFO:train:Test: [16:10:27] [ 156/156]  Loss_Tot: 0.5982  L_Caus: 0.0056  L_Spar: 0.6591  Acc@1: 93.7500 (96.5300)  Acc@5: 100.0000 (99.8200)
+2026-04-04 07:42:46 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:45:06 INFO:train:Train: 16:12:47 [Epoch: 386/410] [Iter:  781/781]  Loss_Tot: 2.0318  L_Full: 0.9942  L_Mask: 0.9938  L_Caus: 0.0087  L_Spar: 0.6560  FR: [0.2884, 0.4270, 0.3768, 0.4184]  Wgt(C/S): 5.00/0.00  LR: 1.299e-05
+2026-04-04 07:45:17 INFO:train:Test: [16:12:58] [ 156/156]  Loss_Tot: 0.7498  L_Caus: 0.0050  L_Spar: 0.6594  Acc@1: 100.0000 (96.4700)  Acc@5: 100.0000 (99.8000)
+2026-04-04 07:45:17 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:47:37 INFO:train:Train: 16:15:18 [Epoch: 387/410] [Iter:  781/781]  Loss_Tot: 2.1223  L_Full: 1.0384  L_Mask: 1.0383  L_Caus: 0.0090  L_Spar: 0.6559  FR: [0.2915, 0.4337, 0.3774, 0.4254]  Wgt(C/S): 5.00/0.00  LR: 1.258e-05
+2026-04-04 07:47:47 INFO:train:Test: [16:15:29] [ 156/156]  Loss_Tot: 0.7818  L_Caus: 0.0055  L_Spar: 0.6595  Acc@1: 93.7500 (96.4400)  Acc@5: 100.0000 (99.8100)
+2026-04-04 07:47:48 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:50:07 INFO:train:Train: 16:17:48 [Epoch: 388/410] [Iter:  781/781]  Loss_Tot: 2.0981  L_Full: 1.0264  L_Mask: 1.0263  L_Caus: 0.0090  L_Spar: 0.6560  FR: [0.2937, 0.4325, 0.3796, 0.4203]  Wgt(C/S): 5.00/0.00  LR: 1.220e-05
+2026-04-04 07:50:18 INFO:train:Test: [16:17:59] [ 156/156]  Loss_Tot: 0.7394  L_Caus: 0.0055  L_Spar: 0.6600  Acc@1: 100.0000 (96.4700)  Acc@5: 100.0000 (99.7700)
+2026-04-04 07:50:18 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:52:38 INFO:train:Train: 16:20:19 [Epoch: 389/410] [Iter:  781/781]  Loss_Tot: 2.1354  L_Full: 1.0445  L_Mask: 1.0444  L_Caus: 0.0092  L_Spar: 0.6561  FR: [0.2971, 0.4337, 0.3787, 0.4219]  Wgt(C/S): 5.00/0.00  LR: 1.185e-05
+2026-04-04 07:52:49 INFO:train:Test: [16:20:30] [ 156/156]  Loss_Tot: 0.7839  L_Caus: 0.0052  L_Spar: 0.6609  Acc@1: 93.7500 (96.5300)  Acc@5: 100.0000 (99.8200)
+2026-04-04 07:52:49 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:55:09 INFO:train:Train: 16:22:50 [Epoch: 390/410] [Iter:  781/781]  Loss_Tot: 2.0837  L_Full: 1.0193  L_Mask: 1.0186  L_Caus: 0.0091  L_Spar: 0.6560  FR: [0.2961, 0.4296, 0.3790, 0.4216]  Wgt(C/S): 5.00/0.00  LR: 1.153e-05
+2026-04-04 07:55:20 INFO:train:Test: [16:23:01] [ 156/156]  Loss_Tot: 0.6826  L_Caus: 0.0055  L_Spar: 0.6587  Acc@1: 100.0000 (96.5700)  Acc@5: 100.0000 (99.8000)
+2026-04-04 07:55:20 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 07:57:40 INFO:train:Train: 16:25:21 [Epoch: 391/410] [Iter:  781/781]  Loss_Tot: 2.0816  L_Full: 1.0183  L_Mask: 1.0180  L_Caus: 0.0090  L_Spar: 0.6560  FR: [0.2945, 0.4305, 0.3806, 0.4200]  Wgt(C/S): 5.00/0.00  LR: 1.124e-05
+2026-04-04 07:57:51 INFO:train:Test: [16:25:32] [ 156/156]  Loss_Tot: 0.6356  L_Caus: 0.0054  L_Spar: 0.6585  Acc@1: 93.7500 (96.4600)  Acc@5: 100.0000 (99.7900)
+2026-04-04 07:57:51 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 08:00:10 INFO:train:Train: 16:27:52 [Epoch: 392/410] [Iter:  781/781]  Loss_Tot: 2.0891  L_Full: 1.0219  L_Mask: 1.0222  L_Caus: 0.0090  L_Spar: 0.6559  FR: [0.2956, 0.4328, 0.3784, 0.4235]  Wgt(C/S): 5.00/0.00  LR: 1.098e-05
+2026-04-04 08:00:21 INFO:train:Test: [16:28:02] [ 156/156]  Loss_Tot: 0.7836  L_Caus: 0.0052  L_Spar: 0.6606  Acc@1: 100.0000 (96.3600)  Acc@5: 100.0000 (99.8300)
+2026-04-04 08:00:21 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 08:02:41 INFO:train:Train: 16:30:22 [Epoch: 393/410] [Iter:  781/781]  Loss_Tot: 2.1510  L_Full: 1.0521  L_Mask: 1.0519  L_Caus: 0.0093  L_Spar: 0.6559  FR: [0.2956, 0.4328, 0.3819, 0.4254]  Wgt(C/S): 5.00/0.00  LR: 1.075e-05
+2026-04-04 08:02:52 INFO:train:Test: [16:30:33] [ 156/156]  Loss_Tot: 0.8092  L_Caus: 0.0055  L_Spar: 0.6599  Acc@1: 93.7500 (96.2500)  Acc@5: 100.0000 (99.7800)
+2026-04-04 08:02:52 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 08:05:12 INFO:train:Train: 16:32:53 [Epoch: 394/410] [Iter:  781/781]  Loss_Tot: 2.0667  L_Full: 1.0110  L_Mask: 1.0111  L_Caus: 0.0088  L_Spar: 0.6560  FR: [0.2916, 0.4315, 0.3787, 0.4229]  Wgt(C/S): 5.00/0.00  LR: 1.055e-05
+2026-04-04 08:05:23 INFO:train:Test: [16:33:04] [ 156/156]  Loss_Tot: 0.6438  L_Caus: 0.0057  L_Spar: 0.6591  Acc@1: 100.0000 (96.4300)  Acc@5: 100.0000 (99.8000)
+2026-04-04 08:05:23 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 08:07:43 INFO:train:Train: 16:35:24 [Epoch: 395/410] [Iter:  781/781]  Loss_Tot: 2.0695  L_Full: 1.0123  L_Mask: 1.0121  L_Caus: 0.0089  L_Spar: 0.6561  FR: [0.2964, 0.4321, 0.3768, 0.4241]  Wgt(C/S): 5.00/0.00  LR: 1.038e-05
+2026-04-04 08:07:54 INFO:train:Test: [16:35:35] [ 156/156]  Loss_Tot: 0.7156  L_Caus: 0.0055  L_Spar: 0.6591  Acc@1: 100.0000 (96.4700)  Acc@5: 100.0000 (99.8600)
+2026-04-04 08:07:54 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 08:10:13 INFO:train:Train: 16:37:54 [Epoch: 396/410] [Iter:  781/781]  Loss_Tot: 2.0988  L_Full: 1.0265  L_Mask: 1.0266  L_Caus: 0.0091  L_Spar: 0.6561  FR: [0.2987, 0.4334, 0.3787, 0.4241]  Wgt(C/S): 5.00/0.00  LR: 1.024e-05
+2026-04-04 08:10:24 INFO:train:Test: [16:38:05] [ 156/156]  Loss_Tot: 0.6970  L_Caus: 0.0056  L_Spar: 0.6600  Acc@1: 100.0000 (96.4800)  Acc@5: 100.0000 (99.7500)
+2026-04-04 08:10:24 INFO:train:*** Best metric: 96.59 (epoch 382)
+2026-04-04 08:12:44 INFO:train:Train: 16:40:25 [Epoch: 397/410] [Iter:  781/781]  Loss_Tot: 2.1079  L_Full: 1.0314  L_Mask: 1.0311  L_Caus: 0.0090  L_Spar: 0.6561  FR: [0.2966, 0.4305, 0.3832, 0.4213]  Wgt(C/S): 5.00/0.00  LR: 1.014e-05
+2026-04-04 08:12:55 INFO:train:Test: [16:40:36] [ 156/156]  Loss_Tot: 0.8310  L_Caus: 0.0053  L_Spar: 0.6617  Acc@1: 100.0000 (96.7200)  Acc@5: 100.0000 (99.7800)
+2026-04-04 08:12:55 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:15:15 INFO:train:Train: 16:42:56 [Epoch: 398/410] [Iter:  781/781]  Loss_Tot: 2.0723  L_Full: 1.0138  L_Mask: 1.0137  L_Caus: 0.0089  L_Spar: 0.6561  FR: [0.3012, 0.4331, 0.3768, 0.4241]  Wgt(C/S): 5.00/0.00  LR: 1.006e-05
+2026-04-04 08:15:26 INFO:train:Test: [16:43:07] [ 156/156]  Loss_Tot: 0.5390  L_Caus: 0.0062  L_Spar: 0.6592  Acc@1: 100.0000 (96.6700)  Acc@5: 100.0000 (99.8200)
+2026-04-04 08:15:26 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:17:46 INFO:train:Train: 16:45:27 [Epoch: 399/410] [Iter:  781/781]  Loss_Tot: 2.1074  L_Full: 1.0311  L_Mask: 1.0306  L_Caus: 0.0091  L_Spar: 0.6560  FR: [0.3027, 0.4337, 0.3816, 0.4241]  Wgt(C/S): 5.00/0.00  LR: 1.002e-05
+2026-04-04 08:17:57 INFO:train:Test: [16:45:38] [ 156/156]  Loss_Tot: 0.7462  L_Caus: 0.0057  L_Spar: 0.6599  Acc@1: 100.0000 (96.4800)  Acc@5: 100.0000 (99.8100)
+2026-04-04 08:17:57 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:20:16 INFO:train:Train: 16:47:57 [Epoch: 400/410] [Iter:  781/781]  Loss_Tot: 2.0158  L_Full: 0.9863  L_Mask: 0.9865  L_Caus: 0.0085  L_Spar: 0.6559  FR: [0.3022, 0.4296, 0.3764, 0.4203]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:20:27 INFO:train:Test: [16:48:08] [ 156/156]  Loss_Tot: 0.6522  L_Caus: 0.0054  L_Spar: 0.6589  Acc@1: 100.0000 (96.4700)  Acc@5: 100.0000 (99.8300)
+2026-04-04 08:20:27 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:22:47 INFO:train:Train: 16:50:28 [Epoch: 401/410] [Iter:  781/781]  Loss_Tot: 2.1264  L_Full: 1.0400  L_Mask: 1.0406  L_Caus: 0.0091  L_Spar: 0.6559  FR: [0.3054, 0.4344, 0.3854, 0.4251]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:22:58 INFO:train:Test: [16:50:39] [ 156/156]  Loss_Tot: 0.7254  L_Caus: 0.0052  L_Spar: 0.6596  Acc@1: 100.0000 (96.5000)  Acc@5: 100.0000 (99.7900)
+2026-04-04 08:22:58 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:25:18 INFO:train:Train: 16:52:59 [Epoch: 402/410] [Iter:  781/781]  Loss_Tot: 2.1405  L_Full: 1.0471  L_Mask: 1.0468  L_Caus: 0.0093  L_Spar: 0.6559  FR: [0.3047, 0.4357, 0.3809, 0.4280]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:25:29 INFO:train:Test: [16:53:10] [ 156/156]  Loss_Tot: 0.6801  L_Caus: 0.0056  L_Spar: 0.6594  Acc@1: 100.0000 (96.4300)  Acc@5: 100.0000 (99.8000)
+2026-04-04 08:25:29 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:27:49 INFO:train:Train: 16:55:30 [Epoch: 403/410] [Iter:  781/781]  Loss_Tot: 2.0866  L_Full: 1.0212  L_Mask: 1.0202  L_Caus: 0.0090  L_Spar: 0.6560  FR: [0.2988, 0.4321, 0.3806, 0.4235]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:28:00 INFO:train:Test: [16:55:41] [ 156/156]  Loss_Tot: 0.6737  L_Caus: 0.0055  L_Spar: 0.6595  Acc@1: 100.0000 (96.5700)  Acc@5: 100.0000 (99.7600)
+2026-04-04 08:28:00 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:30:20 INFO:train:Train: 16:58:01 [Epoch: 404/410] [Iter:  781/781]  Loss_Tot: 2.0681  L_Full: 1.0117  L_Mask: 1.0116  L_Caus: 0.0089  L_Spar: 0.6560  FR: [0.2990, 0.4328, 0.3796, 0.4203]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:30:31 INFO:train:Test: [16:58:12] [ 156/156]  Loss_Tot: 0.6879  L_Caus: 0.0052  L_Spar: 0.6595  Acc@1: 100.0000 (96.3700)  Acc@5: 100.0000 (99.7200)
+2026-04-04 08:30:31 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:32:50 INFO:train:Train: 17:00:32 [Epoch: 405/410] [Iter:  781/781]  Loss_Tot: 2.0786  L_Full: 1.0169  L_Mask: 1.0169  L_Caus: 0.0089  L_Spar: 0.6561  FR: [0.3019, 0.4325, 0.3803, 0.4229]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:33:01 INFO:train:Test: [17:00:42] [ 156/156]  Loss_Tot: 0.7674  L_Caus: 0.0052  L_Spar: 0.6613  Acc@1: 93.7500 (96.4600)  Acc@5: 100.0000 (99.7300)
+2026-04-04 08:33:01 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:35:21 INFO:train:Train: 17:03:02 [Epoch: 406/410] [Iter:  781/781]  Loss_Tot: 2.1021  L_Full: 1.0285  L_Mask: 1.0285  L_Caus: 0.0090  L_Spar: 0.6561  FR: [0.3033, 0.4344, 0.3822, 0.4251]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:35:32 INFO:train:Test: [17:03:13] [ 156/156]  Loss_Tot: 0.6023  L_Caus: 0.0054  L_Spar: 0.6581  Acc@1: 100.0000 (96.5100)  Acc@5: 100.0000 (99.8300)
+2026-04-04 08:35:32 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:37:52 INFO:train:Train: 17:05:33 [Epoch: 407/410] [Iter:  781/781]  Loss_Tot: 2.0954  L_Full: 1.0251  L_Mask: 1.0251  L_Caus: 0.0090  L_Spar: 0.6561  FR: [0.3007, 0.4341, 0.3819, 0.4238]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:38:03 INFO:train:Test: [17:05:44] [ 156/156]  Loss_Tot: 0.7399  L_Caus: 0.0054  L_Spar: 0.6604  Acc@1: 93.7500 (96.4100)  Acc@5: 100.0000 (99.7800)
+2026-04-04 08:38:03 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:40:23 INFO:train:Train: 17:08:04 [Epoch: 408/410] [Iter:  781/781]  Loss_Tot: 2.1073  L_Full: 1.0307  L_Mask: 1.0309  L_Caus: 0.0091  L_Spar: 0.6561  FR: [0.3023, 0.4363, 0.3819, 0.4251]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:40:34 INFO:train:Test: [17:08:15] [ 156/156]  Loss_Tot: 0.5826  L_Caus: 0.0056  L_Spar: 0.6586  Acc@1: 100.0000 (96.5600)  Acc@5: 100.0000 (99.8300)
+2026-04-04 08:40:34 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:42:54 INFO:train:Train: 17:10:35 [Epoch: 409/410] [Iter:  781/781]  Loss_Tot: 2.0741  L_Full: 1.0143  L_Mask: 1.0141  L_Caus: 0.0091  L_Spar: 0.6560  FR: [0.3036, 0.4347, 0.3822, 0.4248]  Wgt(C/S): 5.00/0.00  LR: 1.000e-05
+2026-04-04 08:43:05 INFO:train:Test: [17:10:46] [ 156/156]  Loss_Tot: 0.8057  L_Caus: 0.0054  L_Spar: 0.6614  Acc@1: 100.0000 (96.6100)  Acc@5: 100.0000 (99.8000)
+2026-04-04 08:43:05 INFO:train:*** Best metric: 96.72 (epoch 397)
+2026-04-04 08:43:05 INFO:train:*** Best metric: 96.72 (epoch 397)

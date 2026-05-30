@@ -1,0 +1,38 @@
+data_path: '/root/lanyun-tmp/data/tiny-imagenet-200'
+model: QKFormer_10_768
+nb_classes: 200
+input_size: 64
+time_step: 4
+
+batch_size: 64
+accum_iter: 1
+epochs: 300
+
+blr: 0.00135
+min_lr: 1.0e-5
+warmup_epochs: 5
+weight_decay: 0.05
+layer_decay: 1.0
+drop_path: 0.1
+
+aa: rand-m9-mstd0.5-inc1
+color_jitter: null
+smoothing: 0.1
+reprob: 0.25
+remode: pixel
+recount: 1
+
+mixup: 0.8
+cutmix: 1.0
+mixup_prob: 0.5
+mixup_switch_prob: 0.5
+mixup_mode: batch
+
+output_dir: ./output/tiny_imagenet_10_768_T4
+log_dir: ./output/tiny_imagenet_10_768_T4
+num_workers: 10
+pin_mem: true
+device: cuda
+seed: 42
+finetune: ''
+resume: ''

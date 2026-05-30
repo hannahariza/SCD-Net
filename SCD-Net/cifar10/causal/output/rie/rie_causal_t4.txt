@@ -1,0 +1,410 @@
+num_images: 320
+num_spike_layers: 26
+spike_layers: ['head_lif', 'patch_embed1.embed1.embed_lif', 'patch_embed1.embed2.embed_lif', 'patch_embed2.embed1.embed_lif', 'patch_embed2.max_embed1.embed_lif', 'patch_embed3.embed1.embed_lif', 'patch_embed3.max_embed1.embed_lif', 'stage1.0.mlp.fc1_lif', 'stage1.0.mlp.fc2_lif', 'stage2.0.mixer.conv_neuron', 'stage2.0.mlp.fc1_lif', 'stage2.0.mlp.fc2_lif', 'stage3.0.attn.attn_lif', 'stage3.0.attn.k_lif', 'stage3.0.attn.q_lif', 'stage3.0.attn.v_lif', 'stage3.0.attn.x_lif', 'stage3.0.mlp.fc1_lif', 'stage3.0.mlp.fc2_lif', 'stage3.1.attn.attn_lif', 'stage3.1.attn.k_lif', 'stage3.1.attn.q_lif', 'stage3.1.attn.v_lif', 'stage3.1.attn.x_lif', 'stage3.1.mlp.fc1_lif', 'stage3.1.mlp.fc2_lif']
+overall.baseline_firing_rate: 0.1336943888219228
+overall.baseline_p0: 0.8663056111780771
+overall.baseline_p1: 0.1336943888219228
+overall.baseline_entropy: 0.5674837019855268
+overall.causal_firing_rate: 0.13594977010531198
+overall.causal_p0: 0.864050229894688
+overall.causal_p1: 0.13594977010531198
+overall.causal_entropy: 0.5735325364326391
+overall.rie_causal_over_baseline: 1.0106590452288549
+overall.baseline_num_values: 2045214720
+overall.causal_num_values: 2045214720
+overall.baseline_num_ones: 273433732
+overall.causal_num_ones: 278046471
+per_layer.head_lif.baseline_firing_rate: 0.15705973307291668
+per_layer.head_lif.baseline_p0: 0.8429402669270833
+per_layer.head_lif.baseline_p1: 0.15705973307291668
+per_layer.head_lif.baseline_entropy: 0.6272288704352366
+per_layer.head_lif.baseline_shape: (4, 320, 384)
+per_layer.head_lif.causal_firing_rate: 0.1627685546875
+per_layer.head_lif.causal_p0: 0.8372314453125
+per_layer.head_lif.causal_p1: 0.1627685546875
+per_layer.head_lif.causal_entropy: 0.6408918678339766
+per_layer.head_lif.causal_shape: (4, 320, 384)
+per_layer.head_lif.rie_causal_over_baseline: 1.0217831130576587
+per_layer.head_lif.baseline_num_values: 491520
+per_layer.head_lif.baseline_num_ones: 77198
+per_layer.head_lif.causal_num_values: 491520
+per_layer.head_lif.causal_num_ones: 80004
+per_layer.patch_embed1.embed1.embed_lif.baseline_firing_rate: 0.3401294708251953
+per_layer.patch_embed1.embed1.embed_lif.baseline_p0: 0.6598705291748047
+per_layer.patch_embed1.embed1.embed_lif.baseline_p1: 0.3401294708251953
+per_layer.patch_embed1.embed1.embed_lif.baseline_entropy: 0.9249425457738706
+per_layer.patch_embed1.embed1.embed_lif.baseline_shape: (4, 320, 48, 32, 32)
+per_layer.patch_embed1.embed1.embed_lif.causal_firing_rate: 0.3789819717407227
+per_layer.patch_embed1.embed1.embed_lif.causal_p0: 0.6210180282592773
+per_layer.patch_embed1.embed1.embed_lif.causal_p1: 0.3789819717407227
+per_layer.patch_embed1.embed1.embed_lif.causal_entropy: 0.9573198463948354
+per_layer.patch_embed1.embed1.embed_lif.causal_shape: (4, 320, 48, 32, 32)
+per_layer.patch_embed1.embed1.embed_lif.rie_causal_over_baseline: 1.0350046613899035
+per_layer.patch_embed1.embed1.embed_lif.baseline_num_values: 62914560
+per_layer.patch_embed1.embed1.embed_lif.baseline_num_ones: 21399096
+per_layer.patch_embed1.embed1.embed_lif.causal_num_values: 62914560
+per_layer.patch_embed1.embed1.embed_lif.causal_num_ones: 23843484
+per_layer.patch_embed1.embed2.embed_lif.baseline_firing_rate: 0.3401294708251953
+per_layer.patch_embed1.embed2.embed_lif.baseline_p0: 0.6598705291748047
+per_layer.patch_embed1.embed2.embed_lif.baseline_p1: 0.3401294708251953
+per_layer.patch_embed1.embed2.embed_lif.baseline_entropy: 0.9249425457738706
+per_layer.patch_embed1.embed2.embed_lif.baseline_shape: (4, 320, 48, 32, 32)
+per_layer.patch_embed1.embed2.embed_lif.causal_firing_rate: 0.3789819717407227
+per_layer.patch_embed1.embed2.embed_lif.causal_p0: 0.6210180282592773
+per_layer.patch_embed1.embed2.embed_lif.causal_p1: 0.3789819717407227
+per_layer.patch_embed1.embed2.embed_lif.causal_entropy: 0.9573198463948354
+per_layer.patch_embed1.embed2.embed_lif.causal_shape: (4, 320, 48, 32, 32)
+per_layer.patch_embed1.embed2.embed_lif.rie_causal_over_baseline: 1.0350046613899035
+per_layer.patch_embed1.embed2.embed_lif.baseline_num_values: 62914560
+per_layer.patch_embed1.embed2.embed_lif.baseline_num_ones: 21399096
+per_layer.patch_embed1.embed2.embed_lif.causal_num_values: 62914560
+per_layer.patch_embed1.embed2.embed_lif.causal_num_ones: 23843484
+per_layer.patch_embed2.embed1.embed_lif.baseline_firing_rate: 0.19770417213439942
+per_layer.patch_embed2.embed1.embed_lif.baseline_p0: 0.8022958278656006
+per_layer.patch_embed2.embed1.embed_lif.baseline_p1: 0.19770417213439942
+per_layer.patch_embed2.embed1.embed_lif.baseline_entropy: 0.71731260742819
+per_layer.patch_embed2.embed1.embed_lif.baseline_shape: (4, 320, 192, 16, 16)
+per_layer.patch_embed2.embed1.embed_lif.causal_firing_rate: 0.15175374348958334
+per_layer.patch_embed2.embed1.embed_lif.causal_p0: 0.8482462565104166
+per_layer.patch_embed2.embed1.embed_lif.causal_p1: 0.15175374348958334
+per_layer.patch_embed2.embed1.embed_lif.causal_entropy: 0.6142117032154348
+per_layer.patch_embed2.embed1.embed_lif.causal_shape: (4, 320, 192, 16, 16)
+per_layer.patch_embed2.embed1.embed_lif.rie_causal_over_baseline: 0.8562678208274307
+per_layer.patch_embed2.embed1.embed_lif.baseline_num_values: 62914560
+per_layer.patch_embed2.embed1.embed_lif.baseline_num_ones: 12438471
+per_layer.patch_embed2.embed1.embed_lif.causal_num_values: 62914560
+per_layer.patch_embed2.embed1.embed_lif.causal_num_ones: 9547520
+per_layer.patch_embed2.max_embed1.embed_lif.baseline_firing_rate: 0.29746308326721194
+per_layer.patch_embed2.max_embed1.embed_lif.baseline_p0: 0.7025369167327881
+per_layer.patch_embed2.max_embed1.embed_lif.baseline_p1: 0.29746308326721194
+per_layer.patch_embed2.max_embed1.embed_lif.baseline_entropy: 0.8781676482335448
+per_layer.patch_embed2.max_embed1.embed_lif.baseline_shape: (4, 320, 96, 32, 32)
+per_layer.patch_embed2.max_embed1.embed_lif.causal_firing_rate: 0.28032822608947755
+per_layer.patch_embed2.max_embed1.embed_lif.causal_p0: 0.7196717739105225
+per_layer.patch_embed2.max_embed1.embed_lif.causal_p1: 0.28032822608947755
+per_layer.patch_embed2.max_embed1.embed_lif.causal_entropy: 0.8558976562223606
+per_layer.patch_embed2.max_embed1.embed_lif.causal_shape: (4, 320, 96, 32, 32)
+per_layer.patch_embed2.max_embed1.embed_lif.rie_causal_over_baseline: 0.9746403866540114
+per_layer.patch_embed2.max_embed1.embed_lif.baseline_num_values: 125829120
+per_layer.patch_embed2.max_embed1.embed_lif.baseline_num_ones: 37429518
+per_layer.patch_embed2.max_embed1.embed_lif.causal_num_values: 125829120
+per_layer.patch_embed2.max_embed1.embed_lif.causal_num_ones: 35273454
+per_layer.patch_embed3.embed1.embed_lif.baseline_firing_rate: 0.10946791966756185
+per_layer.patch_embed3.embed1.embed_lif.baseline_p0: 0.8905320803324381
+per_layer.patch_embed3.embed1.embed_lif.baseline_p1: 0.10946791966756185
+per_layer.patch_embed3.embed1.embed_lif.baseline_entropy: 0.49830895432909694
+per_layer.patch_embed3.embed1.embed_lif.baseline_shape: (4, 320, 384, 8, 8)
+per_layer.patch_embed3.embed1.embed_lif.causal_firing_rate: 0.08768895467122396
+per_layer.patch_embed3.embed1.embed_lif.causal_p0: 0.912311045328776
+per_layer.patch_embed3.embed1.embed_lif.causal_p1: 0.08768895467122396
+per_layer.patch_embed3.embed1.embed_lif.causal_entropy: 0.42870844031093713
+per_layer.patch_embed3.embed1.embed_lif.causal_shape: (4, 320, 384, 8, 8)
+per_layer.patch_embed3.embed1.embed_lif.rie_causal_over_baseline: 0.860326583710045
+per_layer.patch_embed3.embed1.embed_lif.baseline_num_values: 31457280
+per_layer.patch_embed3.embed1.embed_lif.baseline_num_ones: 3443563
+per_layer.patch_embed3.embed1.embed_lif.causal_num_values: 31457280
+per_layer.patch_embed3.embed1.embed_lif.causal_num_ones: 2758456
+per_layer.patch_embed3.max_embed1.embed_lif.baseline_firing_rate: 0.29319076538085936
+per_layer.patch_embed3.max_embed1.embed_lif.baseline_p0: 0.7068092346191406
+per_layer.patch_embed3.max_embed1.embed_lif.baseline_p1: 0.29319076538085936
+per_layer.patch_embed3.max_embed1.embed_lif.baseline_entropy: 0.872807377876753
+per_layer.patch_embed3.max_embed1.embed_lif.baseline_shape: (4, 320, 192, 16, 16)
+per_layer.patch_embed3.max_embed1.embed_lif.causal_firing_rate: 0.16436891555786132
+per_layer.patch_embed3.max_embed1.embed_lif.causal_p0: 0.8356310844421386
+per_layer.patch_embed3.max_embed1.embed_lif.causal_p1: 0.16436891555786132
+per_layer.patch_embed3.max_embed1.embed_lif.causal_entropy: 0.6446596862652214
+per_layer.patch_embed3.max_embed1.embed_lif.causal_shape: (4, 320, 192, 16, 16)
+per_layer.patch_embed3.max_embed1.embed_lif.rie_causal_over_baseline: 0.7386047627515743
+per_layer.patch_embed3.max_embed1.embed_lif.baseline_num_values: 62914560
+per_layer.patch_embed3.max_embed1.embed_lif.baseline_num_ones: 18445968
+per_layer.patch_embed3.max_embed1.embed_lif.causal_num_values: 62914560
+per_layer.patch_embed3.max_embed1.embed_lif.causal_num_ones: 10341198
+per_layer.stage1.0.mlp.fc1_lif.baseline_firing_rate: 0.13525218963623048
+per_layer.stage1.0.mlp.fc1_lif.baseline_p0: 0.8647478103637696
+per_layer.stage1.0.mlp.fc1_lif.baseline_p1: 0.13525218963623048
+per_layer.stage1.0.mlp.fc1_lif.baseline_entropy: 0.5716683702516516
+per_layer.stage1.0.mlp.fc1_lif.baseline_shape: (4, 320, 96, 32, 32)
+per_layer.stage1.0.mlp.fc1_lif.causal_firing_rate: 0.12538397312164307
+per_layer.stage1.0.mlp.fc1_lif.causal_p0: 0.8746160268783569
+per_layer.stage1.0.mlp.fc1_lif.causal_p1: 0.12538397312164307
+per_layer.stage1.0.mlp.fc1_lif.causal_entropy: 0.5446414205223044
+per_layer.stage1.0.mlp.fc1_lif.causal_shape: (4, 320, 96, 32, 32)
+per_layer.stage1.0.mlp.fc1_lif.rie_causal_over_baseline: 0.9527226778028622
+per_layer.stage1.0.mlp.fc1_lif.baseline_num_values: 125829120
+per_layer.stage1.0.mlp.fc1_lif.baseline_num_ones: 17018664
+per_layer.stage1.0.mlp.fc1_lif.causal_num_values: 125829120
+per_layer.stage1.0.mlp.fc1_lif.causal_num_ones: 15776955
+per_layer.stage1.0.mlp.fc2_lif.baseline_firing_rate: 0.07039539813995362
+per_layer.stage1.0.mlp.fc2_lif.baseline_p0: 0.9296046018600463
+per_layer.stage1.0.mlp.fc2_lif.baseline_p1: 0.07039539813995362
+per_layer.stage1.0.mlp.fc2_lif.baseline_entropy: 0.36739746988564326
+per_layer.stage1.0.mlp.fc2_lif.baseline_shape: (4, 320, 384, 32, 32)
+per_layer.stage1.0.mlp.fc2_lif.causal_firing_rate: 0.09474810361862182
+per_layer.stage1.0.mlp.fc2_lif.causal_p0: 0.9052518963813782
+per_layer.stage1.0.mlp.fc2_lif.causal_p1: 0.09474810361862182
+per_layer.stage1.0.mlp.fc2_lif.causal_entropy: 0.45212286892147846
+per_layer.stage1.0.mlp.fc2_lif.causal_shape: (4, 320, 384, 32, 32)
+per_layer.stage1.0.mlp.fc2_lif.rie_causal_over_baseline: 1.2306096420886523
+per_layer.stage1.0.mlp.fc2_lif.baseline_num_values: 503316480
+per_layer.stage1.0.mlp.fc2_lif.baseline_num_ones: 35431164
+per_layer.stage1.0.mlp.fc2_lif.causal_num_values: 503316480
+per_layer.stage1.0.mlp.fc2_lif.causal_num_ones: 47688282
+per_layer.stage2.0.mixer.conv_neuron.baseline_firing_rate: 0.41020657221476237
+per_layer.stage2.0.mixer.conv_neuron.baseline_p0: 0.5897934277852377
+per_layer.stage2.0.mixer.conv_neuron.baseline_p1: 0.41020657221476237
+per_layer.stage2.0.mixer.conv_neuron.baseline_entropy: 0.9766088107359585
+per_layer.stage2.0.mixer.conv_neuron.baseline_shape: (4, 320, 192, 16, 16)
+per_layer.stage2.0.mixer.conv_neuron.causal_firing_rate: 0.3799693743387858
+per_layer.stage2.0.mixer.conv_neuron.causal_p0: 0.6200306256612143
+per_layer.stage2.0.mixer.conv_neuron.causal_p1: 0.3799693743387858
+per_layer.stage2.0.mixer.conv_neuron.causal_entropy: 0.9580203894056609
+per_layer.stage2.0.mixer.conv_neuron.causal_shape: (4, 320, 192, 16, 16)
+per_layer.stage2.0.mixer.conv_neuron.rie_causal_over_baseline: 0.9809663591737714
+per_layer.stage2.0.mixer.conv_neuron.baseline_num_values: 62914560
+per_layer.stage2.0.mixer.conv_neuron.baseline_num_ones: 25807966
+per_layer.stage2.0.mixer.conv_neuron.causal_num_values: 62914560
+per_layer.stage2.0.mixer.conv_neuron.causal_num_ones: 23905606
+per_layer.stage2.0.mlp.fc1_lif.baseline_firing_rate: 0.3604008515675863
+per_layer.stage2.0.mlp.fc1_lif.baseline_p0: 0.6395991484324137
+per_layer.stage2.0.mlp.fc1_lif.baseline_p1: 0.3604008515675863
+per_layer.stage2.0.mlp.fc1_lif.baseline_entropy: 0.9430154231305379
+per_layer.stage2.0.mlp.fc1_lif.baseline_shape: (4, 320, 192, 16, 16)
+per_layer.stage2.0.mlp.fc1_lif.causal_firing_rate: 0.24474366505940756
+per_layer.stage2.0.mlp.fc1_lif.causal_p0: 0.7552563349405924
+per_layer.stage2.0.mlp.fc1_lif.causal_p1: 0.24474366505940756
+per_layer.stage2.0.mlp.fc1_lif.causal_entropy: 0.8028402337410412
+per_layer.stage2.0.mlp.fc1_lif.causal_shape: (4, 320, 192, 16, 16)
+per_layer.stage2.0.mlp.fc1_lif.rie_causal_over_baseline: 0.851354298188457
+per_layer.stage2.0.mlp.fc1_lif.baseline_num_values: 62914560
+per_layer.stage2.0.mlp.fc1_lif.baseline_num_ones: 22674461
+per_layer.stage2.0.mlp.fc1_lif.causal_num_values: 62914560
+per_layer.stage2.0.mlp.fc1_lif.causal_num_ones: 15397940
+per_layer.stage2.0.mlp.fc2_lif.baseline_firing_rate: 0.018193658192952475
+per_layer.stage2.0.mlp.fc2_lif.baseline_p0: 0.9818063418070475
+per_layer.stage2.0.mlp.fc2_lif.baseline_p1: 0.018193658192952475
+per_layer.stage2.0.mlp.fc2_lif.baseline_entropy: 0.13117466185090848
+per_layer.stage2.0.mlp.fc2_lif.baseline_shape: (4, 320, 768, 16, 16)
+per_layer.stage2.0.mlp.fc2_lif.causal_firing_rate: 0.04490304390589396
+per_layer.stage2.0.mlp.fc2_lif.causal_p0: 0.955096956094106
+per_layer.stage2.0.mlp.fc2_lif.causal_p1: 0.04490304390589396
+per_layer.stage2.0.mlp.fc2_lif.causal_entropy: 0.2643375416820125
+per_layer.stage2.0.mlp.fc2_lif.causal_shape: (4, 320, 768, 16, 16)
+per_layer.stage2.0.mlp.fc2_lif.rie_causal_over_baseline: 2.015157027661639
+per_layer.stage2.0.mlp.fc2_lif.baseline_num_values: 251658240
+per_layer.stage2.0.mlp.fc2_lif.baseline_num_ones: 4578584
+per_layer.stage2.0.mlp.fc2_lif.causal_num_values: 251658240
+per_layer.stage2.0.mlp.fc2_lif.causal_num_ones: 11300221
+per_layer.stage3.0.attn.attn_lif.baseline_firing_rate: 0.1859927813212077
+per_layer.stage3.0.attn.attn_lif.baseline_p0: 0.8140072186787923
+per_layer.stage3.0.attn.attn_lif.baseline_p1: 0.1859927813212077
+per_layer.stage3.0.attn.attn_lif.baseline_entropy: 0.693012994545837
+per_layer.stage3.0.attn.attn_lif.baseline_shape: (4, 320, 384, 64)
+per_layer.stage3.0.attn.attn_lif.causal_firing_rate: 0.152271302541097
+per_layer.stage3.0.attn.attn_lif.causal_p0: 0.847728697458903
+per_layer.stage3.0.attn.attn_lif.causal_p1: 0.152271302541097
+per_layer.stage3.0.attn.attn_lif.causal_entropy: 0.615495173816909
+per_layer.stage3.0.attn.attn_lif.causal_shape: (4, 320, 384, 64)
+per_layer.stage3.0.attn.attn_lif.rie_causal_over_baseline: 0.8881437702613107
+per_layer.stage3.0.attn.attn_lif.baseline_num_values: 31457280
+per_layer.stage3.0.attn.attn_lif.baseline_num_ones: 5850827
+per_layer.stage3.0.attn.attn_lif.causal_num_values: 31457280
+per_layer.stage3.0.attn.attn_lif.causal_num_ones: 4790041
+per_layer.stage3.0.attn.k_lif.baseline_firing_rate: 0.07672417958577474
+per_layer.stage3.0.attn.k_lif.baseline_p0: 0.9232758204142253
+per_layer.stage3.0.attn.k_lif.baseline_p1: 0.07672417958577474
+per_layer.stage3.0.attn.k_lif.baseline_entropy: 0.3905301219249153
+per_layer.stage3.0.attn.k_lif.baseline_shape: (4, 320, 384, 64)
+per_layer.stage3.0.attn.k_lif.causal_firing_rate: 0.07835362752278646
+per_layer.stage3.0.attn.k_lif.causal_p0: 0.9216463724772135
+per_layer.stage3.0.attn.k_lif.causal_p1: 0.07835362752278646
+per_layer.stage3.0.attn.k_lif.causal_entropy: 0.3963513608350933
+per_layer.stage3.0.attn.k_lif.causal_shape: (4, 320, 384, 64)
+per_layer.stage3.0.attn.k_lif.rie_causal_over_baseline: 1.0149059920921601
+per_layer.stage3.0.attn.k_lif.baseline_num_values: 31457280
+per_layer.stage3.0.attn.k_lif.baseline_num_ones: 2413534
+per_layer.stage3.0.attn.k_lif.causal_num_values: 31457280
+per_layer.stage3.0.attn.k_lif.causal_num_ones: 2464792
+per_layer.stage3.0.attn.q_lif.baseline_firing_rate: 0.1579231897989909
+per_layer.stage3.0.attn.q_lif.baseline_p0: 0.8420768102010091
+per_layer.stage3.0.attn.q_lif.baseline_p1: 0.1579231897989909
+per_layer.stage3.0.attn.q_lif.baseline_entropy: 0.6293179344220627
+per_layer.stage3.0.attn.q_lif.baseline_shape: (4, 320, 384, 64)
+per_layer.stage3.0.attn.q_lif.causal_firing_rate: 0.14567702611287434
+per_layer.stage3.0.attn.q_lif.causal_p0: 0.8543229738871256
+per_layer.stage3.0.attn.q_lif.causal_p1: 0.14567702611287434
+per_layer.stage3.0.attn.q_lif.causal_entropy: 0.5989154815676151
+per_layer.stage3.0.attn.q_lif.causal_shape: (4, 320, 384, 64)
+per_layer.stage3.0.attn.q_lif.rie_causal_over_baseline: 0.9516898356260582
+per_layer.stage3.0.attn.q_lif.baseline_num_values: 31457280
+per_layer.stage3.0.attn.q_lif.baseline_num_ones: 4967834
+per_layer.stage3.0.attn.q_lif.causal_num_values: 31457280
+per_layer.stage3.0.attn.q_lif.causal_num_ones: 4582603
+per_layer.stage3.0.attn.v_lif.baseline_firing_rate: 0.07642459869384766
+per_layer.stage3.0.attn.v_lif.baseline_p0: 0.9235754013061523
+per_layer.stage3.0.attn.v_lif.baseline_p1: 0.07642459869384766
+per_layer.stage3.0.attn.v_lif.baseline_entropy: 0.38945400854707796
+per_layer.stage3.0.attn.v_lif.baseline_shape: (4, 320, 384, 64)
+per_layer.stage3.0.attn.v_lif.causal_firing_rate: 0.08085139592488606
+per_layer.stage3.0.attn.v_lif.causal_p0: 0.9191486040751139
+per_layer.stage3.0.attn.v_lif.causal_p1: 0.08085139592488606
+per_layer.stage3.0.attn.v_lif.causal_entropy: 0.40517205494118597
+per_layer.stage3.0.attn.v_lif.causal_shape: (4, 320, 384, 64)
+per_layer.stage3.0.attn.v_lif.rie_causal_over_baseline: 1.0403591850337
+per_layer.stage3.0.attn.v_lif.baseline_num_values: 31457280
+per_layer.stage3.0.attn.v_lif.baseline_num_ones: 2404110
+per_layer.stage3.0.attn.v_lif.causal_num_values: 31457280
+per_layer.stage3.0.attn.v_lif.causal_num_ones: 2543365
+per_layer.stage3.0.attn.x_lif.baseline_firing_rate: 0.19022156397501627
+per_layer.stage3.0.attn.x_lif.baseline_p0: 0.8097784360249838
+per_layer.stage3.0.attn.x_lif.baseline_p1: 0.19022156397501627
+per_layer.stage3.0.attn.x_lif.baseline_entropy: 0.7019347245210701
+per_layer.stage3.0.attn.x_lif.baseline_shape: (4, 320, 384, 8, 8)
+per_layer.stage3.0.attn.x_lif.causal_firing_rate: 0.16350043614705403
+per_layer.stage3.0.attn.x_lif.causal_p0: 0.836499563852946
+per_layer.stage3.0.attn.x_lif.causal_p1: 0.16350043614705403
+per_layer.stage3.0.attn.x_lif.causal_entropy: 0.6426183286740469
+per_layer.stage3.0.attn.x_lif.causal_shape: (4, 320, 384, 8, 8)
+per_layer.stage3.0.attn.x_lif.rie_causal_over_baseline: 0.9154958519990442
+per_layer.stage3.0.attn.x_lif.baseline_num_values: 31457280
+per_layer.stage3.0.attn.x_lif.baseline_num_ones: 5983853
+per_layer.stage3.0.attn.x_lif.causal_num_values: 31457280
+per_layer.stage3.0.attn.x_lif.causal_num_ones: 5143279
+per_layer.stage3.0.mlp.fc1_lif.baseline_firing_rate: 0.15610008239746093
+per_layer.stage3.0.mlp.fc1_lif.baseline_p0: 0.843899917602539
+per_layer.stage3.0.mlp.fc1_lif.baseline_p1: 0.15610008239746093
+per_layer.stage3.0.mlp.fc1_lif.baseline_entropy: 0.6248975387751852
+per_layer.stage3.0.mlp.fc1_lif.baseline_shape: (4, 320, 384, 8, 8)
+per_layer.stage3.0.mlp.fc1_lif.causal_firing_rate: 0.12354933420817057
+per_layer.stage3.0.mlp.fc1_lif.causal_p0: 0.8764506657918294
+per_layer.stage3.0.mlp.fc1_lif.causal_p1: 0.12354933420817057
+per_layer.stage3.0.mlp.fc1_lif.causal_entropy: 0.5394779840557138
+per_layer.stage3.0.mlp.fc1_lif.causal_shape: (4, 320, 384, 8, 8)
+per_layer.stage3.0.mlp.fc1_lif.rie_causal_over_baseline: 0.8633063031617005
+per_layer.stage3.0.mlp.fc1_lif.baseline_num_values: 31457280
+per_layer.stage3.0.mlp.fc1_lif.baseline_num_ones: 4910484
+per_layer.stage3.0.mlp.fc1_lif.causal_num_values: 31457280
+per_layer.stage3.0.mlp.fc1_lif.causal_num_ones: 3886526
+per_layer.stage3.0.mlp.fc2_lif.baseline_firing_rate: 0.008002265294392904
+per_layer.stage3.0.mlp.fc2_lif.baseline_p0: 0.9919977347056071
+per_layer.stage3.0.mlp.fc2_lif.baseline_p1: 0.008002265294392904
+per_layer.stage3.0.mlp.fc2_lif.baseline_entropy: 0.06723729759382337
+per_layer.stage3.0.mlp.fc2_lif.baseline_shape: (4, 320, 1536, 8, 8)
+per_layer.stage3.0.mlp.fc2_lif.causal_firing_rate: 0.06273317337036133
+per_layer.stage3.0.mlp.fc2_lif.causal_p0: 0.9372668266296387
+per_layer.stage3.0.mlp.fc2_lif.causal_p1: 0.06273317337036133
+per_layer.stage3.0.mlp.fc2_lif.causal_entropy: 0.33820038089353693
+per_layer.stage3.0.mlp.fc2_lif.causal_shape: (4, 320, 1536, 8, 8)
+per_layer.stage3.0.mlp.fc2_lif.rie_causal_over_baseline: 5.029952020551985
+per_layer.stage3.0.mlp.fc2_lif.baseline_num_values: 125829120
+per_layer.stage3.0.mlp.fc2_lif.baseline_num_ones: 1006918
+per_layer.stage3.0.mlp.fc2_lif.causal_num_values: 125829120
+per_layer.stage3.0.mlp.fc2_lif.causal_num_ones: 7893660
+per_layer.stage3.1.attn.attn_lif.baseline_firing_rate: 0.11537996927897136
+per_layer.stage3.1.attn.attn_lif.baseline_p0: 0.8846200307210287
+per_layer.stage3.1.attn.attn_lif.baseline_p1: 0.11537996927897136
+per_layer.stage3.1.attn.attn_lif.baseline_entropy: 0.5159332768113778
+per_layer.stage3.1.attn.attn_lif.baseline_shape: (4, 320, 384, 64)
+per_layer.stage3.1.attn.attn_lif.causal_firing_rate: 0.09344263076782226
+per_layer.stage3.1.attn.attn_lif.causal_p0: 0.9065573692321778
+per_layer.stage3.1.attn.attn_lif.causal_p1: 0.09344263076782226
+per_layer.stage3.1.attn.attn_lif.causal_entropy: 0.447857660621904
+per_layer.stage3.1.attn.attn_lif.causal_shape: (4, 320, 384, 64)
+per_layer.stage3.1.attn.attn_lif.rie_causal_over_baseline: 0.8680534494478249
+per_layer.stage3.1.attn.attn_lif.baseline_num_values: 31457280
+per_layer.stage3.1.attn.attn_lif.baseline_num_ones: 3629540
+per_layer.stage3.1.attn.attn_lif.causal_num_values: 31457280
+per_layer.stage3.1.attn.attn_lif.causal_num_ones: 2939451
+per_layer.stage3.1.attn.k_lif.baseline_firing_rate: 0.08520851135253907
+per_layer.stage3.1.attn.k_lif.baseline_p0: 0.914791488647461
+per_layer.stage3.1.attn.k_lif.baseline_p1: 0.08520851135253907
+per_layer.stage3.1.attn.k_lif.baseline_entropy: 0.42027091963004426
+per_layer.stage3.1.attn.k_lif.baseline_shape: (4, 320, 384, 64)
+per_layer.stage3.1.attn.k_lif.causal_firing_rate: 0.0910975456237793
+per_layer.stage3.1.attn.k_lif.causal_p0: 0.9089024543762207
+per_layer.stage3.1.attn.k_lif.causal_p1: 0.0910975456237793
+per_layer.stage3.1.attn.k_lif.causal_entropy: 0.44012271013811144
+per_layer.stage3.1.attn.k_lif.causal_shape: (4, 320, 384, 64)
+per_layer.stage3.1.attn.k_lif.rie_causal_over_baseline: 1.0472356986405225
+per_layer.stage3.1.attn.k_lif.baseline_num_values: 31457280
+per_layer.stage3.1.attn.k_lif.baseline_num_ones: 2680428
+per_layer.stage3.1.attn.k_lif.causal_num_values: 31457280
+per_layer.stage3.1.attn.k_lif.causal_num_ones: 2865681
+per_layer.stage3.1.attn.q_lif.baseline_firing_rate: 0.11288261413574219
+per_layer.stage3.1.attn.q_lif.baseline_p0: 0.8871173858642578
+per_layer.stage3.1.attn.q_lif.baseline_p1: 0.11288261413574219
+per_layer.stage3.1.attn.q_lif.baseline_entropy: 0.5085500291152734
+per_layer.stage3.1.attn.q_lif.baseline_shape: (4, 320, 384, 64)
+per_layer.stage3.1.attn.q_lif.causal_firing_rate: 0.16368242899576824
+per_layer.stage3.1.attn.q_lif.causal_p0: 0.8363175710042318
+per_layer.stage3.1.attn.q_lif.causal_p1: 0.16368242899576824
+per_layer.stage3.1.attn.q_lif.causal_entropy: 0.6430467599894779
+per_layer.stage3.1.attn.q_lif.causal_shape: (4, 320, 384, 64)
+per_layer.stage3.1.attn.q_lif.rie_causal_over_baseline: 1.2644709923759607
+per_layer.stage3.1.attn.q_lif.baseline_num_values: 31457280
+per_layer.stage3.1.attn.q_lif.baseline_num_ones: 3550980
+per_layer.stage3.1.attn.q_lif.causal_num_values: 31457280
+per_layer.stage3.1.attn.q_lif.causal_num_ones: 5149004
+per_layer.stage3.1.attn.v_lif.baseline_firing_rate: 0.08590771357218424
+per_layer.stage3.1.attn.v_lif.baseline_p0: 0.9140922864278158
+per_layer.stage3.1.attn.v_lif.baseline_p1: 0.08590771357218424
+per_layer.stage3.1.attn.v_lif.baseline_entropy: 0.4226607361182326
+per_layer.stage3.1.attn.v_lif.baseline_shape: (4, 320, 384, 64)
+per_layer.stage3.1.attn.v_lif.causal_firing_rate: 0.08728523254394531
+per_layer.stage3.1.attn.v_lif.causal_p0: 0.9127147674560547
+per_layer.stage3.1.attn.v_lif.causal_p1: 0.08728523254394531
+per_layer.stage3.1.attn.v_lif.causal_entropy: 0.427342767805221
+per_layer.stage3.1.attn.v_lif.causal_shape: (4, 320, 384, 64)
+per_layer.stage3.1.attn.v_lif.rie_causal_over_baseline: 1.0110775174646638
+per_layer.stage3.1.attn.v_lif.baseline_num_values: 31457280
+per_layer.stage3.1.attn.v_lif.baseline_num_ones: 2702423
+per_layer.stage3.1.attn.v_lif.causal_num_values: 31457280
+per_layer.stage3.1.attn.v_lif.causal_num_ones: 2745756
+per_layer.stage3.1.attn.x_lif.baseline_firing_rate: 0.17845500310262044
+per_layer.stage3.1.attn.x_lif.baseline_p0: 0.8215449968973796
+per_layer.stage3.1.attn.x_lif.baseline_p1: 0.17845500310262044
+per_layer.stage3.1.attn.x_lif.baseline_entropy: 0.6766854768561198
+per_layer.stage3.1.attn.x_lif.baseline_shape: (4, 320, 384, 8, 8)
+per_layer.stage3.1.attn.x_lif.causal_firing_rate: 0.12237733205159505
+per_layer.stage3.1.attn.x_lif.causal_p0: 0.8776226679484049
+per_layer.stage3.1.attn.x_lif.causal_p1: 0.12237733205159505
+per_layer.stage3.1.attn.x_lif.causal_entropy: 0.5361560443413557
+per_layer.stage3.1.attn.x_lif.causal_shape: (4, 320, 384, 8, 8)
+per_layer.stage3.1.attn.x_lif.rie_causal_over_baseline: 0.7923268086549514
+per_layer.stage3.1.attn.x_lif.baseline_num_values: 31457280
+per_layer.stage3.1.attn.x_lif.baseline_num_ones: 5613709
+per_layer.stage3.1.attn.x_lif.causal_num_values: 31457280
+per_layer.stage3.1.attn.x_lif.causal_num_ones: 3849658
+per_layer.stage3.1.mlp.fc1_lif.baseline_firing_rate: 0.20751546223958334
+per_layer.stage3.1.mlp.fc1_lif.baseline_p0: 0.7924845377604166
+per_layer.stage3.1.mlp.fc1_lif.baseline_p1: 0.20751546223958334
+per_layer.stage3.1.mlp.fc1_lif.baseline_entropy: 0.7367067184776097
+per_layer.stage3.1.mlp.fc1_lif.baseline_shape: (4, 320, 384, 8, 8)
+per_layer.stage3.1.mlp.fc1_lif.causal_firing_rate: 0.2082332928975423
+per_layer.stage3.1.mlp.fc1_lif.causal_p0: 0.7917667071024577
+per_layer.stage3.1.mlp.fc1_lif.causal_p1: 0.2082332928975423
+per_layer.stage3.1.mlp.fc1_lif.causal_entropy: 0.7380921445453044
+per_layer.stage3.1.mlp.fc1_lif.causal_shape: (4, 320, 384, 8, 8)
+per_layer.stage3.1.mlp.fc1_lif.rie_causal_over_baseline: 1.0018805666243356
+per_layer.stage3.1.mlp.fc1_lif.baseline_num_values: 31457280
+per_layer.stage3.1.mlp.fc1_lif.baseline_num_ones: 6527872
+per_layer.stage3.1.mlp.fc1_lif.causal_num_values: 31457280
+per_layer.stage3.1.mlp.fc1_lif.causal_num_ones: 6550453
+per_layer.stage3.1.mlp.fc2_lif.baseline_firing_rate: 0.008324551582336425
+per_layer.stage3.1.mlp.fc2_lif.baseline_p0: 0.9916754484176635
+per_layer.stage3.1.mlp.fc2_lif.baseline_p1: 0.008324551582336425
+per_layer.stage3.1.mlp.fc2_lif.baseline_entropy: 0.06946909168803338
+per_layer.stage3.1.mlp.fc2_lif.baseline_shape: (4, 320, 1536, 8, 8)
+per_layer.stage3.1.mlp.fc2_lif.causal_firing_rate: 0.022932672500610353
+per_layer.stage3.1.mlp.fc2_lif.causal_p0: 0.9770673274993896
+per_layer.stage3.1.mlp.fc2_lif.causal_p1: 0.022932672500610353
+per_layer.stage3.1.mlp.fc2_lif.causal_entropy: 0.1576042502782175
+per_layer.stage3.1.mlp.fc2_lif.causal_shape: (4, 320, 1536, 8, 8)
+per_layer.stage3.1.mlp.fc2_lif.rie_causal_over_baseline: 2.268695997692128
+per_layer.stage3.1.mlp.fc2_lif.baseline_num_values: 125829120
+per_layer.stage3.1.mlp.fc2_lif.baseline_num_ones: 1047471
+per_layer.stage3.1.mlp.fc2_lif.causal_num_values: 125829120
+per_layer.stage3.1.mlp.fc2_lif.causal_num_ones: 2885598
+causal_variant: causal
+baseline_checkpoint: C:\Users\86191\Desktop\ZQL\Project\experiment\model\maxformer_baseline_cifar10\checkpoint\model_best.pth.tar
+causal_checkpoint: C:\Users\86191\Desktop\ZQL\Project\experiment\model\maxformer_causal_cifar10\checkpoint\causal\model_best.pth.tar
+batch_size: 32

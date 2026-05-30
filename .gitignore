@@ -1,0 +1,8 @@
+*.pth
+*.pth.tar
+*.pyc
+__pycache__/
+**/__pycache__/
+checkpoint.zip
+tensorboard/
+**/tensorboard/
