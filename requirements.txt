@@ -1,0 +1,23 @@
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.1.0+cu118
+torchvision==0.16.0+cu118
+torchaudio==2.1.0+cu118
+spikingjelly==0.0.0.0.14
+timm==0.6.13
+cupy-cuda11x==13.6.0
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.4
+opencv-python==4.13.0.92
+pillow==11.3.0
+PyYAML==6.0.3
+tensorboard==2.20.0
+thop==0.1.1.post2209072238
+torchinfo==1.8.0
+torchmetrics==1.8.2
+pytorch-msssim==1.0.0
+einops==0.8.2
+tqdm==4.67.1
+requests==2.32.5
+huggingface_hub==1.1.6
+safetensors==0.7.0
