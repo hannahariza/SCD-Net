@@ -1,8 +1,3 @@
-'''
-代码复现版，将torch改为cupy实现加速
-'''
-
-
 import torch
 import torch.nn as nn
 from spikingjelly.clock_driven.neuron import MultiStepParametricLIFNode, MultiStepLIFNode
