@@ -4,7 +4,7 @@ Spiking Neural Networks (SNNs) have emerged as an energy-efficient and biologica
 
 # SCD-Net
 
-This repository contains the code for SCD-Net and QK-SCD-Net experiments on static image datasets and event-based datasets. The checkpoint files (`*.pth`, `*.pth.tar`) and TensorBoard event files are intentionally excluded from the repository.
+This repository contains the code for SCD-Net and QK-SCD-Net experiments on static image datasets and event-based datasets. 
 
 ## Environment
 
