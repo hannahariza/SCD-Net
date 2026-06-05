@@ -10,7 +10,7 @@ from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 import math
 from torch.cuda import amp
-import model, utils
+import QK_SCD_Net_model_dvs128, utils
 from spikingjelly.clock_driven import functional
 from spikingjelly.datasets import dvs128_gesture
 from timm.models import create_model
