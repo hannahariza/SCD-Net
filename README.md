@@ -51,54 +51,6 @@ For ImageNet-style scripts, set `NPROC_PER_NODE` according to the number of GPUs
 
 Only the causal main training commands are listed here.
 
-### QK-SCD-Net
-
-#### CIFAR-10
-
-```bash
-cd QK-SCD-Net/cifar10
-python QK_SCR_Net_train_cifar10.py -c cifar10.yml --data-path /path/to/cifar10dvs
-```
-
-#### CIFAR-100
-
-```bash
-cd QK-SCD-Net/cifar100/causal
-python QK_SCR_Net_train_causal_cifar100.py -c cifar100.yml --data-path /path/to/cifar10dvs
-```
-
-#### CIFAR10-DVS
-
-```bash
-cd QK-SCD-Net/cifar10-dvs/causal
-python QK_SCR_Net_train_cifar10dvs.py --data-path /path/to/cifar10dvs
-```
-
-#### DVS128 Gesture
-
-```bash
-cd QK-SCD-Net/dvs-128
-python QK_SCR_Net_train_dvs128.py --data-path /path/to/DVS128Gesture 
-```
-
-#### ImageNet-100
-
-```bash
-cd QK-SCD-Net/imagenet/qkformer_causal_imagenet100
-NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train.py \
-  --config ./conf/10-512-t4.yml \
-  --data_path /path/to/imagenet100 \
-```
-
-#### Tiny-ImageNet
-
-```bash
-cd QK-SCD-Net/imagenet/qkformer_causal_tinyimagenet
-NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train1.py \
-  --config ./conf/10-512-t4.yml \
-  --data_path /path/to/tiny-imagenet-200 \
-```
-
 ### SCD-Net
 
 #### CIFAR-10
@@ -154,6 +106,56 @@ NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train.py \
   --output_dir ./output/train_tinyimagenet_10_512_t4 \
   --log_dir ./log/train_tinyimagenet_10_512_t4 \
 ```
+
+### QK-SCD-Net
+
+#### CIFAR-10
+
+```bash
+cd QK-SCD-Net/cifar10
+python QK_SCR_Net_train_cifar10.py -c cifar10.yml --data-path /path/to/cifar10dvs
+```
+
+#### CIFAR-100
+
+```bash
+cd QK-SCD-Net/cifar100/causal
+python QK_SCR_Net_train_causal_cifar100.py -c cifar100.yml --data-path /path/to/cifar10dvs
+```
+
+#### CIFAR10-DVS
+
+```bash
+cd QK-SCD-Net/cifar10-dvs/causal
+python QK_SCR_Net_train_cifar10dvs.py --data-path /path/to/cifar10dvs
+```
+
+#### DVS128 Gesture
+
+```bash
+cd QK-SCD-Net/dvs-128
+python QK_SCR_Net_train_dvs128.py --data-path /path/to/DVS128Gesture 
+```
+
+#### ImageNet-100
+
+```bash
+cd QK-SCD-Net/imagenet/qkformer_causal_imagenet100
+NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train.py \
+  --config ./conf/10-512-t4.yml \
+  --data_path /path/to/imagenet100 \
+```
+
+#### Tiny-ImageNet
+
+```bash
+cd QK-SCD-Net/imagenet/qkformer_causal_tinyimagenet
+NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train1.py \
+  --config ./conf/10-512-t4.yml \
+  --data_path /path/to/tiny-imagenet-200 \
+```
+
+
 
 ## Notes
 
