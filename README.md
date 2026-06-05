@@ -108,6 +108,13 @@ cd SCD-Net/cifar10/causal
 python SCD_Net_train_cifar10.py -c cifar10.yaml --data-path /path/to/cifar10 
 ```
 
+#### CIFAR-100
+
+```bash
+cd SCD-Net/cifar100
+python SCD_Net_train_cifar100.py -c cifar100.yaml --data-path /path/to/cifar100 
+```
+
 #### CIFAR10-DVS
 
 ```bash
