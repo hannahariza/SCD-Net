@@ -42,21 +42,16 @@ If your CUDA version is different, install the matching PyTorch build from the o
 `-- requirements.txt
 ```
 
-The `output/`, `log/`, and `checkpoint/` folders may contain experiment records or placeholders. Model weight files are not included.
 
 ## Data Preparation
 
-Update the dataset paths in the YAML files or override them from the command line. The most common command-line arguments are:
-
-- CIFAR-style scripts: `--data-path` or `-data-dir`
-- DVS scripts: `--data-path`
-- ImageNet-style scripts: `--data_path`
+Update the dataset paths in the YAML files or override them from the command line.
 
 For ImageNet-style scripts, set `NPROC_PER_NODE` according to the number of GPUs available.
 
 ## Causal Training Commands
 
-Only the causal main training commands are listed here. Ablation scripts, metric-only scripts, heatmap scripts, RIE scripts, firing-rate scripts, and baseline commands are intentionally omitted.
+Only the causal main training commands are listed here.
 
 ### QK-SCD-Net
 
@@ -64,28 +59,28 @@ Only the causal main training commands are listed here. Ablation scripts, metric
 
 ```bash
 cd QK-SCD-Net/cifar10
-python train_causal.py -c cifar10.yml -data-dir /path/to/cifar10
+python QK_SCR_Net_train_cifar10.py -c cifar10.yml --data-path /path/to/cifar10dvs
 ```
 
 #### CIFAR-100
 
 ```bash
 cd QK-SCD-Net/cifar100/causal
-python train_causal.py -c cifar100.yml -data-dir /path/to/cifar100
+python QK_SCR_Net_train_causal_cifar100.py -c cifar100.yml --data-path /path/to/cifar10dvs
 ```
 
 #### CIFAR10-DVS
 
 ```bash
 cd QK-SCD-Net/cifar10-dvs/causal
-python train_causal.py --data-path /path/to/cifar10dvs --output-dir ./output/train_causal_cifar10dvs
+python QK_SCR_Net_train_cifar10dvs.py --data-path /path/to/cifar10dvs
 ```
 
 #### DVS128 Gesture
 
 ```bash
 cd QK-SCD-Net/dvs-128
-python train.py --data-path /path/to/DVS128Gesture --output-dir ./output/train_causal_dvs128
+python QK_SCR_Net_train_dvs128.py --data-path /path/to/DVS128Gesture 
 ```
 
 #### ImageNet-100
@@ -95,9 +90,6 @@ cd QK-SCD-Net/imagenet/qkformer_causal_imagenet100
 NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train.py \
   --config ./conf/10-512-t4.yml \
   --data_path /path/to/imagenet100 \
-  --output_dir ./output/imagenet100_qkformer_10_512_T4 \
-  --log_dir ./log/imagenet100_qkformer_10_512_T4 \
-  --dist_eval --pin_mem
 ```
 
 #### Tiny-ImageNet
@@ -107,9 +99,6 @@ cd QK-SCD-Net/imagenet/qkformer_causal_tinyimagenet
 NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train1.py \
   --config ./conf/10-512-t4.yml \
   --data_path /path/to/tiny-imagenet-200 \
-  --output_dir ./output/tiny_imagenet_qkformer_10_512_T4 \
-  --log_dir ./log/tiny_imagenet_qkformer_10_512_T4 \
-  --dist_eval --pin_mem
 ```
 
 ### SCD-Net
@@ -118,21 +107,21 @@ NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train1.py 
 
 ```bash
 cd SCD-Net/cifar10/causal
-python train_causal_10.py -c cifar10.yaml --data-path /path/to/cifar10 --dataset torch/cifar10
+python SCD_Net_train_cifar10.py -c cifar10.yaml --data-path /path/to/cifar10 
 ```
 
 #### CIFAR10-DVS
 
 ```bash
 cd SCD-Net/cifar10-dvs
-python train_causal_cifar10dvs.py -c cifar10dvs.yaml --data-path /path/to/cifar10dvs --model max_former_causal
+python SCD_Net_train_cifar10dvs.py -c cifar10dvs.yaml --data-path /path/to/cifar10dvs 
 ```
 
 #### DVS128 Gesture
 
 ```bash
 cd SCD-Net/dvs-128
-python train_causal_dvs128.py -c dvsgesture.yaml --data-path /path/to/DVS128Gesture --dataset dvsgesture --num-classes 11 --model max_former
+python SCD_Net_train_dvs128.py -c dvsgesture.yaml --data-path /path/to/DVS128Gesture 
 ```
 
 #### ImageNet-100
@@ -146,7 +135,6 @@ NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train.py \
   --exp train_imagenet100_10_512_t4 \
   --output_dir ./output/train_imagenet100_10_512_t4 \
   --log_dir ./log/train_imagenet100_10_512_t4 \
-  --dist_eval --pin_mem
 ```
 
 #### Tiny-ImageNet
@@ -160,11 +148,9 @@ NPROC_PER_NODE=2 torchrun --nnodes=1 --nproc_per_node=$NPROC_PER_NODE train.py \
   --exp train_tinyimagenet_10_512_t4 \
   --output_dir ./output/train_tinyimagenet_10_512_t4 \
   --log_dir ./log/train_tinyimagenet_10_512_t4 \
-  --dist_eval --pin_mem
 ```
 
 ## Notes
 
 - Replace all `/path/to/...` placeholders with local dataset paths.
 - The number of GPUs can be changed by editing `NPROC_PER_NODE`.
-- Checkpoints should be stored locally and are ignored by Git.
