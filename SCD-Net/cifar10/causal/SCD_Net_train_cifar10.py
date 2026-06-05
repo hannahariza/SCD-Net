@@ -42,7 +42,7 @@ from timm.optim import create_optimizer_v2, optimizer_kwargs
 from timm.scheduler import create_scheduler
 from timm.utils import ApexScaler, NativeScaler
 
-import max_former_causal
+import SCD_Net_model_cifar10
 # import ms_qkformer
 from max_resnet import max_resnet18
 
