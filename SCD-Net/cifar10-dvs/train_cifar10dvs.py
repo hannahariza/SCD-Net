@@ -12,7 +12,7 @@ from torchvision import transforms
 import math
 from torch.cuda import amp
 import utils
-import max_former_causal_cifar10dvs
+import model_cifar10dvs
 import ms_qkformer
 
 from spikingjelly.clock_driven import functional
