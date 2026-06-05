@@ -1,8 +1,3 @@
-'''
-
-'''
-
-
 import torch
 import torch.nn as nn
 from spikingjelly.clock_driven.neuron import MultiStepParametricLIFNode, MultiStepLIFNode
