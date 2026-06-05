@@ -8,8 +8,6 @@ This repository contains the code for SCD-Net and QK-SCD-Net experiments on stat
 
 ## Environment
 
-The dependency list was prepared from the `zcy` conda environment, focusing on SNN and training-related packages.
-
 ```bash
 conda create -n scd-net python=3.9 -y
 conda activate scd-net
