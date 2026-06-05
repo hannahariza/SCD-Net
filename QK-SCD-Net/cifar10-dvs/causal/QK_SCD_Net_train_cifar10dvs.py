@@ -12,7 +12,7 @@ from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 import math
 from torch.cuda import amp
-import model_causal, utils
+import QK_SCD_Net_model_cifar10dvs, utils
 from spikingjelly.clock_driven import functional
 from spikingjelly.datasets import cifar10_dvs
 from timm.models import create_model
