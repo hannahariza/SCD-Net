@@ -16,7 +16,7 @@ import torchvision.utils
 from torch.nn.parallel import DistributedDataParallel as NativeDDP
 
 from spikingjelly.clock_driven import functional
-import model
+import QK_SCD_Net_model_cifar10
 
 from timm.data import create_dataset, resolve_data_config, Mixup, FastCollateMixup, AugMixDataset, create_loader
 from timm.models import create_model, safe_model_name, resume_checkpoint, load_checkpoint, convert_splitbn_model, \
