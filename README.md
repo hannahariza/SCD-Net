@@ -32,6 +32,7 @@ If your CUDA version is different, install the matching PyTorch build from the o
 |       `-- qkformer_causal_tinyimagenet/# QK-SCD-Net Tiny-ImageNet causal training
 |-- SCD-Net/
 |   |-- cifar10/causal/                  # SCD-Net CIFAR-10 causal training
+|   |-- cifar100                         # SCD-Net CIFAR-100 causal training
 |   |-- cifar10-dvs/                     # SCD-Net CIFAR10-DVS causal training
 |   |-- dvs-128/                         # SCD-Net DVS128 Gesture causal training
 |   `-- imagenet/
