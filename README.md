@@ -1,6 +1,4 @@
-# Abstract
 
-Spiking Neural Networks (SNNs) have emerged as an energy-efficient and biologically plausible paradigm. However, the inherent binary and sparse nature of spike representations limits their expressive capacity, resulting in ambiguous and entangled features that introduce spurious correlations between object semantics and background interference. To address these issues, we propose the Spiking Causal Deconfounded Network (SCD-Net), a novel causal deconfounding framework for energy-efficient SNNs. Specifically, SCD-Net introduce a Spiking Causal Intervention (SCI) Module that performs explicit causal intervention on spatiotemporal spike representations, suppressing confounding effects while preserving authentic object semantics. Furthermore, a Causal Necessity and Sufficiency Loss (CNSL) is proposed to optimize the intervention process, facilitating the learning of deconfounded representations. By jointly optimizing the SCI Module and the CNSL, SCD-Net mitigates spurious correlations and captures intrinsic causal representations. Notably, SCD-Net achieves state-of-the-art (SOTA) performance 97.19\% on CIFAR10 while significantly reducing energy consumption by 15.8\%. Moreover, our approach exhibits 66.56\% ($\textbf{+0.63\%}$) accuracy on Tiny-ImageNet with 24\% energy reduction and 86.60\% ($\textbf{+0.76\%}$) on ImageNet-100.
 
 # SCD-Net
 
